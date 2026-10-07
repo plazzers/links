@@ -1,0 +1,676 @@
+{
+ "note": "Teaser data only. Full recipes are the paid product; only the 3 free samples include full text.",
+ "chapters": [
+  {
+   "num": 1,
+   "title": "The Italian Chains",
+   "intro": "Where I grew up and where I can tell you everything they do wrong."
+  },
+  {
+   "num": 2,
+   "title": "The Steakhouse & Grill",
+   "intro": "You're paying $38 for a steak you can cook better tonight."
+  },
+  {
+   "num": 3,
+   "title": "The Mexican Chains",
+   "intro": "Rice, beans, salsa. Pennies. And they charge you $14."
+  },
+  {
+   "num": 4,
+   "title": "The Asian Takeout",
+   "intro": "Faster than delivery and you know what's in it."
+  },
+  {
+   "num": 5,
+   "title": "The Fast Food & Diner Classics",
+   "intro": "The stuff your grandkids beg for, made the right way."
+  },
+  {
+   "num": 6,
+   "title": "Sal's Sauces",
+   "intro": "The jars cost $8. These cost about $2 and taste like a real kitchen."
+  }
+ ],
+ "recipes": [
+  {
+   "num": 1,
+   "chapter": 1,
+   "title": "Garlic Butter Breadsticks",
+   "subtitle": "Like the bottomless breadsticks at the big Italian chain",
+   "serves": "12 breadsticks",
+   "time": "2 hr (mostly rising)",
+   "cost": "about $0.25 each",
+   "tip": "The chains brush them twice. That second brush is why you can't stop eating them. Now you know.",
+   "ingredientNames": [
+    "warm water (110°F)",
+    "(1 packet) instant or active dry yeast",
+    "sugar",
+    "all-purpose flour",
+    "softened butter",
+    "salt",
+    "Topping: 4 tbsp melted butter, 1/2 tsp garlic powder, 1/2 tsp salt, pinch of dried oregano"
+   ]
+  },
+  {
+   "num": 2,
+   "chapter": 1,
+   "title": "Real Fettuccine Alfredo",
+   "subtitle": "Like the alfredo every Italian chain puts on the menu",
+   "serves": "4",
+   "time": "20 min",
+   "cost": "about $2.50 per plate",
+   "tip": "Grate the cheese yourself. Pre-shredded cheese has anti-caking powder in it and your sauce will turn grainy.",
+   "ingredientNames": [
+    "fettuccine",
+    "butter",
+    "heavy cream",
+    "garlic, finely grated",
+    "freshly grated Parmigiano-Reggiano (not the green can)",
+    "Salt, black pepper, pinch of nutmeg",
+    "Fresh parsley to finish"
+   ]
+  },
+  {
+   "num": 3,
+   "chapter": 1,
+   "title": "Sausage, Potato & Kale Soup",
+   "subtitle": "Like the creamy Tuscan soup at the Italian chain",
+   "serves": "6",
+   "time": "40 min",
+   "cost": "about $2 per bowl",
+   "tip": "Slice the potatoes thin and even. Thick chunks make it a stew, thin slices make it the soup you remember.",
+   "ingredientNames": [
+    "Italian sausage (mild or hot), casings removed",
+    "bacon, chopped",
+    "onion, diced",
+    "garlic, minced",
+    "chicken broth",
+    "russet potatoes, sliced thin (1/4 inch)",
+    "heavy cream",
+    "chopped kale, stems removed",
+    "red pepper flakes, salt, pepper"
+   ]
+  },
+  {
+   "num": 4,
+   "chapter": 1,
+   "title": "House Salad with Italian Dressing",
+   "subtitle": "Like the never-ending salad at the Italian chain",
+   "serves": "6",
+   "time": "15 min",
+   "cost": "about $1 per serving",
+   "tip": "The mayonnaise is the secret. It makes the dressing creamy and stops it from separating.",
+   "ingredientNames": [
+    "Dressing: 1/2 cup olive oil, 1/4 cup white wine vinegar, 2 tbsp mayonnaise, 2 tbsp grated parmesan, 1 tbsp water, 1 tsp sugar, 1 tsp Italian seasoning, 1/2 tsp garlic powder, 1/2 tsp salt, 1 tbsp lemon juice",
+    "Salad: 1 head iceberg lettuce and 1 heart of romaine, chopped",
+    "red onion, thinly sliced",
+    "Roma tomatoes, sliced",
+    "pepperoncini peppers",
+    "black olives",
+    "croutons"
+   ]
+  },
+  {
+   "num": 5,
+   "chapter": 1,
+   "title": "Chicken Parmigiana",
+   "subtitle": "Like the chicken parm on every Italian-American menu in the country",
+   "serves": "4",
+   "time": "45 min",
+   "cost": "about $3 per plate",
+   "tip": "Put sauce on top only, never under the chicken. Sauce underneath makes the crust soggy, and that's how you know it was made by somebody who doesn't care.",
+   "ingredientNames": [
+    "chicken breasts, halved horizontally into 4 cutlets",
+    "flour, 2 eggs beaten, 1 1/2 cups panko mixed with 1/2 cup grated parmesan",
+    "Oil for frying",
+    "marinara (see Sauces chapter)",
+    "shredded low-moisture mozzarella",
+    "Fresh basil"
+   ]
+  },
+  {
+   "num": 6,
+   "chapter": 1,
+   "title": "Shrimp Scampi",
+   "subtitle": "Like the scampi at the Italian and seafood chains",
+   "serves": "4",
+   "time": "20 min",
+   "cost": "about $4 per plate",
+   "tip": "Take the shrimp out early. They finish cooking in the sauce. Rubber shrimp is the number one restaurant crime.",
+   "ingredientNames": [
+    "linguine",
+    "shrimp, peeled and deveined",
+    "butter + 2 tbsp olive oil",
+    "garlic, sliced thin",
+    "red pepper flakes",
+    "dry white wine (or chicken broth)",
+    "Juice of 1 lemon",
+    "chopped parsley"
+   ]
+  },
+  {
+   "num": 7,
+   "chapter": 1,
+   "title": "Angela's Tiramisu",
+   "subtitle": "My wife made this every morning for 40 years. No box, no freezer.",
+   "serves": "9",
+   "time": "30 min + 6 hr chill",
+   "cost": "about $1.50 per piece",
+   "tip": "One second in the coffee. Angela would hit my hand if I counted to two.",
+   "ingredientNames": [
+    "egg yolks (pasteurized if you're worried)",
+    "sugar",
+    "mascarpone, room temperature",
+    "cold heavy cream",
+    "strong coffee or espresso, cooled",
+    "coffee liqueur or dark rum (optional)",
+    "About 24 ladyfingers (savoiardi)",
+    "Unsweetened cocoa powder"
+   ]
+  },
+  {
+   "num": 8,
+   "chapter": 2,
+   "title": "Cheddar Garlic Biscuits",
+   "subtitle": "Like the famous biscuits at the seafood chain",
+   "serves": "12 biscuits",
+   "time": "25 min",
+   "cost": "about $0.20 each",
+   "tip": "Cold butter, quick hands. Warm butter gives you hockey pucks.",
+   "ingredientNames": [
+    "all-purpose flour",
+    "baking powder",
+    "sugar",
+    "garlic powder",
+    "salt",
+    "cold butter, cubed",
+    "shredded sharp cheddar",
+    "cold milk",
+    "Topping: 3 tbsp melted butter, 1/2 tsp garlic powder, 1 tsp dried parsley"
+   ]
+  },
+  {
+   "num": 9,
+   "chapter": 2,
+   "title": "Pan-Seared Steak with Garlic Butter",
+   "subtitle": "Like the steakhouse sirloin, but better",
+   "serves": "2",
+   "time": "20 min",
+   "cost": "about $7 per steak (sirloin)",
+   "tip": "Salt early and get the pan hot. That's all a steakhouse does. Plus they charge you $38.",
+   "ingredientNames": [
+    "steaks (sirloin, ribeye or strip), 1 to 1 1/4 inch thick",
+    "Kosher salt and black pepper",
+    "high-heat oil",
+    "butter",
+    "garlic, smashed",
+    "sprigs thyme or rosemary"
+   ]
+  },
+  {
+   "num": 10,
+   "chapter": 2,
+   "title": "Loaded Baked Potato Soup",
+   "subtitle": "Like the potato soup at the casual grill chains",
+   "serves": "6",
+   "time": "45 min",
+   "cost": "about $1.50 per bowl",
+   "tip": "Mash half, leave half. Smooth and chunky at the same time, like a real baked potato.",
+   "ingredientNames": [
+    "bacon, chopped",
+    "onion, diced",
+    "flour",
+    "chicken broth",
+    "milk",
+    "russet potatoes, peeled and cubed",
+    "sour cream",
+    "shredded cheddar",
+    "Green onions to finish"
+   ]
+  },
+  {
+   "num": 11,
+   "chapter": 2,
+   "title": "Hot Spinach Artichoke Dip",
+   "subtitle": "Like the dip every grill chain sells you as an appetizer",
+   "serves": "6",
+   "time": "30 min",
+   "cost": "about $1 per serving",
+   "tip": "Squeeze the spinach until your hands hurt. Wet spinach equals watery dip.",
+   "ingredientNames": [
+    "cream cheese, softened",
+    "sour cream",
+    "mayonnaise",
+    "grated parmesan",
+    "shredded mozzarella, divided",
+    "frozen spinach, thawed and squeezed very dry",
+    "artichoke hearts, drained and chopped",
+    "garlic, minced, pinch of red pepper flakes"
+   ]
+  },
+  {
+   "num": 12,
+   "chapter": 2,
+   "title": "Honey Butter Dinner Rolls",
+   "subtitle": "Like the sweet rolls at the steakhouse chains",
+   "serves": "12 rolls",
+   "time": "2 hr 30 min",
+   "cost": "about $0.20 each",
+   "tip": "Make a double batch of the honey butter. It keeps two weeks in the fridge and your grandkids will put it on everything.",
+   "ingredientNames": [
+    "warm milk",
+    "instant yeast",
+    "honey",
+    "egg",
+    "softened butter",
+    "bread flour (or all- purpose)",
+    "salt",
+    "Honey butter: 1/2 cup soft butter, 3 tbsp honey, 1/4 tsp cinnamon, pinch of salt"
+   ]
+  },
+  {
+   "num": 13,
+   "chapter": 3,
+   "title": "Restaurant-Style Blender Salsa",
+   "subtitle": "Like the free salsa at the Tex-Mex chains",
+   "serves": "about 3 cups",
+   "time": "10 min",
+   "cost": "about $2 for the whole batch",
+   "tip": "Canned tomatoes, not fresh. That's what most restaurants use, and that's why theirs tastes the same in January as in August.",
+   "ingredientNames": [
+    "tomatoes (with juice)",
+    "white onion, roughly chopped",
+    "jalapeño, seeds removed for mild",
+    "garlic",
+    "cilantro",
+    "Juice of 1 lime",
+    "salt, 1/2 tsp cumin, 1/2 tsp sugar"
+   ]
+  },
+  {
+   "num": 14,
+   "chapter": 3,
+   "title": "Cilantro Lime Rice",
+   "subtitle": "Like the rice at the fast-casual burrito chain",
+   "serves": "6",
+   "time": "25 min",
+   "cost": "about $0.40 per serving",
+   "tip": "The bay leaf is the thing nobody tells you about. Try it once without and you'll see.",
+   "ingredientNames": [
+    "long-grain white rice, rinsed",
+    "water",
+    "oil",
+    "bay leaf, 1 tsp salt",
+    "Juice of 1 large lime + 1 tsp zest",
+    "chopped cilantro"
+   ]
+  },
+  {
+   "num": 15,
+   "chapter": 3,
+   "title": "Sizzling Chicken Fajitas",
+   "subtitle": "Like the fajitas that come out smoking at the Tex-Mex chains",
+   "serves": "4",
+   "time": "30 min + 30 min marinating",
+   "cost": "about $3 per serving",
+   "tip": "Thighs, not breasts. Restaurants use thighs because they stay juicy. You should too.",
+   "ingredientNames": [
+    "chicken thighs or breasts, sliced into strips",
+    "Marinade: 3 tbsp oil, juice of 2 limes, 1 tbsp chili powder, 1 tsp cumin, 1 tsp smoked paprika, 1 tsp garlic powder, 1 tsp salt, 1 tsp sugar",
+    "bell peppers and 1 onion, sliced",
+    "flour tortillas, warmed",
+    "To serve: sour cream, salsa, guacamole, cheese"
+   ]
+  },
+  {
+   "num": 16,
+   "chapter": 3,
+   "title": "White Queso Dip",
+   "subtitle": "Like the queso at the Mexican restaurants",
+   "serves": "6",
+   "time": "15 min",
+   "cost": "about $1 per serving",
+   "tip": "Deli white American cheese is the secret. It melts smooth and never breaks. Don't be a snob about it.",
+   "ingredientNames": [
+    "butter",
+    "onion, finely diced",
+    "jalapeño, finely diced",
+    "flour",
+    "milk",
+    "white American cheese from the deli, torn",
+    "Monterey Jack, shredded",
+    "diced green chiles",
+    "cumin"
+   ]
+  },
+  {
+   "num": 17,
+   "chapter": 3,
+   "title": "Burrito Bowl at Home",
+   "subtitle": "Like the build-your-own bowls at the burrito chain",
+   "serves": "4",
+   "time": "35 min",
+   "cost": "about $3 per bowl",
+   "tip": "Chipotle in adobo comes in a little can for about two dollars. That smoky taste you love? That's the can.",
+   "ingredientNames": [
+    "Cilantro lime rice (recipe above)",
+    "chicken thighs",
+    "Marinade: 2 chipotle peppers in adobo + 2 tbsp of the sauce, 2 tbsp oil, 3 cloves garlic, 1 tsp cumin, 1 tsp oregano, 1 tsp salt",
+    "black beans, warmed with a pinch of cumin",
+    "Salsa, corn, cheese, lettuce, sour cream, guacamole"
+   ]
+  },
+  {
+   "num": 18,
+   "chapter": 4,
+   "title": "Orange Chicken",
+   "subtitle": "Like the orange chicken at the mall food court chain",
+   "serves": "4",
+   "time": "35 min",
+   "cost": "about $2.50 per serving",
+   "tip": "Fry a second time for 1 minute just before saucing if you want it extra crispy. That's the restaurant way.",
+   "ingredientNames": [
+    "chicken thighs, cut in 1-inch pieces",
+    "egg, 1/2 cup cornstarch, 1/4 cup flour, salt",
+    "Oil for frying",
+    "Sauce: 3/4 cup orange juice, zest of 1 orange, 1/3 cup sugar, 2 tbsp soy sauce, 2 tbsp rice vinegar, 2 cloves garlic, 1 tsp grated ginger, pinch of red pepper flakes, 1 tbsp cornstarch mixed with 2 tbsp water"
+   ]
+  },
+  {
+   "num": 19,
+   "chapter": 4,
+   "title": "Better Chow Mein",
+   "subtitle": "Like the chow mein at the Chinese takeout chains",
+   "serves": "4",
+   "time": "20 min",
+   "cost": "about $1.50 per serving",
+   "tip": "Cabbage is the cheapest vegetable in the store and it's exactly what they use. Don't let anybody tell you it's fancy.",
+   "ingredientNames": [
+    "fresh chow mein or lo mein noodles (or spaghetti)",
+    "oil",
+    "onion, sliced",
+    "celery stalks, sliced thin",
+    "shredded cabbage",
+    "Sauce: 3 tbsp soy sauce, 1 tbsp oyster sauce, 1 tsp sesame oil, 1 tsp sugar, 2 cloves garlic, 1 tsp grated ginger"
+   ]
+  },
+  {
+   "num": 20,
+   "chapter": 4,
+   "title": "Takeout Fried Rice",
+   "subtitle": "Like the fried rice at every takeout place you've ever ordered from",
+   "serves": "4",
+   "time": "15 min",
+   "cost": "about $1 per serving",
+   "tip": "Cold rice. Always. Fresh rice turns to mush. Restaurants use yesterday's rice, and for once they're right.",
+   "ingredientNames": [
+    "cold cooked rice (day-old is best)",
+    "oil, divided",
+    "eggs, beaten",
+    "frozen peas and carrots",
+    "green onions, sliced",
+    "soy sauce, 1 tsp sesame oil, 1/2 tsp white pepper",
+    "Optional: diced ham, chicken or shrimp"
+   ]
+  },
+  {
+   "num": 21,
+   "chapter": 4,
+   "title": "Chicken Lettuce Wraps",
+   "subtitle": "Like the lettuce wraps at the upscale Asian-fusion chain",
+   "serves": "4",
+   "time": "25 min",
+   "cost": "about $2.50 per serving",
+   "tip": "Water chestnuts give the crunch. Without them it's just chicken in a salad.",
+   "ingredientNames": [
+    "ground chicken",
+    "oil",
+    "garlic, 1 tbsp grated ginger",
+    "water chestnuts, finely chopped",
+    "mushrooms, finely chopped",
+    "green onions",
+    "Sauce: 3 tbsp hoisin, 2 tbsp soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil, 1 tsp sriracha",
+    "Butter lettuce leaves"
+   ]
+  },
+  {
+   "num": 22,
+   "chapter": 5,
+   "title": "Smash Burgers with Special Sauce",
+   "subtitle": "Like the burgers at the famous West Coast and East Coast burger chains",
+   "serves": "4 double burgers",
+   "time": "20 min",
+   "cost": "about $2.50 per burger",
+   "tip": "Smash it in the first 10 seconds and never again. That crispy edge is the whole point.",
+   "ingredientNames": [
+    "80/20 ground beef, made into 8 loose balls",
+    "American cheese",
+    "soft potato buns, toasted with butter",
+    "Thin-sliced onion, pickles, shredded lettuce",
+    "Sauce: 1/2 cup mayo, 2 tbsp ketchup, 1 tbsp sweet relish, 1 tsp mustard, 1 tsp white vinegar, pinch of sugar, salt and pepper"
+   ]
+  },
+  {
+   "num": 23,
+   "chapter": 5,
+   "title": "Crispy Chicken Sandwich",
+   "subtitle": "Like the chicken sandwich everybody lines up for",
+   "serves": "4",
+   "time": "30 min + 4 hr brine",
+   "cost": "about $2.50 per sandwich",
+   "tip": "Pickle juice and a little powdered sugar. Now you know why it tastes the way it tastes.",
+   "ingredientNames": [
+    "chicken breasts, halved into 4 thin cutlets",
+    "Brine: 1 cup pickle juice + 1/2 cup milk",
+    "Coating: 1 cup flour, 2 tbsp powdered sugar, 1 tsp paprika, 1 tsp salt, 1/2 tsp black pepper, 1/2 tsp garlic powder",
+    "egg + 1/2 cup milk",
+    "Oil for frying, 4 buttered toasted buns, dill pickle chips"
+   ]
+  },
+  {
+   "num": 24,
+   "chapter": 5,
+   "title": "Classic Diner Chili",
+   "subtitle": "Like the chili at the square-burger fast food chain",
+   "serves": "8",
+   "time": "1 hr 30 min",
+   "cost": "about $1.50 per bowl",
+   "tip": "It's better the next day. In my restaurant, chili was always yesterday's chili. That one's a good trick.",
+   "ingredientNames": [
+    "ground beef",
+    "onion, 1 green bell pepper, 2 celery stalks, all diced",
+    "garlic",
+    "chili powder, 1 tbsp cumin, 1 tsp oregano, 1 tsp paprika, 1 tsp sugar",
+    "diced tomatoes + 15 oz can tomato sauce",
+    "kidney beans and 1 can pinto beans, drained",
+    "beef broth, salt and pepper"
+   ]
+  },
+  {
+   "num": 25,
+   "chapter": 5,
+   "title": "Creamy Coleslaw",
+   "subtitle": "Like the coleslaw at the fried chicken chain",
+   "serves": "8",
+   "time": "15 min + 2 hr chill",
+   "cost": "about $0.50 per serving",
+   "tip": "Chop it tiny. That's the difference between their slaw and the picnic slaw everybody leaves on the plate.",
+   "ingredientNames": [
+    "very finely chopped cabbage (about 1 small head)",
+    "finely grated carrot",
+    "finely minced onion",
+    "Dressing: 1/2 cup mayo, 1/3 cup sugar, 1/4 cup milk, 1/4 cup buttermilk, 2 1/2 tbsp lemon juice, 1 1/2 tbsp white vinegar, 1/2 tsp salt, 1/8 tsp pepper"
+   ]
+  },
+  {
+   "num": 26,
+   "chapter": 5,
+   "title": "Fluffy Diner Pancakes",
+   "subtitle": "Like the stacks at the pancake house chains",
+   "serves": "10 pancakes",
+   "time": "20 min",
+   "cost": "about $0.20 per pancake",
+   "tip": "Rest the batter and don't stir it again. Ten minutes of waiting is what makes them tall.",
+   "ingredientNames": [
+    "flour",
+    "sugar, 2 tsp baking powder, 1/2 tsp baking soda, 1/2 tsp salt",
+    "buttermilk",
+    "eggs",
+    "melted butter + more for the pan",
+    "vanilla"
+   ]
+  },
+  {
+   "num": 27,
+   "chapter": 5,
+   "title": "Baked Mac and Cheese",
+   "subtitle": "Like the mac and cheese at the Southern-style chains",
+   "serves": "8",
+   "time": "50 min",
+   "cost": "about $1.50 per serving",
+   "tip": "Evaporated milk keeps it creamy even the next day. It's the oldest diner trick there is.",
+   "ingredientNames": [
+    "elbow macaroni",
+    "butter, 1/4 cup flour",
+    "milk + 1 cup evaporated milk",
+    "mustard powder, 1/2 tsp paprika, salt and pepper",
+    "shredded sharp cheddar",
+    "shredded Colby or Monterey Jack",
+    "Topping: 1/2 cup panko with 1 tbsp melted butter"
+   ]
+  },
+  {
+   "num": 28,
+   "chapter": 5,
+   "title": "Oven-Baked Buffalo Wings",
+   "subtitle": "Like the wings at the sports bar chains",
+   "serves": "4",
+   "time": "1 hr",
+   "cost": "about $2.50 per serving",
+   "tip": "Baking powder pulls the moisture out of the skin. Crispy wings, no fryer. You're welcome.",
+   "ingredientNames": [
+    "chicken wings, split, tips removed, patted very dry",
+    "baking powder (NOT baking soda), 1 tsp salt",
+    "Sauce: 1/2 cup hot sauce (cayenne type), 4 tbsp butter, 1 tsp garlic powder, 1 tsp Worcestershire",
+    "Blue cheese or ranch, celery sticks"
+   ]
+  },
+  {
+   "num": 29,
+   "chapter": 5,
+   "title": "Chocolate Lava Cakes",
+   "subtitle": "Like the molten cake dessert at the casual dining chains",
+   "serves": "4",
+   "time": "25 min",
+   "cost": "about $1.25 per cake",
+   "tip": "You can fill the ramekins in the morning and bake them after dinner. That's exactly how the restaurant does it.",
+   "ingredientNames": [
+    "semi-sweet chocolate, chopped",
+    "butter",
+    "powdered sugar",
+    "eggs + 2 egg yolks",
+    "vanilla",
+    "flour",
+    "Butter and cocoa for the ramekins",
+    "Vanilla ice cream to serve"
+   ]
+  },
+  {
+   "num": 30,
+   "chapter": 6,
+   "title": "Sunday Marinara",
+   "subtitle": "The sauce from Romano's. The base for half this book.",
+   "serves": "about 6 cups",
+   "time": "45 min",
+   "cost": "about $4 for the whole pot",
+   "ingredients": [
+    "1/4 cup olive oil",
+    "1 small onion, finely diced",
+    "5 cloves garlic, sliced",
+    "Two 28 oz cans whole San Marzano- style tomatoes, crushed by hand",
+    "1 tsp salt, pinch of red pepper flakes, 1 tsp sugar (only if the tomatoes are sour)",
+    "1 tsp dried oregano",
+    "A handful of fresh basil"
+   ],
+   "steps": [
+    "Cook the onion in the oil over medium-low heat 8 minutes until soft and sweet.",
+    "Add the garlic for 1 minute without browning.",
+    "Add the tomatoes, salt, pepper flakes and oregano.",
+    "Simmer gently 30 to 40 minutes, stirring now and then.",
+    "Tear in the basil at the end. Taste for salt."
+   ],
+   "tip": "Low heat, patience. A burnt garlic sauce is a sauce you pour down the drain.",
+   "freeSample": true
+  },
+  {
+   "num": 31,
+   "chapter": 6,
+   "title": "Garlic Butter Sauce",
+   "subtitle": "The sauce for steak, shrimp, bread and everything else",
+   "serves": "about 1 cup",
+   "time": "10 min",
+   "cost": "about $1.50",
+   "ingredients": [
+    "1/2 cup butter",
+    "6 cloves garlic, minced",
+    "1/4 cup chicken broth",
+    "Juice of 1/2 lemon",
+    "2 tbsp chopped parsley, salt and pepper"
+   ],
+   "steps": [
+    "Melt the butter over medium-low heat.",
+    "Add the garlic and cook 1 to 2 minutes until fragrant, not brown.",
+    "Add the broth and lemon. Simmer 1 minute.",
+    "Stir in the parsley. Season."
+   ],
+   "tip": "Spoon it over a cheap sirloin and your family will think you went to the steakhouse.",
+   "freeSample": true
+  },
+  {
+   "num": 32,
+   "chapter": 6,
+   "title": "Steak Sauce",
+   "subtitle": "Like the brown bottled steak sauce, but fresh",
+   "serves": "about 1 cup",
+   "time": "15 min",
+   "cost": "about $1.50",
+   "tip": "The raisins. That's the sweet-tangy thing you could never figure out.",
+   "ingredientNames": [
+    "ketchup",
+    "Worcestershire",
+    "balsamic vinegar",
+    "orange juice",
+    "raisins, soaked in hot water 10 min",
+    "Dijon mustard",
+    "garlic powder, salt and pepper"
+   ]
+  },
+  {
+   "num": 33,
+   "chapter": 6,
+   "title": "Buttermilk Ranch",
+   "subtitle": "Like the ranch at the wing and pizza chains",
+   "serves": "about 1 1/2 cups",
+   "time": "10 min + 1 hr chill",
+   "cost": "about $1.50",
+   "ingredients": [
+    "1/2 cup mayonnaise",
+    "1/2 cup sour cream",
+    "1/2 cup buttermilk",
+    "1 tbsp fresh dill (or 1 tsp dried)",
+    "1 tbsp fresh chives",
+    "1 tbsp fresh parsley",
+    "1/2 tsp garlic powder, 1/2 tsp onion powder",
+    "1 tsp lemon juice, salt and pepper"
+   ],
+   "steps": [
+    "Whisk everything together.",
+    "Thin with more buttermilk if you want it for salad, keep it thick for dipping.",
+    "Chill at least 1 hour. Keeps 5 days."
+   ],
+   "tip": "Fresh herbs if you can. The bottle never tastes like this.",
+   "freeSample": true
+  }
+ ]
+}
