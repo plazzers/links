@@ -6,6 +6,8 @@ Two small "link in bio" pages, hosted free on GitHub Pages:
 |---|---|
 | Walter's Home Check | https://plazzers.github.io/links/walter/ |
 | Chef Sal Romano | https://plazzers.github.io/links/sal/ |
+| Free tool: What to Check in a House Built in… | https://plazzers.github.io/links/walter/house-age/ |
+| Free tool: Restaurant or Home? | https://plazzers.github.io/links/sal/restaurant-or-home/ |
 | Small index (two buttons) | https://plazzers.github.io/links/ |
 
 Each page is a single file you can edit in any text editor, or right on github.com
@@ -21,10 +23,13 @@ index.html              the small index page
 walter/index.html       Walter's page (all text, links and styling)
 walter/og.jpg           picture shown when the link is shared (1200x630)
 walter/assets/          Walter's photo, favicon, phone home-screen icon
+walter/house-age/       free tool "What to Check in a House Built in…" (page + og.jpg)
 sal/...                 the same for Sal
+sal/restaurant-or-home/ free tool "Restaurant or Home?" calculator (page + og.jpg)
 source-assets/          original photos (not used by the pages directly)
 tools/make_og.py        rebuilds the share pictures and the page photos
 tests/check.js          automatic checks + screenshots (docs/screens/)
+tests/tools.js          the checks for the two free tools (run by check.js)
 ```
 
 ## Change a link
@@ -86,6 +91,43 @@ of `tests/check.js`, otherwise the check will (correctly) report a difference.
 Facebook, X and others cache share pictures. After a change, paste the page address
 into the Facebook Sharing Debugger and click "Scrape again" to refresh it.
 
+## The free tools
+
+Both tools are single pages with a little plain JavaScript inside — no build step, no
+cookies, nothing loaded from other sites. Everything a visitor picks is kept in the page
+address, so a link can be shared and opens with the same answers:
+
+- `walter/house-age/?year=1972&own=1` — year (or a decade: `pre1950`, `1950s` … `2010s`),
+  `own=1` for "already own it", optional `found=basement,crawl,slab`.
+- `sal/restaurant-or-home/?d=2,5,9&p=4` — dish numbers and people; optional `t=20`
+  (tip %) and `dr=0` (drinks per person, 0 = off).
+
+They're linked from the main pages by the dashed **FREE TOOL** card under the free PDF
+buttons. Their Payhip links use a different tracking bit so Payhip shows which tool sent
+the buyer:
+
+```html
+href="https://payhip.com/b/CODE?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=house-age"
+```
+
+(`utm_campaign=restaurant-or-home` on Sal's tool.)
+
+**Edit Walter's checklist:** open `walter/house-age/index.html` and find `var ERA = [`.
+Each item has `from` / `to` (the build years it applies to), a `tag` (`PRO` = "Have a pro
+check", `DIY` = "Look yourself"), a `title`, `why`, `look`, and optional `buy` / `own`
+tips. `FOUND` holds the basement/crawlspace/slab items and `ALWAYS` the ones every house
+gets. Keep the wording cautious ("roughly", "common in") and leave out prices.
+
+**Edit Sal's prices:** open `sal/restaurant-or-home/index.html` and find `var DISHES = [`.
+Each line is `[number, title, restaurant price, home cost, group]` — change the two
+numbers. Keep the dish numbers as they are, or shared links will point at the wrong
+dishes. Sal's six one-liners are in `var LINES`. If you change the prices of dishes used
+in `tests/tools.js` (the `SAL` list near the top), update them there too.
+
+**Share pictures:** `python3 tools/make_og.py` also rebuilds each tool's `og.jpg`.
+
+![Walter's tool on a phone](docs/screens/house-age-mobile.png) ![Sal's tool on a phone](docs/screens/restaurant-or-home-mobile.png)
+
 ## Turn on GitHub Pages (one time)
 
 1. On github.com open the repo **plazzers/links** → **Settings** → **Pages**.
@@ -101,16 +143,22 @@ The checks open every page in a headless Chrome at phone size (390×844) and des
 (1280×800) and confirm: every link matches the spec exactly, every Payhip link carries the
 tracking params, no sideways scrolling, images load, no console errors, buttons are at
 least 48px tall, meta/share tags are present, and each page stays under 150 KB (photo
-excluded). Screenshots are saved to `docs/screens/`.
+excluded). For the two tools it also clicks through them: picks years and decades,
+checks which items appear for which era, does the restaurant math, reloads shared links
+to make sure the answers come back, tries Copy, Share and Print, and checks the Payhip
+links carry `utm_medium=tool` and the right `utm_campaign`. Screenshots are saved to
+`docs/screens/` (including `*-print-*.png` for the print view).
 
 ```sh
 npm install playwright        # once
 npx playwright install chromium   # once, if you don't already have a Chromium for Playwright
-node tests/check.js
+node tests/check.js           # or NODE_PATH="$(npm root -g)" node tests/check.js if installed globally
 ```
 
 ## Notes
 
-- No cookies, no trackers, no scripts, no outside fonts — the pages load instantly.
+- No cookies, no trackers, no outside fonts — the pages load instantly. The main pages
+  have no scripts at all; the two tools use a small built-in script and nothing else.
 - Each page has one fixed brand look, so it looks the same in light and dark mode.
-- Sal's page never names real restaurant brands; keep it that way when adding products.
+- Sal's pages never name real restaurant brands; keep it that way when adding products or dishes.
+- Walter's tool is educational only — the page footer says so; keep that line.

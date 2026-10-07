@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What to Check in a House Built in… — Free tool from Walter's Home Check</title>
+<meta name="description" content="Pick the year your house was built and get a free, plain-English checklist of the things worth a closer look for that era. From Walter's Home Check.">
+<link rel="canonical" href="https://plazzers.github.io/links/walter/house-age/">
+<meta name="theme-color" content="#1C2B3A">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Walter's Home Check">
+<meta property="og:title" content="What to check in a house built in…">
+<meta property="og:description" content="Free tool: pick the year your house was built and get a checklist of what's worth a closer look for that era.">
+<meta property="og:url" content="https://plazzers.github.io/links/walter/house-age/">
+<meta property="og:image" content="https://plazzers.github.io/links/walter/house-age/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What to check in a house built in… — free tool from Walter's Home Check">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What to check in a house built in…">
+<meta name="twitter:description" content="Free tool: pick the year your house was built and get your checklist.">
+<meta name="twitter:image" content="https://plazzers.github.io/links/walter/house-age/og.jpg">
+<style>
+:root{
+  --navy:#1C2B3A;--navy-2:#243649;--navy-3:#2c4157;--denim:#3E5F8A;--paper:#F2EDE4;
+  --muted:#B9C3CF;--orange:#E07A1F;--wood:#6B4A2F;--green:#8FBF8A;
+  --head:"Arial Narrow","Roboto Condensed","Oswald",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--navy);color:var(--paper);font:16px/1.5 var(--body);
+  background-image:linear-gradient(180deg,#22344a 0,var(--navy) 320px)}
+a{color:inherit}
+main{max-width:640px;margin:0 auto;padding:20px 20px 24px}
+.back{display:flex;width:fit-content;align-items:center;gap:8px;min-height:48px;color:var(--muted);text-decoration:none;font-weight:600}
+.back:hover{color:var(--paper)}
+.back img{width:32px;height:32px;border-radius:50%;border:2px solid var(--orange);object-fit:cover}
+.kicker{display:inline-block;margin:18px 0 10px;font:700 .8rem/1 var(--head);letter-spacing:.16em;padding:6px 8px;border-radius:5px;
+  background:var(--orange);color:var(--navy)}
+h1{font:700 2.1rem/1.04 var(--head);font-stretch:condensed;text-transform:uppercase;letter-spacing:.04em;margin:0}
+.why{margin:18px 0 0;padding:16px 18px;background:var(--navy-2);border-left:5px solid var(--wood);border-radius:10px}
+.why h2{font:700 .95rem/1.2 var(--head);text-transform:uppercase;letter-spacing:.16em;color:var(--orange);margin:0 0 6px}
+.why p{margin:0 0 8px}
+.why p:last-child{margin:0}
+.sign{color:var(--muted);font-style:italic}
+form{margin:26px 0 0}
+fieldset{border:0;margin:0 0 18px;padding:0;min-width:0}
+legend{font:700 1.05rem/1.2 var(--head);text-transform:uppercase;letter-spacing:.14em;padding:0;margin:0 0 10px}
+.opt{text-transform:none;letter-spacing:0;font:400 .92rem var(--body);color:var(--muted)}
+.hint{color:var(--muted);font-size:.92rem;margin:-4px 0 10px}
+.year-row{display:flex;gap:10px;flex-wrap:wrap}
+.year-row label{flex:1 1 170px}
+input[type=number]{width:100%;min-height:52px;padding:10px 14px;border-radius:10px;border:2px solid var(--denim);
+  background:var(--navy-2);color:var(--paper);font:700 1.25rem/1 var(--body)}
+input[type=number]:focus{outline:3px solid var(--orange);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 18px;border-radius:10px;
+  border:0;font:700 1rem/1.2 var(--body);cursor:pointer;text-decoration:none;text-align:center;transition:filter .12s ease,transform .12s ease}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:scale(.985)}
+.btn:focus-visible,.chip input:focus-visible+span,.card:focus-visible{outline:3px solid var(--paper);outline-offset:3px}
+.btn-go{background:var(--orange);color:var(--navy);flex:0 0 auto}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:8px}
+.chips-3{grid-template-columns:repeat(3,1fr)}
+.chips-2{grid-template-columns:repeat(2,1fr)}
+.chip{position:relative;display:block}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:flex;align-items:center;justify-content:center;min-height:48px;padding:8px 10px;border-radius:10px;
+  background:var(--navy-2);border:2px solid var(--denim);font-weight:700;text-align:center;cursor:pointer;line-height:1.2;
+  transition:background .12s ease,border-color .12s ease}
+.chip span:hover{border-color:var(--orange)}
+.chip input:checked+span{background:var(--orange);border-color:var(--orange);color:var(--navy)}
+.err{color:#FFB37A;font-weight:600;margin:8px 0 0;min-height:0}
+#results{margin-top:30px;scroll-margin-top:12px}
+.res-head{border-top:2px solid var(--wood);padding-top:22px}
+.res-head h2{font:700 1.6rem/1.1 var(--head);text-transform:uppercase;letter-spacing:.05em;margin:0}
+.res-sub{color:var(--muted);margin:6px 0 0}
+.tipbox{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:rgba(62,95,138,.25);border:1px solid var(--denim)}
+.tipbox strong{color:var(--orange)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.actions .btn{flex:1 1 150px;background:var(--navy-2);color:var(--paper);border:2px solid var(--denim)}
+.status{min-height:1.5em;margin:8px 0 0;color:var(--green);font-weight:600}
+h3{font:700 1.05rem/1.2 var(--head);text-transform:uppercase;letter-spacing:.14em;margin:28px 0 12px;display:flex;align-items:center;gap:12px}
+h3::after{content:"";flex:1;height:2px;background:var(--wood)}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.item{padding:16px 18px;background:var(--navy-2);border:1px solid rgba(62,95,138,.7);border-left:5px solid var(--denim);border-radius:12px}
+.item.pro{border-left-color:var(--orange)}
+.item-top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:6px 12px}
+.item h4{margin:0;font-size:1.06rem;line-height:1.3;flex:1 1 220px}
+.tag{flex:0 0 auto;font:700 .74rem/1 var(--head);letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:5px;
+  background:var(--denim);color:var(--paper);white-space:nowrap}
+.pro .tag{background:var(--orange);color:var(--navy)}
+.item p{margin:8px 0 0;color:var(--paper)}
+.item .look{color:var(--muted);font-size:.95rem}
+.item .look b{color:var(--paper)}
+.cta{margin:36px 0 0;padding:20px;border-radius:14px;background:var(--navy-2);border:2px solid var(--denim)}
+.cta h2{font:700 1.15rem/1.2 var(--head);text-transform:uppercase;letter-spacing:.14em;margin:0 0 14px}
+.cta .btn{display:flex;width:100%;margin:0 0 12px}
+.btn-primary{background:var(--orange);color:var(--navy);min-height:64px;font-size:1.08rem;box-shadow:0 5px 0 #a9560f}
+.free{display:inline-block;font:700 .76rem/1 var(--head);letter-spacing:.14em;padding:5px 7px;border-radius:5px;background:var(--navy);color:var(--orange);vertical-align:middle}
+.card{display:block;padding:14px 16px;min-height:48px;margin:0 0 12px;border-radius:12px;text-decoration:none;
+  background:var(--navy);border:1px solid rgba(62,95,138,.7);border-left:5px solid var(--wood)}
+.card:last-child{margin-bottom:0}
+.card:hover{border-color:var(--denim);border-left-color:var(--orange)}
+.card b{display:block;font-size:1.04rem;line-height:1.3}
+.card span{display:block;color:var(--muted);font-size:.95rem;margin-top:2px}
+footer{max-width:640px;margin:0 auto;padding:24px 20px 40px;text-align:center;color:var(--muted);font-size:.88rem;line-height:1.6}
+footer p{margin:0 0 8px}
+footer a{color:var(--paper);text-underline-offset:3px;display:inline-block;padding:12px 4px;margin:-12px 0}
+.rule{height:2px;background:var(--wood);opacity:.6;max-width:640px;margin:8px auto 0}
+.print-only{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none!important}
+@media (min-width:700px){main{padding-top:32px}h1{font-size:2.7rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{
+  @page{margin:16mm 14mm}
+  body{background:#fff!important;color:#000;font-size:11pt}
+  main{max-width:none;padding:0}
+  .back,.kicker,.why,form,.actions,.status,.cta,.rule,noscript,footer .noprint{display:none!important}
+  h1{font-size:20pt;color:#000}
+  .print-only{display:block}
+  .res-head{border-top:0;padding-top:0}
+  .res-head h2{font-size:15pt}
+  .res-sub,.item p,.item .look,.item .look b{color:#000}
+  .tipbox{background:none;border:1px solid #999;color:#000}
+  .tipbox strong{color:#000}
+  h3{margin:16pt 0 6pt;font-size:11pt;break-after:avoid}
+  h3::after{background:#999}
+  .list{gap:6pt}
+  .item{background:none;border:1px solid #999;border-left:4pt solid #666;padding:8pt 10pt;break-inside:avoid;color:#000}
+  .item.pro{border-left-color:#000}
+  .tag,.pro .tag{background:none;color:#000;border:1px solid #000}
+  .item h4::before{content:"\2610  ";font-weight:400}
+  footer{color:#000;padding:12pt 0 0;max-width:none}
+  footer a{color:#000;padding:0;margin:0}
+}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../"><img src="../assets/walter.jpg" width="480" height="480" alt="Walter">Walter's Home Check</a>
+  <p class="print-only">Walter's Home Check · plazzers.github.io/links/walter/house-age/</p>
+  <span class="kicker">FREE TOOL</span>
+  <h1>What to check in a house built in…</h1>
+
+  <section class="why" aria-labelledby="why">
+    <h2 id="why">Why this matters</h2>
+    <p>Every house carries the habits of the year it was built. Builders used what was normal at the time — the wiring, the pipes, the insulation — and we've learned a lot about some of those materials since.</p>
+    <p>None of this means your house is in trouble. Most of it is just worth knowing about, so you know where to look and what to ask. Pick the year and I'll show you what I'd look at first. <span class="sign">— Walter</span></p>
+  </section>
+
+  <noscript><p class="tipbox">This tool needs JavaScript turned on. The free Weekend Home Check below works without it.</p></noscript>
+
+  <form id="f" novalidate>
+    <fieldset>
+      <legend>When was it built?</legend>
+      <p class="hint">Type the year, or pick a decade if you're not sure.</p>
+      <div class="year-row">
+        <label><span class="sr">Year built</span><input id="year" type="number" inputmode="numeric" min="1700" max="2100" placeholder="e.g. 1972" autocomplete="off"></label>
+        <button class="btn btn-go" type="submit">Show my checklist</button>
+      </div>
+      <p class="err" id="err" role="alert" hidden></p>
+    </fieldset>
+    <fieldset>
+      <legend class="sr">Or pick a decade</legend>
+      <div class="chips" id="decades">
+        <label class="chip"><input type="radio" name="decade" value="pre1950"><span>Before 1950</span></label>
+        <label class="chip"><input type="radio" name="decade" value="1950s"><span>1950s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="1960s"><span>1960s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="1970s"><span>1970s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="1980s"><span>1980s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="1990s"><span>1990s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="2000s"><span>2000s</span></label>
+        <label class="chip"><input type="radio" name="decade" value="2010s"><span>2010s or newer</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Foundation <small class="opt">· optional</small></legend>
+      <div class="chips chips-3">
+        <label class="chip"><input type="checkbox" name="found" value="basement"><span>Basement</span></label>
+        <label class="chip"><input type="checkbox" name="found" value="crawl"><span>Crawlspace</span></label>
+        <label class="chip"><input type="checkbox" name="found" value="slab"><span>Slab</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>You are…</legend>
+      <div class="chips chips-2">
+        <label class="chip"><input type="radio" name="own" value="0" checked><span>Buying</span></label>
+        <label class="chip"><input type="radio" name="own" value="1"><span>Already own it</span></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <section id="results" aria-live="polite" hidden tabindex="-1">
+    <div class="res-head">
+      <h2 id="res-title"></h2>
+      <p class="res-sub" id="res-sub"></p>
+      <p class="tipbox" id="res-tip"></p>
+    </div>
+    <div class="actions">
+      <button class="btn" type="button" id="print">Print / Save as PDF</button>
+      <button class="btn" type="button" id="copy">Copy list</button>
+      <button class="btn" type="button" id="share">Share</button>
+    </div>
+    <p class="status" id="status" role="status"></p>
+    <div id="groups"></div>
+  </section>
+
+  <section class="cta" aria-labelledby="next">
+    <h2 id="next">Take it further</h2>
+    <a class="btn btn-primary" href="https://payhip.com/b/hiIm1?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=house-age"><span><span class="free">FREE<span class="sr">:</span></span> The Weekend Home Check — 25 things to check in 30 minutes</span></a>
+    <a class="card" href="https://payhip.com/b/ABaxT?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=house-age"><b>The Home Check Manual</b><span>The Home Check Manual has a full chapter on what to check by the decade your house was built.</span></a>
+    <a class="card" href="https://payhip.com/b/OZeda?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=house-age"><b>Walter's Home Check App</b><span>The whole room-by-room checklist on your phone. Photos, notes, PDF report.</span></a>
+  </section>
+</main>
+<div class="rule" aria-hidden="true"></div>
+<footer>
+  <p>Educational content. Not a substitute for a professional inspection of your property.</p>
+  <p class="noprint"><a href="../">← Back to Walter's Home Check</a></p>
+  <p>© 2026 Walter's Home Check</p>
+</footer>
+<script>
+(function () {
+  'use strict';
+  var NOW = new Date().getFullYear();
+  var PRO = 'Have a pro check', DIY = 'Look yourself';
+
+  // Era items: shown when the chosen year range overlaps [from, to].
+  // All years are rough — wording stays cautious on purpose.
+  var ERA = [
+    { from: 0, to: 1950, tag: PRO, title: 'Knob-and-tube or old cloth-covered wiring',
+      why: 'Common in homes wired roughly before the 1950s. It has no ground wire, the old insulation can get brittle, and it was never meant to be buried in insulation or carry today\'s loads. Some insurers ask about it.',
+      look: 'Ceramic knobs and tubes on the joists in the attic or basement, or fabric-wrapped wires at the panel or fixtures. Don\'t handle the wiring — just note where you see it.',
+      buy: 'Ask the seller whether any original wiring is still in use, and check with your insurer before closing.',
+      own: 'Have a licensed electrician look at how much is still live and what it\'s connected to.' },
+    { from: 0, to: 1965, tag: PRO, title: 'Two-prong outlets and older fuse boxes',
+      why: 'Ungrounded two-prong outlets and screw-in fuse boxes are common in homes from roughly before the mid-1960s. Not automatically unsafe, but they often mean the system wasn\'t sized for modern use — and a three-prong outlet on old wiring may not actually be grounded.',
+      look: 'Count the two-prong outlets, look for a fuse box instead of breakers, and watch for warm cover plates or lights that dim when something kicks on.',
+      own: 'Don\'t just swap in three-prong outlets on ungrounded wiring — ask an electrician about the safe ways to update them.' },
+    { from: 1950, to: 1990, tag: PRO, title: 'Electrical panel brand',
+      why: 'Certain older panel brands have known concerns about breakers that may not trip when they should — mainly Federal Pacific Electric (FPE) "Stab-Lok" and Zinsco (also sold as Sylvania-Zinsco). They were common in homes built roughly from the 1950s through the 1980s.',
+      look: 'Read the label on the panel door or inside it — don\'t remove the cover. If you see one of those names, have an electrician look at it.',
+      buy: 'Ask your inspector to note the panel brand in the report, and check with your insurer.',
+      own: 'Snap a photo of the panel label so you have it handy when you call an electrician.' },
+    { from: 1964, to: 1976, tag: PRO, title: 'Aluminum branch wiring',
+      why: 'Some homes built roughly from the mid-1960s to the mid-1970s were wired with aluminum instead of copper. The wire itself isn\'t the issue — the connections at outlets and switches can loosen and overheat over time. There are accepted repairs for it.',
+      look: 'Look for "AL" or "ALUMINUM" printed on cable jackets you can see in the basement, attic or at the panel. Warning signs: warm outlet covers, flickering lights, a burning smell.',
+      buy: 'If the inspector finds it, ask whether the connections have already been repaired, and get an electrician\'s opinion before closing.',
+      own: 'Have an electrician check the connections. Don\'t replace outlets or switches yourself unless they\'re rated for aluminum wire.' },
+    { from: 0, to: 1960, tag: DIY, title: 'Galvanized steel water pipes',
+      why: 'Common for water supply lines in homes built roughly before the 1960s. They rust from the inside over decades, which can mean low water pressure, discolored water and leaks.',
+      look: 'Gray, threaded pipes where the water line comes in. A fridge magnet sticks to galvanized steel; it won\'t stick to copper. Check pressure with two taps running.',
+      buy: 'Ask whether the supply pipes have been replaced, and when.',
+      own: 'If pressure is dropping or the water runs brown at first, get a plumber\'s opinion on replacing them before they leak.' },
+    { from: 0, to: 1979, tag: PRO, title: 'Cast-iron drains and clay sewer line',
+      why: 'Older homes often have cast-iron drain pipes inside and a clay (or similar older-material) sewer line running to the street. Over decades, roots, cracks and sags are common — and they\'re out of sight.',
+      look: 'Slow drains, gurgling, or a wet patch in the yard are hints. A sewer camera inspection is the real answer — a plumber runs a camera down the line and shows you.',
+      own: 'Recurring backups are the sign to get the line scoped — find out what\'s there before it becomes an emergency.',
+      buy: 'A sewer camera inspection is usually not part of a general home inspection — worth adding before you close, especially with big trees in the yard.' },
+    { from: 1977, to: 1996, tag: DIY, title: 'Polybutylene water pipes',
+      why: 'A gray (sometimes blue or black) flexible plastic supply pipe used in many homes built roughly from the late 1970s to the mid-1990s. It has a history of leaking at fittings and as it ages, and some insurers ask about it.',
+      look: 'Check where the water line enters the house and at the water heater. It\'s often stamped "PB2110". If you find it, get a plumber\'s opinion.',
+      buy: 'Ask whether it has been replaced, and check with your insurer before closing.',
+      own: 'Know where your main water shut-off is, and look over the fittings from time to time for drips.' },
+    { from: 0, to: 1977, tag: PRO, title: 'Possible lead paint',
+      why: 'Homes built before 1978 may have lead-based paint, often under newer layers. It\'s mostly a problem when paint is sanded, scraped or peeling — the dust and chips are the risk, especially for kids and pregnant women.',
+      look: 'Don\'t sand, scrape or heat-strip old paint before testing. Window sills and frames, doors and porches are the usual spots. A certified lead inspector, or an EPA-recognized test kit, can tell you.',
+      buy: 'Sellers of pre-1978 homes in the US must disclose any known lead paint and give you a chance to test.',
+      own: 'Planning a renovation? In the US, contractors working on pre-1978 homes should be lead-safe certified (EPA RRP) — ask for it.' },
+    { from: 0, to: 1985, tag: PRO, title: 'Materials that may contain asbestos',
+      why: 'Common in homes built before the 1980s, and some products were still used into the mid-1980s: some old floor tiles (often 9"×9"), pipe and duct wrap, popcorn ceilings, and vermiculite attic insulation. Intact material that\'s left alone is generally a lower risk — breaking, sanding or removing it is what releases fibers.',
+      look: 'Don\'t disturb it — test first. Vermiculite looks like loose, pebbly gray-brown or gold granules in the attic. Only a lab test can confirm asbestos.',
+      buy: 'Ask the seller about any testing or removal that\'s been done, and plan for testing before any renovation.',
+      own: 'Before any remodel, demolition or flooring job, have suspect materials tested. Removal is a job for a licensed abatement pro.' },
+    { from: 0, to: 1980, tag: DIY, title: 'Original windows and insulation',
+      why: 'Older homes often still have original single-pane windows and much less insulation than today\'s standards. Not a safety issue — it shows up as drafts, condensation and high heating and cooling bills.',
+      look: 'Single-pane glass, drafts around sashes, rot on sills, and how deep the attic insulation is. In a pre-1978 house, treat old window paint as possible lead paint.' },
+    { from: 2001, to: 2008, tag: PRO, title: 'Problem ("Chinese") drywall',
+      why: 'Some homes built or renovated roughly from 2001 to 2008 — mostly in the southeastern US, especially Florida and the Gulf Coast — used imported drywall that gives off sulfur gases.',
+      look: 'Signs: a sulfur or "rotten egg" smell, blackened or corroded copper wiring and pipes, and air conditioner coils that keep failing. Worth asking about if the house was built or renovated in those years.' },
+    { from: 2000, to: 9999, tag: DIY, title: 'Grading and drainage',
+      why: 'Even in a newer home, soil settles in the first years and gutters get overlooked. Water running toward the house is one of the most common causes of wet basements and foundation trouble.',
+      look: 'The ground should slope away from the house. Downspouts should end several feet out, not right at the wall.' },
+    { from: 2000, to: 9999, tag: DIY, title: 'Attic ventilation',
+      why: 'Blocked soffit vents or bath fans that dump into the attic can lead to moisture, mold and a shorter roof life — even in newer homes.',
+      look: 'Look for daylight at the soffit vents, insulation not stuffed against them, bath fan ducts that go outside, and no dark staining on the roof sheathing.' },
+    { from: 2000, to: 9999, tag: DIY, title: 'Flashing details',
+      why: 'Where roof meets wall, around windows, chimneys and decks — small flashing shortcuts are common and let water in slowly where you don\'t see it.',
+      look: 'Look for stains under windows, at ceiling corners below roof-wall joints, and at the deck ledger board. Have a roofer or inspector check anything that looks off.' }
+  ];
+
+  var FOUND = {
+    basement: { tag: DIY, title: 'Basement: water and walls',
+      why: 'Basements tell you how water moves around the house. Most basement water is a drainage problem, not a foundation problem — but it\'s worth knowing which.',
+      look: 'Water stains, white chalky deposits (efflorescence) on walls, a musty smell, and the sump pump if there is one. Horizontal cracks or walls that bow inward — have a structural engineer look.' },
+    crawl: { tag: DIY, title: 'Crawlspace: moisture, wood and pests',
+      why: 'Crawlspaces are out of sight, so moisture, wood rot and pests go unnoticed for years — and that air ends up in the house.',
+      look: 'With a flashlight from the access hatch: standing water, a missing or torn vapor barrier, damp or soft wood, sagging floor framing, droppings or mud tubes from termites.' },
+    slab: { tag: DIY, title: 'Slab: cracks and hidden plumbing',
+      why: 'Thin hairline cracks in a slab are normal. Wider or uneven cracks, and plumbing leaks under the slab, are the things worth catching.',
+      look: 'Cracks wider than about 1/4 inch or where one side is higher, doors that stick, and warm spots on the floor or a running water meter with everything off (a sign of a leak under the slab).' }
+  };
+
+  var ALWAYS = [
+    { tag: DIY, title: 'Radon test',
+      why: 'Radon is an invisible, odorless gas from the ground. It shows up in houses of every age, in every region — new or old, with or without a basement. Testing is the only way to know.',
+      look: 'A simple test kit or a professional test. The EPA recommends fixing the home if the result is 4 pCi/L or higher.' },
+    { tag: DIY, title: 'Roof age and condition',
+      why: 'Asphalt shingle roofs commonly last roughly 20–30 years. Knowing where yours is in that range helps you plan instead of being surprised.',
+      look: 'From the ground or with binoculars: curling, cracked or missing shingles, lots of granules in the gutters, sagging lines. Ask for the roof\'s age or records.' },
+    { tag: DIY, title: 'Water heater and HVAC age',
+      why: 'Tank water heaters commonly last roughly 8–12 years, furnaces about 15–20, and AC units about 10–15. Age alone doesn\'t mean failure, but it tells you what\'s coming.',
+      look: 'The data plate on each unit shows a model and serial number — the manufacture date is usually printed there or coded in the serial. Look for rust or water at the base of the water heater.' },
+    { tag: DIY, title: 'Foundation and signs of water',
+      why: 'Water is behind most of the expensive problems in a house. Catching it early is the cheapest fix there is.',
+      look: 'Stains on ceilings and walls, musty smells, cracked or uneven floors, doors that stick, and stair-step cracks in brick or block. Anything that looks like movement — have a pro look.' }
+  ];
+
+  var DECADES = {
+    pre1950: { from: 0, to: 1949, label: 'before 1950' },
+    '1950s': { from: 1950, to: 1959, label: 'in the 1950s' },
+    '1960s': { from: 1960, to: 1969, label: 'in the 1960s' },
+    '1970s': { from: 1970, to: 1979, label: 'in the 1970s' },
+    '1980s': { from: 1980, to: 1989, label: 'in the 1980s' },
+    '1990s': { from: 1990, to: 1999, label: 'in the 1990s' },
+    '2000s': { from: 2000, to: 2009, label: 'in the 2000s' },
+    '2010s': { from: 2010, to: 9999, label: 'in 2010 or later' }
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $('f'), yearIn = $('year'), results = $('results'), groupsEl = $('groups'), status = $('status');
+  var state = { year: null, found: [], own: false };
+  var lastText = '';
+
+  function rangeFor(year) {
+    if (DECADES[year]) return DECADES[year];
+    var y = parseInt(year, 10);
+    return { from: y, to: y, label: 'in ' + y };
+  }
+  function validYear(v) {
+    if (DECADES[v]) return true;
+    if (!/^\d{4}$/.test(String(v))) return false;
+    var y = parseInt(v, 10);
+    return y >= 1700 && y <= NOW + 1;
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
+  }
+
+  function itemHtml(it, own) {
+    var extra = own ? it.own : it.buy;
+    return '<li class="item' + (it.tag === PRO ? ' pro' : '') + '"><div class="item-top"><h4>' + esc(it.title) + '</h4>' +
+      '<span class="tag">' + esc(it.tag) + '</span></div><p>' + esc(it.why) + '</p>' +
+      '<p class="look"><b>What to look for:</b> ' + esc(it.look) + '</p>' +
+      (extra ? '<p class="look"><b>' + (own ? 'Since you own it:' : 'If you\'re buying:') + '</b> ' + esc(extra) + '</p>' : '') + '</li>';
+  }
+
+  function itemText(it, own) {
+    var extra = own ? it.own : it.buy;
+    return '[ ] ' + it.title + ' (' + it.tag + ')\n    ' + it.why + '\n    What to look for: ' + it.look +
+      (extra ? '\n    ' + (own ? 'Since you own it: ' : 'If you\'re buying: ') + extra : '');
+  }
+
+  function render() {
+    if (!state.year) { results.hidden = true; return; }
+    var r = rangeFor(state.year), own = state.own;
+    var era = ERA.filter(function (it) { return it.from <= r.to && it.to >= r.from; });
+    var found = state.found.map(function (k) { return FOUND[k]; });
+    var groups = [];
+    if (era.length) groups.push({ h: 'Because of when it was built', items: era });
+    if (found.length) groups.push({ h: 'Because of your foundation', items: found });
+    groups.push({ h: 'Every house, every age', items: ALWAYS });
+
+    var title = 'Your checklist: a house built ' + r.label;
+    var count = era.length + found.length + ALWAYS.length;
+    var sub = count + ' things worth a closer look' + (own ? ' — for a house you already own.' : ' — for a house you\'re buying.');
+    var tip = own
+      ? 'No need to tackle it all at once. Start with the safety items — electrical and radon — then plan ahead for the aging stuff. Keep notes and dates; your future self will thank you.'
+      : 'Bring this list to your inspection and ask about each item. A general home inspection doesn\'t always include radon, sewer camera, lead or asbestos testing — ask which are included and book the rest before you close.';
+    $('res-title').textContent = title;
+    $('res-sub').textContent = sub;
+    $('res-tip').innerHTML = '<strong>' + (own ? 'Already own it?' : 'Buying?') + '</strong> ' + esc(tip);
+    groupsEl.innerHTML = groups.map(function (g) {
+      return '<h3>' + esc(g.h) + '</h3><ul class="list">' + g.items.map(function (it) { return itemHtml(it, own); }).join('') + '</ul>';
+    }).join('');
+
+    lastText = title + '\n' + sub + '\n\n' + groups.map(function (g) {
+      return g.h.toUpperCase() + '\n\n' + g.items.map(function (it) { return itemText(it, own); }).join('\n\n');
+    }).join('\n\n') + '\n\nFrom Walter\'s Home Check: ' + location.href +
+      '\nEducational content. Not a substitute for a professional inspection of your property.';
+    results.hidden = false;
+    document.title = 'What to check in a house built ' + r.label + ' — Walter\'s Home Check';
+  }
+
+  function syncUrl() {
+    var p = new URLSearchParams();
+    if (state.year) p.set('year', state.year);
+    if (state.own) p.set('own', '1');
+    if (state.found.length) p.set('found', state.found.join(','));
+    var q = p.toString();
+    history.replaceState(null, '', location.pathname + (q ? '?' + q : ''));
+  }
+
+  function syncInputs() {
+    yearIn.value = DECADES[state.year] ? '' : (state.year || '');
+    [].forEach.call(form.decade, function (el) { el.checked = el.value === state.year; });
+    [].forEach.call(form.found, function (el) { el.checked = state.found.indexOf(el.value) !== -1; });
+    form.own.value = state.own ? '1' : '0';
+  }
+
+  function update(scroll) {
+    status.textContent = '';
+    syncUrl();
+    render();
+    if (scroll && !results.hidden) results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function showErr(msg) { $('err').textContent = msg; $('err').hidden = !msg; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = yearIn.value.trim();
+    if (!validYear(v)) { showErr('Please enter a 4-digit year between 1700 and ' + (NOW + 1) + ', or pick a decade.'); return; }
+    showErr('');
+    state.year = String(parseInt(v, 10));
+    syncInputs();
+    update(true);
+  });
+  [].forEach.call(form.decade, function (el) {
+    el.addEventListener('change', function () { showErr(''); state.year = el.value; syncInputs(); update(true); });
+  });
+  [].forEach.call(form.found, function (el) {
+    el.addEventListener('change', function () {
+      state.found = [].filter.call(form.found, function (x) { return x.checked; }).map(function (x) { return x.value; });
+      update(false);
+    });
+  });
+  [].forEach.call(form.own, function (el) {
+    el.addEventListener('change', function () { state.own = form.own.value === '1'; update(false); });
+  });
+
+  function copyText(text, okMsg) {
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      status.textContent = ok ? okMsg : 'Couldn\'t copy automatically — select the text and copy it.';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { status.textContent = okMsg; }, fallback);
+    } else fallback();
+  }
+
+  $('print').addEventListener('click', function () { window.print(); });
+  $('copy').addEventListener('click', function () { copyText(lastText, 'Checklist copied. Paste it into a note or an email.'); });
+  $('share').addEventListener('click', function () {
+    var data = { title: document.title, text: 'What to check in a house built ' + rangeFor(state.year).label + ' — free checklist from Walter\'s Home Check', url: location.href };
+    if (navigator.share) {
+      navigator.share(data).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(location.href, 'Link copied — paste it anywhere to share.'); });
+    } else copyText(location.href, 'Link copied — paste it anywhere to share.');
+  });
+
+  // Restore from the URL (?year=1972&own=1&found=basement)
+  var q = new URLSearchParams(location.search);
+  var y = (q.get('year') || '').trim();
+  if (validYear(y)) state.year = DECADES[y] ? y : String(parseInt(y, 10));
+  state.own = q.get('own') === '1';
+  state.found = (q.get('found') || '').split(',').filter(function (k) { return FOUND[k]; })
+    .filter(function (k, i, a) { return a.indexOf(k) === i; });
+  syncInputs();
+  render();
+})();
+</script>
+</body>
+</html>

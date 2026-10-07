@@ -1,5 +1,6 @@
 """Generate the 1200x630 social preview images (og.jpg) and the optimized
-host photos for both link pages.
+host photos for both link pages, plus the og.jpg for each free tool
+(walter/house-age/, sal/restaurant-or-home/).
 
 Run from the repo root:  python3 tools/make_og.py
 Needs Pillow (pip install pillow). Reads source-assets/*.jpg.
@@ -60,12 +61,16 @@ def circle(im, ring, ring_w, halo=None, halo_w=0):
     return canvas
 
 
-def shadow(base, layer, xy, blur=24, offset=12, alpha=120):
+def shadow(base, layer, xy, blur=24, offset=12, alpha=120, pad=0):
+    """pad > 0 gives the blur room so the shadow fades out instead of being
+    cut off at the layer's edges."""
     a = layer.split()[-1].point(lambda v: alpha if v else 0)
-    sh = Image.new("RGBA", layer.size, (0, 0, 0, 0))
-    sh.putalpha(a)
+    sh = Image.new("RGBA", (layer.width + 2 * pad, layer.height + 2 * pad), (0, 0, 0, 0))
+    sa = Image.new("L", sh.size, 0)
+    sa.paste(a, (pad, pad))
+    sh.putalpha(sa)
     sh = sh.filter(ImageFilter.GaussianBlur(blur))
-    base.alpha_composite(sh, (xy[0], xy[1] + offset))
+    base.alpha_composite(sh, (xy[0] - pad, xy[1] + offset - pad))
     base.alpha_composite(layer, xy)
 
 
@@ -169,9 +174,99 @@ def sal():
     return base.convert("RGB")
 
 
+def walter_tool():
+    """Share picture for walter/house-age/."""
+    navy, navy2, denim, paper, orange, wood = "#1C2B3A", "#243649", "#3E5F8A", "#F2EDE4", "#E07A1F", "#6B4A2F"
+    base = Image.new("RGBA", (W, H), hexrgb(navy))
+    d = ImageDraw.Draw(base)
+    for x in range(0, W, 40):
+        d.line((x, 0, x, H), fill=(36, 54, 73, 255))
+    for y in range(0, H, 40):
+        d.line((0, y, W, y), fill=(36, 54, 73, 255))
+    d.rectangle((0, H - 18, W, H), fill=hexrgb(wood))
+    d.rectangle((0, H - 24, W, H - 18), fill=hexrgb(orange))
+
+    x0, max_w = 70, 870
+    p = pill("FREE TOOL", ImageFont.truetype(str(SANS_BOLD), 30), orange, navy, pad_x=20, pad_y=12)
+    base.alpha_composite(p, (x0, 62))
+    brand = fit("WALTER'S HOME CHECK", SANS_BOLD, 26, 400, hexrgb("#B9C3CF"), tracking_em=0.18)
+    base.alpha_composite(brand, (x0 + p.width + 22, 62 + (p.height - brand.height) // 2 + 2))
+    photo = circle(square_photo("walter", 150), orange, 6, navy2, 6)
+    shadow(base, photo, (W - 70 - photo.width, 140), blur=12, offset=6, pad=30)
+    y = 140
+    for line in ("WHAT TO CHECK IN A", "HOUSE BUILT IN..."):
+        l = fit(line, SANS_BOLD, 118, max_w, hexrgb(paper), squeeze=0.78, tracking_em=0.03)
+        base.alpha_composite(l, (x0, y)); y += l.height - 4
+    y += 22
+    font = ImageFont.truetype(str(SANS_BOLD), 34)
+    x = x0
+    for i, label in enumerate(("1950s", "1960s", "1970s", "1980s", "1990s", "2000s")):
+        c = pill(label, font, orange if label == "1970s" else denim, navy if label == "1970s" else paper, pad_x=20, pad_y=14)
+        base.alpha_composite(c, (x, y)); x += c.width + 14
+    y += 96
+    tag = fit("PICK THE YEAR. GET YOUR CHECKLIST.", SANS_BOLD, 40, max_w, hexrgb(orange), squeeze=0.85, tracking_em=0.1)
+    base.alpha_composite(tag, (x0, y))
+    return base.convert("RGB")
+
+
+def sal_tool():
+    """Share picture for sal/restaurant-or-home/."""
+    esp, esp2, cream, muted, red, olive = "#2A1E18", "#36281F", "#FAF4E8", "#D9CBB5", "#BE3A24", "#586E34"
+    base = Image.new("RGBA", (W, H), hexrgb(esp))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse((560, -80, 1300, 700), fill=(70, 48, 36, 255))
+    base.alpha_composite(glow.filter(ImageFilter.GaussianBlur(90)))
+    d = ImageDraw.Draw(base)
+    third = W // 3
+    d.rectangle((0, 0, third, 14), fill=hexrgb(olive))
+    d.rectangle((third, 0, 2 * third, 14), fill=hexrgb(cream))
+    d.rectangle((2 * third, 0, W, 14), fill=hexrgb(red))
+
+    x0 = 70
+    p = pill("FREE CALCULATOR", ImageFont.truetype(str(SANS_BOLD), 28), cream, red, pad_x=20, pad_y=12)
+    base.alpha_composite(p, (x0, 66))
+    t1 = fit("Restaurant", SERIF_BOLD, 120, 640, hexrgb(cream))
+    t2 = fit("or Home?", SERIF_BOLD, 120, 640, hexrgb(cream))
+    y = 140
+    base.alpha_composite(t1, (x0, y)); y += t1.height - 6
+    base.alpha_composite(t2, (x0, y)); y += t2.height + 18
+    d.rectangle((x0 + 4, y, x0 + 34, y + 5), fill=hexrgb(olive))
+    d.rectangle((x0 + 34, y, x0 + 64, y + 5), fill=hexrgb(cream))
+    d.rectangle((x0 + 64, y, x0 + 94, y + 5), fill=hexrgb(red)); y += 28
+    sub = fit("See what you keep by cooking it yourself.", SERIF_ITALIC, 40, 640, hexrgb(muted))
+    base.alpha_composite(sub, (x0, y))
+
+    # receipt-style comparison card
+    cx, cy, cw, ch = 760, 110, 370, 400
+    card = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+    cd = ImageDraw.Draw(card)
+    cd.rounded_rectangle((0, 0, cw - 1, ch - 1), radius=24, fill=hexrgb(cream))
+    lab = ImageFont.truetype(str(SANS_BOLD), 24)
+    big = ImageFont.truetype(str(SERIF_BOLD), 76)
+    cd.text((32, 30), "DINNER FOR 4, OUT", font=lab, fill=hexrgb("#7a6655"))
+    cd.text((32, 62), "~$96", font=big, fill=hexrgb(esp))
+    cd.line((32, 168, cw - 32, 168), fill=hexrgb(muted), width=3)
+    cd.text((32, 186), "AT HOME", font=lab, fill=hexrgb("#7a6655"))
+    cd.text((32, 218), "~$14", font=big, fill=hexrgb(olive))
+    cd.rounded_rectangle((24, 318, cw - 24, ch - 24), radius=16, fill=hexrgb(red))
+    keep = ImageFont.truetype(str(SERIF_BOLD), 40)
+    kt = "You keep ~$82"
+    cd.text(((cw - cd.textlength(kt, font=keep)) / 2, 328), kt, font=keep, fill=hexrgb(cream))
+    shadow(base, card, (cx, cy), blur=20, offset=10, alpha=140, pad=60)
+    photo = circle(square_photo("sal", 110), cream, 5, red, 6)
+    shadow(base, photo, (cx + cw - 80, cy - 50), blur=10, offset=6, pad=30)
+    small = fit("CHEF SAL ROMANO", SERIF_BOLD, 26, 400, hexrgb(muted), tracking_em=0.2)
+    base.alpha_composite(small, (x0, H - 76))
+    return base.convert("RGB")
+
+
 if __name__ == "__main__":
     for name, make in (("walter", walter), ("sal", sal)):
         save_page_photo(name)
         out = ROOT / name / "og.jpg"
+        make().save(out, quality=86, optimize=True, progressive=True)
+        print(out.relative_to(ROOT), out.stat().st_size // 1024, "KB")
+    for folder, make in (("walter/house-age", walter_tool), ("sal/restaurant-or-home", sal_tool)):
+        out = ROOT / folder / "og.jpg"
         make().save(out, quality=86, optimize=True, progressive=True)
         print(out.relative_to(ROOT), out.stat().st_size // 1024, "KB")

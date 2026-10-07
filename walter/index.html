@@ -58,6 +58,17 @@ h1{font:700 2.3rem/1.02 var(--head);font-stretch:condensed;text-transform:upperc
 .free{display:inline-block;font:700 .78rem/1 var(--head);letter-spacing:.14em;padding:5px 7px;border-radius:5px;
   background:var(--navy);color:var(--orange);vertical-align:middle}
 .btn-secondary .free{background:var(--orange);color:var(--navy)}
+.tool{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:4px 14px;margin-top:18px;padding:14px 16px;min-height:72px;
+  border-radius:12px;text-decoration:none;color:var(--paper);background:var(--navy-2);border:2px dashed var(--orange);
+  transition:transform .12s ease,background .12s ease}
+.tool:hover{background:#2a3f55}
+.tool:active{transform:scale(.99)}
+.tool:focus-visible{outline:3px solid var(--paper);outline-offset:3px}
+.tool-icon{width:44px;height:44px;border-radius:10px;background:var(--orange);color:var(--navy);display:flex;align-items:center;justify-content:center}
+.tool-text{display:block;font-weight:700;font-size:1.05rem;line-height:1.3}
+.tool-text small{display:block;font-weight:500;font-size:.92rem;color:var(--muted);margin-top:2px}
+.tool-label{color:var(--orange);font:700 .82rem/1 var(--head);letter-spacing:.14em;display:block;margin-bottom:4px}
+.tool-arrow{font-size:1.4rem;color:var(--orange)}
 h2{font:700 1.15rem/1.2 var(--head);text-transform:uppercase;letter-spacing:.16em;margin:40px 0 14px;
   display:flex;align-items:center;gap:12px}
 h2::after{content:"";flex:1;height:2px;background:var(--wood)}
@@ -96,6 +107,12 @@ footer a{color:var(--paper);text-underline-offset:3px;display:inline-block;paddi
   </a>
   <a class="btn btn-secondary" href="https://payhip.com/b/Yml6C?utm_source=links&amp;utm_medium=bio">
     <span><span class="free">FREE<span class="sr">:</span></span> Before the First Freeze<small><span class="sr"> — </span>Winter checklist</small></span>
+  </a>
+
+  <a class="tool" href="house-age/">
+    <span class="tool-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" focusable="false"><path d="M3 11 12 3.5 21 11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10v10h13V10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m9 15 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="tool-text"><span class="tool-label">FREE TOOL<span class="sr">:</span></span> What to Check in a House Built in…<small><span class="sr"> — </span>Pick the year, get your era checklist</small></span>
+    <span class="tool-arrow" aria-hidden="true">→</span>
   </a>
 
   <section aria-labelledby="guides">

@@ -2,12 +2,14 @@
 // Run from the repo root:  node tests/check.js
 // (needs the `playwright` npm package; if it is installed globally, run
 //  NODE_PATH="$(npm root -g)" node tests/check.js)
-// Serves the repo under /links/ like GitHub Pages, checks every page at phone
-// and desktop size, and saves screenshots to docs/screens/.
+// Serves the repo under /links/ like GitHub Pages, checks every page and both
+// free tools (tests/tools.js) at phone and desktop size, and saves screenshots
+// to docs/screens/.
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
+const { checkTools } = require('./tools');
 
 const ROOT = path.resolve(__dirname, '..');
 const UTM = 'utm_source=links&utm_medium=bio';
@@ -16,13 +18,14 @@ const VIEWPORTS = [
   { width: 1280, height: 800 },
 ];
 
-// Exactly what BUILD_SPEC.md asks for, in page order.
+// Exactly what BUILD_SPEC.md (+ the FREE TOOL cards from SPEC_V2_FREE_TOOLS.md) asks for, in page order.
 const PAGES = {
   walter: {
     photo: 'walter/assets/walter.jpg',
     links: [
       'https://payhip.com/b/hiIm1',
       'https://payhip.com/b/Yml6C',
+      'house-age/',
       'https://payhip.com/b/OZeda',
       'https://payhip.com/b/ABaxT',
       'https://payhip.com/b/HAfRF',
@@ -34,6 +37,7 @@ const PAGES = {
       'I look at houses the way an inspector does — and show you the warning signs most people walk right past.',
       'FREE: The Weekend Home Check — 25 things to check in 30 minutes',
       'FREE: Before the First Freeze — Winter checklist',
+      'FREE TOOL: What to Check in a House Built in… — Pick the year, get your era checklist',
       'Guides & tools',
       "Walter's Home Check App", 'The whole room-by-room checklist on your phone. Photos, notes, PDF report.', '$29', 'NEW',
       'The Home Check Manual', 'Room-by-room guide, seasonal calendar and home record page.', '$17',
@@ -47,6 +51,7 @@ const PAGES = {
     photo: 'sal/assets/sal.jpg',
     links: [
       'https://payhip.com/b/dnY7F',
+      'restaurant-or-home/',
       'https://payhip.com/b/xM6XQ',
       'https://payhip.com/b/MQDaN',
       'https://payhip.com/b/Lv425',
@@ -58,6 +63,7 @@ const PAGES = {
       'CHEF SAL ROMANO', "What the restaurants won't tell you.",
       "Forty years in restaurant kitchens. Now I'm telling you the tricks — and showing you how to cook it better at home.",
       "FREE: Sal's 25 Rules for Eating Out",
+      'FREE TOOL: Restaurant or Home? — See what you keep by cooking it yourself',
       'Cook it at home',
       "Sal's Kitchen App", 'All 33 restaurant favorites on your phone, with shopping list & cooking timers.', '$19', 'NEW',
       "Sal's Restaurant Copycat Cookbook", '33 restaurant dishes at home for a fraction of the price.', '$17',
@@ -207,6 +213,8 @@ function jpegSize(file) {
       await context.close();
     }
   }
+
+  await checkTools(browser, base, VIEWPORTS, fail);
 
   await browser.close();
   server.close();

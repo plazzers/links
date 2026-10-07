@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant or Home? — Free calculator from Chef Sal Romano</title>
+<meta name="description" content="Pick your favorite restaurant dishes and see what dinner costs out versus made at home. A free calculator from Chef Sal Romano.">
+<link rel="canonical" href="https://plazzers.github.io/links/sal/restaurant-or-home/">
+<meta name="theme-color" content="#2A1E18">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chef Sal Romano">
+<meta property="og:title" content="Restaurant or Home? See what you'd keep.">
+<meta property="og:description" content="Free calculator: pick the dishes, pick how many people, and see what dinner costs out versus made at home.">
+<meta property="og:url" content="https://plazzers.github.io/links/sal/restaurant-or-home/">
+<meta property="og:image" content="https://plazzers.github.io/links/sal/restaurant-or-home/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Restaurant or Home? — free calculator from Chef Sal Romano">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Restaurant or Home? See what you'd keep.">
+<meta name="twitter:description" content="Free calculator from Chef Sal Romano: dinner out versus made at home.">
+<meta name="twitter:image" content="https://plazzers.github.io/links/sal/restaurant-or-home/og.jpg">
+<style>
+:root{
+  --espresso:#2A1E18;--espresso-2:#36281F;--cream:#FAF4E8;--muted:#D9CBB5;
+  --red:#BE3A24;--red-dark:#8E2716;--olive:#586E34;--olive-light:#A9BF7A;
+  --serif:Georgia,"Times New Roman",serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--espresso);color:var(--cream);font:16px/1.5 var(--body);
+  background-image:radial-gradient(120% 360px at 50% 0,#3a2a20 0,var(--espresso) 100%)}
+.tricolore{height:6px;background:linear-gradient(90deg,var(--olive) 0 33.33%,var(--cream) 33.33% 66.66%,var(--red) 66.66% 100%)}
+a{color:inherit}
+main{max-width:680px;margin:0 auto;padding:16px 20px 24px}
+.back{display:flex;width:fit-content;align-items:center;gap:8px;min-height:48px;color:var(--muted);text-decoration:none;font:600 1rem var(--serif)}
+.back:hover{color:var(--cream)}
+.back img{width:32px;height:32px;border-radius:50%;border:2px solid var(--cream);object-fit:cover}
+.kicker{display:inline-block;margin:16px 0 8px;font:700 .78rem/1 var(--body);letter-spacing:.14em;padding:6px 8px;border-radius:5px;background:var(--cream);color:var(--red)}
+h1{font:700 2.2rem/1.1 var(--serif);margin:0}
+.lede{color:var(--muted);font:italic 1.1rem/1.4 var(--serif);margin:8px 0 0}
+h2{font:italic 700 1.3rem/1.2 var(--serif);margin:30px 0 12px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--olive),transparent)}
+.step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--red);
+  color:var(--cream);font:700 .95rem/1 var(--body);font-style:normal;flex:0 0 auto}
+.group{margin:0 0 14px;border:0;padding:0;min-width:0}
+.group legend{font:700 .78rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--olive-light);margin:0 0 8px;padding:0}
+.dishes{display:grid;grid-template-columns:1fr;gap:8px}
+@media (min-width:560px){.dishes{grid-template-columns:1fr 1fr}}
+.dish{position:relative;display:block}
+.dish input{position:absolute;opacity:0;width:1px;height:1px}
+.dish span{display:grid;grid-template-columns:24px 1fr;gap:2px 10px;align-items:center;min-height:56px;padding:9px 12px;border-radius:10px;
+  background:var(--espresso-2);border:2px solid rgba(250,244,232,.14);cursor:pointer;line-height:1.25;transition:border-color .12s ease,background .12s ease}
+.dish span::before{content:"";grid-row:1 / span 2;width:22px;height:22px;border-radius:6px;border:2px solid var(--muted);background:transparent}
+.dish b{font:700 1rem/1.25 var(--serif)}
+.dish small{grid-column:2;color:var(--muted);font-size:.84rem}
+.dish span:hover{border-color:var(--red)}
+.dish input:checked+span{border-color:var(--red);background:#4a2a20}
+.dish input:checked+span::before{background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23FAF4E8' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat;border-color:var(--red)}
+.dish input:focus-visible+span,.btn:focus-visible,.card:focus-visible,.step-btn:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.quick button{min-height:48px;padding:8px 14px;border-radius:999px;border:1px solid rgba(250,244,232,.3);background:transparent;color:var(--cream);
+  font:600 .92rem var(--body);cursor:pointer}
+.quick button:hover{border-color:var(--cream)}
+.settings{display:grid;gap:16px;padding:16px 18px;border-radius:12px;background:var(--espresso-2);border:1px solid rgba(250,244,232,.14)}
+.row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
+.row label,.row .lbl{font-weight:700}
+.row .note{display:block;font-weight:400;color:var(--muted);font-size:.86rem}
+.stepper{display:flex;align-items:center;gap:6px}
+.step-btn{width:48px;height:48px;border-radius:10px;border:2px solid var(--olive);background:transparent;color:var(--cream);font:700 1.4rem/1 var(--body);cursor:pointer}
+.step-btn:hover{background:var(--olive)}
+.stepper output{min-width:3ch;text-align:center;font:700 1.4rem/1 var(--serif)}
+input[type=range]{width:100%;height:48px;accent-color:var(--red);margin:0}
+.tip-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px}
+.tip-row input{grid-column:1 / -1}
+.tip-val{font:700 1.2rem var(--serif)}
+.drinks{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.check{display:inline-flex;align-items:center;gap:10px;min-height:48px;cursor:pointer;font-weight:700}
+.check input{width:22px;height:22px;accent-color:var(--red);margin:0}
+.money{display:inline-flex;align-items:center;gap:4px;font-weight:700}
+.money input{width:5.5em;min-height:48px;padding:8px 10px;border-radius:10px;border:2px solid var(--olive);background:var(--espresso);color:var(--cream);font:700 1.05rem var(--body)}
+.money input:disabled{opacity:.45}
+.peek{position:sticky;bottom:0;z-index:2;margin:18px -20px 0;padding:10px 20px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(42,30,24,.96);border-top:1px solid rgba(250,244,232,.18);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.peek p{margin:0;font:700 1.05rem/1.25 var(--serif)}
+.peek p small{display:block;font:400 .84rem var(--body);color:var(--muted)}
+.peek .btn{min-height:48px;padding:8px 14px;background:var(--red);color:var(--cream);flex:0 0 auto}
+.result{margin:28px 0 0;padding:22px 20px;border-radius:16px;background:var(--cream);color:var(--espresso);text-align:center;
+  box-shadow:0 0 0 4px var(--espresso-2),0 0 0 5px rgba(250,244,232,.18),0 14px 34px rgba(0,0,0,.35)}
+.big{font:700 1.45rem/1.35 var(--serif);margin:0}
+.big .n{white-space:nowrap}
+.big .keep{display:block;margin-top:6px;color:var(--red);font-size:1.9rem}
+.quote{margin:14px auto 0;max-width:28em;font:italic 1.05rem/1.45 var(--serif);color:#5b4636}
+.quote::before{content:"“"}
+.quote::after{content:"” — Sal"}
+.empty{font:italic 1.1rem var(--serif);margin:0}
+.month{margin:16px 0 0;padding:14px 16px;border-radius:12px;background:var(--olive);color:var(--cream);text-align:center}
+.month h3{margin:0 0 4px;font:italic 700 1.1rem var(--serif)}
+.month p{margin:0}
+.month strong{font:700 1.3rem var(--serif);white-space:nowrap}
+details{margin:14px 0 0;border-radius:12px;background:var(--espresso-2);border:1px solid rgba(250,244,232,.14)}
+summary{min-height:48px;display:flex;align-items:center;padding:10px 16px;cursor:pointer;font-weight:700}
+.tbl-wrap{overflow-x:auto;padding:0 12px 12px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{padding:7px 6px;text-align:right;border-bottom:1px solid rgba(250,244,232,.1);vertical-align:top}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--muted);font-weight:600;font-size:.82rem}
+tfoot td{font-weight:700;border-bottom:0}
+.est{color:var(--muted);font-size:.84rem;margin:8px 4px 0}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 18px;border-radius:12px;border:0;
+  text-decoration:none;font:700 1rem/1.3 var(--body);text-align:center;cursor:pointer;transition:transform .12s ease,filter .12s ease}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:scale(.985)}
+.btn-ghost{flex:1 1 150px;background:transparent;color:var(--cream);border:2px solid var(--olive)}
+.status{min-height:1.5em;margin:8px 0 0;color:var(--olive-light);font-weight:600}
+.cta{margin:30px 0 0}
+.cta .btn{width:100%}
+.btn-primary{background:var(--red);color:var(--cream);min-height:64px;font-size:1.1rem;box-shadow:0 5px 0 var(--red-dark);margin:0 0 16px}
+.free{display:inline-block;font-size:.76rem;letter-spacing:.14em;padding:5px 7px;border-radius:5px;background:var(--cream);color:var(--red);vertical-align:middle}
+.card{display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:center;padding:14px 16px;min-height:48px;margin:0 0 12px;
+  background:var(--espresso-2);border:1px solid rgba(250,244,232,.14);border-radius:12px;text-decoration:none;color:var(--cream)}
+.card:hover{border-color:var(--red)}
+.card b{font:700 1.08rem/1.3 var(--serif)}
+.card span{grid-column:1;color:var(--muted);font-size:.95rem}
+.price{grid-column:2!important;grid-row:1 / span 2;background:var(--red);color:var(--cream)!important;font-weight:800;font-size:1rem!important;padding:7px 11px;border-radius:999px}
+footer{max-width:680px;margin:0 auto;padding:24px 20px 40px;text-align:center;color:var(--muted);font-size:.88rem;line-height:1.6;border-top:1px solid rgba(250,244,232,.12)}
+footer p{margin:0 0 8px}
+footer a{color:var(--cream);text-underline-offset:3px;display:inline-block;padding:12px 4px;margin:-12px 0}
+.sign{font:italic 1rem/1.4 var(--serif);color:var(--olive-light)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none!important}
+@media (min-width:700px){main{padding-top:28px}h1{font-size:2.8rem}.big{font-size:1.7rem}.big .keep{font-size:2.3rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{
+  body{background:#fff!important;color:#000}
+  .tricolore,.back,form,.share,.status,.cta,footer a,summary,noscript{display:none!important}
+  main{max-width:none;padding:0}
+  .kicker{border:1px solid #000;color:#000;background:none}
+  .lede,.est,thead th{color:#333}
+  .result{box-shadow:none;border:2px solid #000;break-inside:avoid}
+  .quote{color:#333}
+  .month{background:none;color:#000;border:1px solid #000;break-inside:avoid}
+  details{background:none;border:1px solid #999;color:#000}
+  th,td{border-bottom-color:#ccc}
+  footer{color:#000;border-top-color:#ccc}
+}
+</style>
+</head>
+<body>
+<div class="tricolore" aria-hidden="true"></div>
+<main>
+  <a class="back" href="../"><img src="../assets/sal.jpg" width="480" height="480" alt="Chef Sal">Chef Sal Romano</a>
+  <span class="kicker">FREE CALCULATOR</span>
+  <h1>Restaurant or Home?</h1>
+  <p class="lede">Pick what you'd order, tell me how many are eating, and I'll show you what you keep by cooking it yourself.</p>
+
+  <noscript><p class="est">This calculator needs JavaScript turned on.</p></noscript>
+
+  <form id="f" novalidate>
+    <h2><span class="step">1</span>What's for dinner?</h2>
+    <div class="quick" aria-label="Quick picks">
+      <button type="button" data-pick="2,4,7">Italian night</button>
+      <button type="button" data-pick="13,15,14">Fajita night</button>
+      <button type="button" data-pick="18,20,19">Takeout night</button>
+      <button type="button" data-pick="22,25">Burger night</button>
+      <button type="button" data-pick="">Clear</button>
+    </div>
+    <div id="dish-groups"></div>
+    <p class="est">“Out” = typical casual-dining price, estimate. “Home” = made-at-home cost per plate, estimate. Starters and sides are counted as one person's share.</p>
+
+    <h2><span class="step">2</span>How many, and the extras</h2>
+    <div class="settings">
+      <div class="row">
+        <span class="lbl" id="people-lbl">People eating</span>
+        <div class="stepper" role="group" aria-labelledby="people-lbl">
+          <button class="step-btn" type="button" id="minus" aria-label="One fewer person">−</button>
+          <output id="people" aria-live="polite">4</output>
+          <button class="step-btn" type="button" id="plus" aria-label="One more person">+</button>
+        </div>
+      </div>
+      <div class="tip-row">
+        <label for="tip">Tip at the restaurant</label>
+        <span class="tip-val" id="tip-val">18%</span>
+        <input id="tip" type="range" min="0" max="30" step="1" value="18">
+      </div>
+      <div class="row">
+        <label class="check"><input id="drinks-on" type="checkbox" checked> Drinks at the restaurant</label>
+        <span class="money"><label for="drinks" class="sr">Drinks per person in dollars</label>$<input id="drinks" type="number" inputmode="decimal" min="0" max="50" step="0.5" value="3"><span class="note"> per person</span></span>
+      </div>
+    </div>
+    <div class="peek" id="peek" aria-hidden="true">
+      <p id="peek-text"></p>
+      <button class="btn" type="button" id="peek-btn" tabindex="-1">See result ↓</button>
+    </div>
+  </form>
+
+  <section class="result" id="result" aria-live="polite" aria-atomic="true">
+    <p class="big" id="big"></p>
+    <p class="quote" id="quote"></p>
+  </section>
+  <section class="month" id="month" aria-labelledby="month-h">
+    <h3 id="month-h">Make it a month</h3>
+    <p id="month-text"></p>
+  </section>
+
+  <details>
+    <summary>See the math</summary>
+    <div class="tbl-wrap"><table id="tbl"></table></div>
+    <p class="est" style="padding:0 16px 14px">All prices are rough estimates for illustration. Your restaurant and grocery store will differ; the estimates lean conservative on purpose.</p>
+  </details>
+
+  <div class="share">
+    <button class="btn btn-ghost" type="button" id="share">Share this dinner</button>
+    <button class="btn btn-ghost" type="button" id="copy">Copy link</button>
+  </div>
+  <p class="status" id="status" role="status"></p>
+
+  <section class="cta" aria-labelledby="cta-h">
+    <h2 id="cta-h">Cook it at home</h2>
+    <a class="card" href="https://payhip.com/b/xM6XQ?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=restaurant-or-home"><b>Sal's Kitchen App</b><span>All 33 recipes on your phone with shopping list &amp; timers.</span><span class="price">$19</span></a>
+    <a class="card" href="https://payhip.com/b/MQDaN?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=restaurant-or-home"><b>Sal's Restaurant Copycat Cookbook</b><span>33 restaurant dishes at home for a fraction of the price.</span><span class="price">$17</span></a>
+    <a class="btn btn-primary" href="https://payhip.com/b/dnY7F?utm_source=links&amp;utm_medium=tool&amp;utm_campaign=restaurant-or-home"><span><span class="free">FREE<span class="sr">:</span></span> Sal's 25 Rules for Eating Out</span></a>
+  </section>
+</main>
+<footer>
+  <p>Prices are rough estimates for illustration. Recipes are inspired by popular restaurant dishes. Not affiliated with or endorsed by any restaurant.</p>
+  <p><a href="../">← Back to Chef Sal Romano</a></p>
+  <p>© 2026 Chef Sal Romano. <span class="sign">Mangia bene.</span></p>
+</footer>
+<script>
+(function () {
+  'use strict';
+  // [id, title, out (typical casual-dining price per plate, estimate), home (cost per plate, estimate), group]
+  // Home costs from the cookbook where it gives one; the rest are conservative estimates.
+  var DISHES = [
+    [1, 'Garlic Butter Breadsticks', 3, 0.5, 0, '2 breadsticks'],
+    [2, 'Real Fettuccine Alfredo', 18, 2.5, 0],
+    [3, 'Sausage, Potato & Kale Soup', 7, 2, 0, 'bowl'],
+    [4, 'House Salad with Italian Dressing', 6, 1, 0],
+    [5, 'Chicken Parmigiana', 20, 3.5, 0],
+    [6, 'Shrimp Scampi', 21, 4.5, 0],
+    [7, "Angela's Tiramisu", 9, 1.5, 0],
+    [8, 'Cheddar Garlic Biscuits', 3, 0.6, 1, '2 biscuits'],
+    [9, 'Pan-Seared Steak with Garlic Butter', 26, 8, 1],
+    [10, 'Loaded Baked Potato Soup', 7, 1.75, 1, 'bowl'],
+    [11, 'Hot Spinach Artichoke Dip', 5, 1.25, 1, 'shared starter'],
+    [12, 'Honey Butter Dinner Rolls', 3, 0.4, 1, '2 rolls'],
+    [13, 'Restaurant-Style Blender Salsa', 3, 0.75, 2, 'with chips'],
+    [14, 'Cilantro Lime Rice', 3.5, 0.5, 2, 'side'],
+    [15, 'Sizzling Chicken Fajitas', 18, 3.5, 2],
+    [16, 'White Queso Dip', 4.5, 1, 2, 'shared starter'],
+    [17, 'Burrito Bowl at Home', 11, 3, 2],
+    [18, 'Orange Chicken', 12, 2.5, 3],
+    [19, 'Better Chow Mein', 10, 1.5, 3],
+    [20, 'Takeout Fried Rice', 10, 1.25, 3],
+    [21, 'Chicken Lettuce Wraps', 13, 3, 3],
+    [22, 'Smash Burgers with Special Sauce', 14, 3, 4],
+    [23, 'Crispy Chicken Sandwich', 13, 2.5, 4],
+    [24, 'Classic Diner Chili', 7, 2, 4, 'bowl'],
+    [25, 'Creamy Coleslaw', 3.5, 0.5, 4, 'side'],
+    [26, 'Fluffy Diner Pancakes', 10, 1, 4, 'stack'],
+    [27, 'Baked Mac and Cheese', 6, 1.75, 4, 'side'],
+    [28, 'Oven-Baked Buffalo Wings', 13, 2.5, 4],
+    [29, 'Chocolate Lava Cakes', 9, 1.25, 5]
+  ];
+  var GROUPS = ['Italian night', 'Steakhouse & grill', 'Tex-Mex', 'Takeout favorites', 'Diner & game day', 'Dessert'];
+  var LINES = [
+    'The restaurant buys the same groceries you do. They just charge you rent on them.',
+    'Forty years in kitchens taught me one thing: the markup is the main course.',
+    'Your kitchen doesn\'t charge a tip. And the chef? Very handsome.',
+    'Cook it once with me and you\'ll never read a menu the same way.',
+    'Same dish, your table, your people. That\'s the good stuff.',
+    'Keep the change. Actually — keep all of it.'
+  ];
+  var DEF = { d: [2, 4, 7], p: 4, t: 18, dr: 3 };
+  var MAXP = 20;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var byId = {};
+  DISHES.forEach(function (d) { byId[d[0]] = d; });
+  var state = { d: DEF.d.slice(), p: DEF.p, t: DEF.t, dr: DEF.dr };
+  var lineIdx = 0, touched = false;
+
+  function money(n) { return '$' + (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, ''); }
+  function approx(n) { return '~$' + Math.round(n).toLocaleString('en-US'); }
+
+  // Build dish pickers
+  var html = '';
+  GROUPS.forEach(function (g, gi) {
+    html += '<fieldset class="group"><legend>' + g + '</legend><div class="dishes">';
+    DISHES.filter(function (d) { return d[4] === gi; }).forEach(function (d) {
+      html += '<label class="dish"><input type="checkbox" name="d" value="' + d[0] + '"><span><b>' + d[1] + '</b>' +
+        '<small>~' + money(d[2]) + ' out · ~' + money(d[3]) + ' home' + (d[5] ? ' · ' + d[5] : '') + '</small></span></label>';
+    });
+    html += '</div></fieldset>';
+  });
+  $('dish-groups').innerHTML = html;
+  var boxes = [].slice.call(document.querySelectorAll('input[name=d]'));
+
+  function calc() {
+    var dishes = state.d.map(function (id) { return byId[id]; });
+    var outPlate = 0, homePlate = 0;
+    dishes.forEach(function (d) { outPlate += d[2]; homePlate += d[3]; });
+    var p = state.p;
+    var food = outPlate * p;
+    var drinks = state.dr * p;
+    var tip = (food + drinks) * state.t / 100;
+    var out = food + drinks + tip;
+    var homeDrinks = state.dr > 0 ? 0.5 * p : 0; // a pitcher of iced tea or soda at home
+    var home = homePlate * p + homeDrinks;
+    return { dishes: dishes, p: p, food: food, drinks: drinks, tip: tip, out: out, homeFood: homePlate * p, homeDrinks: homeDrinks, home: home, keep: out - home };
+  }
+
+  function render() {
+    var c = calc();
+    var who = c.p === 1 ? 'Dinner for 1' : 'Dinner for ' + c.p;
+    if (!c.dishes.length) {
+      $('big').innerHTML = '<span class="empty">Pick at least one dish above and I\'ll do the math.</span>';
+      $('quote').hidden = true; $('month').hidden = true;
+      $('tbl').innerHTML = '';
+      $('peek').hidden = true;
+    } else {
+      // Round each side, then subtract, so the three numbers always add up.
+      var o = Math.round(c.out), h = Math.round(c.home);
+      $('big').innerHTML = who + ' at a restaurant: <span class="n">' + approx(o) + '</span>. At home: <span class="n">' + approx(h) + '</span>.' +
+        '<span class="keep">You keep <span class="n">' + approx(o - h) + '</span>.</span>';
+      $('peek').hidden = false;
+      $('peek-text').innerHTML = 'You keep ' + approx(o - h) + '<small>out ' + approx(o) + ' · home ' + approx(h) + '</small>';
+      $('quote').hidden = false;
+      $('quote').textContent = LINES[lineIdx % LINES.length];
+      $('month').hidden = false;
+      var year = (o - h) * 52;
+      $('month-text').innerHTML = 'Cook this once a week instead of eating out and you keep about <strong>' + approx(year / 12) + ' a month</strong> — <strong>' + approx(year) + ' a year</strong>.';
+      var rows = c.dishes.map(function (d) { return '<tr><td>' + d[1] + '</td><td>' + money(d[2]) + '</td><td>' + money(d[3]) + '</td></tr>'; }).join('');
+      $('tbl').innerHTML = '<thead><tr><th>Per plate (estimates)</th><th>Out</th><th>Home</th></tr></thead><tbody>' + rows +
+        '<tr><td>× ' + c.p + (c.p === 1 ? ' person' : ' people') + '</td><td>' + money(c.food) + '</td><td>' + money(c.homeFood) + '</td></tr>' +
+        '<tr><td>Drinks</td><td>' + money(c.drinks) + '</td><td>' + money(c.homeDrinks) + '</td></tr>' +
+        '<tr><td>Tip ' + state.t + '%</td><td>' + money(c.tip) + '</td><td>$0</td></tr></tbody>' +
+        '<tfoot><tr><td>Total</td><td>' + money(c.out) + '</td><td>' + money(c.home) + '</td></tr></tfoot>';
+    }
+    $('people').textContent = state.p;
+    $('minus').disabled = state.p <= 1; $('plus').disabled = state.p >= MAXP;
+    $('tip-val').textContent = state.t + '%';
+  }
+
+  function syncInputs() {
+    boxes.forEach(function (b) { b.checked = state.d.indexOf(+b.value) !== -1; });
+    $('tip').value = state.t;
+    $('drinks-on').checked = state.dr > 0;
+    $('drinks').disabled = state.dr <= 0;
+    if (state.dr > 0) $('drinks').value = state.dr;
+  }
+
+  function syncUrl() {
+    var p = new URLSearchParams();
+    p.set('d', state.d.join(','));
+    p.set('p', state.p);
+    if (state.t !== DEF.t) p.set('t', state.t);
+    if (state.dr !== DEF.dr) p.set('dr', state.dr);
+    // URLSearchParams escapes commas; keep the URL readable (?d=2,5,9&p=4)
+    history.replaceState(null, '', location.pathname + '?' + p.toString().replace(/%2C/g, ','));
+  }
+
+  function changed(newLine) {
+    touched = true;
+    if (newLine) lineIdx++;
+    $('status').textContent = '';
+    syncUrl();
+    render();
+  }
+
+  function sortD() { state.d.sort(function (a, b) { return a - b; }); }
+
+  boxes.forEach(function (b) {
+    b.addEventListener('change', function () {
+      state.d = boxes.filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+      changed(true);
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-pick]'), function (btn) {
+    btn.addEventListener('click', function () {
+      var v = btn.getAttribute('data-pick');
+      state.d = v ? v.split(',').map(Number) : [];
+      sortD(); syncInputs(); changed(true);
+    });
+  });
+  $('peek-btn').addEventListener('click', function () { $('result').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+  $('minus').addEventListener('click', function () { if (state.p > 1) { state.p--; changed(false); } });
+  $('plus').addEventListener('click', function () { if (state.p < MAXP) { state.p++; changed(false); } });
+  $('tip').addEventListener('input', function () { state.t = +this.value; changed(false); });
+  $('drinks-on').addEventListener('change', function () {
+    var v = parseFloat($('drinks').value);
+    state.dr = this.checked ? (v > 0 ? v : DEF.dr) : 0;
+    syncInputs(); changed(false);
+  });
+  $('drinks').addEventListener('input', function () {
+    var v = parseFloat(this.value);
+    if (isFinite(v) && v >= 0 && v <= 50) { state.dr = Math.round(v * 100) / 100; changed(false); }
+  });
+
+  function copyText(text, okMsg) {
+    var status = $('status');
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      status.textContent = ok ? okMsg : 'Couldn\'t copy automatically — copy the address from your browser bar.';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { status.textContent = okMsg; }, fallback);
+    } else fallback();
+  }
+  function shareUrl() { if (!touched) syncUrl(); return location.href; }
+  $('copy').addEventListener('click', function () { copyText(shareUrl(), 'Link copied — paste it anywhere to share.'); });
+  $('share').addEventListener('click', function () {
+    var c = calc(), url = shareUrl();
+    var text = c.dishes.length ? 'Dinner for ' + c.p + ' out: ' + approx(c.out) + '. At home: ' + approx(c.home) + '. Restaurant or home?' : 'Restaurant or home? Free calculator from Chef Sal Romano.';
+    if (navigator.share) {
+      navigator.share({ title: 'Restaurant or Home?', text: text, url: url })
+        .catch(function (e) { if (!e || e.name !== 'AbortError') copyText(url, 'Link copied — paste it anywhere to share.'); });
+    } else copyText(url, 'Link copied — paste it anywhere to share.');
+  });
+
+  // Print the math table too (closed <details> content doesn't print).
+  var mathWasOpen;
+  window.addEventListener('beforeprint', function () { var d = document.querySelector('details'); mathWasOpen = d.open; d.open = true; });
+  window.addEventListener('afterprint', function () { document.querySelector('details').open = mathWasOpen; });
+
+  // Restore from the URL (?d=2,5,9&p=4&t=20&dr=0)
+  var q = new URLSearchParams(location.search);
+  if (q.has('d')) {
+    state.d = (q.get('d') || '').split(',').map(function (s) { return parseInt(s, 10); })
+      .filter(function (n, i, a) { return byId[n] && a.indexOf(n) === i; });
+    sortD();
+  }
+  var p = parseInt(q.get('p'), 10);
+  if (p >= 1 && p <= MAXP) state.p = p;
+  var t = parseInt(q.get('t'), 10);
+  if (t >= 0 && t <= 30) state.t = t;
+  var dr = parseFloat(q.get('dr'));
+  if (isFinite(dr) && dr >= 0 && dr <= 50) state.dr = dr;
+  // Pick the opening line from the dishes so a shared link shows the same quote.
+  lineIdx = state.d.reduce(function (a, b) { return a + b; }, 0);
+  syncInputs();
+  render();
+})();
+</script>
+</body>
+</html>

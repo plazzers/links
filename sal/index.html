@@ -57,6 +57,17 @@ h1{font:700 2rem/1.1 var(--serif);letter-spacing:.08em;margin:0}
   background:var(--cream);color:var(--red);vertical-align:middle}
 .btn-outline{background:var(--espresso-2);color:var(--cream);border:2px solid var(--olive);margin-top:28px}
 .btn-olive{background:var(--olive);color:var(--cream);margin-top:12px}
+.tool{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:4px 14px;margin-top:18px;padding:14px 16px;min-height:72px;
+  border-radius:12px;text-decoration:none;color:var(--cream);background:var(--espresso-2);border:2px dashed var(--olive-light);
+  transition:transform .12s ease,background .12s ease}
+.tool:hover{background:#41302a}
+.tool:active{transform:scale(.99)}
+.tool:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.tool-icon{width:44px;height:44px;border-radius:10px;background:var(--olive);color:var(--cream);display:flex;align-items:center;justify-content:center}
+.tool-text{display:block;font:700 1.08rem/1.3 var(--serif)}
+.tool-text small{display:block;font:500 .92rem/1.4 var(--body);color:var(--muted);margin-top:2px}
+.tool-label{color:var(--olive-light);font:700 .78rem/1 var(--body);letter-spacing:.14em;display:block;margin-bottom:5px}
+.tool-arrow{font-size:1.4rem;color:var(--olive-light)}
 h2{font:italic 700 1.4rem/1.2 var(--serif);margin:40px 0 14px;display:flex;align-items:center;gap:12px}
 h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--olive),transparent)}
 .cards{list-style:none;margin:0;padding:0;display:grid;gap:12px}
@@ -93,6 +104,12 @@ footer a{color:var(--cream);text-underline-offset:3px;display:inline-block;paddi
 
   <a class="btn btn-primary" href="https://payhip.com/b/dnY7F?utm_source=links&amp;utm_medium=bio">
     <span><span class="free">FREE<span class="sr">:</span></span> Sal's 25 Rules for Eating Out</span>
+  </a>
+
+  <a class="tool" href="restaurant-or-home/">
+    <span class="tool-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" focusable="false"><rect x="5" y="2.5" width="14" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="8" y="5.5" width="8" height="4" rx="1" fill="currentColor"/><circle cx="9" cy="13" r="1.3" fill="currentColor"/><circle cx="15" cy="13" r="1.3" fill="currentColor"/><circle cx="9" cy="17.5" r="1.3" fill="currentColor"/><circle cx="15" cy="17.5" r="1.3" fill="currentColor"/></svg></span>
+    <span class="tool-text"><span class="tool-label">FREE TOOL<span class="sr">:</span></span> Restaurant or Home?<small><span class="sr"> — </span>See what you keep by cooking it yourself</small></span>
+    <span class="tool-arrow" aria-hidden="true">→</span>
   </a>
 
   <section aria-labelledby="cook">
