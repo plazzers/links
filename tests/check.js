@@ -18,7 +18,8 @@ const VIEWPORTS = [
   { width: 1280, height: 800 },
 ];
 
-// Exactly what BUILD_SPEC.md (+ the FREE TOOL cards from SPEC_V2_FREE_TOOLS.md) asks for, in page order.
+// Exactly what BUILD_SPEC.md (+ the FREE TOOL cards from SPEC_V2_FREE_TOOLS.md and the
+// "Read the guides" button from SPEC_V4_GUIDE_SITES.md) asks for, in page order.
 const PAGES = {
   walter: {
     photo: 'walter/assets/walter.jpg',
@@ -26,6 +27,7 @@ const PAGES = {
       'https://payhip.com/b/hiIm1',
       'https://payhip.com/b/Yml6C',
       'house-age/',
+      'guides/',
       'https://payhip.com/b/OZeda',
       'https://payhip.com/b/ABaxT',
       'https://payhip.com/b/HAfRF',
@@ -38,6 +40,7 @@ const PAGES = {
       'FREE: The Weekend Home Check — 25 things to check in 30 minutes',
       'FREE: Before the First Freeze — Winter checklist',
       'FREE TOOL: What to Check in a House Built in… — Pick the year, get your era checklist',
+      'Read the guides',
       'Guides & tools',
       "Walter's Home Check App", 'The whole room-by-room checklist on your phone. Photos, notes, PDF report.', '$29', 'NEW',
       'The Home Check Manual', 'Room-by-room guide, seasonal calendar and home record page.', '$17',
@@ -52,6 +55,7 @@ const PAGES = {
     links: [
       'https://payhip.com/b/dnY7F',
       'restaurant-or-home/',
+      'guides/',
       'https://payhip.com/b/xM6XQ',
       'https://payhip.com/b/MQDaN',
       'https://payhip.com/b/Lv425',
@@ -61,13 +65,14 @@ const PAGES = {
     ],
     text: [
       'CHEF SAL ROMANO', "What the restaurants won't tell you.",
-      "Forty years in restaurant kitchens. Now I'm telling you the tricks — and showing you how to cook it better at home.",
+      "I know how restaurant kitchens work. Now I'm telling you the tricks — and showing you how to cook it better at home.",
+      'Read the guides',
       "FREE: Sal's 25 Rules for Eating Out",
       'FREE TOOL: Restaurant or Home? — See what you keep by cooking it yourself',
       'Cook it at home',
       "Sal's Kitchen App", 'All 33 restaurant favorites on your phone, with shopping list & cooking timers.', '$19', 'NEW',
       "Sal's Restaurant Copycat Cookbook", '33 restaurant dishes at home for a fraction of the price.', '$17',
-      "Sal's Italian Kitchen", '60 real Italian recipes from 40 years in the kitchen.', '$39.99',
+      "Sal's Italian Kitchen", '60 real Italian recipes, from antipasti to dolci.', '$39.99',
       "All of Sal's books", 'Watch on YouTube',
       'Recipes are inspired by popular restaurant dishes. Not affiliated with or endorsed by any restaurant.',
       '© 2026 Chef Sal Romano. Mangia bene.',

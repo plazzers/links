@@ -1,0 +1,16 @@
+/* Chef Sal Romano — espresso / cream / tomato with the tri-stripe. Generated into sal/guides/guides.css by tools/build_guides.py */
+:root{
+  --bar:#2A1E18;--bar-2:#36281F;--bar-text:#FAF4E8;--bar-muted:#D9CBB5;
+  --bg:#FAF4E8;--paper:#FFFDF8;--ink:#2A1E18;--ink-2:#54443A;--line:#E3D6C2;
+  --accent:#BE3A24;--accent-ink:#FAF4E8;--accent-dark:#8E2716;--link:#A3301C;--soft:#F1E7D6;--soft-2:#F6EEE1;
+  --chip:#E9EEDD;--chip-ink:#43562A;
+  --head:Georgia,"Times New Roman",serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --h-transform:none;--h-weight:700;--h-stretch:normal;
+}
+.tricolore{height:6px;background:linear-gradient(90deg,#586E34 0 33.33%,#FAF4E8 33.33% 66.66%,#BE3A24 66.66% 100%)}
+.top{background:radial-gradient(120% 200px at 50% 0,#3a2a20 0,var(--bar) 100%)}
+.brand{font:700 1.2rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase}
+.brand-eyebrow{font-size:.62em;letter-spacing:.3em;color:var(--bar-muted);margin-right:4px}
+.kicker,.box-kicker,.recipe-flag{font-style:italic}
+.chip{letter-spacing:.06em}

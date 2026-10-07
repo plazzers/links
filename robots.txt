@@ -1,0 +1,6 @@
+# Crawlers read robots.txt from the root of the host (plazzers.github.io/robots.txt);
+# this copy documents the intent and points to the sitemap for Search Console.
+User-agent: *
+Allow: /
+
+Sitemap: https://plazzers.github.io/links/sitemap.xml

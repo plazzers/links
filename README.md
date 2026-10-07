@@ -8,6 +8,9 @@ Two small "link in bio" pages, hosted free on GitHub Pages:
 | Chef Sal Romano | https://plazzers.github.io/links/sal/ |
 | Free tool: What to Check in a House Built in… | https://plazzers.github.io/links/walter/house-age/ |
 | Free tool: Restaurant or Home? | https://plazzers.github.io/links/sal/restaurant-or-home/ |
+| Walter's guides (30 articles) | https://plazzers.github.io/links/walter/guides/ |
+| Sal's guides (30 articles) | https://plazzers.github.io/links/sal/guides/ |
+| About pages | https://plazzers.github.io/links/walter/about/ · https://plazzers.github.io/links/sal/about/ |
 | Small index (two buttons) | https://plazzers.github.io/links/ |
 
 Each page is a single file you can edit in any text editor, or right on github.com
@@ -33,6 +36,12 @@ tools/make_pins.py      builds all Pinterest pins (content in tools/pins_walter.
 tools/check_pins.py     checks the pins and CSVs
 tests/check.js          automatic checks + screenshots (docs/screens/)
 tests/tools.js          the checks for the two free tools (run by check.js)
+content/                guide articles (Markdown) and about-page text
+tools/build_guides.py   builds walter/guides/, sal/guides/, about pages, feeds, sitemap.xml
+tools/guides/           shared CSS/JS + per-channel colours for the guide pages
+tests/guide_rules.py    article rules (used by the build and the checks)
+tests/check_guides.py   guide checks (content, links, utm, sitemap, JSON-LD)
+tests/guides.js         guide browser checks + screenshots
 ```
 
 ## Change a link
@@ -130,6 +139,70 @@ in `tests/tools.js` (the `SAL` list near the top), update them there too.
 **Share pictures:** `python3 tools/make_og.py` also rebuilds each tool's `og.jpg`.
 
 ![Walter's tool on a phone](docs/screens/house-age-mobile.png) ![Sal's tool on a phone](docs/screens/restaurant-or-home-mobile.png)
+
+## Guides (the two article sites)
+
+Each channel has a small article site: `walter/guides/` and `sal/guides/`, plus an
+`about/` page. The articles are written in Markdown in `content/walter/` and
+`content/sal/`; `tools/build_guides.py` turns them into the HTML pages (which are
+committed, like everything else here). The link pages have a **Read the guides**
+button and both free tools show a **Related guides** strip.
+
+![Walter's guides on a phone](docs/screens/guides-walter-index-mobile.png) ![A Sal article on a phone](docs/screens/guides-sal-article-mobile.png)
+
+```sh
+pip install markdown pyyaml pillow   # once
+python3 tools/build_guides.py        # rebuilds every guide page, share picture, feed and the sitemap (~5 s)
+python3 tests/check_guides.py        # content + built-site checks
+node tests/guides.js                 # browser checks + screenshots (docs/screens/guides-*.png)
+```
+
+**Edit an article:** open `content/<channel>/<slug>.md`, change the text, run the
+build, commit. **Add an article:** copy an existing file of the same kind, give it a
+new file name (that becomes the address: `content/walter/deck-safety.md` →
+`/walter/guides/deck-safety/`), and fill in the top block:
+
+```yaml
+---
+title: "The headline (the H1)"
+seo_title: "Shorter version for the browser tab, max 60 characters"   # only if title is longer
+description: "70-155 characters for Google and social shares."
+keyword: "the one search phrase this article targets"
+category: systems          # walter: buying | seasonal | systems | older-homes | habits
+                           # sal: secrets | copycat
+date: 2026-10-07
+updated: 2026-10-07        # shown as "Last updated"; change it when you edit
+product: app               # Walter only: app | redflag | manual (the box near the end)
+house_age_tool: true       # Walter, optional: adds the house-age tool box
+start_here: true           # optional: one of the 3 "Start here" picks on the index
+sources:                   # Walter: required, public sources for specific facts
+  - title: "EPA — A Citizen's Guide to Radon"
+    url: "https://www.epa.gov/radon/citizens-guide-radon-guide-protecting-yourself-and-your-family-radon"
+recipe: 2                  # Sal copycat only: number in content-sources/sal/copycat-teasers.json
+italian: true              # Sal, optional: adds the Italian Kitchen card
+---
+```
+
+Then the article: a short intro, then `## ` sections (they become the table of
+contents). Link other guides with `[text](../other-slug/)`. Don't add Payhip links,
+YouTube links, author boxes or disclaimers — the build adds the free PDF box, the
+product box(es) with `utm_source=guides&utm_medium=article&utm_campaign=<slug>`,
+the tool box, YouTube, sources, author box, disclaimer and 3 related articles.
+
+The build refuses to run if an article breaks a rule (`tests/guide_rules.py`):
+900–1,600 words, `<title>` ≤ 60 and description ≤ 155 characters, no real restaurant or
+chain names, no invented credentials or biography ("licensed inspector", "forty years",
+"Michelin", "my restaurant"…), no "guaranteed" or "cure", no prices in Walter's articles,
+and no recipe amounts in Sal's dish articles. The full recipes are the paid product:
+only the three free samples (`free_sample: true` on recipes 30, 31 and 33, with a
+`[[free-sample]]` line where the card goes) show the full recipe, rendered from
+`copycat-teasers.json`. Write in the hosts' voice, but never state made-up credentials,
+history or reviews as fact.
+
+The build also writes `<channel>/guides/feed.xml` (RSS), `search.json` (the index page
+search), `sitemap.xml` and `robots.txt`. GitHub only reads `robots.txt` at the root of
+`plazzers.github.io`, so submit `https://plazzers.github.io/links/sitemap.xml` in Google
+Search Console instead. About-page text lives in `content/about/`.
 
 ## Pinterest pins
 

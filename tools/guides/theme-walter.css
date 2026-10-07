@@ -1,0 +1,15 @@
+/* Walter's Home Check — navy / orange blueprint. Generated into walter/guides/guides.css by tools/build_guides.py */
+:root{
+  --bar:#1C2B3A;--bar-2:#243649;--bar-text:#F2EDE4;--bar-muted:#B9C3CF;
+  --bg:#F7F4EE;--paper:#FFFFFF;--ink:#1C2B3A;--ink-2:#3B4B5C;--line:#DCD3C4;
+  --accent:#E07A1F;--accent-ink:#1C2B3A;--accent-dark:#A9560F;--link:#2F5683;--soft:#EDE6DA;--soft-2:#F2EDE4;
+  --chip:#E4ECF5;--chip-ink:#23476F;
+  --head:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --h-transform:none;--h-weight:800;--h-stretch:condensed;
+}
+.top{background-color:var(--bar);background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:24px 24px;border-bottom:4px solid var(--accent)}
+.brand{font:700 1.15rem/1 var(--head);font-stretch:condensed;text-transform:uppercase;letter-spacing:.06em}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;margin-right:10px;border-radius:7px;background:var(--accent);color:var(--bar);font-size:1.1rem}
+.kicker,.chip,.box-kicker,.recipe-flag{text-transform:uppercase;letter-spacing:.12em}
+h1,.prose h2,.related h2,section>h2{font-family:var(--head);font-stretch:condensed}

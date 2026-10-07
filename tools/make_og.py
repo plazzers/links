@@ -260,6 +260,89 @@ def sal_tool():
     return base.convert("RGB")
 
 
+def wrap_fit(text, path, start, max_w, max_lines, fill, squeeze=1.0, min_size=40, max_h=10_000, gap=0):
+    """Word-wrap text into at most max_lines lines, shrinking the font until it fits."""
+    size = start
+    while True:
+        font = ImageFont.truetype(str(path), size)
+        lines, cur = [], ""
+        for word in text.split():
+            trial = (cur + " " + word).strip()
+            if font.getlength(trial) * squeeze <= max_w or not cur:
+                cur = trial
+            else:
+                lines.append(cur)
+                cur = word
+        lines.append(cur)
+        widest = max(font.getlength(l) * squeeze for l in lines)
+        asc, desc = font.getmetrics()
+        tall = len(lines) * (asc + desc + gap)
+        if (len(lines) <= max_lines and widest <= max_w and tall <= max_h) or size <= min_size:
+            return [text_layer(l, font, fill, squeeze) for l in lines]
+        size -= 4
+
+
+def guide_og(channel, title, label):
+    """Share picture for a guide article or page (1200x630): brand look + title."""
+    if channel == "walter":
+        navy, navy2, paper, orange, wood, muted = "#1C2B3A", "#243649", "#F2EDE4", "#E07A1F", "#6B4A2F", "#B9C3CF"
+        base = Image.new("RGBA", (W, H), hexrgb(navy))
+        d = ImageDraw.Draw(base)
+        for x in range(0, W, 40):
+            d.line((x, 0, x, H), fill=(36, 54, 73, 255))
+        for y in range(0, H, 40):
+            d.line((0, y, W, y), fill=(36, 54, 73, 255))
+        d.rectangle((0, H - 18, W, H), fill=hexrgb(wood))
+        d.rectangle((0, H - 24, W, H - 18), fill=hexrgb(orange))
+        x0, max_w = 70, 1060
+        p = pill(label.upper(), ImageFont.truetype(str(SANS_BOLD), 28), orange, navy, pad_x=20, pad_y=12)
+        base.alpha_composite(p, (x0, 64))
+        lines = wrap_fit(title.upper(), SANS_BOLD, 108, max_w, 3, hexrgb(paper), squeeze=0.8, min_size=56, max_h=310, gap=-4)
+        y = 150
+        for l in lines:
+            base.alpha_composite(l, (x0, y)); y += l.height - 4
+        photo = circle(square_photo("walter", 96), orange, 5, navy2, 5)
+        shadow(base, photo, (x0, H - 150), blur=10, offset=5, pad=30)
+        brand = fit("WALTER'S HOME CHECK", SANS_BOLD, 34, 600, hexrgb(paper), squeeze=0.85, tracking_em=0.12)
+        base.alpha_composite(brand, (x0 + photo.width + 22, H - 136))
+        tag = fit("WHAT HOMEOWNERS MISS", SANS_BOLD, 24, 600, hexrgb(muted), tracking_em=0.18)
+        base.alpha_composite(tag, (x0 + photo.width + 24, H - 90))
+        return base.convert("RGB")
+    esp, cream, muted, red, olive = "#2A1E18", "#FAF4E8", "#D9CBB5", "#BE3A24", "#586E34"
+    base = Image.new("RGBA", (W, H), hexrgb(esp))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse((500, -120, 1400, 640), fill=(70, 48, 36, 255))
+    base.alpha_composite(glow.filter(ImageFilter.GaussianBlur(90)))
+    d = ImageDraw.Draw(base)
+    third = W // 3
+    d.rectangle((0, 0, third, 14), fill=hexrgb(olive))
+    d.rectangle((third, 0, 2 * third, 14), fill=hexrgb(cream))
+    d.rectangle((2 * third, 0, W, 14), fill=hexrgb(red))
+    x0, max_w = 70, 1060
+    p = pill(label.upper(), ImageFont.truetype(str(SANS_BOLD), 26), red, cream, pad_x=20, pad_y=12)
+    base.alpha_composite(p, (x0, 66))
+    lines = wrap_fit(title, SERIF_BOLD, 96, max_w, 3, hexrgb(cream), min_size=52, max_h=300)
+    y = 150
+    for l in lines:
+        base.alpha_composite(l, (x0, y)); y += l.height
+    y += 10
+    d.rectangle((x0 + 4, y, x0 + 34, y + 5), fill=hexrgb(olive))
+    d.rectangle((x0 + 34, y, x0 + 64, y + 5), fill=hexrgb(cream))
+    d.rectangle((x0 + 64, y, x0 + 94, y + 5), fill=hexrgb(red))
+    photo = circle(square_photo("sal", 96), cream, 4, red, 5)
+    shadow(base, photo, (x0, H - 150), blur=10, offset=5, pad=30)
+    brand = fit("CHEF SAL ROMANO", SERIF_BOLD, 36, 600, hexrgb(cream), tracking_em=0.12)
+    base.alpha_composite(brand, (x0 + photo.width + 22, H - 134))
+    tag = fit("What the restaurants won't tell you.", SERIF_ITALIC, 28, 600, hexrgb(muted))
+    base.alpha_composite(tag, (x0 + photo.width + 24, H - 88))
+    return base.convert("RGB")
+
+
+def avatar_webp(name, out, size=128):
+    """Small round-crop-ready author photo for the guide pages."""
+    square_photo(name, size).save(out, "WEBP", quality=80, method=6)
+
+
 if __name__ == "__main__":
     for name, make in (("walter", walter), ("sal", sal)):
         save_page_photo(name)

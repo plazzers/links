@@ -10,9 +10,9 @@ const TOOLS = {
     slug: 'house-age',
     photo: 'walter/assets/walter.jpg',
     payhip: ['https://payhip.com/b/hiIm1', 'https://payhip.com/b/ABaxT', 'https://payhip.com/b/OZeda'],
-    other: ['../', '../'],
+    other: ['../', '../guides/buying-an-older-home-checklist/', '../guides/knob-and-tube-wiring/', '../guides/lead-paint-in-older-homes/', '../guides/polybutylene-and-galvanized-pipes/', '../guides/', '../'],
     text: [
-      'What to check in a house built in…', 'Why this matters',
+      'What to check in a house built in…', 'Why this matters', 'Related guides',
       'The Home Check Manual has a full chapter on what to check by the decade your house was built',
       'Educational content. Not a substitute for a professional inspection of your property.',
     ],
@@ -23,9 +23,9 @@ const TOOLS = {
     slug: 'restaurant-or-home',
     photo: 'sal/assets/sal.jpg',
     payhip: ['https://payhip.com/b/xM6XQ', 'https://payhip.com/b/MQDaN', 'https://payhip.com/b/dnY7F'],
-    other: ['../', '../'],
+    other: ['../', '../guides/eating-out-vs-cooking-at-home/', '../guides/how-to-eat-out-cheaper/', '../guides/restaurant-drink-markup/', '../guides/sunday-marinara-sauce/', '../guides/', '../'],
     text: [
-      'Restaurant or Home?', 'all 33 recipes on your phone with shopping list & timers',
+      'Restaurant or Home?', 'Related guides', 'all 33 recipes on your phone with shopping list & timers',
       'typical casual-dining price, estimate',
       'Prices are rough estimates for illustration. Recipes are inspired by popular restaurant dishes. Not affiliated with or endorsed by any restaurant.',
     ],
