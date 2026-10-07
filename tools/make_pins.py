@@ -766,8 +766,8 @@ def gallery(all_pins):
 # ---------------------------------------------------------------- main
 
 BOARDS = {
-    "walter": {"quick": "Home Maintenance Checklists", "buyer": "Buying a House Tips",
-               "older": "Older Home Problems", "seasonal": "Winter Home Prep", "list": "Home Maintenance Checklists"},
+    "walter": {"quick": "Home Maintenance Checklists", "buyer": "Buying a House: Red Flags",
+               "older": "Older Homes", "seasonal": "Winter Home Prep", "list": "Home Maintenance Checklists"},
     "sal": {"recipe": "Copycat Restaurant Recipes", "trick": "Restaurant Secrets", "money": "Budget Family Dinners"},
 }
 DEFAULT_LINK = {"walter": {"older": "house-age"}, "sal": {"money": "restaurant-or-home"}}
