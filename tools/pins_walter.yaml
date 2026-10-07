@@ -1,0 +1,1032 @@
+# Walter's Home Check — Pinterest pins.
+#
+# Each pin becomes pins/walter/NNN-slug.jpg (NNN = its position in this list),
+# one row in pins/pinterest-bulk-walter.csv and one card in pins/index.html.
+# To add a pin: copy a block, change everything, keep the slug unique
+# (lowercase-with-dashes), then run  python3 tools/make_pins.py  and
+# python3 tools/check_pins.py.  New pins go at the END so file names don't shift.
+#
+# type:      quick | buyer | older | seasonal | list   (sets the default board,
+#            and "older" pins link to the house-age tool)
+# topic:     a short word; the scheduler keeps the same topic from running back to back
+# kicker:    small orange line above the headline
+# headline:  big text; wrap the words to show in orange in *stars*; a | forces a
+#            line break. Put the line in "quotes" if it starts with a *star*.
+# body:      1–2 short sentences (normal pins)   items: 5–7 short lines (list pins)
+# tag:       the orange button bottom-left
+# title / description / keywords: what Pinterest shows (title <= 100 chars,
+#            description <= 500, 5–8 keywords)
+# product:   true if the description mentions a product (keep it to 10 or fewer)
+# board / link: optional overrides (link: walter | house-age)
+
+pins:
+
+# ---------------------------------------------------------------- one thing to do today (20)
+
+- slug: find-main-water-shutoff
+  type: quick
+  topic: plumbing
+  kicker: One thing to do today
+  headline: Find your main | *water shutoff*
+  body: Test it gently, then hang a bright tag on it. If a pipe bursts, every minute counts.
+  tag: Winter tip
+  board: Winter Home Prep
+  title: Find Your Main Water Shutoff Valve Before You Need It
+  description: >-
+    Do you know where your main water shutoff valve is? Most homeowners don't until a pipe
+    bursts. Look where the water line enters the house — often in the basement, crawlspace,
+    utility room or near the water heater. Turn it gently to make sure it moves, then hang a
+    bright tag on it so anyone in the family can find it fast. A simple home maintenance
+    habit that can save your floors. More easy home checks on Walter's page.
+  keywords: [main water shutoff valve, burst pipe, home maintenance tips, winter home prep, plumbing basics, new homeowner tips]
+
+- slug: test-gfci-outlets
+  type: quick
+  topic: electrical
+  kicker: One thing to do today
+  headline: Press *test* on every GFCI outlet
+  body: Kitchen, baths, garage, outside. It should click off and reset. If it won't, have it looked at.
+  tag: 5-minute check
+  title: How to Test a GFCI Outlet (a 5-Minute Home Safety Check)
+  description: >-
+    GFCI outlets are the ones with TEST and RESET buttons, usually in kitchens, bathrooms,
+    garages, laundry rooms and outside. Press TEST: the power should cut off with a click.
+    Press RESET to bring it back. If it won't trip or won't reset, have an electrician take
+    a look. Many makers suggest testing them monthly. A quick home safety check anyone can
+    do. More five-minute checks on Walter's Home Check.
+  keywords: [GFCI outlet test, electrical safety, home maintenance checklist, bathroom outlet, home safety tips, homeowner tips]
+
+- slug: clean-dryer-vent
+  type: quick
+  topic: fire
+  kicker: One thing to do today
+  headline: Clean out your *dryer vent*
+  body: Lint builds up past the screen, inside the duct. Make sure the outside flap opens when the dryer runs.
+  tag: Safety check
+  title: Clean Your Dryer Vent — Not Just the Lint Screen
+  description: >-
+    The lint screen catches most of it, but lint still builds up inside the dryer duct and
+    the outside vent. Signs it's clogged: clothes take longer to dry, the dryer feels very
+    hot, or the outside flap barely moves when it runs. Unplug the dryer, disconnect the
+    duct, and clean it with a vent brush, then check the outside flap. Easy home maintenance
+    that keeps your dryer working well. More simple checks on Walter's page.
+  keywords: [dryer vent cleaning, dryer lint, laundry room, home safety, home maintenance tips, fire prevention]
+
+- slug: check-furnace-filter
+  type: quick
+  topic: hvac
+  kicker: One thing to do today
+  headline: Hold your *furnace filter* up to the light
+  body: If you can't see light through it, it's time. Write today's date on the new one.
+  tag: 5-minute check
+  title: How to Tell When Your Furnace Filter Needs Changing
+  description: >-
+    An easy furnace filter check: slide it out and hold it up to a light. If you can barely
+    see light through it, swap it. Match the size printed on the frame and point the
+    airflow arrow toward the furnace. Write the date on the edge so you know when you
+    changed it. A clean HVAC filter helps your system breathe and keeps dust down. Find
+    more quick home maintenance checks on Walter's Home Check.
+  keywords: [furnace filter, HVAC filter, change air filter, home maintenance checklist, heating system, homeowner tips]
+
+- slug: test-sump-pump
+  type: quick
+  topic: water
+  kicker: One thing to do today
+  headline: Test your | *sump pump* before | you need it
+  body: Slowly pour a bucket of water into the pit. It should switch on, drain it and shut off.
+  tag: Basement check
+  title: How to Test Your Sump Pump in 2 Minutes
+  description: >-
+    The worst time to find out your sump pump doesn't work is during a storm. Test it:
+    slowly pour a bucket of water into the sump pit. The float should rise, the pump should
+    switch on, empty the pit and shut off by itself. Check that the discharge pipe outside
+    is clear and drains away from the house. Simple basement waterproofing habit for every
+    season. More basement checks on Walter's page.
+  keywords: [sump pump test, wet basement, basement waterproofing, home maintenance tips, storm prep, homeowner checklist]
+
+- slug: test-smoke-co-alarms
+  type: quick
+  topic: fire
+  kicker: One thing to do today
+  headline: Test every | *smoke & CO alarm*
+  body: Then check the date on the back. Alarms don't last forever; the label says when to replace them.
+  tag: Safety check
+  title: Test Your Smoke and Carbon Monoxide Alarms (and Check the Date)
+  description: >-
+    Press and hold the test button on every smoke alarm and carbon monoxide alarm in the
+    house. Then take one down and look at the back: most have a manufacture date and the
+    maker says how many years it's good for. Old alarms get replaced, not just new
+    batteries. A two-minute home safety check that's worth putting on the calendar. More
+    easy home safety checks on Walter's Home Check.
+  keywords: [smoke alarm test, carbon monoxide detector, home safety checklist, fire safety, home maintenance, homeowner tips]
+
+- slug: water-heater-relief-valve
+  type: quick
+  topic: plumbing
+  kicker: One thing to do today
+  headline: Look at your water heater's *relief valve*
+  body: The pipe from it should run down toward the floor, never capped. Drips or crust there? Have it checked.
+  tag: 5-minute check
+  title: Water Heater Relief Valve — What to Look For
+  description: >-
+    Every tank water heater has a temperature and pressure relief valve, usually on the top
+    or side, with a pipe running down toward the floor. That pipe should be open at the end,
+    never capped or plugged. Drips, rust or white crust around the valve are worth a
+    plumber's look. While you're there, check the label for the water heater's age. Quick
+    water heater maintenance check from Walter's Home Check.
+  keywords: [water heater maintenance, relief valve, TPR valve, plumbing check, home maintenance tips, water heater safety]
+
+- slug: garage-door-reverse-test
+  type: quick
+  topic: garage
+  kicker: One thing to do today
+  headline: Test your garage door's *auto-reverse*
+  body: Lay a 2x4 flat under the door and close it. It should touch the board and go back up.
+  tag: Safety check
+  title: Garage Door Auto-Reverse Test Every Family Should Do
+  description: >-
+    Your automatic garage door should reverse if it hits something. Test it: lay a 2x4 flat
+    on the floor under the door and press close. It should touch the board and go back up.
+    Then wave something through the beam of the photo-eye sensors near the floor while it
+    closes; it should stop and reverse. If either test fails, look at the opener manual or
+    call a garage door pro. More simple safety checks on Walter's page.
+  keywords: [garage door safety, auto reverse test, garage door opener, home safety checklist, home maintenance, family safety]
+
+- slug: tub-caulk-check
+  type: quick
+  topic: bathroom
+  kicker: One thing to do today
+  headline: Check the *caulk* around your tub
+  body: Gaps, cracks or black spots let water behind the tile. Cut out the old bead and run a fresh one.
+  tag: 5-minute check
+  title: When to Recaulk Your Bathtub (and Why It Matters)
+  description: >-
+    The caulk line around a tub or shower is a small thing that keeps water out of the wall.
+    Look for gaps, cracks, peeling, or dark spots that won't clean off. If you see them, cut
+    out the old caulk, clean and dry the joint completely, and run a fresh bead of
+    kitchen-and-bath silicone. An easy weekend bathroom maintenance job that protects what's
+    behind the tile. More quick checks on Walter's page.
+  keywords: [recaulk bathtub, bathroom caulk, shower maintenance, water damage prevention, home maintenance tips, DIY home repair]
+
+- slug: downspout-extensions
+  type: quick
+  topic: water
+  kicker: One thing to do today
+  headline: Where do your *downspouts* dump water?
+  body: Right beside the house, it soaks the foundation. Add extensions so it lands several feet away.
+  tag: Rainy day check
+  title: Downspout Extensions — the Easy Fix for a Wet Basement
+  description: >-
+    Watch your downspouts next time it rains. If the water pours out right next to the
+    foundation, it soaks the soil against your basement walls. A simple downspout extension
+    or splash block that carries water several feet away from the house is one of the
+    easiest ways to help keep a basement dry. Check that gutters aren't overflowing too.
+    More rainy-day home checks on Walter's Home Check.
+  keywords: [downspout extension, wet basement, gutter drainage, foundation water, home maintenance tips, rainy day home check]
+
+- slug: check-yard-grading
+  type: quick
+  topic: water
+  kicker: One thing to do today
+  headline: Check which way your *yard slopes*
+  body: Soil against the house should fall away from it, not toward it. A board and a level will tell you.
+  tag: Outside check
+  title: Check Your Yard Grading to Keep Water Away From the Foundation
+  description: >-
+    Good grading means the ground slopes away from your house so rain runs off instead of
+    toward the foundation. Lay a long straight board on the ground pointing out from the
+    wall, put a level on it, and see which way it tips. Low spots and flower beds that slope
+    toward the house can be built back up with soil. An easy outside check for wet basement
+    prevention. More outdoor home checks on Walter's page.
+  keywords: [yard grading, foundation drainage, wet basement, landscaping slope, home maintenance tips, exterior home check]
+
+- slug: attic-after-storm
+  type: quick
+  topic: roof
+  kicker: One thing to do today
+  headline: Peek in your *attic* after a big storm
+  body: Bring a flashlight. Look for wet spots, dark stains on the wood, or daylight where it shouldn't be.
+  tag: Storm check
+  title: What to Look For in Your Attic After a Storm
+  description: >-
+    After heavy rain or wind, take a flashlight into the attic (step only on the joists).
+    Look at the underside of the roof for wet spots, dark stains, drips around vents and
+    chimneys, and any daylight coming through. Feel the insulation for damp patches. Catching
+    a small roof leak early is much easier than finding it on the ceiling later. More storm
+    and roof checks on Walter's Home Check.
+  keywords: [attic inspection, roof leak, storm damage, roof maintenance, home maintenance tips, after storm checklist]
+
+- slug: washing-machine-hoses
+  type: quick
+  topic: plumbing
+  kicker: One thing to do today
+  headline: Check the hoses | behind your | *washing machine*
+  body: Pull the machine out a little. Bulges, cracks or rust at the ends mean it's time for new ones.
+  tag: 5-minute check
+  title: Check Your Washing Machine Hoses Before They Leak
+  description: >-
+    The rubber hoses behind your washing machine are under water pressure all the time. Pull
+    the machine out a little and look: bulges, cracks, stiffness or rust at the fittings mean
+    it's time to replace them. Braided stainless hoses are a popular upgrade, and it's a good
+    habit to know where the washer's shutoff valves are. A five-minute laundry room check.
+    More quick home checks on Walter's page.
+  keywords: [washing machine hoses, laundry room, water leak prevention, home maintenance checklist, plumbing tips, homeowner tips]
+
+- slug: silent-toilet-leak
+  type: quick
+  topic: bathroom
+  kicker: One thing to do today
+  headline: Find a *silent toilet leak*
+  body: A few drops of food coloring in the tank. Wait 15 minutes. Color in the bowl? The flapper leaks.
+  tag: 5-minute check
+  title: The Food Coloring Test for a Silent Toilet Leak
+  description: >-
+    A toilet can leak water into the bowl all day without making a sound. Test it: put a few
+    drops of food coloring in the tank, don't flush, and wait about 15 minutes. If color shows
+    up in the bowl, the flapper isn't sealing. Flappers are usually an easy DIY swap. Flush
+    afterward so the color doesn't stain. A simple bathroom check that saves water. More easy
+    home checks on Walter's Home Check.
+  keywords: [toilet leak test, food coloring test, toilet flapper, save water, bathroom maintenance, DIY plumbing]
+
+- slug: under-sink-check
+  type: quick
+  topic: plumbing
+  kicker: One thing to do today
+  headline: Open the cabinet | *under every sink*
+  body: Feel the pipes and the cabinet floor. Soft wood, stains or a musty smell mean a slow drip.
+  tag: 5-minute check
+  title: Look Under Every Sink for a Slow Leak
+  description: >-
+    Slow drips under sinks can go unnoticed for months. Open each cabinet with a flashlight,
+    run the water, and feel the pipes, the shutoff valves and the cabinet floor. Water
+    stains, swollen or soft wood, rust, or a musty smell all point to a leak. Many small
+    leaks are just a loose slip nut. Five minutes, every sink in the house. More quick home
+    maintenance checks on Walter's page.
+  keywords: [under sink leak, plumbing check, water damage, kitchen sink, home maintenance checklist, homeowner tips]
+
+- slug: label-breaker-panel
+  type: quick
+  topic: electrical
+  kicker: One thing to do today
+  headline: Label your *breaker panel*
+  body: Switch off one breaker at a time and note what goes dark. In an emergency, you'll know which one.
+  tag: Weekend job
+  title: How to Label Your Breaker Panel (Weekend Home Project)
+  description: >-
+    A breaker panel full of blank or faded labels makes every small problem harder. With a
+    helper and a phone, switch off one breaker at a time and note which lights and outlets
+    go dark. Write clear labels and tape a printed map inside the panel door. Leave the
+    panel cover on and call an electrician for anything inside it. A satisfying weekend
+    home project. More home checks on Walter's Home Check.
+  keywords: [label breaker panel, electrical panel, circuit breaker, weekend home project, home organization, homeowner tips]
+
+- slug: fire-extinguisher-gauge
+  type: quick
+  topic: fire
+  kicker: One thing to do today
+  headline: Check your | *fire extinguisher* | gauge
+  body: The needle should sit in the green. Keep one near the kitchen exit, not behind the stove.
+  tag: Safety check
+  title: Check Your Fire Extinguisher Gauge (Takes 10 Seconds)
+  description: >-
+    Look at the small pressure gauge on your fire extinguisher: the needle should be in the
+    green. Check that the pin and seal are in place and the hose isn't cracked. Look at the
+    label for the date and the maker's guidance on replacing it. Keep one where you can grab
+    it on the way out of the kitchen, not behind the stove. Quick home safety check from
+    Walter's Home Check.
+  keywords: [fire extinguisher check, kitchen safety, home safety checklist, fire safety tips, home maintenance, family safety]
+
+- slug: bathroom-fan-test
+  type: quick
+  topic: bathroom
+  kicker: One thing to do today
+  headline: Does your | *bathroom fan* | really work?
+  body: Hold a square of toilet paper up to it while it runs. If it doesn't stick, the fan isn't doing much.
+  tag: 5-minute check
+  title: The Toilet Paper Test for Your Bathroom Exhaust Fan
+  description: >-
+    A bathroom fan can be noisy and still move very little air. Turn it on and hold a single
+    square of toilet paper up to the grille. It should be pulled up and held there. If not,
+    the fan may be clogged with dust or the duct may be blocked or disconnected. A working
+    bathroom exhaust fan helps keep moisture, peeling paint and mildew down. More easy checks
+    on Walter's Home Check.
+  keywords: [bathroom exhaust fan, bathroom mildew, moisture control, ventilation, home maintenance tips, bathroom tips]
+
+- slug: vacuum-fridge-coils
+  type: quick
+  topic: kitchen
+  kicker: One thing to do today
+  headline: Vacuum your *fridge coils*
+  body: Dusty coils make the fridge work harder. Unplug it, find the coils, and vacuum them gently.
+  tag: 5-minute check
+  title: How to Clean Refrigerator Coils (Easy Kitchen Maintenance)
+  description: >-
+    Refrigerator condenser coils collect dust and pet hair, which makes the fridge work
+    harder to stay cold. Unplug it, find the coils (behind a grille at the bottom front or
+    on the back), and vacuum them with a brush attachment or a coil brush. Check your
+    manual for your model. A quick kitchen maintenance job most people never do. More
+    simple home checks on Walter's page.
+  keywords: [clean refrigerator coils, kitchen maintenance, appliance care, fridge maintenance, home maintenance checklist, cleaning tips]
+
+- slug: seal-gaps-outside
+  type: quick
+  topic: exterior
+  kicker: One thing to do today
+  headline: Seal gaps where | *pipes & wires* | enter the house
+  body: Where lines enter the house, gaps let in water, drafts and bugs. Seal them with caulk or foam.
+  tag: Walk-around check
+  title: Seal Gaps Where Pipes and Wires Enter Your House
+  description: >-
+    Walk around the outside of your house and look wherever something goes through the wall:
+    hose faucets, AC lines, cable and phone wires, dryer vents, gas and electric lines.
+    Gaps around them let in water, drafts, insects and mice. Seal small gaps with exterior
+    caulk and larger ones with the right foam or a cover plate. An easy exterior home
+    maintenance walk-around. More outside checks on Walter's page.
+  keywords: [seal gaps, exterior caulk, pest prevention, drafty house, home maintenance tips, exterior home check]
+
+# ---------------------------------------------------------------- buyer red flags (15)
+
+- slug: foundation-crack-direction
+  type: buyer
+  topic: foundation
+  kicker: Before you buy
+  headline: Foundation crack? | *Which way* | does it run?
+  body: Thin vertical hairlines are common. Horizontal, stair-step or wider at one end deserves a closer look.
+  tag: Buyer red flag
+  title: Foundation Cracks — Which Ones Buyers Should Worry About
+  description: >-
+    Not every foundation crack is a problem. Thin vertical hairline cracks are common as
+    concrete cures. Cracks that run horizontally, step diagonally through block, are wider
+    at one end, or have one side pushed out deserve a closer look by a structural engineer
+    before you buy. Take photos and ask the seller what they know. A house hunting tip from
+    Walter's Home Check, with more buyer checks on the page.
+  keywords: [foundation cracks, house hunting tips, buying a house, home inspection, first time home buyer, structural problems]
+
+- slug: fresh-paint-one-spot
+  type: buyer
+  topic: water
+  kicker: Before you buy
+  headline: Fresh paint in *just one spot*
+  body: One freshly painted patch on a ceiling or wall can hide a stain. Ask what happened there.
+  tag: Buyer red flag
+  title: Fresh Paint in One Spot? What Home Buyers Should Ask
+  description: >-
+    A whole house freshly painted for sale is normal. A single fresh patch on a ceiling, a
+    basement wall, or under a window is worth noticing. It can be covering an old water
+    stain. Ask the seller what happened there and whether it was repaired, and point it out
+    to your home inspector. One of the easy-to-miss house hunting red flags from Walter's
+    Home Check.
+  keywords: [house hunting red flags, buying a house tips, home inspection, water stain, first time home buyer, home showing tips]
+
+- slug: musty-basement
+  type: buyer
+  topic: water
+  kicker: Before you buy
+  headline: A basement that *smells musty*
+  body: Your nose finds moisture first. Look for a white chalky line, rusty nails and a dehumidifier running.
+  tag: Buyer red flag
+  title: Musty Basement Smell — a Red Flag When Buying a House
+  description: >-
+    At a showing, take a deep breath when you walk into the basement. A musty smell usually
+    means moisture. Then look: white chalky deposits on the walls, rust on nails or the
+    water heater base, stains at the bottom of walls, fresh paint low down, and a
+    dehumidifier hard at work. Ask about water history and have it checked. House hunting
+    tips from Walter's Home Check.
+  keywords: [musty basement, wet basement, buying a house tips, house hunting checklist, home inspection, first time home buyer]
+
+- slug: diy-electrical
+  type: buyer
+  topic: electrical
+  kicker: Before you buy
+  headline: Signs of *DIY electrical* work
+  body: Extension cords stapled to walls, open junction boxes, outlets that feel warm. Get it checked.
+  tag: Buyer red flag
+  title: Signs of DIY Electrical Work to Spot Before You Buy a House
+  description: >-
+    Amateur electrical work is one of the more common things buyers miss. Look for extension
+    cords stapled along walls, junction boxes without covers, loose outlets, outlets or
+    switch plates that feel warm, and lights that flicker. In basements and garages, look
+    for wiring that just doesn't look neat. Point it out to your inspector and consider an
+    electrician's opinion. More buyer red flags on Walter's page.
+  keywords: [DIY electrical, electrical problems, buying a house tips, house hunting red flags, home inspection, first time home buyer]
+
+- slug: ceiling-stains
+  type: buyer
+  topic: water
+  kicker: Before you buy
+  headline: Brown rings on *the ceiling*
+  body: Is it an old leak that was fixed, or one that's still going? Look at what's above it.
+  tag: Buyer red flag
+  title: Ceiling Water Stains — What Buyers Should Ask
+  description: >-
+    A brown ring on a ceiling means water got there at some point. The question is whether
+    it's an old, repaired leak or an active one. Look at what's above it: a bathroom, the
+    roof, an AC unit, a chimney. Ask the seller when it happened and what was fixed, and have
+    your inspector check it, ideally with a moisture meter. House hunting tips from Walter's
+    Home Check.
+  keywords: [ceiling water stain, roof leak, buying a house tips, home inspection, house hunting red flags, first time home buyer]
+
+- slug: grading-toward-house
+  type: buyer
+  topic: exterior
+  kicker: Before you buy
+  headline: Dirt sloping | *toward the house*
+  body: Water follows the slope. Grading that runs toward the foundation often means a wet basement later.
+  tag: Buyer red flag
+  title: Bad Yard Grading — an Easy Red Flag to Spot When House Hunting
+  description: >-
+    Walk all the way around the house you're thinking of buying. The ground right next to
+    the foundation should slope away. Soil, flower beds or patios that slope toward the
+    house send rainwater to the basement walls. Also look at where the downspouts end. It's
+    often fixable, but it tells you to look harder inside for water. More buyer red flags on
+    Walter's Home Check.
+  keywords: [yard grading, foundation drainage, buying a house tips, house hunting checklist, wet basement, home inspection]
+
+- slug: too-perfect-flip
+  type: buyer
+  topic: flip
+  kicker: Before you buy
+  headline: A flip that looks | *too perfect*
+  body: New floors and paint are nice. Look hard at what they didn't redo, and ask about permits.
+  tag: Buyer red flag
+  title: Buying a Flipped House? Check What They Didn't Fix
+  description: >-
+    Flipped houses can look amazing: new floors, fresh paint, shiny kitchen. Look past it.
+    Check the age of the roof, electrical panel, water heater, furnace and AC, and look at
+    the foundation and attic. Ask for permits on the work that was done, and get your own
+    full home inspection. A beautiful finish doesn't tell you about the systems underneath.
+    Buyer tips from Walter's Home Check.
+  keywords: [buying a flipped house, house flip red flags, buying a house tips, home inspection, first time home buyer, house hunting]
+
+- slug: sticking-doors
+  type: buyer
+  topic: foundation
+  kicker: Before you buy
+  headline: Doors that *stick or won't latch*
+  body: One sticky door is humidity. Several, plus sloping floors or cracks at door corners, is worth a look.
+  tag: Buyer red flag
+  title: Sticking Doors and Sloping Floors — What They Can Mean
+  description: >-
+    At a showing, open and close every door. One that sticks in summer is usually humidity.
+    Several doors that rub or won't latch, together with sloping floors, diagonal cracks at
+    the corners of doors and windows, or gaps at the top of door frames, can point to
+    movement in the house. It's worth having it looked at before you buy. House hunting
+    tips from Walter's Home Check.
+  keywords: [sticking doors, sloping floors, foundation settling, buying a house tips, home inspection, house hunting red flags]
+
+- slug: roof-age-question
+  type: buyer
+  topic: roof
+  kicker: Before you buy
+  headline: Ask how old *the roof* really is
+  body: Curling or missing shingles, granules in the gutters and patchy repairs say it's near the end.
+  tag: Buyer red flag
+  title: How to Tell If a Roof Is Near the End When Buying a House
+  description: >-
+    Ask the seller how old the roof is and whether there are receipts. Then look for
+    yourself from the ground: curling or cupped shingles, missing pieces, bald spots,
+    granules collecting in the gutters, and patches of different colored shingles. Inside,
+    look for stains on top floor ceilings. A roof near the end of its life is a big item to
+    plan for. More buyer checks on Walter's page.
+  keywords: [roof age, roof inspection, buying a house tips, house hunting checklist, first time home buyer, home inspection]
+
+- slug: water-heater-age-buyer
+  type: buyer
+  topic: plumbing
+  kicker: Before you buy
+  headline: Check the age of | *the water heater*
+  body: The date is usually on the label. Rust at the base or a crusty valve? Plan for a new one.
+  tag: Buyer red flag
+  title: How to Check a Water Heater's Age Before You Buy a House
+  description: >-
+    The water heater's manufacture date is usually on the label, sometimes hidden in the
+    serial number (look up the maker's code online). Rust around the base, water in the
+    drain pan, or crust on the relief valve suggest it's near the end. It's not a deal
+    breaker, but it's good to know before you move in. A quick house hunting check from
+    Walter's Home Check.
+  keywords: [water heater age, buying a house tips, home inspection checklist, first time home buyer, house hunting, plumbing check]
+
+- slug: foggy-windows
+  type: buyer
+  topic: windows
+  kicker: Before you buy
+  headline: Foggy | *double-pane* | windows
+  body: Moisture between the panes means the seal has failed. Count how many before you make an offer.
+  tag: Buyer red flag
+  title: Foggy Double-Pane Windows — What Buyers Should Know
+  description: >-
+    If you see fog, haze or water droplets between the two panes of glass, the window's seal
+    has failed. The window still works, but it insulates less and the haze won't clean off.
+    During a showing, count how many windows are affected and look at the frames for rot or
+    water stains. Good to know before you make an offer. More house hunting tips on Walter's
+    Home Check.
+  keywords: [foggy windows, failed window seal, double pane windows, buying a house tips, home inspection, house hunting checklist]
+
+- slug: soft-bathroom-floor
+  type: buyer
+  topic: bathroom
+  kicker: Before you buy
+  headline: A *soft floor* | near the toilet
+  body: Press around the base with your foot. Spongy or stained flooring can mean a long, slow leak.
+  tag: Buyer red flag
+  title: Soft Floor Around the Toilet — a Hidden Leak Red Flag
+  description: >-
+    In every bathroom at a showing, gently press the floor around the toilet and in front of
+    the tub with your foot. It should feel solid. A soft, spongy or bouncy spot, loose tiles,
+    or stains around the base can mean water has been getting under the floor for a while.
+    Check the ceiling below too. An easy house hunting check from Walter's Home Check.
+  keywords: [bathroom floor damage, toilet leak, water damage, buying a house tips, house hunting red flags, home inspection]
+
+- slug: heavy-air-freshener
+  type: buyer
+  topic: smell
+  kicker: Before you buy
+  headline: Heavy | *air freshener* | everywhere
+  body: Candles and plug-ins in every room can mask pets, smoke or damp. Come back for a second visit.
+  tag: Buyer red flag
+  title: Strong Air Freshener at a Showing? Here's Why to Look Twice
+  description: >-
+    A nice candle at an open house is normal. Strong scents in every room, especially
+    basements and closets, can cover up odors like pet urine, smoke or dampness. Open closet
+    doors and cabinets, smell the basement, and look at carpets and baseboards. If you're
+    serious about the house, visit again at a different time of day. Buyer tips from Walter's
+    Home Check.
+  keywords: [house showing tips, buying a house tips, house hunting red flags, first time home buyer, home inspection, open house tips]
+
+- slug: old-hvac-no-records
+  type: buyer
+  topic: hvac
+  kicker: Before you buy
+  headline: "*Old furnace*, | no service | records"
+  body: Look for a service sticker and the data plate. No records? Ask for an HVAC check before you buy.
+  tag: Buyer red flag
+  title: Checking the Furnace and AC When Buying a House
+  description: >-
+    Find the furnace and the outdoor AC unit and look at the data plate for the age (often
+    in the serial number). Look for a service sticker with recent dates and ask the seller
+    for maintenance records. Rust, unusual noises or a unit that won't run in the right
+    season are worth an HVAC technician's opinion before closing. A house hunting check from
+    Walter's Home Check.
+  keywords: [furnace age, AC unit, HVAC inspection, buying a house tips, first time home buyer, home inspection checklist]
+
+- slug: mulch-against-siding
+  type: buyer
+  topic: exterior
+  kicker: Before you buy
+  headline: Mulch piled | *against siding*
+  body: Soil and mulch touching siding invite rot and insects. Press the lowest trim board. Soft wood is a clue.
+  tag: Buyer red flag
+  title: Mulch and Soil Against Siding — a House Hunting Red Flag
+  description: >-
+    Siding and trim should sit a few inches above the soil and mulch. When dirt is piled
+    right against them, wood stays wet and insects have an easy way in. At a showing, look
+    at the bottom of the siding and gently press the lowest trim boards and door frames.
+    Soft or crumbly wood is worth pointing out to your home inspector. More buyer red flags
+    on Walter's Home Check.
+  keywords: [wood rot, siding damage, termite signs, buying a house tips, house hunting checklist, home inspection]
+
+# ---------------------------------------------------------------- older homes (12) -> house-age tool
+
+- slug: lead-paint-before-1978
+  type: older
+  topic: paint
+  kicker: Built before 1978?
+  headline: Test for | *lead paint* | before you sand
+  body: Paint from before 1978 may contain lead. Don't sand, scrape or heat-strip until it's been tested.
+  tag: Older homes
+  title: Lead Paint in Homes Built Before 1978 — Test Before You Sand
+  description: >-
+    Homes built before 1978 may have lead-based paint somewhere under the newer layers.
+    Intact paint is usually left alone; the risk comes from dust and chips when it's sanded,
+    scraped or heat-stripped. Test before a project, using a certified lead inspector or an
+    EPA-recognized test kit, and use lead-safe work practices. See what else to check for
+    your home's build year with Walter's free house-age tool.
+  keywords: [lead paint, old house renovation, homes built before 1978, older home problems, home renovation safety, house built in]
+
+- slug: asbestos-floor-tiles
+  type: older
+  topic: asbestos
+  kicker: Built before the 1980s?
+  headline: Old *9-inch floor tiles*
+  body: Some older tiles and their black glue contain asbestos. Leave them alone, or test before removing.
+  tag: Older homes
+  title: Old 9x9 Floor Tiles — Why to Test Before You Remove Them
+  description: >-
+    Many older homes have 9-inch square vinyl floor tiles, often in basements and kitchens.
+    Some tiles from that era, and the black adhesive under them, contain asbestos. Intact
+    tiles are usually not a problem; breaking, sanding or scraping them is. Leave them in
+    place or cover them, and have a sample tested before any removal. Check what else to
+    look at for your home's age with Walter's free house-age tool.
+  keywords: [asbestos floor tiles, 9x9 tiles, old house renovation, older home problems, basement remodel, house built in]
+
+- slug: popcorn-ceiling
+  type: older
+  topic: asbestos
+  kicker: Built before the 1980s?
+  headline: Test that | *popcorn ceiling* | before you scrape
+  body: Some textured ceilings from that era contain asbestos. Have a sample tested before you disturb it.
+  tag: Older homes
+  title: Removing a Popcorn Ceiling? Test It for Asbestos First
+  description: >-
+    Popcorn or cottage cheese ceilings were popular for decades, and some applied before the
+    1980s contain asbestos. You can't tell by looking. Before you scrape, sand or drill it,
+    have a sample tested by a lab. If it's positive, leave it alone or hire a licensed
+    abatement pro. A sensible first step for older home renovations. See what to check for
+    your build year with Walter's free house-age tool.
+  keywords: [popcorn ceiling removal, asbestos testing, older home problems, old house renovation, ceiling remodel, house built in]
+
+- slug: vermiculite-insulation
+  type: older
+  topic: asbestos
+  kicker: Older attic?
+  headline: Loose, pebbly *attic insulation*
+  body: Gray-brown, shiny, pebble-like insulation may be vermiculite, which can contain asbestos. Don't disturb it.
+  tag: Older homes
+  title: Vermiculite Attic Insulation — What Older Home Owners Should Know
+  description: >-
+    Look in the attic of an older home. If the insulation is loose, pebbly and gray-brown or
+    silvery-gold, it may be vermiculite, and some vermiculite contains asbestos. Don't
+    disturb it, don't store things up there, and don't try to remove it yourself. Have it
+    tested and get a pro's advice before any attic work. More era-by-era checks in Walter's
+    free house-age tool.
+  keywords: [vermiculite insulation, attic insulation, asbestos, older home problems, old house tips, house built in]
+
+- slug: old-pipe-wrap
+  type: older
+  topic: asbestos
+  kicker: Older basement?
+  headline: White wrap on | *old heating pipes*
+  body: Some old pipe and boiler insulation contains asbestos. If it's intact, leave it. Crumbling? Call a pro.
+  tag: Older homes
+  title: Old White Pipe Insulation in the Basement — Leave It Be
+  description: >-
+    In many older homes, heating pipes and boilers are wrapped in white or gray insulation
+    that looks like plaster or corrugated paper. Some of it contains asbestos. If it's
+    intact, it's usually best left alone. If it's damaged, crumbling or in the way of a
+    project, have it tested and handled by a licensed pro. See what else to check for your
+    home's age with Walter's free house-age tool.
+  keywords: [asbestos pipe insulation, old boiler, basement pipes, older home problems, old house tips, house built in]
+
+- slug: knob-and-tube-wiring
+  type: older
+  topic: wiring
+  kicker: Built before the 1950s?
+  headline: Look for *knob-and-tube* wiring
+  body: Ceramic knobs and tubes in the attic or basement. It's ungrounded and often modified. Get it checked.
+  tag: Older homes
+  title: Knob-and-Tube Wiring — How to Spot It in an Older Home
+  description: >-
+    Knob-and-tube wiring was common in houses built roughly before the 1950s. Look in the
+    attic and basement for single wires running on white ceramic knobs and through ceramic
+    tubes. It has no ground wire, and decades of changes and buried insulation can make it a
+    concern. Many insurers ask about it, so have an electrician evaluate it. Check what else
+    to look at for your build year with Walter's free house-age tool.
+  keywords: [knob and tube wiring, old house wiring, older home problems, electrical safety, buying an old house, house built in]
+
+- slug: aluminum-wiring
+  type: older
+  topic: wiring
+  kicker: Built 1965–1975?
+  headline: Ask about *aluminum wiring*
+  body: Homes from roughly the mid-60s to mid-70s may have it. Connections can loosen. An electrician can check.
+  tag: Older homes
+  title: Aluminum Wiring in 1960s and 1970s Homes — What to Know
+  description: >-
+    Some homes built roughly from the mid-1960s to the mid-1970s have aluminum branch wiring.
+    The concern is the connections at outlets, switches and splices, which can loosen and
+    overheat over time. Look for "AL" printed on wire jackets in the panel or basement, and
+    have an electrician check it; there are proven repair methods. Find more checks for your
+    home's age in Walter's free house-age tool.
+  keywords: [aluminum wiring, 1970s house, older home problems, electrical safety, buying an old house, house built in]
+
+- slug: polybutylene-pipes
+  type: older
+  topic: pipes
+  kicker: Built late 1970s to mid-1990s?
+  headline: Gray plastic pipes? Check for *polybutylene*
+  body: Often stamped PB. It's known to fail without warning. Worth a plumber's opinion, especially if you're buying.
+  tag: Older homes
+  title: Polybutylene Pipes — How to Spot Them in Your Home
+  description: >-
+    Polybutylene water pipe was used in many homes built roughly from the late 1970s to the
+    mid-1990s. It's usually gray (sometimes blue or black), flexible, and often stamped
+    PB2110. It has a history of failing without much warning. Look near the water heater,
+    under sinks and where the main line enters. Ask a plumber about it, especially when
+    buying. More checks by build year in Walter's free house-age tool.
+  keywords: [polybutylene pipes, 1980s house, plumbing problems, older home problems, buying a house, house built in]
+
+- slug: galvanized-pipes
+  type: older
+  topic: pipes
+  kicker: Built before the 1960s?
+  headline: Old *galvanized* water pipes
+  body: Gray steel pipes can rust from the inside. Low pressure or brown water at first turn-on are the clues.
+  tag: Older homes
+  title: Galvanized Water Pipes in Older Homes — Signs to Watch For
+  description: >-
+    Galvanized steel water pipes were common in homes built roughly before the 1960s. Over
+    time they can rust and narrow from the inside. Clues: low water pressure, brownish water
+    when a tap is first turned on, and rust at the joints. A magnet sticks to galvanized
+    pipe but not to copper. A plumber can tell you how much life is left. See more checks
+    for your home's age in Walter's free house-age tool.
+  keywords: [galvanized pipes, old plumbing, low water pressure, older home problems, old house tips, house built in]
+
+- slug: older-panel-brands
+  type: older
+  topic: panel
+  kicker: Older electrical panel?
+  headline: Know the *brand* of your panel
+  body: Some older panels, like Federal Pacific Stab-Lok and Zinsco, have known concerns. Ask an electrician.
+  tag: Older homes
+  title: Federal Pacific and Zinsco Panels — Why to Check Your Panel's Brand
+  description: >-
+    The brand name is usually on the panel door or the label inside it. Some older panels,
+    including Federal Pacific Electric (Stab-Lok breakers) and Zinsco, have known concerns,
+    and some insurers ask about them. If yours is one of them, or just very old, have a
+    licensed electrician take a look. Leave the cover on yourself. More checks for your
+    home's build year in Walter's free house-age tool.
+  keywords: [Federal Pacific panel, Zinsco panel, electrical panel, older home problems, electrical safety, house built in]
+
+- slug: two-prong-outlets
+  type: older
+  topic: wiring
+  kicker: Older home?
+  headline: Two-prong outlets | *aren't grounded*
+  body: A three-prong adapter doesn't fix it. GFCI protection or proper grounding by an electrician does.
+  tag: Older homes
+  title: Two-Prong Outlets in an Older Home — the Safe Way to Upgrade
+  description: >-
+    Two-prong outlets are common in older homes and mean the circuit likely has no ground
+    wire. A cheap three-prong adapter doesn't change that, and swapping in a three-prong
+    outlet without a ground just hides it. Safer options: have an electrician add GFCI
+    protection (labeled properly) or run a ground. A plug-in tester shows what you have.
+    More checks by build year in Walter's free house-age tool.
+  keywords: [two prong outlets, ungrounded outlets, old house wiring, older home problems, electrical safety, house built in]
+
+- slug: sewer-line-scope
+  type: older
+  topic: sewer
+  kicker: Built before the 1970s?
+  headline: Scope the *sewer line* before you buy
+  body: Older clay and cast-iron lines can crack or fill with roots. A camera inspection shows what you can't see.
+  tag: Older homes
+  title: Why a Sewer Camera Inspection Is Worth It on an Older Home
+  description: >-
+    Many older homes have clay or cast-iron sewer lines running out to the street. Tree
+    roots, cracks and sags happen out of sight, and a standard home inspection doesn't see
+    inside the pipe. A sewer scope (camera inspection) by a plumber shows the line's
+    condition before you buy. Slow drains and gurgling toilets are clues too. More checks
+    for your home's age in Walter's free house-age tool.
+  keywords: [sewer scope inspection, sewer line, older home problems, buying an old house, home inspection, house built in]
+
+# ---------------------------------------------------------------- seasonal (8)
+
+- slug: disconnect-garden-hoses
+  type: seasonal
+  topic: freeze
+  kicker: Before the first freeze
+  headline: Disconnect your *garden hoses*
+  body: A hose left on traps water in the faucet, where it can freeze and split the pipe inside the wall.
+  tag: Winter tip
+  product: true
+  title: Disconnect Garden Hoses Before the First Freeze
+  description: >-
+    One of the easiest winter home prep jobs: disconnect, drain and store your garden hoses
+    before the first hard freeze. A connected hose traps water in the outdoor faucet, where
+    it can freeze and crack the pipe inside the wall, and you may not see the leak until
+    spring. If you have an inside shutoff for the faucet, close it and drain the line.
+    Walter's free Before the First Freeze checklist has the rest.
+  keywords: [winterize outdoor faucet, garden hose, frozen pipes, winter home prep, fall home maintenance, before the first freeze]
+
+- slug: clean-gutters-fall
+  type: seasonal
+  topic: roof
+  kicker: After the leaves drop
+  headline: Clean the *gutters* one more time
+  body: Clogged gutters overflow at the foundation, and in winter they can help ice dams form.
+  tag: Fall tip
+  title: Why to Clean Gutters After the Leaves Fall
+  description: >-
+    Clean your gutters once the trees are bare, not just in early fall. Clogged gutters
+    overflow right at the foundation and can help ice dams form along the roof edge in
+    winter. Scoop out the leaves, flush with a hose, and check that each downspout runs
+    clear and empties away from the house. Use a sturdy ladder and a helper, or hire it out.
+    More fall home maintenance tips on Walter's page.
+  keywords: [gutter cleaning, fall home maintenance, ice dams, winter home prep, downspouts, fall checklist]
+
+- slug: prevent-frozen-pipes
+  type: seasonal
+  topic: freeze
+  kicker: Cold snap coming?
+  headline: Keep your *pipes* from freezing
+  body: Open cabinet doors on outside walls, let a faucet drip, and keep the heat on if you travel.
+  tag: Winter tip
+  product: true
+  title: How to Keep Pipes From Freezing in a Cold Snap
+  description: >-
+    When a hard freeze is coming: open sink cabinet doors on outside walls so warm air
+    reaches the pipes, let a faucet on an outside wall drip slowly, keep the garage door
+    closed, and don't turn the heat way down if you travel. Know where your main water
+    shutoff is in case a pipe does burst. Walter's free Before the First Freeze checklist
+    covers the rest of winter prep.
+  keywords: [prevent frozen pipes, winter home prep, cold weather tips, burst pipe, winter home maintenance, homeowner tips]
+
+- slug: icicles-ice-dams
+  type: seasonal
+  topic: roof
+  kicker: Winter roof watch
+  headline: Big icicles can mean *ice dams*
+  body: Heavy icicles along the eaves often mean heat is escaping into the attic. Air sealing helps long-term.
+  tag: Winter tip
+  title: Big Icicles on Your Roof? What They Can Tell You About Ice Dams
+  description: >-
+    Big icicles and thick ice along the edge of the roof often mean an ice dam: heat leaks
+    into the attic, melts snow higher up, and the water refreezes at the cold eaves. Water
+    can back up under the shingles. The long-term fixes are usually air sealing and
+    insulation in the attic, and good ventilation. Don't chip at ice from a ladder. More
+    winter home tips on Walter's Home Check.
+  keywords: [ice dams, icicles on roof, attic insulation, winter roof, winter home maintenance, roof leak]
+
+- slug: test-heat-early
+  type: seasonal
+  topic: hvac
+  kicker: Before you need the heat
+  headline: Turn on your *heat* before it's cold
+  body: Run it on a mild day. A dusty smell at first is normal. Odd noises or no heat? Call now, not in a cold snap.
+  tag: Fall tip
+  title: Test Your Furnace Before the First Cold Day
+  description: >-
+    Don't wait for the first freezing night to find out your heat doesn't work. On a mild
+    fall day, change the filter and run the heat for a while. A slight dusty smell the first
+    time is common. Banging, squealing, a burning smell that doesn't fade, or no warm air
+    means it's time for an HVAC service call, before everyone else calls too. More fall
+    home prep on Walter's page.
+  keywords: [furnace maintenance, fall home maintenance, heating system, winter home prep, HVAC tips, fall checklist]
+
+- slug: chimney-check
+  type: seasonal
+  topic: fire
+  kicker: Fireplace season
+  headline: Have the *chimney* looked at
+  body: Creosote builds up inside. Get it inspected before the first fire, and make sure the damper works.
+  tag: Fall tip
+  title: Get Your Chimney Checked Before the First Fire of the Season
+  description: >-
+    Before you light the first fire of the season, have the chimney inspected and cleaned
+    if needed; creosote builds up inside with use. Check that the damper opens and closes,
+    the chimney cap is in place, and nothing is nesting up there. Keep a screen in front of
+    the fire and the smoke and CO alarms working. More fall home safety checks on Walter's
+    Home Check.
+  keywords: [chimney inspection, fireplace safety, creosote, fall home maintenance, winter home prep, home safety]
+
+- slug: spring-walk-around
+  type: seasonal
+  topic: exterior
+  kicker: When the snow melts
+  headline: Walk around your house *after winter*
+  body: Look for loose shingles, cracked caulk, peeling paint and anything winter pushed out of place.
+  tag: Spring tip
+  board: Seasonal Home Maintenance
+  title: Spring Home Maintenance — the After-Winter Walk-Around
+  description: >-
+    Once the snow is gone, take a slow walk around the outside of your house. Look up at the
+    roof and gutters for loose or missing shingles and sagging sections. Check caulk around
+    windows and doors, peeling paint, cracked steps and walkways, and the soil along the
+    foundation. Make a list and fix the small things before spring rains. More seasonal
+    checklists on Walter's page.
+  keywords: [spring home maintenance, spring checklist, exterior home check, after winter, home maintenance tips, roof inspection]
+
+- slug: ac-unit-spring
+  type: seasonal
+  topic: hvac
+  kicker: Before the first hot day
+  headline: Clear around your *AC unit*
+  body: Give the outdoor unit room to breathe. Trim plants back, clear leaves, then test it before it's hot.
+  tag: Spring tip
+  board: Seasonal Home Maintenance
+  title: Spring AC Prep — Give Your Outdoor Unit Room to Breathe
+  description: >-
+    Before the first hot day, look at your outdoor AC unit. Clear leaves and debris, trim
+    plants back a couple of feet, and check that it sits level. Change the indoor filter,
+    then run the AC for a while on a warm day to make sure it cools. Odd noises or warm air?
+    Schedule service before the summer rush. More seasonal home maintenance on Walter's Home
+    Check.
+  keywords: [AC maintenance, spring home maintenance, air conditioner, HVAC tips, spring checklist, home maintenance tips]
+
+# ---------------------------------------------------------------- list pins (5)
+
+- slug: 7-checks-before-winter
+  type: list
+  topic: freeze
+  kicker: Save this list
+  headline: 7 things to check *before winter*
+  items:
+    - Disconnect the garden hoses
+    - Clean gutters & downspouts
+    - Change the furnace filter
+    - Test smoke & CO alarms
+    - Seal drafts at doors & windows
+    - Find the main water shutoff
+    - Check the attic for damp spots
+  tag: Winter tip
+  board: Winter Home Prep
+  product: true
+  title: 7 Things to Check Before Winter (Easy Winter Home Prep Checklist)
+  description: >-
+    A simple winter home prep checklist: disconnect garden hoses, clean the gutters and
+    downspouts, change the furnace filter, test smoke and carbon monoxide alarms, seal
+    drafts around doors and windows, find your main water shutoff, and check the attic for
+    damp spots. Most take a few minutes. Save it for the weekend before the first freeze, or
+    grab Walter's free Before the First Freeze checklist.
+  keywords: [winter home checklist, winter home prep, fall home maintenance, winterize house, home maintenance checklist, before the first freeze]
+
+- slug: 5-signs-roof-near-end
+  type: list
+  topic: roof
+  kicker: Save this list
+  headline: 5 signs your *roof* is near the end
+  items:
+    - Curling or cupped shingles
+    - Bald spots, granules in gutters
+    - Missing or cracked shingles
+    - Stains or daylight in the attic
+    - A sagging ridge or roof line
+  tag: Roof check
+  title: 5 Signs Your Roof Is Near the End of Its Life
+  description: >-
+    How to tell if your roof is getting old, from the ground and the attic: curling or
+    cupped shingles, bald spots and lots of granules in the gutters, missing or cracked
+    shingles, water stains or daylight in the attic, and a sagging ridge. One sign alone may
+    just need a repair; several together mean it's time to get a roofer's opinion and plan
+    ahead. More home checks on Walter's page.
+  keywords: [roof replacement signs, old roof, roof inspection, home maintenance checklist, roofing tips, homeowner tips]
+
+- slug: 6-things-at-a-showing
+  type: list
+  topic: showing
+  kicker: House hunting? Save this
+  headline: 6 things to check | *at a showing*
+  items:
+    - Look up for ceiling stains
+    - Open every sink cabinet
+    - Smell the basement
+    - Run taps and flush toilets
+    - Find the panel & water heater
+    - Walk the grading outside
+  tag: Buyer red flag
+  board: Buying a House Tips
+  product: true
+  title: 6 Things to Check at a House Showing (First-Time Buyer Checklist)
+  description: >-
+    A quick house showing checklist for buyers: look up for ceiling stains, open every sink
+    cabinet, take a deep breath in the basement, run the taps and flush the toilets, find
+    the electrical panel and water heater and check their age, and walk around outside to
+    see which way the ground slopes. Your home inspector goes deeper. Walter's House Buyer's
+    Red Flag Checklist has 50 more.
+  keywords: [house showing checklist, first time home buyer, buying a house tips, house hunting checklist, home inspection, open house tips]
+
+- slug: 5-checks-under-5-minutes
+  type: list
+  topic: quick
+  kicker: Save this list
+  headline: 5 checks that take | *under 5 minutes*
+  items:
+    - Press TEST on GFCI outlets
+    - Hold the furnace filter to light
+    - Food coloring in the toilet tank
+    - Peek under every sink
+    - Test the garage door reverse
+  tag: 5-minute check
+  product: true
+  title: 5 Home Checks That Take Under 5 Minutes Each
+  description: >-
+    Quick home maintenance checks anyone can do today: press TEST on your GFCI outlets, hold
+    the furnace filter up to the light, put food coloring in the toilet tank to find a
+    silent leak, look under every sink for drips, and test the garage door's auto-reverse.
+    Small checks that catch problems early. Want 25 of them in one go? Get Walter's free
+    Weekend Home Check — 25 things in 30 minutes.
+  keywords: [home maintenance checklist, quick home checks, homeowner tips, new homeowner checklist, home safety, weekend home check]
+
+- slug: 6-things-older-home
+  type: list
+  topic: older
+  kicker: Older home? Save this
+  headline: 6 things to ask about in an *older home*
+  items:
+    - Lead paint (before 1978)
+    - Asbestos in old materials
+    - Knob-and-tube wiring
+    - Aluminum wiring (mid-60s to 70s)
+    - Galvanized or PB pipes
+    - The sewer line to the street
+  tag: Older homes
+  board: Older Home Problems
+  link: house-age
+  title: 6 Things to Ask About When Buying an Older Home
+  description: >-
+    Buying or living in an older house? Things worth asking about, depending on when it was
+    built: lead paint (before 1978), asbestos in materials like old tiles and pipe wrap,
+    knob-and-tube wiring, aluminum wiring (roughly mid-60s to mid-70s), galvanized or
+    polybutylene pipes, and the condition of the sewer line. Pick your build year in
+    Walter's free house-age tool for a tailored checklist.
+  keywords: [buying an old house, older home problems, old house checklist, home inspection, house built in, first time home buyer]

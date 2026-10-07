@@ -26,8 +26,11 @@ walter/assets/          Walter's photo, favicon, phone home-screen icon
 walter/house-age/       free tool "What to Check in a House Built in…" (page + og.jpg)
 sal/...                 the same for Sal
 sal/restaurant-or-home/ free tool "Restaurant or Home?" calculator (page + og.jpg)
-source-assets/          original photos (not used by the pages directly)
+pins/                   Pinterest pins, bulk CSVs, contact sheets and a review gallery
+source-assets/          original photos (not used by the pages directly) + cut-outs for the pins
 tools/make_og.py        rebuilds the share pictures and the page photos
+tools/make_pins.py      builds all Pinterest pins (content in tools/pins_walter.yaml, pins_sal.yaml)
+tools/check_pins.py     checks the pins and CSVs
 tests/check.js          automatic checks + screenshots (docs/screens/)
 tests/tools.js          the checks for the two free tools (run by check.js)
 ```
@@ -127,6 +130,63 @@ in `tests/tools.js` (the `SAL` list near the top), update them there too.
 **Share pictures:** `python3 tools/make_og.py` also rebuilds each tool's `og.jpg`.
 
 ![Walter's tool on a phone](docs/screens/house-age-mobile.png) ![Sal's tool on a phone](docs/screens/restaurant-or-home-mobile.png)
+
+## Pinterest pins
+
+120 ready-made pins (60 for Walter, 60 for Sal), 1000×1500, hosted on this site so
+Pinterest can fetch them. Every pin links back to a page here with
+`?utm_source=pinterest&utm_medium=pin&utm_campaign=<pin name>`: Walter's "older homes"
+pins go to the house-age tool, Sal's money pins to the Restaurant or Home? calculator,
+the rest to the main pages.
+
+| What | Where |
+|---|---|
+| Review gallery (all pins with title, board, date, link) | https://plazzers.github.io/links/pins/ |
+| Contact sheets | `pins/contact-walter.jpg`, `pins/contact-sal.jpg` |
+| Bulk upload files | `pins/pinterest-bulk-walter.csv`, `pins/pinterest-bulk-sal.csv` |
+
+The gallery is not linked from anywhere and tells search engines not to index it.
+
+**Upload a CSV to Pinterest** (one per Pinterest account):
+
+1. You need a Pinterest **business** account (free; you can convert a personal one in
+   Settings).
+2. Create the boards first, with exactly these names (the CSV puts each pin on one):
+   - Walter: *Home Maintenance Checklists*, *Buying a House Tips*, *Older Home Problems*,
+     *Winter Home Prep*, *Seasonal Home Maintenance*
+   - Sal: *Copycat Restaurant Recipes*, *Easy Italian Dinners*, *Restaurant Secrets*,
+     *Budget Family Dinners*
+3. Click **Create** → **Create Pins in bulk** → **Upload .csv file**, and pick the file.
+4. Pinterest fetches the images and schedules each pin for its *Publish date*: 3 a day at
+   13:00, 17:00 and 21:00 UTC, from 10 October 2026, alternating topics. To post everything
+   at once instead, clear that column (open the CSV in a spreadsheet, keep it UTF-8 CSV).
+   Pinterest only accepts dates in the future, so if you upload after 10 October, rebuild
+   with a later start date (`START` near the top of `tools/make_pins.py`).
+
+**Add or change pins:** all text lives in `tools/pins_walter.yaml` and
+`tools/pins_sal.yaml` — open one, copy a block of the same kind, change it and add it
+at the end of the list (the comment at the top of each file explains every field; wrap
+the words to highlight in `*stars*`, `|` forces a line break). Then:
+
+```sh
+pip install pillow pyyaml      # once
+python3 tools/make_pins.py     # rebuilds pins, CSVs, contact sheets and gallery (~40 s)
+python3 tools/check_pins.py    # checks sizes, CSV format, links, dates and wording rules
+```
+
+Look at the contact sheets, then commit everything in `pins/`. The generator shrinks a
+headline that's too long; if one still doesn't fit it stops and names the pin, so shorten
+that text. Sal's money numbers come straight from the calculator's price list, so they
+always match it. Fonts (Oswald, Source Sans 3, Inter, Playfair Display, all under the
+Open Font License) are in `tools/fonts/`. The cut-out photos
+`source-assets/*-cutout.png` were made once with a background-removal model
+(`rembg`, model `birefnet-portrait`); if you replace a host photo, make a new cut-out the
+same way.
+
+Content rules the check enforces: no real restaurant names, no prices on Walter's pins,
+no health claims, at most 10 Walter pins that mention a product. Recipe times and
+ingredient counts on Sal's pins are estimates — fix them in `pins_sal.yaml` if the
+cookbook says otherwise.
 
 ## Turn on GitHub Pages (one time)
 
