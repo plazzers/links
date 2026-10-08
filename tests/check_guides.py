@@ -25,7 +25,7 @@ from guide_rules import BANNED, CHAINS, CONTENT, ROOT, all_articles, lint, split
 SITE = "https://plazzers.github.io/links/"
 PAYHIP = {
     "walter": {"hiIm1", "OZeda", "HAfRF", "ABaxT"},
-    "sal": {"dnY7F", "xM6XQ", "MQDaN", "Lv425"},
+    "sal": {"dnY7F", "xM6XQ", "MQDaN", "Lv425", "B9g7J"},
 }
 WALTER_PRODUCT = {"app": "OZeda", "redflag": "HAfRF", "manual": "ABaxT"}
 DISCLAIMER = {

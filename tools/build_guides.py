@@ -93,6 +93,8 @@ CH = {
             "cookbook": ("MQDaN", "Sal's Restaurant Copycat Cookbook",
                          "33 restaurant dishes at home for a fraction of the price — with exact amounts."),
             "italian": ("Lv425", "Sal's Italian Kitchen", "60 real Italian recipes, from antipasti to dolci."),
+            "bundle": ("B9g7J", "Sal's Complete Kitchen (best value)",
+                       "Both cookbooks + the app: 93 recipes for $44.99. Save over 40%."),
         },
         "related_tool": ["eating-out-vs-cooking-at-home", "how-to-eat-out-cheaper",
                          "restaurant-drink-markup", "sunday-marinara-sauce"],
@@ -348,7 +350,7 @@ def render_body(a):
     if ch == "walter":
         keys, kicker = [a.fm["product"]], "Go further"
     elif a.category == "copycat":
-        keys = ["cookbook", "app"] + (["italian"] if a.fm.get("italian") else [])
+        keys = ["bundle", "cookbook", "app"] + (["italian"] if a.fm.get("italian") else [])
         kicker = "Get the full recipe"
     else:
         keys, kicker = ["cookbook", "app"], "Cook it at home instead"

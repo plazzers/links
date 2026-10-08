@@ -56,6 +56,7 @@ const PAGES = {
       'https://payhip.com/b/dnY7F',
       'restaurant-or-home/',
       'guides/',
+      'https://payhip.com/b/B9g7J',
       'https://payhip.com/b/xM6XQ',
       'https://payhip.com/b/MQDaN',
       'https://payhip.com/b/Lv425',
