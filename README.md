@@ -8,8 +8,8 @@ Two small "link in bio" pages, hosted free on GitHub Pages:
 | Chef Sal Romano | https://plazzers.github.io/links/sal/ |
 | Free tool: What to Check in a House Built in… | https://plazzers.github.io/links/walter/house-age/ |
 | Free tool: Restaurant or Home? | https://plazzers.github.io/links/sal/restaurant-or-home/ |
-| Walter's guides (30 articles) | https://plazzers.github.io/links/walter/guides/ |
-| Sal's guides (30 articles) | https://plazzers.github.io/links/sal/guides/ |
+| Walter's guides | https://plazzers.github.io/links/walter/guides/ |
+| Sal's guides | https://plazzers.github.io/links/sal/guides/ |
 | About pages | https://plazzers.github.io/links/walter/about/ · https://plazzers.github.io/links/sal/about/ |
 | Small index (two buttons) | https://plazzers.github.io/links/ |
 
@@ -235,6 +235,14 @@ The gallery is not linked from anywhere and tells search engines not to index it
    at once instead, clear that column (open the CSV in a spreadsheet, keep it UTF-8 CSV).
    Pinterest only accepts dates in the future, so if you upload after 10 October, rebuild
    with a later start date (`START` near the top of `tools/make_pins.py`).
+
+**Weekly pins:** new pins get a `week: YYYY-MM-DD` line in the YAML. They are not added
+to the big bulk CSVs (so the original schedule never moves); instead each week gets its own
+upload file, `pins/weekly/<week>-walter.csv` and `pins/weekly/<week>-sal.csv`, plus a contact
+sheet `pins/weekly/<week>-<channel>.jpg`. A weekly batch is 21 pins per channel, scheduled
+3 a day (13:00/17:00/21:00 UTC) from the day after the last publish date already used for
+that channel. A pin can link to a guide article with `link: walter/guides/<slug>` (or
+`sal/guides/<slug>`). Upload each weekly CSV the same way as the bulk CSV.
 
 **Add or change pins:** all text lives in `tools/pins_walter.yaml` and
 `tools/pins_sal.yaml` — open one, copy a block of the same kind, change it and add it

@@ -1169,3 +1169,377 @@ pins:
     secrets from Chef Sal Romano. Try your own order in his free Restaurant or Home?
     calculator.
   keywords: [restaurant bill, save money eating out, budget family dinners, cooking at home vs eating out, frugal living tips, money saving tips]
+
+# ================================================================ weekly batch 2026-10-08
+# Pins with "week:" go to pins/weekly/<week>-sal.csv instead of the big bulk CSV.
+# link: sal/guides/<slug> sends a pin to a guide article.
+
+- slug: save-the-pasta-water
+  week: 2026-10-08
+  type: trick
+  topic: pasta
+  kicker: Italian kitchen trick
+  headline: Never Pour Out | All the *Pasta Water*
+  body: Scoop out a mug before you drain. A splash of that starchy water makes any sauce silky and helps it cling.
+  quote: That cloudy water is free sauce. Every Italian grandmother knows it. Now you do too.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Save a Cup of Pasta Water — The Easiest Italian Kitchen Trick
+  description: >-
+    Before you drain the pasta, scoop out a mug of the cooking water. It's cloudy with starch,
+    and a splash of it loosens a thick sauce, makes butter and cheese sauces silky, and helps
+    the sauce cling to every noodle instead of sliding off. It's how restaurant pasta looks so
+    glossy. Easy Italian dinner tips from Chef Sal Romano. More on Sal's page.
+  keywords: [pasta water, how to cook pasta, easy italian dinners, pasta sauce tips, cooking tips, italian cooking]
+
+- slug: finish-pasta-in-the-pan
+  week: 2026-10-08
+  type: trick
+  topic: sauce
+  kicker: Restaurant pasta secret
+  headline: Finish the Pasta | *in the Sauce*
+  body: Pull the pasta a minute early, then toss it in the pan with the sauce. It soaks up flavor instead of sitting under it.
+  quote: Sauce on top of naked pasta is a cafeteria. Pasta cooked in the sauce is a restaurant.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Why Restaurant Pasta Tastes Better — Finish It in the Sauce
+  description: >-
+    The restaurant trick for better pasta at home: take the pasta out about a minute before
+    it's done, then toss it in the pan with the sauce and a splash of pasta water for the last
+    minute. The pasta finishes cooking in the sauce and soaks up the flavor, so every bite is
+    coated. Works with marinara, Alfredo and garlic butter. More easy Italian dinners on Sal's
+    page.
+  keywords: [how to make restaurant pasta, pasta tips, easy italian dinners, pasta sauce, weeknight dinner ideas, italian cooking tips]
+
+- slug: no-oil-in-pasta-water
+  week: 2026-10-08
+  type: trick
+  topic: pasta
+  kicker: Italian kitchen myth
+  headline: Skip the *Oil* in the Pasta Water
+  body: Oil floats on top and does very little for sticking. Plenty of water and a good stir in the first minute do the job.
+  quote: Oil in the water just makes the sauce slide off later. Stir instead. Save the oil for the bread.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Should You Put Oil in Pasta Water? What Cooks Do Instead
+  description: >-
+    Adding oil to pasta water is a common habit, but most of it just floats on top. To keep
+    pasta from sticking, use a big pot with plenty of water, keep it at a rolling boil and stir
+    well in the first minute or two. Skipping the oil also helps the sauce cling to the pasta
+    later. Easy Italian kitchen tips from Chef Sal Romano. More on Sal's page.
+  keywords: [oil in pasta water, how to cook pasta, pasta sticking, easy italian dinners, cooking myths, italian cooking tips]
+
+- slug: garlic-low-heat
+  week: 2026-10-08
+  type: trick
+  topic: garlic
+  kicker: Italian kitchen trick
+  headline: Burnt *Garlic* | Ruins the Pan
+  body: Garlic goes in over gentle heat and only until it smells sweet and turns pale gold. Brown means bitter.
+  quote: Garlic burns in seconds. Stand there, keep it moving, and have the next thing ready to go in.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: How to Cook Garlic Without Burning It (Italian Kitchen Tip)
+  description: >-
+    Burnt garlic tastes bitter and can spoil a whole sauce. Cook it over gentle heat, keep it
+    moving, and stop when it smells sweet and turns pale gold, then add the tomatoes, wine or
+    pasta water right away. If it goes dark brown, start over; it's cheaper than ruining
+    dinner. Easy Italian dinner tips from Chef Sal Romano. More on Sal's page.
+  keywords: [how to cook garlic, burnt garlic, garlic sauce, easy italian dinners, cooking tips for beginners, italian cooking]
+
+- slug: cheese-off-the-heat
+  week: 2026-10-08
+  type: trick
+  topic: cheese
+  kicker: Why your sauce goes grainy
+  headline: Add the Cheese | *Off the Heat*
+  body: Too hot and grated cheese clumps into strings. Take the pan off the burner, then stir it in a little at a time.
+  quote: Grate the cheese yourself and take the pan off the fire. That's the whole secret to smooth Alfredo.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Why Cheese Sauce Gets Clumpy — Add It Off the Heat
+  description: >-
+    If your Alfredo or cheese sauce turns grainy or stringy, the pan was probably too hot when
+    the cheese went in. Take the pan off the burner, add finely grated cheese a handful at a
+    time and stir until smooth, with a splash of pasta water if it gets thick. Freshly grated
+    cheese melts more smoothly than many pre-shredded bags. More easy Italian dinners on Sal's
+    page.
+  keywords: [clumpy cheese sauce, alfredo sauce tips, how to make alfredo, easy italian dinners, pasta sauce tips, cooking tips]
+
+- slug: toasted-breadcrumb-topping
+  week: 2026-10-08
+  type: trick
+  topic: crumbs
+  kicker: Italian kitchen trick
+  headline: Crunchy Toasted *Breadcrumbs* on Top
+  body: Toast breadcrumbs in olive oil with garlic until golden. Scatter over pasta for crunch.
+  quote: Never throw out old bread. Toast it and put it on the pasta.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Toasted Breadcrumb Pasta Topping — Cheap Italian Crunch
+  description: >-
+    A budget Italian kitchen trick: toast breadcrumbs in a little olive oil with garlic and a
+    pinch of salt until golden and crisp, then scatter them over pasta, roasted vegetables or
+    mac and cheese. It adds crunch and flavor for very little money, and it's a good way to use
+    up stale bread. Easy Italian dinner ideas from Chef Sal Romano on Sal's page.
+  keywords: [toasted breadcrumbs, pasta topping, budget italian dinner, easy italian dinners, use stale bread, frugal cooking]
+
+- slug: season-every-step
+  week: 2026-10-08
+  type: trick
+  topic: seasoning
+  kicker: Restaurant secret
+  headline: Season at | *Every Step*
+  body: A pinch of salt in the onions, the sauce, the pasta water. Not one big shake at the end.
+  quote: Taste as you go. If you only taste at the end, it's too late to fix the middle.
+  tag: Restaurant trick
+  title: Why Restaurant Food Tastes Better — They Season at Every Step
+  description: >-
+    One reason restaurant food tastes better than home cooking: cooks season a little at each
+    step instead of all at the end. A pinch of salt with the onions, more in the sauce, the
+    pasta water seasoned too, and a taste before it goes on the plate. Small amounts, more
+    often. Restaurant secrets for home cooks from Chef Sal Romano. More on Sal's page.
+  keywords: [restaurant cooking secrets, how to season food, cooking tips, home cooking tips, restaurant secrets, cook like a chef]
+
+- slug: prep-before-the-heat
+  week: 2026-10-08
+  type: trick
+  topic: prep
+  kicker: Restaurant secret
+  headline: Prep *Everything* First
+  body: Chop, measure and line it all up before the heat goes on. Restaurants never chop while a pan burns.
+  quote: Ten minutes of prep, then dinner practically cooks itself.
+  tag: Restaurant trick
+  title: The Restaurant Prep Trick That Makes Weeknight Dinners Easier
+  description: >-
+    Restaurant cooks prep everything before they turn on the heat: vegetables chopped,
+    sauces measured, spices out, all lined up near the stove. At home it means no burnt garlic
+    while you hunt for the oregano, and dinner moves fast once the pan is hot. Ten minutes of
+    prep makes weeknight cooking calmer. Restaurant secrets from Chef Sal Romano on Sal's page.
+  keywords: [mise en place, meal prep tips, weeknight dinner tips, restaurant secrets, cooking tips, cook like a chef]
+
+- slug: hot-pan-first
+  week: 2026-10-08
+  type: trick
+  topic: searing
+  kicker: Restaurant secret
+  headline: Get the Pan Hot | *Before* the Food
+  body: Food in a cold pan steams and sticks. Heat the pan, add the oil, then the food. Listen for the sizzle.
+  quote: No sizzle, no brown. No brown, no flavor. Wait for the pan. It's worth the minute.
+  tag: Restaurant trick
+  title: The Hot Pan Rule — How Restaurants Get That Brown Crust
+  description: >-
+    How restaurants get a golden crust on chicken, steak and potatoes: the pan is hot before
+    anything goes in. Heat the pan, add the oil, then the food, and don't move it until it
+    releases on its own. Don't crowd the pan either, or the food steams instead of browning.
+    Simple restaurant secrets for better home cooking from Chef Sal Romano on Sal's page.
+  keywords: [how to sear meat, pan searing tips, restaurant secrets, cooking tips, how to brown chicken, cook like a chef]
+
+- slug: let-the-meat-rest
+  week: 2026-10-08
+  type: trick
+  topic: steak
+  kicker: Restaurant secret
+  headline: Let It *Rest* Before You Cut
+  body: Steak, roast chicken, the holiday turkey. A few minutes on the board keeps more juice in the meat.
+  quote: Cut it right away and the juice ends up on the board. Wait a few minutes and it stays in the meat.
+  tag: Restaurant trick
+  title: Why You Should Let Meat Rest Before Cutting (Restaurant Trick)
+  description: >-
+    Restaurant kitchens let steaks, roasts and chicken rest for a few minutes before slicing,
+    loosely covered. If you cut right away, more juice runs out onto the board. Resting keeps
+    more of it in the meat, so it eats juicier. Bigger roasts and the holiday turkey need
+    longer than a steak. Restaurant secrets for home cooks from Chef Sal Romano on Sal's page.
+  keywords: [let meat rest, how to cook steak, juicy turkey tips, restaurant secrets, cooking tips, thanksgiving cooking tips]
+
+- slug: warm-the-plates
+  week: 2026-10-08
+  type: trick
+  topic: serving
+  kicker: Restaurant secret
+  headline: Warm Plates | Keep Dinner *Hot*
+  body: A cold plate steals heat fast. Warm the plates in a low oven for a few minutes before you serve.
+  quote: Restaurants warm the plates. It costs nothing and your pasta stays hot to the last bite.
+  tag: Restaurant trick
+  title: Warm the Plates — The Free Restaurant Trick for Hotter Dinners
+  description: >-
+    A small restaurant trick that costs nothing: warm the plates. A cold plate pulls the heat
+    out of pasta, steak and gravy in minutes. Put oven-safe plates in a low oven for a few
+    minutes, or run them under hot water and dry them, then serve. Great for the holiday table
+    too. Restaurant secrets for home cooks from Chef Sal Romano on Sal's page.
+  keywords: [restaurant secrets, how to serve dinner, holiday dinner tips, thanksgiving tips, cooking tips, dinner party tips]
+
+- slug: holiday-set-menus
+  week: 2026-10-08
+  type: trick
+  topic: menus
+  kicker: Restaurant secret
+  headline: "Set Menus: | *Do the Math*"
+  body: Compare the fixed holiday menu with the regular one. Sometimes it's a deal. Sometimes you pay more for less choice.
+  quote: Add up the courses you'd really order off the normal menu. Then decide. Takes one minute.
+  tag: Restaurant trick
+  title: Holiday Restaurant Set Menus — Are They Really a Deal?
+  description: >-
+    Around the holidays many restaurants switch to a fixed set menu. Sometimes it's good value,
+    sometimes the same dishes cost more and you get less choice. Before you book, compare it
+    with the regular menu: add up what you'd actually order, plus drinks and tip. Restaurant
+    secrets from Chef Sal Romano. Get his free 25 Rules for Eating Out on Sal's page.
+  keywords: [holiday dinner out, restaurant prix fixe, save money eating out, restaurant secrets, thanksgiving dinner out, dining out tips]
+
+- slug: lunch-menu-trick
+  week: 2026-10-08
+  type: trick
+  topic: menus
+  kicker: Eat out for less
+  headline: Same Kitchen, | *Lunch Prices*
+  body: Many restaurants serve similar dishes at lunch, a bit smaller and for less. Celebrate at noon.
+  quote: Same chef, same sauce, smaller plate, smaller bill. Lunch is the best deal on the menu.
+  tag: Restaurant trick
+  title: Want to Try a Nice Restaurant for Less? Go at Lunch
+  description: >-
+    One of the easiest ways to eat out for less: go at lunch. Many restaurants serve similar
+    dishes at lunchtime in smaller portions and for a lower price than at dinner. Same kitchen,
+    same sauces, smaller bill. Great for birthdays and trying a new place. Restaurant secrets
+    from Chef Sal Romano. Get his free 25 Rules for Eating Out on Sal's page.
+  keywords: [save money eating out, restaurant lunch menu, eat out for less, restaurant secrets, frugal living tips, dining out tips]
+
+- slug: make-gravy-ahead
+  week: 2026-10-08
+  type: trick
+  topic: holiday
+  kicker: Holiday kitchen trick
+  headline: Make the *Gravy* the Day Before
+  body: Restaurants make sauces ahead. Make gravy a day early with stock and butter, then reheat and add pan drippings.
+  quote: The day of the big dinner, the stove is full and so are your hands. Get the gravy out of the way.
+  tag: Holiday tip
+  board: Budget Family Dinners
+  title: Make-Ahead Gravy — The Restaurant Trick for a Calmer Holiday Dinner
+  description: >-
+    Restaurant kitchens make their sauces ahead, and you can do the same with holiday gravy.
+    Make it a day early with butter, flour and good stock, cool it and keep it in the fridge.
+    On the day, reheat it gently and whisk in the pan drippings for extra flavor. One less
+    thing on a crowded stove. Holiday cooking tips from Chef Sal Romano on Sal's page.
+  keywords: [make ahead gravy, thanksgiving gravy, holiday cooking tips, thanksgiving prep, budget family dinners, cooking tips]
+
+- slug: dinner-rolls-not-dense
+  week: 2026-10-08
+  type: trick
+  topic: rolls
+  kicker: New guide · Copycat rolls
+  headline: Dense Rolls? | Too Much *Flour*
+  body: Soft dough makes soft rolls. Use a light hand with extra flour and let it rise until doubled.
+  quote: Sticky dough scares people. Don't be scared. The basket at the steakhouse starts sticky too.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-honey-butter-dinner-rolls
+  title: Copycat Honey Butter Dinner Rolls — Why Yours Come Out Dense
+  description: >-
+    Soft, sweet honey butter dinner rolls like the steakhouse basket. The most common mistake
+    is too much flour: the dough should stay soft and a little tacky. Use warm (not hot) milk,
+    let it rise until doubled, shape tight balls and brush with butter right out of the oven.
+    Perfect for the holiday table. Read Sal's full copycat guide.
+  keywords: [honey butter rolls, copycat dinner rolls, soft dinner rolls, thanksgiving rolls, copycat restaurant recipes, homemade bread]
+
+- slug: chili-brown-the-beef
+  week: 2026-10-08
+  type: trick
+  topic: chili
+  kicker: New guide · Copycat chili
+  headline: Diner Chili Starts | with *Brown* Beef
+  body: Not gray. Brown it in batches, then cook the onion, pepper and celery in the same pot. That's the flavor.
+  quote: Make it today, eat it tomorrow. Chili is always better the next day.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-diner-chili
+  title: Copycat Diner Chili — The Browning Trick for Deep Flavor
+  description: >-
+    Copycat diner chili like the fast food classic: thick, beefy, a little sweet and mild.
+    Brown the beef well, cook the onion, green pepper and celery in the same pot, toast the
+    spices, and simmer low with kidney and pinto beans. It's even better the next day. Read
+    Sal's full copycat chili guide.
+  keywords: [copycat chili recipe, diner chili, game day chili, easy chili recipe, copycat restaurant recipes, budget family dinners]
+
+- slug: soup-salad-breadsticks-for-4
+  week: 2026-10-08
+  type: money
+  topic: soup
+  kicker: Restaurant or home?
+  headline: "Soup, Salad & | Breadsticks for 4: | *Out vs Home*"
+  calc: {d: [3, 4, 1], p: 4, t: 18, dr: 3}
+  out_label: Out, for 4 people
+  tag: Save money
+  title: "Soup, Salad and Breadsticks for 4: Restaurant vs Home"
+  description: >-
+    Sausage, potato and kale soup, a house salad and garlic breadsticks for 4: about {out}
+    at the Italian chain with drinks and tip, or about {home} made at home. That's roughly
+    {keep} back in your pocket on a cozy fall night. Budget family dinner ideas from Chef Sal
+    Romano. Try your own order in his free Restaurant or Home? calculator.
+  keywords: [soup and salad dinner, budget family dinners, cooking at home vs eating out, save money on food, fall dinner ideas, copycat recipes]
+
+- slug: scampi-date-night-for-2
+  week: 2026-10-08
+  type: money
+  topic: date
+  kicker: Restaurant or home?
+  headline: "Shrimp Scampi | Date Night: | *Out vs Home*"
+  calc: {d: [6, 4, 7], p: 2, t: 18, dr: 3}
+  out_label: Out, for 2 people
+  tag: Save money
+  title: "Shrimp Scampi Date Night for 2: Restaurant vs Home"
+  description: >-
+    Shrimp scampi, a house salad and tiramisu for two: about {out} out with drinks and tip,
+    or about {home} at home. Light a candle, warm the plates and keep roughly {keep} for the
+    next date. Budget date night ideas from Chef Sal Romano. Try your own order in his free
+    Restaurant or Home? calculator.
+  keywords: [date night at home, shrimp scampi, budget date night, cooking at home vs eating out, easy italian dinners, save money on food]
+
+- slug: chicken-sandwich-night-for-4
+  week: 2026-10-08
+  type: money
+  topic: sandwich
+  kicker: Restaurant or home?
+  headline: "Chicken Sandwich | Night for 4: | *Out vs Home*"
+  calc: {d: [23, 25, 27], p: 4, t: 18, dr: 3}
+  out_label: Out, for 4 people
+  tag: Save money
+  title: "Crispy Chicken Sandwich Night for 4: Out vs Home"
+  description: >-
+    Crispy chicken sandwiches with coleslaw and baked mac and cheese for 4: about {out} at a
+    sit-down restaurant with drinks and tip, or about {home} made at home. That's roughly
+    {keep} saved on one family dinner. Budget family dinner ideas from Chef Sal Romano. Try
+    your own order in his free Restaurant or Home? calculator.
+  keywords: [crispy chicken sandwich, budget family dinners, family dinner ideas, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: lettuce-wraps-takeout-for-4
+  week: 2026-10-08
+  type: money
+  topic: takeout
+  kicker: Takeout or home?
+  headline: "Lettuce Wraps & | Fried Rice for 4: | *Takeout vs Home*"
+  calc: {d: [21, 20], p: 4, t: 0, dr: 0}
+  out_label: Takeout, 4 people
+  tag: Save money
+  title: "Lettuce Wraps and Fried Rice for 4: Takeout vs Home"
+  description: >-
+    Chicken lettuce wraps and takeout-style fried rice for 4: about {out} as takeout, before
+    any delivery fees, or about {home} made at home in about the time the delivery takes.
+    That's roughly {keep} saved, every time. Budget family dinner ideas from Chef Sal Romano.
+    Try your own order in his free Restaurant or Home? calculator.
+  keywords: [takeout at home, chicken lettuce wraps, fried rice, budget family dinners, fakeout takeout, save money on food]
+
+- slug: soup-night-bill-breakdown
+  week: 2026-10-08
+  type: money
+  topic: list
+  kicker: Restaurant or home?
+  headline: "Soup & Biscuits | for 4: *the Bill*"
+  rows: breakdown
+  calc: {d: [10, 8], p: 4, t: 18, dr: 3}
+  tag: Save money
+  title: Soup and Biscuits for 4 — Where the Restaurant Bill Goes
+  description: >-
+    Loaded baked potato soup and cheddar garlic biscuits for 4 people: the food, the drinks and
+    the tip add up to about {out} at a restaurant. The same cozy dinner made at home is about
+    {home}. Budget family dinner ideas from Chef Sal Romano. Try your own order in his free
+    Restaurant or Home? calculator.
+  keywords: [soup night, budget family dinners, cooking at home vs eating out, restaurant bill, fall dinner ideas, save money on food]

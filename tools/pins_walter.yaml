@@ -974,7 +974,7 @@ pins:
     - Find the panel & water heater
     - Walk the grading outside
   tag: Buyer red flag
-  board: Buying a House: Red Flags
+  board: "Buying a House: Red Flags"
   product: true
   title: 6 Things to Check at a House Showing (First-Time Buyer Checklist)
   description: >-
@@ -1030,3 +1030,381 @@ pins:
     polybutylene pipes, and the condition of the sewer line. Pick your build year in
     Walter's free house-age tool for a tailored checklist.
   keywords: [buying an old house, older home problems, old house checklist, home inspection, house built in, first time home buyer]
+
+# ================================================================ weekly batch 2026-10-08
+# Pins with "week:" go to pins/weekly/<week>-walter.csv instead of the big bulk CSV.
+
+- slug: ceiling-fan-winter-direction
+  week: 2026-10-08
+  type: quick
+  topic: hvac
+  kicker: One thing to do today
+  headline: Flip your *ceiling fan* for winter
+  body: On low, turning clockwise, it gently pushes warm air down from the ceiling. Check the switch on the fan body.
+  tag: Winter tip
+  board: Winter Home Prep
+  title: Which Way Should a Ceiling Fan Turn in Winter?
+  description: >-
+    Most ceiling fans have a small direction switch on the motor housing. In winter, many
+    makers suggest running the fan on low, turning clockwise as you look up, so it gently
+    pulls air up and pushes the warm air near the ceiling back down without a cold breeze.
+    Turn the fan off and let it stop before you flip the switch. Check your fan's manual,
+    since some models differ. More easy seasonal checks on Walter's page.
+  keywords: [ceiling fan direction winter, winter home prep, home heating tips, ceiling fan clockwise, home maintenance tips, homeowner tips]
+
+- slug: attic-hatch-seal
+  week: 2026-10-08
+  type: quick
+  topic: drafts
+  kicker: One thing to do today
+  headline: Seal and insulate the *attic hatch*
+  body: Often it's a loose board with nothing on top. Weatherstripping around the edge stops a sneaky winter draft.
+  tag: Winter tip
+  board: Winter Home Prep
+  title: Your Attic Hatch Could Be the Biggest Draft in the House
+  description: >-
+    The attic hatch or pull-down stairs are often just a loose panel with no seal and no
+    insulation on top, so warm air escapes straight into the attic all winter. Add
+    weatherstripping around the edge where the hatch sits, and insulation on the attic side
+    of the panel. It's a small weekend job that makes a hallway noticeably less drafty.
+    More winter home prep on Walter's page.
+  keywords: [attic hatch insulation, attic draft, air sealing, winter home prep, home energy tips, weatherstripping]
+
+- slug: range-hood-filter
+  week: 2026-10-08
+  type: quick
+  topic: kitchen
+  kicker: Before the holiday cooking
+  headline: Clean the *range hood* filter
+  body: A greasy filter can't pull smoke and steam out well. Most metal filters pop out and wash in hot soapy water.
+  tag: 5-minute check
+  title: Clean Your Range Hood Filter Before the Holiday Cooking Starts
+  description: >-
+    Before the big holiday cooking days, look at the filter in your range hood. A greasy
+    filter can't pull smoke, steam and cooking smells out well, and built-up grease near the
+    stove isn't something you want. Most metal mesh filters pop out and wash in hot soapy
+    water; charcoal filters get replaced instead. Check your hood's manual. More quick home
+    checks on Walter's page.
+  keywords: [range hood filter cleaning, kitchen maintenance, holiday cooking prep, home maintenance checklist, kitchen cleaning tips, homeowner tips]
+
+- slug: dishwasher-filter
+  week: 2026-10-08
+  type: quick
+  topic: appliances
+  kicker: One thing to do today
+  headline: Your dishwasher has a *filter*
+  body: Many models have one under the bottom rack. Twist it out, rinse it, put it back. Dishes come out cleaner.
+  tag: 5-minute check
+  title: Clean Your Dishwasher Filter (Most People Don't Know It's There)
+  description: >-
+    Many newer dishwashers have a filter at the bottom of the tub, under the lower rack.
+    When it clogs with food bits, dishes come out gritty and the machine can smell. On most
+    models it twists out by hand: rinse it under the tap, scrub gently with a soft brush and
+    lock it back in place. Check your dishwasher's manual for how often. More five-minute
+    checks on Walter's page.
+  keywords: [dishwasher filter cleaning, dishwasher smell, kitchen maintenance, home maintenance checklist, appliance care, homeowner tips]
+
+- slug: gas-meter-shutoff
+  week: 2026-10-08
+  type: quick
+  topic: gas
+  kicker: Know this before you need it
+  headline: Know where your *gas meter* is
+  body: If you smell gas, get everyone out first, then call the gas company from outside. Let them turn it back on.
+  tag: Safety check
+  title: Where Is Your Gas Meter? What Every Homeowner Should Know
+  description: >-
+    If your home has natural gas, know where the meter is and ask your gas company how they
+    want you to handle the shutoff. If you ever smell gas, don't flip switches or use the
+    phone inside: get everyone out, then call the gas company or 911 from outside. Once the
+    gas has been shut off, let the gas company turn it back on and relight things. A simple
+    safety habit. More home safety checks on Walter's page.
+  keywords: [gas meter shutoff, smell gas what to do, home safety tips, natural gas safety, new homeowner tips, emergency preparedness]
+
+- slug: furnace-vent-snow
+  week: 2026-10-08
+  type: quick
+  topic: hvac
+  kicker: Before the first snow
+  headline: Find your furnace's *outside vent pipes*
+  body: Many newer furnaces vent through a side wall with plastic pipes. Keep snow and leaves away from them.
+  tag: Winter tip
+  board: Winter Home Prep
+  title: Keep Your Furnace Vent Pipes Clear of Snow This Winter
+  description: >-
+    Many high-efficiency furnaces and water heaters vent through a side wall with two plastic
+    pipes instead of a chimney. If drifting snow, leaves or a bush block them, the appliance
+    can shut down, and a blocked exhaust is a carbon monoxide concern. Find yours now, keep
+    the area clear all winter, and make sure your CO alarms work. More winter home prep on
+    Walter's page.
+  keywords: [furnace vent pipe snow, high efficiency furnace, winter home prep, carbon monoxide safety, furnace maintenance, homeowner tips]
+
+- slug: outdoor-steps-railings
+  week: 2026-10-08
+  type: quick
+  topic: outside
+  kicker: Before it gets icy
+  headline: Shake every *outdoor railing*
+  body: Loose railings and wobbly steps are worse on ice. Tighten or fix them while it's still dry outside.
+  tag: Safety check
+  board: Winter Home Prep
+  title: Check Outdoor Steps and Railings Before Ice Season
+  description: >-
+    Walk every outdoor step and grab every railing before winter: front steps, back deck,
+    porch and basement stairs outside. Loose railings, wobbly treads, rotted wood or crumbling
+    concrete edges are much worse once there's ice. Tighten what you can while it's dry, and
+    have anything structural looked at by a pro. Keep a spot for ice melt and a shovel by the
+    door. More winter checks on Walter's page.
+  keywords: [outdoor railing safety, porch steps repair, winter home prep, deck safety check, home safety tips, fall home maintenance]
+
+- slug: faucet-aerator
+  week: 2026-10-08
+  type: quick
+  topic: plumbing
+  kicker: One thing to do today
+  headline: Weak faucet? Clean the *aerator*
+  body: Unscrew the little screen at the tip, rinse out the grit, screw it back. Often the whole fix.
+  tag: 5-minute check
+  title: Low Water Pressure at One Faucet? Clean the Aerator First
+  description: >-
+    If one faucet suddenly has a weak or sputtering stream, check the aerator first: the small
+    screen at the tip of the spout. Unscrew it by hand (or with a cloth-wrapped wrench), rinse
+    out the grit and mineral buildup, and screw it back on. If every faucet in the house is
+    weak, that's a different problem worth asking a plumber about. More easy fixes on
+    Walter's page.
+  keywords: [faucet aerator cleaning, low water pressure faucet, plumbing basics, home maintenance tips, easy home fixes, homeowner tips]
+
+- slug: dehumidifier-at-showing
+  week: 2026-10-08
+  type: buyer
+  topic: water
+  kicker: Buying a house?
+  headline: Dehumidifiers running *at the showing*
+  body: Not a deal-breaker, but ask why. It can mean the basement has a moisture or water problem.
+  tag: Buyer red flag
+  title: Dehumidifiers Running at a House Showing? Ask This Question
+  description: >-
+    A dehumidifier humming in the basement during a showing isn't automatically bad, but it's
+    worth a question. Ask the seller why it's there and whether the basement has ever had
+    water. Look for stains low on the walls, white powdery deposits, rust on metal legs and a
+    musty smell, and point them out to your home inspector. More house-hunting red flags on
+    Walter's page.
+  keywords: [basement moisture, house showing tips, buying a house red flags, wet basement signs, home inspection, first time home buyer]
+
+- slug: white-powder-basement-walls
+  week: 2026-10-08
+  type: buyer
+  topic: water
+  kicker: Buyer red flag
+  headline: White powder on *basement walls*
+  body: That chalky crust is left behind when water moves through concrete or block. Ask where the water comes from.
+  tag: Buyer red flag
+  title: White Powder on Basement Walls (Efflorescence) — What It Means
+  description: >-
+    White, chalky or crusty deposits on basement walls or floors are called efflorescence.
+    They're minerals left behind when water moves through concrete or block and dries on the
+    surface. It doesn't mean the house is bad, but it does mean water has been getting in.
+    Ask about it, check the grading and gutters outside, and have your inspector take a
+    close look. More buyer red flags on Walter's page.
+  keywords: [efflorescence basement, white powder basement walls, wet basement, buying a house red flags, home inspection tips, first time home buyer]
+
+- slug: ask-for-utility-bills
+  week: 2026-10-08
+  type: buyer
+  topic: questions
+  kicker: Ask the seller
+  headline: Ask for a year of *utility bills*
+  body: Big winter or summer spikes can point to an old system, poor insulation or drafty windows.
+  tag: Buyer tip
+  title: Ask the Seller for 12 Months of Utility Bills Before You Buy
+  description: >-
+    A smart question before you buy a house: can I see the last 12 months of utility bills?
+    Very high heating or cooling months can point to an aging furnace or AC, thin insulation,
+    drafty windows or a leaky attic. Compare them with how many people live there and how
+    they use the house, and bring any questions to your home inspector. More seller questions
+    on Walter's page.
+  keywords: [questions to ask when buying a house, utility bills, home buying tips, first time home buyer, energy efficient home, house hunting]
+
+- slug: house-hunting-in-winter
+  week: 2026-10-08
+  type: buyer
+  topic: season
+  kicker: House hunting this winter?
+  headline: Snow can hide *roof and yard problems*
+  body: Ask for summer photos, and ask the inspector what they couldn't see under the snow.
+  tag: Buyer tip
+  title: Buying a House in Winter? What Snow Can Hide
+  description: >-
+    Buying a house in winter has upsides, and one catch: snow can hide the roof, the grading,
+    the driveway and the yard. Ask the seller for photos from warmer months, ask about roof
+    age and drainage, and read your inspection report for anything the inspector noted they
+    couldn't see. Winter is also a good time to feel how warm each room stays. More buyer
+    tips on Walter's page.
+  keywords: [buying a house in winter, home inspection winter, house hunting tips, first time home buyer, roof inspection, buying a house red flags]
+
+- slug: cast-iron-drain-pipes
+  week: 2026-10-08
+  type: older
+  topic: plumbing
+  kicker: Older home?
+  headline: Look at the *cast iron* drain pipes
+  body: Common in older homes. Look for rust, flaking, cracks or wet spots, and ask about a sewer scope.
+  tag: Older homes
+  title: Cast Iron Drain Pipes in an Older Home — What to Look For
+  description: >-
+    Many older homes have heavy black cast iron drain pipes. They can last a long time, but
+    with age they can rust from the inside, crack or leak at joints. Where you can see them in
+    the basement, look for rust flakes, cracks, damp spots and stains. If you're buying, a
+    sewer camera inspection shows the line out to the street. Pick your build year in
+    Walter's free house-age tool.
+  keywords: [cast iron drain pipes, older home plumbing, old house problems, sewer scope inspection, buying an old house, home inspection]
+
+- slug: three-prong-no-ground
+  week: 2026-10-08
+  type: older
+  topic: electrical
+  kicker: Older home?
+  headline: Three prongs doesn't always mean *grounded*
+  body: In older homes, outlets were sometimes swapped without adding a ground. A plug-in tester shows it.
+  tag: Older homes
+  title: Three-Prong Outlets in an Older Home May Not Be Grounded
+  description: >-
+    In older homes, two-prong outlets were sometimes replaced with three-prong ones without
+    adding a ground wire. They look modern but aren't grounded. A simple plug-in outlet tester
+    from a hardware store shows "open ground" on outlets like this. If you find them, have a
+    licensed electrician look at the options. Check what's common for your build year in
+    Walter's free house-age tool.
+  keywords: [ungrounded outlets, three prong outlet no ground, older home electrical, outlet tester, old house problems, home inspection]
+
+- slug: old-oil-tank
+  week: 2026-10-08
+  type: older
+  topic: heating
+  kicker: Older home?
+  headline: Ask about an *old oil tank*
+  body: A pipe sticking out of the yard or a basement wall can be a sign of a tank that's still there.
+  tag: Older homes
+  title: Buying an Older Home? Ask About an Old Heating Oil Tank
+  description: >-
+    Many older homes were once heated with oil, and some still have the tank, sometimes buried
+    in the yard. Clues: a small fill pipe or vent pipe sticking out of the ground or a basement
+    wall, or old copper lines in the basement. Ask the seller if there is or was a tank and
+    whether it was removed, with paperwork. Your agent can tell you what's normal locally.
+    Pick your build year in Walter's free house-age tool.
+  keywords: [old oil tank, buried oil tank, buying an old house, older home problems, home inspection, house built before 1970]
+
+- slug: fuse-box-older-home
+  week: 2026-10-08
+  type: older
+  topic: electrical
+  kicker: Older home?
+  headline: Still on a *fuse box*?
+  body: Not automatically unsafe, but it may be old and small for today's use. Have an electrician look it over.
+  tag: Older homes
+  title: Does Your Older Home Still Have a Fuse Box? What to Know
+  description: >-
+    Some older homes still have screw-in fuses instead of breakers. A fuse box isn't
+    automatically unsafe, but it may be decades old and sized for far fewer appliances than a
+    house uses today. Never replace a fuse with a bigger one than the circuit is rated for.
+    If you're buying or own a home with fuses, have a licensed electrician check it. Pick your
+    build year in Walter's free house-age tool.
+  keywords: [fuse box older home, old electrical panel, older home electrical, buying an old house, home inspection, house built before 1960]
+
+- slug: space-heater-three-feet
+  week: 2026-10-08
+  type: seasonal
+  topic: heating
+  kicker: New guide · Winter safety
+  headline: Space heaters need *3 feet* of clear space
+  body: Plug straight into the wall, never a power strip. Off when you leave the room or go to bed.
+  tag: Read the guide
+  link: walter/guides/space-heater-safety
+  title: Space Heater Safety Checklist — The 3-Foot Rule and More
+  description: >-
+    Before you plug in a space heater this winter: keep anything that can burn at least three
+    feet away, plug it straight into a wall outlet (not an extension cord or power strip),
+    pick a model with tip-over and overheat shut-off, and turn it off when you leave the room
+    or go to bed. Fuel-burning heaters need CO alarms too. Read Walter's full space heater
+    safety guide.
+  keywords: [space heater safety, space heater tips, winter home safety, fire prevention, winter home prep, home safety checklist]
+
+- slug: find-drafts-paper-test
+  week: 2026-10-08
+  type: seasonal
+  topic: drafts
+  kicker: New guide · Winter prep
+  headline: Find drafts with a *sheet of paper*
+  body: Close a door or window on it. If it slides out easily, the seal isn't touching there.
+  tag: Read the guide
+  link: walter/guides/how-to-find-drafts-in-your-house
+  title: How to Find Drafts in Your House (The Paper Test and More)
+  description: >-
+    Cold spots in the house? Find the drafts with simple tests on a windy day: close a door or
+    window on a sheet of paper and see if it slides out, feel around outlets and trim with a
+    damp hand, and look for light around closed doors. Start with doors, the attic hatch and
+    outlets on outside walls. Read Walter's full guide on finding and fixing drafts.
+  keywords: [how to find drafts in your house, air leaks, weatherstripping, winter home prep, home energy tips, drafty house]
+
+- slug: generator-outside-only
+  week: 2026-10-08
+  type: seasonal
+  topic: outage
+  kicker: Winter power outage?
+  headline: Generators stay *outside*. Always.
+  body: Never in the house, garage or basement, even with the door open. Keep it away from windows.
+  tag: Safety check
+  title: Winter Power Outage? Never Run a Generator Inside the House or Garage
+  description: >-
+    If the power goes out this winter, a portable generator must stay outside, never in the
+    house, garage, basement or crawlspace, even with doors or windows open. Keep it far from
+    windows, doors and vents, and follow the maker's instructions for distance. Have working
+    battery-powered or battery-backup CO alarms. Get Walter's free Before the First Freeze
+    checklist on his page.
+  keywords: [generator safety, winter power outage, carbon monoxide safety, winter storm prep, home safety tips, emergency preparedness]
+  product: true
+
+- slug: 6-checks-before-holiday-guests
+  week: 2026-10-08
+  type: list
+  topic: holiday
+  kicker: Guests coming? Save this
+  headline: 6 checks before | *holiday guests*
+  items:
+    - Test smoke and CO alarms
+    - Clean the range hood filter
+    - Snake slow drains early
+    - Light the steps and walkway
+    - Check the guest room heat
+    - Clear paths to every exit
+  tag: Save this list
+  title: 6 Home Checks Before Holiday Guests Arrive
+  description: >-
+    Holiday guests on the way? A short home checklist for the week before: test the smoke and
+    CO alarms, clean the range hood filter before the big cooking day, deal with slow drains
+    before the house fills up, make sure steps and walkways are lit, check that the guest room
+    actually gets warm, and keep a clear path to every exit. Get Walter's free Weekend Home
+    Check on his page.
+  keywords: [holiday hosting checklist, home maintenance checklist, holiday guests prep, home safety, thanksgiving prep, homeowner tips]
+  product: true
+
+- slug: 5-questions-for-your-inspector
+  week: 2026-10-08
+  type: list
+  topic: inspection
+  kicker: Buying a house? Save this
+  headline: 5 questions for | your *home inspector*
+  items:
+    - What worries you most here?
+    - What couldn't you see today?
+    - Which item needs a specialist?
+    - What would you fix first?
+    - What's near the end of its life?
+  tag: Buyer tip
+  board: "Buying a House: Red Flags"
+  title: 5 Questions to Ask Your Home Inspector Before You Buy
+  description: >-
+    Go to the home inspection if you can, and ask: what worries you most about this house?
+    What couldn't you see or test today? Which items need a specialist, like a roofer,
+    electrician or sewer scope? What would you fix first? What is close to the end of its
+    life? The answers help you plan and negotiate. More buyer checklists on Walter's page.
+  keywords: [home inspection questions, buying a house tips, first time home buyer, home inspector, house hunting checklist, buying a house red flags]

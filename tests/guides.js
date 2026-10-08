@@ -84,7 +84,7 @@ async function run(browser, base, fail) {
       await page.goto(`${base}${ch}/guides/`, { waitUntil: 'networkidle' });
       await audit('index');
       const total = await page.locator('#list .gcard').count();
-      if (total !== 30) fail(where, `index lists ${total} guides`);
+      if (total !== fs.readdirSync(path.join(ROOT, 'content', ch)).filter(f => f.endsWith('.md')).length) fail(where, `index lists ${total} guides`);
       if ((await page.locator('.start .gcard').count()) !== 3) fail(where, 'Start here should have 3 picks');
       await shot(page, `${ch}-index-${size}`);
       const { q, hit, cat } = SEARCH[ch];

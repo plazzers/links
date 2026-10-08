@@ -8,6 +8,12 @@ writes, for each channel:
   pins/contact-<channel>.jpg         contact sheet of every pin
 plus pins/index.html, a noindex gallery for reviewing everything.
 
+Weekly batches: pins with  week: YYYY-MM-DD  in the YAML are kept out of the
+big bulk CSV and go to pins/weekly/<week>-<channel>.csv (+ a contact sheet
+pins/weekly/<week>-<channel>.jpg). Each weekly batch is scheduled 3 a day
+from the day after the last publish date of the batches before it, so old
+schedules never move.
+
 Run from the repo root:   python3 tools/make_pins.py
 Only one channel:         python3 tools/make_pins.py walter
 Then check the output:    python3 tools/check_pins.py
@@ -635,7 +641,7 @@ def spread_pick(group, last_topic):
     return None
 
 
-def schedule(pins):
+def schedule(pins, start=START):
     """Order the pins so similar topics aren't back to back: always take the
     next pin from the group with the most pins left, skipping the group (and
     topic) just used when possible. Then 3 slots a day."""
@@ -659,16 +665,20 @@ def schedule(pins):
         order.append(pick)
         last_type, last_topic = pick["type"], pick.get("topic")
     for i, p in enumerate(order):
-        p["publish"] = (START + timedelta(days=i // 3, hours=SLOTS[i % 3])).strftime("%Y-%m-%dT%H:%M:%S")
+        p["publish"] = (start + timedelta(days=i // 3, hours=SLOTS[i % 3])).strftime("%Y-%m-%dT%H:%M:%S")
     return order
 
 
 def link_for(p):
-    return LINKS[p["link"]] + f"?utm_source=pinterest&utm_medium=pin&utm_campaign={p['slug']}"
+    # link: walter | house-age | sal | restaurant-or-home, or a site path such
+    # as walter/guides/<slug> (a guide article)
+    base = LINKS.get(p["link"]) or SITE + p["link"].strip("/") + "/"
+    return base + f"?utm_source=pinterest&utm_medium=pin&utm_campaign={p['slug']}"
 
 
-def write_csv(channel, pins):
-    path = OUT / f"pinterest-bulk-{channel}.csv"
+def write_csv(channel, pins, path=None):
+    path = path or OUT / f"pinterest-bulk-{channel}.csv"
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, quoting=csv.QUOTE_ALL)
         w.writerow(["Title", "Media URL", "Pinterest board", "Thumbnail", "Description", "Link", "Publish date", "Keywords"])
@@ -678,13 +688,13 @@ def write_csv(channel, pins):
     return path
 
 
-def contact_sheet(channel, pins, cols=10, tw=200):
+def contact_sheet(channel, pins, cols=10, tw=200, path=None, label=None):
     th = tw * 3 // 2
     pad, lab = 12, 26
     rows = -(-len(pins) // cols)
     sheet = Image.new("RGB", (cols * (tw + pad) + pad, rows * (th + pad + lab) + pad + 50), (238, 236, 232))
     d = ImageDraw.Draw(sheet)
-    d.text((pad, 34), f"{channel.upper()} — {len(pins)} pins (in file order)", font=font(INTER_B, 26), fill=(30, 30, 30), anchor="ls")
+    d.text((pad, 34), label or f"{channel.upper()} — {len(pins)} pins (in file order)", font=font(INTER_B, 26), fill=(30, 30, 30), anchor="ls")
     for i, p in enumerate(sorted(pins, key=lambda p: p["file"])):
         im = Image.open(OUT / channel / p["file"]).resize((tw, th), Image.LANCZOS)
         x = pad + (i % cols) * (tw + pad)
@@ -694,7 +704,7 @@ def contact_sheet(channel, pins, cols=10, tw=200):
         while lf.getlength(label) > tw:
             label = label[:-2] + "…"
         d.text((x, y + th + 18), label, font=lf, fill=(60, 60, 60), anchor="ls")
-    path = OUT / f"contact-{channel}.jpg"
+    path = path or OUT / f"contact-{channel}.jpg"
     sheet.save(path, quality=85, optimize=True)
     return path
 
@@ -714,6 +724,9 @@ def gallery(all_pins):
   <details><summary>Description</summary><p>{esc(' '.join(p['description'].split()))}</p><p class="kw">{esc(', '.join(p['keywords']))}</p></details>
 </article>""")
         cards[channel] = "\n".join(out)
+    weekly = " · ".join(f'<a href="weekly/{f.name}">{f.stem}</a>'
+                        for f in sorted((OUT / "weekly").glob("*.csv"))) if (OUT / "weekly").is_dir() else ""
+    weekly = f"<br>Weekly CSVs: {weekly}" if weekly else ""
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -744,7 +757,7 @@ def gallery(all_pins):
   <h1>Pin gallery</h1>
   <p>Review page, not linked from the site. {sum(len(v) for v in all_pins.values())} pins in publish order. CSVs:
   <a href="pinterest-bulk-walter.csv">Walter</a> · <a href="pinterest-bulk-sal.csv">Sal</a> ·
-  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a></p>
+  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a>{weekly}</p>
   <nav><a href="#walter">Walter's Home Check</a><a href="#sal">Chef Sal Romano</a></nav>
 </header>
 <main>
@@ -816,6 +829,28 @@ def load(channel):
     return pins
 
 
+def week_of(p):
+    w = p.get("week")
+    return str(w) if w else None
+
+
+def schedule_all(channel, pins):
+    """Schedule the original batch from START, then each weekly batch from the
+    day after the previous batch's last publish date. Returns {week: pins}."""
+    base = [p for p in pins if not week_of(p)]
+    schedule(base)
+    last = max(p["publish"] for p in base)
+    weeks = {}
+    for p in pins:
+        if week_of(p):
+            weeks.setdefault(week_of(p), []).append(p)
+    for wk in sorted(weeks):
+        start = datetime.strptime(last[:10], "%Y-%m-%d") + timedelta(days=1)
+        schedule(weeks[wk], start)
+        last = max(p["publish"] for p in weeks[wk])
+    return base, weeks
+
+
 def build(channel):
     pins = load(channel)
     folder = OUT / channel
@@ -828,9 +863,14 @@ def build(channel):
     for p in pins:
         size = save_jpeg(make(p), folder / p["file"])
         p["_size"] = size
-    schedule(pins)
-    write_csv(channel, pins)
-    contact_sheet(channel, pins)
+    base, weeks = schedule_all(channel, pins)
+    write_csv(channel, base)
+    contact_sheet(channel, base)
+    for wk, wp in weeks.items():
+        write_csv(channel, wp, OUT / "weekly" / f"{wk}-{channel}.csv")
+        contact_sheet(channel, wp, cols=7, path=OUT / "weekly" / f"{wk}-{channel}.jpg",
+                      label=f"{channel.upper()} — week {wk} — {len(wp)} pins")
+        print(f"{channel}: week {wk}: {len(wp)} pins, {wp and min(p['publish'] for p in wp)} .. {max(p['publish'] for p in wp)}")
     print(f"{channel}: {len(pins)} pins, largest {max(p['_size'] for p in pins) // 1024} KB")
     return pins
 
@@ -843,6 +883,6 @@ if __name__ == "__main__":
             built[ch] = build(ch)
         else:
             built[ch] = load(ch)
-            schedule(built[ch])
+            schedule_all(ch, built[ch])
     gallery(built)
     print("pins/index.html written")

@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Wed, 07 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Copycat Diner Chili (Like the Fast Food Classic, Only Better)</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-diner-chili/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-diner-chili/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Copycat diner chili like the fast food classic: what makes it work, Sal&#x27;s browning and simmer tips, ingredients, common mistakes and toppings.</description>
+  </item>
+  <item>
+    <title>Copycat Honey Butter Dinner Rolls (Like the Steakhouse Basket)</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-honey-butter-dinner-rolls/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-honey-butter-dinner-rolls/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Soft honey butter dinner rolls like the steakhouse bread basket: why they work, Sal&#x27;s dough tips, ingredients, common mistakes and make-ahead ideas.</description>
+  </item>
   <item>
     <title>Homemade Buttermilk Ranch That Beats the Bottle</title>
     <link>https://plazzers.github.io/links/sal/guides/buttermilk-ranch-dressing/</link>

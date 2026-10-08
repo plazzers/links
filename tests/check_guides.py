@@ -175,11 +175,11 @@ def main():
             fail("content", p)
     arts = {"walter": sorted(CONTENT.glob("walter/*.md")), "sal": sorted(CONTENT.glob("sal/*.md"))}
     for ch, files in arts.items():
-        if len(files) != 30:
-            fail(ch, f"{len(files)} articles (want 30)")
+        if len(files) < 30:  # 30 launch articles + weekly additions
+            fail(ch, f"{len(files)} articles (want at least 30)")
     sal_cats = [split(f.read_text())[0].get("category") for f in arts["sal"]]
-    if sal_cats.count("secrets") != 12 or sal_cats.count("copycat") != 18:
-        fail("sal", f"want 12 secrets + 18 copycat, got {sal_cats.count('secrets')} + {sal_cats.count('copycat')}")
+    if sal_cats.count("secrets") < 12 or sal_cats.count("copycat") < 18:
+        fail("sal", f"want at least 12 secrets + 18 copycat, got {sal_cats.count('secrets')} + {sal_cats.count('copycat')}")
 
     pages = []
     rec = teasers()
