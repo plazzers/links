@@ -11,7 +11,7 @@ Nothing else in the repo may contain a Payhip link for the kit
 """
 
 # The paid product on Payhip (placeholder until the product exists).
-BUY_URL = "https://payhip.com/PLACEHOLDER"
+BUY_URL = "https://payhip.com/b/KQZna"
 
 # The free lead-magnet product on Payhip (placeholder until it exists).
 FREE_URL = "https://payhip.com/PLACEHOLDER-FREE"
