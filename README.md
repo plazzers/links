@@ -46,10 +46,10 @@ tools/guides/           shared CSS/JS + per-channel colours for the guide pages
 tests/guide_rules.py    article rules (used by the build and the checks)
 tests/check_guides.py   guide checks (content, links, utm, sitemap, JSON-LD)
 tests/guides.js         guide browser checks + screenshots
-creator-kit/            Faceless Creator Kit site (generated): landing, 2 free tools, 12 guides, launch/LAUNCH-PLAN.md
+creator-kit/            Faceless Creator Kit site (generated): landing, 2 free tools, 22 guides, launch/LAUNCH-PLAN.md
 tools/kit_config.py     BUY_URL / FREE_URL / price for the kit site (the only place they live)
 tools/build_kit_site.py builds creator-kit/ from content/kit/*.md + tools/kit/ + source-assets/kit/
-tools/pins_kit.yaml     the 30 kit pins (third pin style "kit")
+tools/pins_kit.yaml     the kit pins (third pin style "kit"): 30 + batch 2 (20)
 tests/kit_rules.py      kit article + honesty rules (used by the build and the checks)
 tests/check_kit_site.py kit site checks (meta, links, store links, wording, JSON-LD, sitemap)
 tests/kit.js            kit browser checks + screenshots (docs/screens/kit-*.png)
@@ -322,6 +322,9 @@ or case studies.
 `tools/check_pins.py`). 30 pins, 2 a day at 14:00 and 20:00 UTC from 12 October 2026
 (`KIT_START` in `make_pins.py`). Create these boards first: *Faceless YouTube Tips*,
 *Pinterest Marketing for Creators*, *YouTube Growth Tools*.
+Batch 2 (`batch: 2` in the YAML, 20 pins for the second set of guides) goes to
+`pins/pinterest-bulk-kit-2.csv` and `pins/contact-kit-2.jpg`, 2 a day at the same hours
+from 27 October 2026 (`KIT_BATCHES` in `make_pins.py` and `check_pins.py`).
 
 **Launch plan:** `creator-kit/launch/LAUNCH-PLAN.md` — posts, Product Hunt listing,
 emails, LAUNCH30 discount, 4-week calendar and the affiliate pitch.

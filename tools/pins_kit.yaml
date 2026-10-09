@@ -425,3 +425,292 @@ pins:
     keywords: [pinterest csv, schedule pinterest pins, pinterest publish date, pinterest bulk upload, free pinterest tools, pinterest scheduling]
     link: pinterest-csv-checker
     board: "YouTube Growth Tools"
+
+# ================================================================ batch 2 (20 pins)
+# batch: 2  -> kept out of pinterest-bulk-kit.csv; written to
+# pins/pinterest-bulk-kit-2.csv, 2 a day at 14:00/20:00 UTC from KIT_BATCHES[2]
+# (2026-10-27). One how-to per new guide + 10 tips.
+
+# ---------------------------------------------------------------- batch 2: how-tos (10)
+
+  - slug: youtube-description-in-5-steps
+    batch: 2
+    type: howto
+    topic: youtube
+    kicker: "Step by step"
+    headline: "Write a YouTube *description* in 5 steps"
+    items: ["Say what it covers", "Main link in line two", "Paste your chapters", "Label every link", "Add any disclosure"]
+    tag: "Free guide"
+    title: "How to Write a YouTube Description in 5 Steps (Copy-Ready Template)"
+    description: "Most viewers only see the first two lines of a description, so say what the video covers in plain words and put your main link there with a reason to click. Then add a short paragraph, your chapters, a labeled list of links and a plain disclosure for any affiliate links or paid promotion. The free guide has a template to copy."
+    keywords: [youtube description, youtube description template, youtube seo, faceless youtube, youtube tips, youtube links]
+    link: guide/youtube-description-template
+    board: "Faceless YouTube Tips"
+
+  - slug: youtube-chapters-not-showing
+    batch: 2
+    type: howto
+    topic: youtube
+    kicker: "Quick fixes"
+    headline: "YouTube chapters *not showing?*"
+    items: ["First time is 0:00", "Three or more times", "No chapter under 10s", "Times in order", "Time first on each line"]
+    tag: "Free guide"
+    title: "YouTube Chapters Not Showing? 5 Timestamp Fixes to Check"
+    description: "When a timestamp list doesn't turn into chapters, the cause is usually small: the first time isn't 0:00, there are fewer than three, one section is under 10 seconds, the times are out of order, or a bullet or emoji sits before the timestamp. Re-copy the times from your final edit. The free guide covers chapter titles too."
+    keywords: [youtube chapters, youtube timestamps, chapters not showing, youtube description, faceless youtube, youtube tips]
+    link: guide/youtube-chapters-timestamps
+    board: "Faceless YouTube Tips"
+
+  - slug: how-many-shorts-per-video
+    batch: 2
+    type: howto
+    topic: youtube
+    kicker: "Shorts planning"
+    headline: "How many *Shorts* from one video?"
+    items: ["Count stand-alone ideas", "Sort strong, maybe, skip", "Make the strong ones", "Rewrite each first line", "Space them out"]
+    tag: "Free guide"
+    title: "How Many Shorts to Cut From One Long Video (A Simple Way to Decide)"
+    description: "There's no magic number of Shorts per video. Count the moments that stand alone, sort them into strong, maybe and skip, and make only the strong ones you can finish properly, each with a rewritten first line and its own title. Then spread them out over the following days. The free guide explains how to pick the moments."
+    keywords: [youtube shorts, shorts from long videos, repurpose youtube videos, faceless youtube, youtube shorts tips, content repurposing]
+    link: guide/how-many-shorts-from-one-video
+    board: "Faceless YouTube Tips"
+
+  - slug: pin-design-reads-on-phone
+    batch: 2
+    type: howto
+    topic: pinterest
+    kicker: "Pin design"
+    headline: "Design a pin that *reads on a phone*"
+    items: ["1000×1500, 2:3 ratio", "Short headline, top half", "One or two fonts", "Strong contrast", "Shrink it and check"]
+    tag: "Free guide"
+    title: "Pinterest Pin Size and Design Rules: Make Pins That Read on a Phone"
+    description: "Most Pinterest browsing happens on phones, in narrow columns. Design at 1000×1500 pixels, keep the headline short and big in the top half, use one or two bold fonts with strong contrast, and keep a small, consistent brand mark. Then shrink the pin to feed size and check it reads in one glance. The free guide has the full checklist."
+    keywords: [pinterest pin size, pinterest pin design, pinterest marketing, pinterest tips, pin templates, pinterest for creators]
+    link: guide/pinterest-pin-size-design
+    board: "Pinterest Marketing for Creators"
+
+  - slug: scheduler-or-bulk-csv
+    batch: 2
+    type: howto
+    topic: pinterest
+    kicker: "Pinterest scheduling"
+    headline: "Schedule pins: *built-in tool or CSV?*"
+    items: ["A few pins: pin builder", "A batch: bulk CSV", "All dates in the future", "Fixed times, mixed topics", "Check the CSV first"]
+    tag: "Free guide"
+    title: "How to Schedule Pinterest Pins: Built-In Scheduler vs Bulk CSV"
+    description: "Pinterest gives you two free ways to schedule. The pin builder can publish a pin at a later date, which suits a few pins a week. For a batch, a bulk-create CSV with a Publish date column schedules up to 200 pins in one file. Pick fixed times, mix your topics and check the file before uploading. The free guide compares both."
+    keywords: [schedule pinterest pins, pinterest scheduler, pinterest bulk upload, pinterest csv, pinterest marketing, pinterest tips]
+    link: guide/schedule-pinterest-pins
+    board: "Pinterest Marketing for Creators"
+
+  - slug: pinterest-boards-new-account
+    batch: 2
+    type: howto
+    topic: pinterest
+    kicker: "New account setup"
+    headline: "Set up *Pinterest boards* the simple way"
+    items: ["Business account first", "A few focused boards", "Name them like a search", "Short board descriptions", "Most relevant board first"]
+    tag: "Free guide"
+    title: "Pinterest Board Strategy for a New Account: A Simple Setup"
+    description: "A new creator account doesn't need dozens of boards. Start with a few focused boards you can fill with relevant pins, name each one with a plain search phrase, add a one-sentence description, and save every pin to its most relevant board first. Review the setup after a couple of months. The free guide walks through it."
+    keywords: [pinterest boards, pinterest board strategy, pinterest for beginners, pinterest marketing, pinterest business account, pinterest tips]
+    link: guide/pinterest-board-strategy-new-account
+    board: "Pinterest Marketing for Creators"
+
+  - slug: utm-links-which-video
+    batch: 2
+    type: howto
+    topic: workflow
+    kicker: "Track what works"
+    headline: "See which *video* sent the visit"
+    items: ["utm_source=youtube", "utm_medium=description", "utm_campaign=video-slug", "Lowercase, no spaces", "Test every link"]
+    tag: "Free guide"
+    title: "UTM Links for YouTubers: See Which Video Sent Each Visitor"
+    description: "YouTube Studio shows views, not what viewers did after they left. Add UTM tags to the links that go to your own site or store: source for the platform, medium for where the link sits and campaign for the video's slug. Keep them lowercase and consistent, and test every link. The free guide has a simple naming system."
+    keywords: [utm links, utm parameters, youtube analytics, track youtube links, creator business, youtube description links]
+    link: guide/utm-links-for-youtubers
+    board: "YouTube Growth Tools"
+
+  - slug: first-free-download
+    batch: 2
+    type: howto
+    topic: workflow
+    kicker: "Small channel tip"
+    headline: "Make your first *free download*"
+    items: ["Pick a viewer question", "Answer it on one page", "Set up the delivery", "Link it near the top", "Mention it once, aloud"]
+    tag: "Free guide"
+    title: "Lead Magnets for Small YouTube Channels: Make Your First Free Download"
+    description: "A lead magnet is a small free resource offered for an email address. Pick a question viewers already ask, answer it on one finished page, deliver it through a store or email platform, link it in the first lines of the description and mention it once in the video. Be clear about what people sign up for. The free guide has ideas by format."
+    keywords: [lead magnet, email list, youtube channel growth, small youtuber tips, faceless youtube, creator business]
+    link: guide/lead-magnets-small-youtube-channels
+    board: "Faceless YouTube Tips"
+
+  - slug: free-toolkit-faceless-channel
+    batch: 2
+    type: howto
+    topic: workflow
+    kicker: "Free tools"
+    headline: "A *free toolkit* for faceless channels"
+    items: ["Edit: DaVinci Resolve", "Audio: Audacity", "Screen: OBS Studio", "Images: Canva or GIMP", "Music: YT Audio Library"]
+    tag: "Free guide"
+    title: "Free Tools for a Faceless YouTube Channel: An Honest List"
+    description: "You can start a faceless channel with free software: a free editor like DaVinci Resolve or Shotcut, Audacity for voiceovers, OBS Studio for screen recording, Canva or GIMP for thumbnails and the YouTube Audio Library for music. Check each free plan's terms for commercial use. The free guide lists more tools, with no affiliate links."
+    keywords: [free youtube tools, faceless youtube, youtube editing software, free video editor, youtube automation tools, small youtuber tips]
+    link: guide/free-tools-faceless-youtube-channel
+    board: "YouTube Growth Tools"
+
+  - slug: ai-voice-video-checklist
+    batch: 2
+    type: howto
+    topic: youtube
+    kicker: "AI voice channels"
+    headline: "Before you publish an *AI voice* video"
+    items: ["Your script, edited", "Clips support narration", "Not a template copy", "Disclose realistic AI", "Watch it yourself first"]
+    tag: "Free guide"
+    title: "AI Voice and Avatar Channels: A Pre-Publish Checklist for YouTube"
+    description: "AI voices are allowed on YouTube, but monetized channels should know the reused and inauthentic content policies, and realistic synthetic content needs a disclosure in Studio. Write and edit your own script, let clips support your narration, keep each video distinct and watch it before publishing. The free guide links to YouTube's official pages."
+    keywords: [ai voice youtube, youtube monetization policy, reused content, ai avatar channel, faceless youtube, youtube automation]
+    link: guide/ai-voice-channels-youtube-content-policy
+    board: "Faceless YouTube Tips"
+
+# ---------------------------------------------------------------- batch 2: tips (10)
+
+  - slug: description-first-two-lines
+    batch: 2
+    type: tip
+    topic: youtube
+    kicker: "Description tip"
+    headline: "Your *first two lines* do the work"
+    body: "Most viewers never expand the description. Say what the video covers and put your main link right there."
+    tag: "Save for later"
+    title: "YouTube Description Tip: Make the First Two Lines Count"
+    description: "Only the opening of a YouTube description shows before viewers tap more. Use it to say what the video covers in the words people search for, then add your one most important link with a short reason to click. Move hashtags, social links and long lists further down. The free guide has a full description template."
+    keywords: [youtube description, youtube seo, youtube tips, faceless youtube, small youtuber tips, youtube links]
+    link: guide/youtube-description-template
+    board: "Faceless YouTube Tips"
+
+  - slug: hashtag-limit-60
+    batch: 2
+    type: tip
+    topic: youtube
+    kicker: "Hashtag tip"
+    headline: "Over *60 hashtags*? All are ignored"
+    body: "YouTube ignores every hashtag on a video that has more than 60. Use two to five relevant ones at the end."
+    tag: "Save for later"
+    title: "YouTube Hashtags: Why Fewer, Relevant Tags Beat Stuffing"
+    description: "YouTube's guidelines say that if a video has more than 60 hashtags, all of them are ignored, and misleading or excessive tags can keep a video out of search. Use two to five hashtags that describe the topic or series, and put them at the end of the description so the first lines stay clean. The free guide covers the rest of the description."
+    keywords: [youtube hashtags, youtube description, youtube seo, youtube tips, faceless youtube, youtube rules]
+    link: guide/youtube-description-template
+    board: "Faceless YouTube Tips"
+
+  - slug: shorts-links-not-clickable
+    batch: 2
+    type: tip
+    topic: youtube
+    kicker: "Shorts tip"
+    headline: "Links in Shorts *aren't clickable*"
+    body: "Links in Shorts descriptions and comments don't work. Set the related video to your long video instead."
+    tag: "Save for later"
+    title: "YouTube Shorts Links Aren't Clickable: Use the Related Video Instead"
+    description: "If you cut Shorts from a long video, a link in the Short's description won't send anyone anywhere, because links in Shorts descriptions and comments aren't clickable. Set the related video in the Short's details to the full video, and keep your links in that video's description. The free guide shows how to plan Shorts from one video."
+    keywords: [youtube shorts, shorts related video, shorts tips, faceless youtube, youtube shorts links, repurpose youtube videos]
+    link: guide/how-many-shorts-from-one-video
+    board: "Faceless YouTube Tips"
+
+  - slug: pins-taller-than-2-3
+    batch: 2
+    type: tip
+    topic: pinterest
+    kicker: "Pin size tip"
+    headline: "Pins taller than *2:3* can get cropped"
+    body: "Very long infographic pins may be cut off in the feed. Design at 1000×1500 and keep key text high up."
+    tag: "Save for later"
+    title: "Pinterest Pin Size Tip: Why Extra-Tall Pins Can Get Cropped"
+    description: "Pinterest recommends a 2:3 ratio, and pins taller than that may be cut off in the feed, so the bottom of a long infographic can disappear. Design at 1000×1500 pixels, keep the headline and key points in the top half, and save long lists for the page the pin links to. The free guide covers pin size and design rules."
+    keywords: [pinterest pin size, pinterest pin design, pinterest tips, pinterest marketing, pin dimensions, pinterest for creators]
+    link: guide/pinterest-pin-size-design
+    board: "Pinterest Marketing for Creators"
+
+  - slug: pin-alt-text-for-people
+    batch: 2
+    type: tip
+    topic: pinterest
+    kicker: "Pinterest tip"
+    headline: "Write *alt text* for people first"
+    body: "Describe what the pin shows, like its headline and background, for people who use screen readers."
+    tag: "Save for later"
+    title: "Pinterest Alt Text: Describe Your Pin for People Who Can't See It"
+    description: "Pinterest lets you add alt text to each pin. It's an accessibility feature first: describe what the pin shows, such as its headline and background, for people using screen readers. Keep it plain and accurate rather than a list of keywords. Bulk CSV uploads don't include alt text, so add it when editing. The free guide covers the other pin fields too."
+    keywords: [pinterest alt text, pinterest accessibility, pinterest tips, pinterest pin description, pinterest marketing, pinterest for creators]
+    link: guide/pinterest-pin-size-design
+    board: "Pinterest Marketing for Creators"
+
+  - slug: create-boards-before-csv
+    batch: 2
+    type: tip
+    topic: pinterest
+    kicker: "Bulk upload tip"
+    headline: "Create your boards *before* the CSV"
+    body: "Bulk upload needs board names that match your boards exactly, capitals and spaces included."
+    tag: "Free tool"
+    title: "Pinterest Bulk Upload Tip: Create Your Boards Before You Upload the CSV"
+    description: "Every row in a Pinterest bulk-upload CSV names a board, and that name must match a board on your profile exactly, including capital letters and spaces. Create the boards first, then compare the names. The free Pinterest CSV Checker lists every board name in your file so you can spot a typo before uploading. Try it in the free tool."
+    keywords: [pinterest boards, pinterest bulk upload, pinterest csv, pinterest csv checker, free pinterest tools, pinterest tips]
+    link: pinterest-csv-checker
+    board: "YouTube Growth Tools"
+
+  - slug: no-utm-on-internal-links
+    batch: 2
+    type: tip
+    topic: workflow
+    kicker: "Tracking tip"
+    headline: "No UTM tags on *your own site's links*"
+    body: "Tagging links between your own pages overwrites where the visit really came from. Tag outside links only."
+    tag: "Save for later"
+    title: "UTM Tip for Creators: Don't Tag Links Between Your Own Pages"
+    description: "UTM tags label where a visit came from, like a video description or a pin. If you also add them to links from one page of your site to another, the visitor gets relabeled mid-visit and your reports lose the real source. Tag links from YouTube, Pinterest and email only, the same way every time. The free guide has a simple naming system."
+    keywords: [utm links, utm parameters, website analytics, creator business, track youtube links, pinterest analytics]
+    link: guide/utm-links-for-youtubers
+    board: "Faceless YouTube Tips"
+
+  - slug: one-free-download-everywhere
+    batch: 2
+    type: tip
+    topic: workflow
+    kicker: "Lead magnet tip"
+    headline: "Use *one free download* everywhere"
+    body: "One useful freebie linked on every related video is easier to keep current than a new one each week."
+    tag: "Save for later"
+    title: "Lead Magnet Tip: Link One Good Free Download Across Your Videos"
+    description: "Small channels often make a new freebie for every video, then struggle to keep them all up to date. One useful, finished download linked consistently from every related video is easier to maintain and simpler for viewers. Update it when platform rules change. The free guide covers lead magnet ideas, delivery and where to link."
+    keywords: [lead magnet, email list, youtube channel growth, small youtuber tips, faceless youtube, creator business]
+    link: guide/lead-magnets-small-youtube-channels
+    board: "Faceless YouTube Tips"
+
+  - slug: disclose-realistic-ai
+    batch: 2
+    type: tip
+    topic: youtube
+    kicker: "AI disclosure tip"
+    headline: "Realistic AI? Use the *disclosure setting*"
+    body: "YouTube asks you to label realistic altered or synthetic content in Studio. AI help with a script alone doesn't need it."
+    tag: "Free guide"
+    title: "YouTube AI Disclosure: When Realistic Synthetic Content Needs a Label"
+    description: "YouTube asks creators to disclose realistic altered or synthetic content, like making a real person appear to say something they didn't or generating realistic scenes that didn't happen. Using AI to help draft a script or captions doesn't need the label. Check YouTube's official help page for the current examples. The free guide links to it."
+    keywords: [youtube ai disclosure, ai voice youtube, synthetic content, faceless youtube, youtube policy, ai avatar channel]
+    link: guide/ai-voice-channels-youtube-content-policy
+    board: "Faceless YouTube Tips"
+
+  - slug: chapter-titles-are-navigation
+    batch: 2
+    type: tip
+    topic: youtube
+    kicker: "Chapters tip"
+    headline: "Chapter titles are *navigation*, not bait"
+    body: "Give each chapter a few plain words that name one idea, like Step 2: Check the seal."
+    tag: "Free guide"
+    title: "YouTube Chapter Titles: Short, Plain and One Idea Each"
+    description: "Chapter titles show on the progress bar and get cut short on phones. Keep each one to a few plain words that name a single idea, number the steps in tutorials, and skip teasers like you won't believe this part. If you script in sections, your chapter titles are almost written already. The free guide covers timestamps and fixes."
+    keywords: [youtube chapters, chapter titles, youtube timestamps, faceless youtube, youtube tips, youtube description]
+    link: guide/youtube-chapters-timestamps
+    board: "Faceless YouTube Tips"

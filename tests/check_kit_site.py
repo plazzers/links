@@ -113,8 +113,8 @@ def check_store_link(href, where):
 
 def main():
     pages = sorted(KIT.rglob("index.html"))
-    if len(pages) < 17:
-        fail("site", f"only {len(pages)} pages (want landing, tools index, 2 tools, guides index, 12 guides)")
+    if len(pages) < 27:
+        fail("site", f"only {len(pages)} pages (want landing, tools index, 2 tools, guides index, 22 guides)")
     kinds = set()
     for p in pages:
         where = str(p.relative_to(ROOT))
@@ -206,8 +206,8 @@ def main():
     # articles, launch plan, pins
     for a in all_articles():
         problems.extend(lint(a))
-    if len(all_articles()) != 12:
-        fail("content/kit", f"{len(all_articles())} articles, want 12")
+    if len(all_articles()) != 22:
+        fail("content/kit", f"{len(all_articles())} articles, want 22")
     plan = KIT / "launch" / "LAUNCH-PLAN.md"
     if not plan.is_file():
         fail("launch", "creator-kit/launch/LAUNCH-PLAN.md is missing")

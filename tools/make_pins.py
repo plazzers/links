@@ -17,6 +17,9 @@ schedules never move.
 
 The kit (third style, "kit") has 30 pins scheduled 2 a day (14:00 and 20:00
 UTC) from KIT_START; its links go to creator-kit/ (landing, free tools, guides).
+Later kit batches: pins with  batch: N  in tools/pins_kit.yaml are kept out of
+pinterest-bulk-kit.csv and go to pins/pinterest-bulk-kit-N.csv (+ contact sheet
+pins/contact-kit-N.jpg), 2 a day at the same hours from KIT_BATCHES[N].
 
 Run from the repo root:   python3 tools/make_pins.py
 Only one channel:         python3 tools/make_pins.py walter   (or sal, kit)
@@ -53,6 +56,7 @@ START = datetime(2026, 10, 10)
 SLOTS = (13, 17, 21)         # UTC publish hours, 3 pins a day per channel
 KIT_START = datetime(2026, 10, 12)
 KIT_SLOTS = (14, 20)        # UTC publish hours, 2 kit pins a day
+KIT_BATCHES = {2: datetime(2026, 10, 27)}  # later kit batches (batch: N in the YAML) and their start days
 SRGB = ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes()
 
 LINKS = {
@@ -927,8 +931,8 @@ def gallery(all_pins):
 <header>
   <h1>Pin gallery</h1>
   <p>Review page, not linked from the site. {sum(len(v) for v in all_pins.values())} pins in publish order. CSVs:
-  <a href="pinterest-bulk-walter.csv">Walter</a> · <a href="pinterest-bulk-sal.csv">Sal</a> · <a href="pinterest-bulk-kit.csv">Creator Kit</a> ·
-  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a> · <a href="contact-kit.jpg">Creator Kit</a>{weekly}</p>
+  <a href="pinterest-bulk-walter.csv">Walter</a> · <a href="pinterest-bulk-sal.csv">Sal</a> · <a href="pinterest-bulk-kit.csv">Creator Kit</a> · <a href="pinterest-bulk-kit-2.csv">Creator Kit batch 2</a> ·
+  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a> · <a href="contact-kit.jpg">Creator Kit</a> · <a href="contact-kit-2.jpg">Creator Kit batch 2</a>{weekly}</p>
   <nav><a href="#walter">Walter's Home Check</a><a href="#sal">Chef Sal Romano</a><a href="#kit">Faceless Creator Kit</a></nav>
 </header>
 <main>
@@ -1011,12 +1015,18 @@ def week_of(p):
     return str(w) if w else None
 
 
+def kit_batches(pins):
+    return sorted({p["batch"] for p in pins if p.get("batch")})
+
+
 def schedule_all(channel, pins):
     """Schedule the original batch from START, then each weekly batch from the
     day after the previous batch's last publish date. Returns {week: pins}."""
-    base = [p for p in pins if not week_of(p)]
+    base = [p for p in pins if not week_of(p) and not p.get("batch")]
     if channel == "kit":
         schedule(base, KIT_START, KIT_SLOTS)
+        for n in kit_batches(pins):
+            schedule([p for p in pins if p.get("batch") == n], KIT_BATCHES[n], KIT_SLOTS)
     else:
         schedule(base)
     last = max(p["publish"] for p in base)
@@ -1046,6 +1056,12 @@ def build(channel):
     base, weeks = schedule_all(channel, pins)
     write_csv(channel, base)
     contact_sheet(channel, base)
+    if channel == "kit":
+        for n in kit_batches(pins):
+            bp = [p for p in pins if p.get("batch") == n]
+            write_csv(channel, bp, OUT / f"pinterest-bulk-kit-{n}.csv")
+            contact_sheet(channel, bp, path=OUT / f"contact-kit-{n}.jpg", label=f"KIT — batch {n} — {len(bp)} pins (in file order)")
+            print(f"kit: batch {n}: {len(bp)} pins, {min(p['publish'] for p in bp)} .. {max(p['publish'] for p in bp)}")
     for wk, wp in weeks.items():
         write_csv(channel, wp, OUT / "weekly" / f"{wk}-{channel}.csv")
         contact_sheet(channel, wp, cols=7, path=OUT / "weekly" / f"{wk}-{channel}.jpg",

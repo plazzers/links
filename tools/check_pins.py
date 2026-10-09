@@ -283,20 +283,30 @@ def check_week(channel, wk, pins, by_file, prev_last):
 
 KIT_BOARDS = {"Faceless YouTube Tips", "Pinterest Marketing for Creators", "YouTube Growth Tools"}
 KIT_START, KIT_SLOTS = datetime(2026, 10, 12), (14, 20)
+KIT_BATCHES = {2: (datetime(2026, 10, 27), 20)}  # batch: N -> (first day, pin count), pins/pinterest-bulk-kit-N.csv
 KIT_BANNED = [r"guarantee", r"testimonial", r"passive income", r"go viral", r"overnight", r"\brated\b",
               r"\bratings?\b", r"#1\b", r"best[- ]selling", r"trusted by", r"loved by", r"\$\s?\d", r"\d+%"]
 
 
 def check_kit():
     """The Faceless Creator Kit pins: 30 pins, 2 a day at 14/20 UTC from
-    2026-10-12, three boards, links to creator-kit/ pages that exist."""
+    2026-10-12, three boards, links to creator-kit/ pages that exist. Later
+    batches (batch: N) follow the same rules in pins/pinterest-bulk-kit-N.csv."""
     pins = yaml.safe_load((ROOT / "tools" / "pins_kit.yaml").read_text(encoding="utf-8"))["pins"]
     slugs = [p["slug"] for p in pins]
     for s, n in Counter(slugs).items():
         if n > 1:
             bad(f"kit: slug used twice: {s}")
-    if len(pins) != 30:
-        bad(f"kit: {len(pins)} pins in the YAML, expected 30")
+    base_n = sum(1 for p in pins if not p.get("batch"))
+    if base_n != 30:
+        bad(f"kit: {base_n} pins in the YAML outside batches, expected 30")
+    for n, (_, count) in KIT_BATCHES.items():
+        got = sum(1 for p in pins if p.get("batch") == n)
+        if got != count:
+            bad(f"kit: batch {n} has {got} pins in the YAML, expected {count}")
+    for p in pins:
+        if p.get("batch") and p["batch"] not in KIT_BATCHES:
+            bad(f"kit/{p['slug']}: unknown batch {p['batch']}")
     for p in pins:
         t = text_of(p).lower()
         for b in KIT_BANNED:
@@ -315,7 +325,20 @@ def check_kit():
                 bad(f"kit/{f.name}: no sRGB color profile")
         if f.stat().st_size >= 350_000:
             bad(f"kit/{f.name}: too big")
-    path = PINS / "pinterest-bulk-kit.csv"
+    by_file = {f"{i:03d}-{p['slug']}.jpg": p for i, p in enumerate(pins, 1)}
+    check_kit_csv(PINS / "pinterest-bulk-kit.csv", 30, KIT_START, by_file, None)
+    for n, (start, count) in KIT_BATCHES.items():
+        check_kit_csv(PINS / f"pinterest-bulk-kit-{n}.csv", count, start, by_file, n)
+        if not (PINS / f"contact-kit-{n}.jpg").is_file():
+            bad(f"pins/contact-kit-{n}.jpg is missing")
+    print(f"kit: {len(files)} images")
+
+
+def check_kit_csv(path, count, start, by_file, batch):
+    """One kit CSV: header, 'count' rows of this batch's pins, 2 a day at 14/20 UTC from 'start'."""
+    if not path.is_file():
+        bad(f"{path.name} is missing")
+        return
     raw = path.read_bytes()
     text = raw.decode("utf-8")
     if raw.startswith(b"\xef\xbb\xbf"):
@@ -324,8 +347,8 @@ def check_kit():
     if rows[0] != HEADER:
         bad(f"{path.name}: header is {rows[0]}")
     body = rows[1:]
-    if len(body) != 30:
-        bad(f"{path.name}: {len(body)} rows, expected 30")
+    if len(body) != count:
+        bad(f"{path.name}: {len(body)} rows, expected {count}")
     buf = io.StringIO()
     csv.writer(buf, quoting=csv.QUOTE_ALL).writerows(rows)
     if buf.getvalue() != text:
@@ -345,6 +368,8 @@ def check_kit():
             bad(f"{where}: Thumbnail should be empty")
         if not media.startswith(prefix) or not (PINS / "kit" / media[len(prefix):]).is_file():
             bad(f"{where}: Media URL doesn't point to a pin in the repo: {media}")
+        elif by_file.get(media[len(prefix):], {}).get("batch") != batch:
+            bad(f"{where}: {media[len(prefix):]} doesn't belong in this CSV (batch {batch})")
         base, _, query = link.partition("?")
         slug = media[len(prefix):-4].split("-", 1)[-1]
         if not base.startswith(SITE + "creator-kit/") or not (ROOT / base[len(SITE):] / "index.html").is_file():
@@ -361,15 +386,14 @@ def check_kit():
             dates.append(datetime.strptime(date, "%Y-%m-%dT%H:%M:%S"))
         except ValueError:
             bad(f"{where}: publish date '{date}' is not ISO 8601")
-    want = [KIT_START + timedelta(days=i // 2, hours=KIT_SLOTS[i % 2]) for i in range(len(dates))]
+    want = [start + timedelta(days=i // 2, hours=KIT_SLOTS[i % 2]) for i in range(len(dates))]
     if dates != want:
-        bad(f"{path.name}: publish dates aren't 2 a day at 14/20 UTC from 2026-10-12")
-    by_file = {f"{i:03d}-{p['slug']}.jpg": p for i, p in enumerate(pins, 1)}
+        bad(f"{path.name}: publish dates aren't 2 a day at 14/20 UTC from {start:%Y-%m-%d}")
     seq = [by_file.get(r[1].rsplit("/", 1)[-1]) for r in body]
     same = sum(1 for a, b in zip(seq, seq[1:]) if a and b and a["type"] == b["type"] and a.get("topic") == b.get("topic"))
     if same:
         bad(f"{path.name}: {same} back-to-back pins with the same type and topic")
-    print(f"kit: {len(files)} images, {len(body)} CSV rows, dates {body[0][6]} .. {body[-1][6]}")
+    print(f"kit: {path.name}: {len(body)} CSV rows, dates {body[0][6]} .. {body[-1][6]}")
 
 
 def desc_ok_cta(body):
