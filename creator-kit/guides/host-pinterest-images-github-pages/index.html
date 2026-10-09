@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Host Pinterest Images Free with GitHub Pages</title>
+<meta name="description" content="Step by step: host your pin images on GitHub Pages for free so Pinterest bulk upload can fetch them, all from the github.com website.">
+<link rel="canonical" href="https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/">
+<meta name="theme-color" content="#1c1a27">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/kit.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Faceless Creator Kit">
+<meta property="og:title" content="Host Pinterest Images Free with GitHub Pages">
+<meta property="og:description" content="Step by step: host your pin images on GitHub Pages for free so Pinterest bulk upload can fetch them, all from the github.com website.">
+<meta property="og:url" content="https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/">
+<meta property="og:image" content="https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Host Images for Pinterest Bulk Upload with GitHub Pages (Free)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Host Pinterest Images Free with GitHub Pages">
+<meta name="twitter:description" content="Step by step: host your pin images on GitHub Pages for free so Pinterest bulk upload can fetch them, all from the github.com website.">
+<meta name="twitter:image" content="https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/og.jpg">
+<meta property="article:published_time" content="2026-10-09">
+<meta property="article:modified_time" content="2026-10-09">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Host Images for Pinterest Bulk Upload with GitHub Pages (Free)","description":"Step by step: host your pin images on GitHub Pages for free so Pinterest bulk upload can fetch them, all from the github.com website.","image":["https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/og.jpg"],"datePublished":"2026-10-09","dateModified":"2026-10-09","author":{"@type":"Organization","name":"Faceless Creator Kit","url":"https://plazzers.github.io/links/creator-kit/"},"publisher":{"@type":"Organization","name":"Faceless Creator Kit","url":"https://plazzers.github.io/links/creator-kit/","logo":{"@type":"ImageObject","url":"https://plazzers.github.io/links/creator-kit/assets/apple-touch-icon.png"}},"mainEntityOfPage":"https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/","url":"https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/","keywords":"host images for pinterest bulk upload","articleSection":"Pinterest","wordCount":1269,"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Faceless Creator Kit","item":"https://plazzers.github.io/links/creator-kit/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://plazzers.github.io/links/creator-kit/guides/"},{"@type":"ListItem","position":3,"name":"How to Host Images for Pinterest Bulk Upload with GitHub Pages (Free)","item":"https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in"><a class="brand" href="../../"><img src="../../assets/favicon.svg" width="30" height="30" alt="">Faceless Creator Kit</a><nav aria-label="Site"><a href="../../">The kit</a><a href="../../tools/">Free tools</a><a href="../../guides/" aria-current="page">Guides</a></nav></div></header>
+<main id="main" class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Faceless Creator Kit</a></li><li><a href="../">Guides</a></li><li><a href="../?c=pinterest">Pinterest</a></li></ol></nav>
+<div class="layout">
+<article class="article">
+<header class="art-head">
+<p class="chip">Pinterest</p>
+<h1>How to Host Images for Pinterest Bulk Upload with GitHub Pages (Free)</h1>
+<p class="dek">Step by step: host your pin images on GitHub Pages for free so Pinterest bulk upload can fetch them, all from the github.com website.</p>
+<p class="meta"><span>Last updated <time datetime="2026-10-09">October 9, 2026</time></span><span>6 min read</span>
+<button class="share" type="button" data-title="How to Host Images for Pinterest Bulk Upload with GitHub Pages (Free)" data-url="https://plazzers.github.io/links/creator-kit/guides/host-pinterest-images-github-pages/">Share</button></p>
+<p class="share-status" role="status" aria-live="polite"></p>
+</header>
+<details class="toc toc-m"><summary>On this page</summary><nav aria-label="Table of contents"><ol><li><a href="#why-you-need-image-hosting-at-all">Why you need image hosting at all</a></li><li><a href="#what-you-need">What you need</a></li><li><a href="#step-1-create-a-public-repository">Step 1: Create a public repository</a></li><li><a href="#step-2-upload-your-images">Step 2: Upload your images</a></li><li><a href="#step-3-turn-on-github-pages">Step 3: Turn on GitHub Pages</a></li><li><a href="#step-4-build-your-image-urls">Step 4: Build your image URLs</a></li><li><a href="#step-5-test-a-url-in-a-private-window">Step 5: Test a URL in a private window</a></li><li><a href="#optional-nojekyll-limits-and-housekeeping">Optional: .nojekyll, limits and housekeeping</a></li></ol></nav></details>
+<div class="prose">
+<p>Pinterest bulk upload does not take image files. It takes a CSV with a Media URL for each pin, and Pinterest downloads the image from that link. So before you can upload a batch of pins, every image needs a public, direct link. GitHub Pages is a free way to get one, and you can set it up entirely in the browser on github.com without installing anything or using the command line. This guide walks through it step by step.</p>
+<h2 id="why-you-need-image-hosting-at-all">Why you need image hosting at all</h2>
+<p>The Media URL column in a Pinterest bulk CSV must point straight at the image file, for example <code>https://yourname.github.io/pins/meal-prep-01.jpg</code>. Pinterest's servers open that link and fetch the image.</p>
+<p>That rules out a few common options:</p>
+<ul>
+<li><strong>Files on your computer:</strong> Pinterest cannot reach them.</li>
+<li><strong>Google Drive, Dropbox or OneDrive share links:</strong> these usually open a preview page, not the raw file, so the fetch fails.</li>
+<li><strong>Anything behind a login:</strong> if you need to be signed in to see it, Pinterest cannot see it either.</li>
+</ul>
+<p>GitHub Pages serves plain files from a public repository at a stable address, which is exactly what bulk upload needs. If you are new to the overall process, start with <a href="../pinterest-bulk-upload-csv/">how to bulk upload pins with a CSV</a> and come back here for the hosting step.</p>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>A free GitHub account (sign up at github.com)</li>
+<li>Your pin images, ideally 1000×1500 pixels, saved as JPG or PNG</li>
+<li>About 15 minutes for the first setup</li>
+</ul>
+<p>Before uploading, rename your files to short, lowercase names with hyphens instead of spaces, for example <code>meal-prep-01.jpg</code>. File names become part of the URL, and on GitHub Pages they are case-sensitive, so <code>Pin-01.JPG</code> and <code>pin-01.jpg</code> are different addresses. Simple names save you from typos later.</p>
+<aside class="box box-free" aria-label="Free download">
+<p class="box-kicker">Free download</p>
+<p class="box-title">The Faceless Channel Starter Pack</p>
+<p>A free PDF: 10 title formulas, a one-page weekly planning checklist and a Pinterest bulk-upload CSV template with the exact header.</p>
+<a class="btn btn-dark btn-small" href="https://payhip.com/PLACEHOLDER-FREE?utm_source=kitsite&amp;utm_medium=guide&amp;utm_campaign=host-pinterest-images-github-pages">Get it free</a>
+</aside>
+<h2 id="step-1-create-a-public-repository">Step 1: Create a public repository</h2>
+<ol>
+<li>Sign in to github.com.</li>
+<li>Click the <strong>+</strong> in the top right corner and choose <strong>New repository</strong>.</li>
+<li>Enter a <strong>Repository name</strong>. Keep it short and lowercase, for example <code>pins</code>. It becomes part of every image URL.</li>
+<li>Set the visibility to <strong>Public</strong>. On a free account, GitHub Pages needs a public repository, and Pinterest needs to read the files anyway.</li>
+<li>Tick <strong>Add a README file</strong>. This creates the main branch right away, which makes the next steps simpler.</li>
+<li>Click <strong>Create repository</strong>.</li>
+</ol>
+<p>Remember that everything in a public repository can be seen by anyone. Only upload images you are happy to have public, which pin images are by nature.</p>
+<h2 id="step-2-upload-your-images">Step 2: Upload your images</h2>
+<ol>
+<li>In your new repository, click <strong>Add file</strong> and choose <strong>Upload files</strong>.</li>
+<li>Drag your images into the upload area, or click "choose your files" to select them.</li>
+<li>Wait until every file shows as uploaded.</li>
+<li>Under <strong>Commit changes</strong>, add a short message such as "Add meal prep pins".</li>
+<li>Leave "Commit directly to the main branch" selected and click <strong>Commit changes</strong>.</li>
+</ol>
+<p>You can put the images straight in the root of the repository, or in a folder. To use a folder, you can drag in a folder from your computer, which keeps its name. A folder per batch or per channel, for example <code>meal-prep/</code>, keeps things tidy, but it also adds the folder name to every URL.</p>
+<p>The web uploader handles many files at once, but GitHub limits how much you can upload in one go through the browser. If you have a large batch, upload it in a few rounds. Check GitHub's docs for the current file size limits.</p>
+<h2 id="step-3-turn-on-github-pages">Step 3: Turn on GitHub Pages</h2>
+<ol>
+<li>In the repository, click <strong>Settings</strong> (the tab along the top).</li>
+<li>In the left sidebar, click <strong>Pages</strong>.</li>
+<li>Under <strong>Build and deployment</strong>, set <strong>Source</strong> to <strong>Deploy from a branch</strong>.</li>
+<li>Under <strong>Branch</strong>, choose <strong>main</strong> and the folder <strong>/ (root)</strong>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>GitHub now builds and publishes the site. This usually takes a minute or two. Refresh the Pages settings screen and you should see a message that your site is live, with its address. You can also follow progress under the <strong>Actions</strong> tab of the repository.</p>
+<aside class="box box-tool" aria-label="Free tool">
+<a href="../../tools/pinterest-csv-checker/"><span class="box-kicker">Free tool</span><b>Pinterest CSV Checker</b><span>Check a Pinterest bulk-upload CSV before you upload it, and download a fixed copy.</span> <span class="go">Try it →</span></a>
+</aside>
+<h2 id="step-4-build-your-image-urls">Step 4: Build your image URLs</h2>
+<p>For a repository published from the root of main, the pattern is:</p>
+<pre><code>https://&lt;user&gt;.github.io/&lt;repo&gt;/&lt;file&gt;
+</code></pre>
+<p>Replace each part with your own values:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;user&gt;</code></td>
+<td><code>yourname</code></td>
+<td>Your GitHub username, in lowercase</td>
+</tr>
+<tr>
+<td><code>&lt;repo&gt;</code></td>
+<td><code>pins</code></td>
+<td>The repository name</td>
+</tr>
+<tr>
+<td><code>&lt;file&gt;</code></td>
+<td><code>meal-prep-01.jpg</code></td>
+<td>Exact file name, including the extension</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the example becomes <code>https://yourname.github.io/pins/meal-prep-01.jpg</code>. If the image sits in a folder, add the folder: <code>https://yourname.github.io/pins/meal-prep/meal-prep-01.jpg</code>.</p>
+<p>One exception: if you named the repository exactly <code>&lt;user&gt;.github.io</code>, it is served at the top level and the URL is <code>https://yourname.github.io/meal-prep-01.jpg</code> with no repository name in the path.</p>
+<p>In your spreadsheet, you can build these with a formula instead of typing them. If the file name is in column B, <code>="https://yourname.github.io/pins/"&amp;B2</code> gives you the full Media URL.</p>
+<h2 id="step-5-test-a-url-in-a-private-window">Step 5: Test a URL in a private window</h2>
+<p>Do not skip this. Open a private or incognito browser window, so you are not signed in to GitHub, and paste one of your image URLs.</p>
+<ul>
+<li><strong>You see only the image:</strong> it works. Pinterest will be able to fetch it.</li>
+<li><strong>You see a 404 page:</strong> the site may still be building, so wait a few minutes. If it persists, check the spelling and capitals of the user, repository and file name, and that Pages is set to main and root.</li>
+<li><strong>The site loads but the image is missing:</strong> the file may be in a folder you left out of the URL.</li>
+</ul>
+<p>Test two or three files from different parts of the batch, not just the first one. Then put the URLs in the Media URL column of your CSV and run it through the free <a href="../../tools/pinterest-csv-checker/">Pinterest CSV Checker</a> before uploading. If Pinterest still reports image problems, see <a href="../pinterest-bulk-csv-errors/">Pinterest bulk CSV errors and how to fix them</a>.</p>
+<h2 id="optional-nojekyll-limits-and-housekeeping">Optional: .nojekyll, limits and housekeeping</h2>
+<h3 id="do-you-need-a-nojekyll-file">Do you need a .nojekyll file?</h3>
+<p>GitHub Pages runs Jekyll on branch-based sites by default. Jekyll ignores files and folders whose names start with an underscore. If your image names are normal, you do not need to do anything. If you want to switch Jekyll off, add an empty file named <code>.nojekyll</code> to the root of the repository with <strong>Add file → Create new file</strong>. It is optional for plain image hosting.</p>
+<h3 id="usage-limits">Usage limits</h3>
+<p>GitHub Pages is free, but it is not unlimited. GitHub publishes soft limits on repository size, site size and monthly bandwidth, and it is meant for project and personal sites rather than heavy file delivery. A few batches of pin images are normally a small fraction of that, but check GitHub's Pages documentation for the current limits, and keep image files compact (a few hundred KB each is plenty for a 1000×1500 pin).</p>
+<h3 id="keeping-it-tidy">Keeping it tidy</h3>
+<ul>
+<li><strong>Do not delete images</strong> after uploading pins. Pinterest stores its own copy once a pin is created, but scheduled pins may still need to fetch the image later. Leave files in place at least until every scheduled pin has published.</li>
+<li><strong>Do not rename files</strong> that are already in a CSV, or those links break.</li>
+<li><strong>Use one repository</strong> and add a new folder for each batch.</li>
+</ul>
+<p>The Faceless Creator Kit's Pin Factory exports a ZIP of images under 350 KB each together with a CSV, and you can enter your GitHub Pages address so the Media URLs are filled in for you. Upload the ZIP's contents here and the links in the CSV match.</p>
+<p>Once it is set up, each new batch is quick: upload the images, wait a minute, test one URL, and your CSV is ready for Pinterest.</p><aside class="box box-product" aria-label="Faceless Creator Kit">
+<p class="box-kicker">Faceless Creator Kit</p>
+<p class="box-title">Make the pins and the CSV in one go</p>
+<p>The Pin Factory in the Faceless Creator Kit turns spreadsheet rows into 1000×1500 pins in your brand, then exports the images and a Pinterest bulk-upload CSV with links, UTM tags and a schedule. One payment of $29, no subscription.</p>
+<div class="btns"><a class="btn btn-primary btn-small" href="https://payhip.com/PLACEHOLDER?utm_source=kitsite&amp;utm_medium=guide&amp;utm_campaign=host-pinterest-images-github-pages">Get the kit — $29</a><a class="btn btn-ghost btn-small" href="../../#tools">See how it works</a></div>
+</aside>
+</div>
+<p class="small">Platforms change their menus and limits from time to time. This guide was checked on October 9, 2026; if something looks different, the platform's own help pages have the current details.</p>
+</article>
+<nav class="toc toc-d" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-you-need-image-hosting-at-all">Why you need image hosting at all</a></li><li><a href="#what-you-need">What you need</a></li><li><a href="#step-1-create-a-public-repository">Step 1: Create a public repository</a></li><li><a href="#step-2-upload-your-images">Step 2: Upload your images</a></li><li><a href="#step-3-turn-on-github-pages">Step 3: Turn on GitHub Pages</a></li><li><a href="#step-4-build-your-image-urls">Step 4: Build your image URLs</a></li><li><a href="#step-5-test-a-url-in-a-private-window">Step 5: Test a URL in a private window</a></li><li><a href="#optional-nojekyll-limits-and-housekeeping">Optional: .nojekyll, limits and housekeeping</a></li></ol></nav>
+</div>
+<section class="related" aria-labelledby="related"><h2 id="related">Related guides</h2><ul><li><a class="rcard" href="../pinterest-bulk-upload-csv/"><span class="chip">Pinterest</span><b>How to Bulk Upload Pins to Pinterest with a CSV (Step by Step)</b><span>6 min read</span></a></li><li><a class="rcard" href="../pinterest-bulk-csv-errors/"><span class="chip">Pinterest</span><b>Pinterest Bulk CSV Errors and How to Fix Them</b><span>6 min read</span></a></li><li><a class="rcard" href="../pinterest-for-youtubers/"><span class="chip">Pinterest</span><b>Pinterest for YouTubers: Driving Traffic to Videos and Products</b><span>6 min read</span></a></li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+<nav aria-label="Footer"><a href="../../">Faceless Creator Kit</a><a href="../../tools/title-scorer/">YouTube Title Scorer</a><a href="../../tools/pinterest-csv-checker/">Pinterest CSV Checker</a><a href="../../guides/">Guides</a></nav>
+<p>An independent tool for creators. Not affiliated with or endorsed by YouTube, Google or Pinterest.</p>
+<p>No cookies, no tracking on this site. The free tools run in your browser; nothing you type is sent anywhere.</p>
+<p>© 2026 Faceless Creator Kit</p>
+</div></footer>
+<script src="../../assets/kit.js" defer></script>
+</body>
+</html>

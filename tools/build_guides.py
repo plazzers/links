@@ -9,7 +9,8 @@ Reads content/walter/*.md, content/sal/*.md and content/about/*.md and writes
     <channel>/guides/<slug>/index.html     one page per article (+ og.jpg)
     <channel>/guides/{guides.css,guides.js,search.json,feed.xml,og.jpg,avatar.webp}
     <channel>/about/index.html             about page
-    sitemap.xml, robots.txt                for the whole site
+    sitemap.xml, robots.txt                for the whole site (incl. creator-kit/ pages,
+                                           listed by tools/build_kit_site.py)
     + the "Related guides" strip on the two free tools (between marker comments)
 
 Idempotent: running it twice gives the same files. Needs markdown, pyyaml,
@@ -541,6 +542,9 @@ def sitemap(arts):
         urls.append((f"{ch}/guides/", max(a.updated for a in arts[ch])))
         urls.append((f"{ch}/about/", None))
         urls += [(f"{ch}/guides/{a.slug}/", a.updated) for a in arts[ch]]
+    if (ROOT / "content" / "kit").is_dir():  # Faceless Creator Kit site (tools/build_kit_site.py)
+        from build_kit_site import sitemap_entries
+        urls += sitemap_entries()
     rows = "".join(f"  <url><loc>{SITE}{u}</loc>{f'<lastmod>{d.isoformat()}</lastmod>' if d else ''}</url>\n"
                    for u, d in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{rows}</urlset>\n'

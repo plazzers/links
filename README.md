@@ -11,7 +11,11 @@ Two small "link in bio" pages, hosted free on GitHub Pages:
 | Walter's guides | https://plazzers.github.io/links/walter/guides/ |
 | Sal's guides | https://plazzers.github.io/links/sal/guides/ |
 | About pages | https://plazzers.github.io/links/walter/about/ · https://plazzers.github.io/links/sal/about/ |
-| Small index (two buttons) | https://plazzers.github.io/links/ |
+| Small index (two buttons + "Tools for creators") | https://plazzers.github.io/links/ |
+| Faceless Creator Kit (landing page) | https://plazzers.github.io/links/creator-kit/ |
+| Free tool: YouTube Title Scorer | https://plazzers.github.io/links/creator-kit/tools/title-scorer/ |
+| Free tool: Pinterest CSV Checker | https://plazzers.github.io/links/creator-kit/tools/pinterest-csv-checker/ |
+| Creator Kit guides | https://plazzers.github.io/links/creator-kit/guides/ |
 
 Each page is a single file you can edit in any text editor, or right on github.com
 (open the file → pencil icon → edit → **Commit changes**). The live site updates
@@ -42,6 +46,13 @@ tools/guides/           shared CSS/JS + per-channel colours for the guide pages
 tests/guide_rules.py    article rules (used by the build and the checks)
 tests/check_guides.py   guide checks (content, links, utm, sitemap, JSON-LD)
 tests/guides.js         guide browser checks + screenshots
+creator-kit/            Faceless Creator Kit site (generated): landing, 2 free tools, 12 guides, launch/LAUNCH-PLAN.md
+tools/kit_config.py     BUY_URL / FREE_URL / price for the kit site (the only place they live)
+tools/build_kit_site.py builds creator-kit/ from content/kit/*.md + tools/kit/ + source-assets/kit/
+tools/pins_kit.yaml     the 30 kit pins (third pin style "kit")
+tests/kit_rules.py      kit article + honesty rules (used by the build and the checks)
+tests/check_kit_site.py kit site checks (meta, links, store links, wording, JSON-LD, sitemap)
+tests/kit.js            kit browser checks + screenshots (docs/screens/kit-*.png)
 ```
 
 ## Change a link
@@ -268,6 +279,52 @@ Content rules the check enforces: no real restaurant names, no prices on Walter'
 no health claims, at most 10 Walter pins that mention a product. Recipe times and
 ingredient counts on Sal's pins are estimates — fix them in `pins_sal.yaml` if the
 cookbook says otherwise.
+
+## Faceless Creator Kit site
+
+A marketing site for the Faceless Creator Kit (the paid web app at
+https://plazzers.github.io/channel-studio/kit/), built like the guide sites: Markdown
+and Python in, plain HTML out (committed). No frameworks, no outside fonts or scripts,
+no tracking.
+
+![Kit landing page](docs/screens/kit-landing-mobile.png) ![Title scorer](docs/screens/kit-title-scorer-mobile.png) ![CSV checker](docs/screens/kit-csv-checker-mobile.png)
+
+**Set the store links (do this once the Payhip products exist):** open
+`tools/kit_config.py`, replace `BUY_URL` (the paid kit) and `FREE_URL` (the free
+lead magnet — also change `FREE_NAME`/`FREE_DESC` to match it), then rebuild:
+
+```sh
+pip install markdown pyyaml pillow      # once
+python3 tools/build_kit_site.py         # rebuilds creator-kit/ and sitemap.xml (~5 s)
+python3 tests/check_kit_site.py         # meta, links, store links, honesty wording, JSON-LD, sitemap
+node tests/kit.js                       # browser checks + screenshots (docs/screens/kit-*.png)
+```
+
+Every Buy/Free button gets `?utm_source=kitsite&utm_medium=<landing|tool|guide|tools>&utm_campaign=<slug>`.
+The check fails if a Payhip link for the kit appears anywhere except `tools/kit_config.py`.
+Also update `BUY_URL` / `FREE_URL` in `creator-kit/launch/LAUNCH-PLAN.md` copy before posting.
+
+**Guides:** `content/kit/<slug>.md` (front matter: `title`, optional `seo_title`,
+`description` 70–155 chars, `keyword`, `category` pinterest|youtube|workflow|selling,
+`date`, `updated`, `tool` title-scorer|pinterest-csv-checker, `feature` planner|pins,
+optional `start_here`). 900–1,500 words, at least 4 `## ` sections. The build adds the
+free-download box, the free-tool box, the product box and related guides. The build
+refuses banned wording (`tests/kit_rules.py`): "guaranteed", testimonials, ratings,
+user counts, income claims, "passive income", "go viral" and similar. No invented stats
+or case studies.
+
+**Free tools:** the page copy is in `tools/build_kit_site.py`, the logic in
+`tools/kit/title-scorer.js` (same rules as the kit's title lab — keep them in sync) and
+`tools/kit/csv-checker.js`. Both run only in the browser.
+
+**Pins:** `tools/pins_kit.yaml` → `pins/kit/`, `pins/pinterest-bulk-kit.csv`,
+`pins/contact-kit.jpg` (built by `python3 tools/make_pins.py`, checked by
+`tools/check_pins.py`). 30 pins, 2 a day at 14:00 and 20:00 UTC from 12 October 2026
+(`KIT_START` in `make_pins.py`). Create these boards first: *Faceless YouTube Tips*,
+*Pinterest Marketing for Creators*, *YouTube Growth Tools*.
+
+**Launch plan:** `creator-kit/launch/LAUNCH-PLAN.md` — posts, Product Hunt listing,
+emails, LAUNCH30 discount, 4-week calendar and the affiliate pitch.
 
 ## Turn on GitHub Pages (one time)
 

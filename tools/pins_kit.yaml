@@ -1,0 +1,427 @@
+# Faceless Creator Kit — Pinterest pins.
+#
+# 30 pins that promote the Faceless Creator Kit (Channel Planner + Pin Factory),
+# its free tools and the guides in content/kit/. New pins go at the END so
+# numbered file names don't shift; keep every slug unique (lowercase-with-dashes).
+#
+# slug:        unique id, lowercase-with-dashes
+# type:        tip | howto | feature | tool
+#              tip/howto pins link to the matching guide, feature pins link to
+#              the kit, tool pins link to a free tool
+# topic:       pinterest | youtube | workflow (the scheduler keeps the same topic
+#              from running back to back)
+# kicker:      small line above the headline (<= 24 chars)
+# headline:    big text, 22–48 chars; wrap the 1–3 words to highlight in *stars*
+# body:        tip/feature/tool only: 1–2 plain sentences, 60–130 chars
+# items:       howto only: 3–5 short lines (<= 26 chars each), no body
+# tag:         the pill bottom-left (<= 18 chars)
+# title / description / keywords: what Pinterest shows (title 40–100 chars,
+#              description 150–450 chars ending in a soft call to action,
+#              5–8 keywords)
+# link:        creator-kit | title-scorer | pinterest-csv-checker | guide/<slug>
+# board:       Pinterest Marketing for Creators (pinterest tips/howtos),
+#              Faceless YouTube Tips (youtube/workflow tips/howtos),
+#              YouTube Growth Tools (feature and tool pins)
+#
+# Honesty: no stats, no promises of views, income or sales, no ratings or
+# testimonials. Facts must match the guides in content/kit/.
+
+pins:
+
+# ---------------------------------------------------------------- tips (10)
+
+  - slug: exact-pinterest-csv-header
+    type: tip
+    topic: pinterest
+    kicker: "Pinterest tip"
+    headline: "The *exact CSV header* Pinterest wants"
+    body: "Title, Media URL, Pinterest board, Thumbnail, Description, Link, Publish date, Keywords. Same spelling, same order."
+    tag: "Free guide"
+    title: "The Exact Pinterest Bulk Upload CSV Header (Copy and Paste)"
+    description: "Pinterest bulk create is strict about the first line of your CSV. It needs eight columns, spelled exactly right and in order: Title, Media URL, Pinterest board, Thumbnail, Description, Link, Publish date, Keywords. Keep the Thumbnail column even for image pins, or everything after it shifts. The free guide walks through a sample row and the full upload."
+    keywords: [pinterest bulk upload, pinterest csv, bulk create pins, pinterest marketing, csv header, pinterest for creators]
+    link: guide/pinterest-bulk-upload-csv
+    board: "Pinterest Marketing for Creators"
+
+  - slug: pinterest-publish-date-format
+    type: tip
+    topic: pinterest
+    kicker: "Pinterest CSV tip"
+    headline: "Publish dates need *a capital T*"
+    body: "Use YYYY-MM-DDTHH:MM:SS, like 2026-10-20T18:00:00, and make sure every date is still in the future."
+    tag: "Save for later"
+    title: "Pinterest CSV Publish Date Format: Fix Pins That Post Right Away"
+    description: "If your bulk-uploaded pins publish immediately or the row fails, check the Publish date column. Pinterest expects YYYY-MM-DDTHH:MM:SS with a capital T, and every date must be in the future when you upload. Spreadsheets like to reformat dates, so set the column to plain text. The free guide covers this and the other common CSV errors."
+    keywords: [pinterest csv error, pinterest publish date, schedule pinterest pins, pinterest bulk upload, pinterest tips]
+    link: guide/pinterest-bulk-csv-errors
+    board: "Pinterest Marketing for Creators"
+
+  - slug: drive-links-fail-on-pinterest
+    type: tip
+    topic: pinterest
+    kicker: "Pinterest tip"
+    headline: "Why *Google Drive links* fail on Pinterest"
+    body: "Share links open a preview page, not the image. Bulk upload needs a public, direct link ending in .jpg or .png."
+    tag: "Free guide"
+    title: "Why Google Drive Links Fail in Pinterest Bulk Upload (and a Free Fix)"
+    description: "Pinterest bulk upload fetches every image from the Media URL in your CSV. Google Drive and Dropbox share links usually open a viewer page instead of the raw file, so the fetch fails. GitHub Pages gives each image a plain public address for free, and you can set it up from the github.com website. The step-by-step guide shows how."
+    keywords: [pinterest bulk upload, host images for pinterest, github pages, pinterest media url, pinterest csv, free image hosting]
+    link: guide/host-pinterest-images-github-pages
+    board: "Pinterest Marketing for Creators"
+
+  - slug: dont-reuse-thumbnail-as-pin
+    type: tip
+    topic: pinterest
+    kicker: "Pinterest for YouTubers"
+    headline: "Don't reuse your *YouTube thumbnail* as a pin"
+    body: "A 1280×720 thumbnail is the wrong shape and gets small in the feed. Make a 1000×1500 pin with a short headline."
+    tag: "Save for later"
+    title: "Pinterest for YouTubers: Why Your Thumbnail Makes a Weak Pin"
+    description: "Pinterest's feed is built around tall 2:3 pins. A wide 1280×720 YouTube thumbnail shrinks in it and the text gets hard to read on a phone. Make a 1000×1500 pin instead, with a short readable headline and consistent colors, and link it straight to the video. The free guide covers what to pin for each video and where to link."
+    keywords: [pinterest for youtubers, pinterest pin size, youtube promotion, pinterest marketing, faceless youtube, pinterest pin design]
+    link: guide/pinterest-for-youtubers
+    board: "Pinterest Marketing for Creators"
+
+  - slug: thumbnail-text-two-to-five-words
+    type: tip
+    topic: youtube
+    kicker: "Thumbnail tip"
+    headline: "Keep thumbnail text to *2-5 words*"
+    body: "Viewers scrolling won't read a sentence. Use a few bold words that add to the title instead of repeating it."
+    tag: "Free guide"
+    title: "YouTube Thumbnail Text Rules: Keep It to 2 to 5 Readable Words"
+    description: "Thumbnails are seen small and fast, so a sentence won't get read. Keep thumbnail text to two to five words, split it into two short lines, use strong contrast and a bold font, and keep it clear of the bottom-right corner where the video length sits. Then shrink it to phone size and check every word. The free guide has the full checklist."
+    keywords: [youtube thumbnail text, thumbnail tips, faceless youtube, youtube thumbnails, youtube tips, small youtuber tips]
+    link: guide/youtube-thumbnail-text-rules
+    board: "Faceless YouTube Tips"
+
+  - slug: youtube-chapter-rules
+    type: tip
+    topic: youtube
+    kicker: "YouTube tip"
+    headline: "The *3 chapter rules* YouTube checks"
+    body: "First timestamp at 0:00, at least three chapters, and each chapter at least 10 seconds long."
+    tag: "Save for later"
+    title: "YouTube Chapter Rules: 0:00 Start, 3 Chapters, 10 Seconds Each"
+    description: "Chapters only show up when they follow YouTube's rules: the first timestamp is 0:00, there are at least three chapters, and each one lasts at least 10 seconds. Give each chapter a plain title with one idea, and your chapter list doubles as a ready-made list of Shorts ideas. The free guide shows how to turn chapters into Shorts."
+    keywords: [youtube chapters, youtube timestamps, youtube shorts, faceless youtube, youtube description, youtube tips]
+    link: guide/chapters-to-youtube-shorts
+    board: "Faceless YouTube Tips"
+
+  - slug: script-prompt-points-first
+    type: tip
+    topic: workflow
+    kicker: "AI script tip"
+    headline: "Write *your points* before the prompt"
+    body: "A topic alone gets a generic script. List the facts you've checked, in order, and tell the AI not to add new ones."
+    tag: "Free guide"
+    title: "AI Script Prompts That Sound Human: Start With Your Own Points"
+    description: "Most robotic AI scripts come from thin prompts. Before you write any prompt wording, list your points: one short sentence of fact or instruction each, with one concrete example, checked before they go in. Add a voice description and a banned-phrase list, then edit the draft out loud. The free guide includes a full example prompt to copy."
+    keywords: [ai script prompts, faceless youtube, youtube script, ai voiceover, ai video script, youtube automation]
+    link: guide/ai-script-prompts-that-sound-human
+    board: "Faceless YouTube Tips"
+
+  - slug: one-video-buffer
+    type: tip
+    topic: workflow
+    kicker: "Solo creator tip"
+    headline: "Keep a *one-video buffer*, not a backlog"
+    body: "One finished video scheduled a week ahead means a sick day moves your work, not your upload."
+    tag: "Save for later"
+    title: "Weekly Content Calendar Tip: Build a One-Video Buffer"
+    description: "A buffer is one finished video scheduled ahead of its publish date. For two or three weeks, add one extra script early in the week, then schedule that video a week out and keep working one week ahead. If you use it, rebuild it slowly. The free guide has a sample weekly calendar for one-person channels."
+    keywords: [content calendar, youtube schedule, faceless youtube, solo creator, youtube workflow, batching content]
+    link: guide/content-calendar-one-person-channel
+    board: "Faceless YouTube Tips"
+
+  - slug: one-change-per-week
+    type: tip
+    topic: workflow
+    kicker: "Weekly review tip"
+    headline: "Change *one thing* each week"
+    body: "Pick a single change, write it down and keep everything else the same, so you can see what it did."
+    tag: "Free guide"
+    title: "Weekly YouTube Review: Change One Thing at a Time"
+    description: "Changing your title style, thumbnail and upload day all at once makes it impossible to tell what helped. In a short weekly review, note your numbers, compare them with your own last four to six videos and choose exactly one change for next week. If nothing stands out, keep going. The free guide walks through a 20-minute review."
+    keywords: [youtube analytics, weekly review, content strategy, youtube studio, faceless youtube, pinterest analytics]
+    link: guide/weekly-content-review
+    board: "Faceless YouTube Tips"
+
+  - slug: free-product-first
+    type: tip
+    topic: workflow
+    kicker: "Selling tip"
+    headline: "Offer a *free product* before a paid one"
+    body: "A short, finished freebie lets viewers try your work and shows whether they want this kind of product at all."
+    tag: "Free guide"
+    title: "Selling Digital Products From a Faceless Channel: Start With a Freebie"
+    description: "On Payhip you can offer a free product that collects an email before the download. Keep it small, useful and finished, like a one-page checklist, not a teaser with the useful part removed. It helps you learn what your viewers want before you build something bigger. The honest Payhip basics guide covers pricing, links and coupons too."
+    keywords: [sell digital products, payhip, faceless youtube, lead magnet, digital downloads, creator business]
+    link: guide/sell-digital-products-faceless-channel
+    board: "Faceless YouTube Tips"
+
+# ---------------------------------------------------------------- how-tos (8)
+
+  - slug: bulk-upload-pins-with-csv
+    type: howto
+    topic: pinterest
+    kicker: "Step by step"
+    headline: "Bulk upload pins *with one CSV*"
+    items: ["Host your pin images", "Fill in the 8 columns", "Save as CSV UTF-8", "Check the file", "Create Pins in bulk"]
+    tag: "Free guide"
+    title: "How to Bulk Upload Pins to Pinterest With a CSV (Step by Step)"
+    description: "You can schedule up to 200 pins with one CSV file. Host your images so each has a public direct link, fill in the eight columns, save as CSV UTF-8, check it, then use Create Pins in bulk in your business account. Keep titles within 100 characters and descriptions within 500. The free guide has the exact header and a sample row."
+    keywords: [pinterest bulk upload, pinterest csv, schedule pinterest pins, bulk create pins, pinterest marketing, pinterest for creators]
+    link: guide/pinterest-bulk-upload-csv
+    board: "Pinterest Marketing for Creators"
+
+  - slug: host-pin-images-github-pages
+    type: howto
+    topic: pinterest
+    kicker: "Free image hosting"
+    headline: "Host pin images free on *GitHub Pages*"
+    items: ["Create a public repo", "Upload your images", "Turn on Pages: main, root", "Build each image URL", "Test in a private window"]
+    tag: "Free guide"
+    title: "How to Host Pinterest Images for Free With GitHub Pages"
+    description: "Pinterest bulk upload needs a public, direct link for every image. GitHub Pages gives you one for free, set up entirely on github.com: create a public repository, upload your pins, turn on Pages from the main branch, then build URLs like yourname.github.io/pins/pin-01.jpg. Test one in a private window first. The step-by-step guide covers it all."
+    keywords: [github pages, host images for pinterest, pinterest bulk upload, free image hosting, pinterest csv, pinterest tips]
+    link: guide/host-pinterest-images-github-pages
+    board: "Pinterest Marketing for Creators"
+
+  - slug: youtube-title-in-five-minutes
+    type: howto
+    topic: youtube
+    kicker: "YouTube titles"
+    headline: "Write a YouTube title *in five minutes*"
+    items: ["Write the video's promise", "Pick a title formula", "Draft three versions", "Run the checklist", "Pair with thumbnail text"]
+    tag: "Free guide"
+    title: "How to Write a YouTube Title in Five Minutes (No Clickbait)"
+    description: "Start with a one-sentence promise of your video, pick a formula that fits it, and draft three versions. Check each for length, a strong start and your keyword, then read the winner next to your thumbnail text so they don't repeat each other. The free guide has ten honest title formulas with examples."
+    keywords: [youtube titles, youtube title formulas, no clickbait, faceless youtube, youtube seo, youtube tips]
+    link: guide/youtube-title-formulas
+    board: "Faceless YouTube Tips"
+
+  - slug: chapters-into-shorts-steps
+    type: howto
+    topic: youtube
+    kicker: "Shorts how-to"
+    headline: "Turn your *chapters into Shorts*"
+    items: ["Pick stand-alone chapters", "Write a new hook", "Add 2-5 words on screen", "Title each Short", "Link back to the video"]
+    tag: "Free guide"
+    title: "How to Turn YouTube Chapters Into Shorts, Step by Step"
+    description: "Your chapter list is already a list of Shorts ideas. Pick the chapters that stand alone, write a fresh one-line hook for each, add two to five words of on-screen text, give every Short its own clear title and link back to the long video. Re-edit rather than copy, so each Short adds something. The free guide walks through every step."
+    keywords: [youtube shorts, shorts ideas, repurpose content, youtube chapters, faceless youtube, youtube shorts tips]
+    link: guide/chapters-to-youtube-shorts
+    board: "Faceless YouTube Tips"
+
+  - slug: thumbnail-text-checklist
+    type: howto
+    topic: youtube
+    kicker: "Thumbnail checklist"
+    headline: "Check thumbnail text *before you upload*"
+    items: ["2-5 words, or none", "Don't repeat the title", "Two short lines max", "Clear of bottom-right", "Readable at phone size"]
+    tag: "Save for later"
+    title: "YouTube Thumbnail Text Checklist: 5 Checks Before You Upload"
+    description: "Run this quick check on every thumbnail: two to five words, or none if the image works alone; words that add to the title instead of repeating it; at most two short lines; nothing important in the bottom-right corner; and every word readable when shrunk to phone size. The free guide explains each rule with examples."
+    keywords: [youtube thumbnail, thumbnail text, thumbnail checklist, faceless youtube, youtube tips, youtube design]
+    link: guide/youtube-thumbnail-text-rules
+    board: "Faceless YouTube Tips"
+
+  - slug: five-part-script-prompt
+    type: howto
+    topic: workflow
+    kicker: "AI script prompts"
+    headline: "The *5 parts* of a good script prompt"
+    items: ["Role and audience", "Your checked points", "Structure and length", "Voice rules", "Output format"]
+    tag: "Free guide"
+    title: "How to Write an AI Video Script Prompt in 5 Parts"
+    description: "A natural-sounding AI script starts with a specific prompt. Write it in five parts: who narrates and who listens, your checked points in order, the structure with rough lengths, voice rules like short sentences and banned filler phrases, and the output format. Then read the draft aloud and edit. The free guide includes a full example prompt."
+    keywords: [ai script prompt, faceless youtube, youtube script, ai video script, prompt template, youtube automation]
+    link: guide/ai-script-prompts-that-sound-human
+    board: "Faceless YouTube Tips"
+
+  - slug: twenty-minute-weekly-review
+    type: howto
+    topic: workflow
+    kicker: "Weekly review"
+    headline: "A *20-minute* weekly content review"
+    items: ["Note YouTube Studio stats", "Note Pinterest numbers", "Compare your last 4-6", "Choose one change", "Pick next week's topic"]
+    tag: "Save for later"
+    title: "How to Track What Works: A 20-Minute Weekly Content Review"
+    description: "Set a timer and keep the same order every week: note your YouTube Studio numbers, then your Pinterest numbers, compare them with your own last four to six videos, choose one change and pick next week's topic. No outside benchmarks, just your own channel over time. The free guide lists exactly which numbers to write down."
+    keywords: [youtube analytics, content review, youtube studio, pinterest analytics, faceless youtube, creator workflow]
+    link: guide/weekly-content-review
+    board: "Faceless YouTube Tips"
+
+  - slug: plan-faceless-channel-five-decisions
+    type: howto
+    topic: workflow
+    kicker: "Before you plan"
+    headline: "Decide *5 things* before you plan videos"
+    items: ["Topic in one sentence", "Who it's for", "One main format", "Your faceless method", "What you add"]
+    tag: "Free guide"
+    title: "How to Plan a Faceless YouTube Channel: 5 Decisions First"
+    description: "Before any schedule, write down five things: your topic in one sentence, who it's for, one main format, your faceless method (stock footage, slides, AI voice or avatar) and what you add yourself. That last line matters for YouTube's rules on repetitive content. The free guide then lays out a simple weekly workflow, day by day."
+    keywords: [faceless youtube channel, plan youtube channel, youtube workflow, ai avatar youtube, youtube for beginners, content planning]
+    link: guide/plan-a-faceless-youtube-channel
+    board: "Faceless YouTube Tips"
+
+# ---------------------------------------------------------------- kit features (6)
+
+  - slug: kit-title-thumbnail-lab
+    type: feature
+    topic: youtube
+    kicker: "Faceless Creator Kit"
+    headline: "Compare *3 titles* side by side"
+    body: "The title and thumbnail lab scores each title out of 100 and explains every point, next to its thumbnail text."
+    tag: "Planner"
+    title: "Compare YouTube Titles and Thumbnail Text Side by Side"
+    description: "The Faceless Creator Kit's title and thumbnail lab puts three title and thumbnail-text pairs next to each other. Each title gets a simple score out of 100 with every point explained, and thumbnail text outside two to five words is flagged. It's a writing checklist, not a ranking formula. See the full planner in the Faceless Creator Kit."
+    keywords: [youtube title, thumbnail text, youtube planner, faceless youtube, youtube tools, title tester]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+  - slug: kit-prompt-builder
+    type: feature
+    topic: workflow
+    kicker: "Channel Planner"
+    headline: "Build script prompts *in a click*"
+    body: "Three templates: listicle explainer, story reveal and how-to. Fill in your points, copy, paste into your AI tool."
+    tag: "Planner"
+    title: "AI Script Prompt Builder for Faceless YouTube Channels"
+    description: "The prompt builder in the Faceless Creator Kit has three templates: listicle explainer, story/insider reveal and how-to. Fill in your points, copy the prompt and paste it into whatever AI tool you use for scripts. Edit the templates or add your own, each with a fixed ending line. It builds the prompt; it doesn't write or voice the video. Part of the Faceless Creator Kit."
+    keywords: [ai script prompt, faceless youtube, youtube planner, prompt templates, youtube script, creator tools]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+  - slug: kit-shorts-planner
+    type: feature
+    topic: youtube
+    kicker: "Shorts planner"
+    headline: "Plan Shorts *straight from chapters*"
+    body: "The Shorts planner turns a video's chapters into a list of Shorts with fields for hooks, on-screen text and titles."
+    tag: "Planner"
+    title: "Plan YouTube Shorts From Your Video Chapters"
+    description: "The Shorts planner in the Faceless Creator Kit takes the chapters of a long video and lays out a list of Shorts, each with a hook, on-screen text and a title for you to fill in and edit. Then put them on the calendar next to your long videos. It plans the Shorts; you still edit them. Find it in the Faceless Creator Kit."
+    keywords: [youtube shorts, shorts planner, repurpose content, faceless youtube, youtube planner, content calendar]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+  - slug: kit-eight-pin-templates
+    type: feature
+    topic: pinterest
+    kicker: "Pin Factory"
+    headline: "*8 pin templates* at 1000×1500"
+    body: "Bold Headline, Numbered List, Quick Tip, Checklist, Quote, Do vs Don't and more, in your own colors and fonts."
+    tag: "Pin Factory"
+    title: "8 Pinterest Pin Templates for YouTubers, Sized 1000×1500"
+    description: "Pin Factory in the Faceless Creator Kit includes 8 pin templates at Pinterest's 2:3 size: Bold Headline, Numbered List, Quick Tip, Recipe/Product Card, Quote, Before → After / Do vs Don't, Money Compare and Checklist. Add a brand kit per channel with your colors, fonts, logo and call-to-action tag. No design software needed with the Faceless Creator Kit."
+    keywords: [pinterest templates, pin templates, pinterest for youtubers, pinterest pin design, faceless youtube, pin maker]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+  - slug: kit-batch-mode
+    type: feature
+    topic: workflow
+    kicker: "Pin Factory"
+    headline: "Turn spreadsheet rows *into pins*"
+    body: "Paste rows from Google Sheets or Excel, or upload a CSV, and render every pin at once. Click any pin to fix it."
+    tag: "Pin Factory"
+    title: "Make Pinterest Pins in Bulk From a Spreadsheet"
+    description: "Batch mode in the Faceless Creator Kit's Pin Factory turns spreadsheet rows into pins. Paste rows from Google Sheets or Excel, or upload a CSV, and every pin renders at once in your brand colors. Click any pin to fix it before export. A practical way to make a week of pins in one sitting with the Faceless Creator Kit."
+    keywords: [bulk pin maker, pinterest pins in bulk, batch content, pinterest for youtubers, faceless youtube, creator workflow]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+  - slug: kit-csv-export-private-offline
+    type: feature
+    topic: workflow
+    kicker: "Faceless Creator Kit"
+    headline: "Your data stays *on your device*"
+    body: "No account, no cloud, no tracking. Works offline after the first visit, and exports a ZIP plus a Pinterest CSV."
+    tag: "Private & offline"
+    title: "A Private, Offline Creator App With Pinterest Bulk CSV Export"
+    description: "The Faceless Creator Kit runs in your browser and keeps your plans on your own device: no account, no cloud, no tracking, and it works offline after the first visit. Pin Factory exports your pins as PNG or JPG in one ZIP plus a Pinterest bulk-upload CSV with UTM links, a posting schedule and length checks. One payment, no subscription: the Faceless Creator Kit."
+    keywords: [pinterest bulk upload, pinterest csv, creator tools, offline app, faceless youtube, no subscription]
+    link: creator-kit
+    board: "YouTube Growth Tools"
+
+# ---------------------------------------------------------------- free tools (6)
+
+  - slug: title-scorer-check-your-title
+    type: tool
+    topic: youtube
+    kicker: "Free tool"
+    headline: "Score your YouTube title *for free*"
+    body: "Paste a title and see how it does on length, a strong start, numbers, caps, bait phrases and your keyword."
+    tag: "Free tool"
+    title: "Free YouTube Title Scorer: Check Your Title Before You Publish"
+    description: "The free YouTube Title Scorer checks a title against a short list of transparent rules: 40 to 65 characters, a number, a strong start, no more than two all-caps words, no bait phrases and your keyword. Every point is explained. These are clear writing habits, not ranking factors. Try the free tool on your next draft."
+    keywords: [youtube title, title checker, youtube seo, free youtube tools, faceless youtube, youtube title ideas]
+    link: title-scorer
+    board: "YouTube Growth Tools"
+
+  - slug: title-scorer-three-drafts
+    type: tool
+    topic: youtube
+    kicker: "Free tool"
+    headline: "Test *three title drafts*, keep the clearest"
+    body: "Write three versions with different formulas, run each through the free scorer and fix length first."
+    tag: "Free tool"
+    title: "Compare Three YouTube Title Drafts With a Free Title Scorer"
+    description: "Instead of agonizing over one title, write three drafts using different formulas, such as how-to, the mistake or a comparison. Run each through the free YouTube Title Scorer, fix length first, then the opening words and the keyword. Pick the one that pairs well with your thumbnail text. Try the free tool on your next three drafts."
+    keywords: [youtube titles, title scorer, youtube title formulas, youtube tips, free youtube tools, small youtuber]
+    link: title-scorer
+    board: "YouTube Growth Tools"
+
+  - slug: title-scorer-shorts-titles
+    type: tool
+    topic: youtube
+    kicker: "Free tool"
+    headline: "Check your *Shorts titles* too"
+    body: "Shorts titles run shorter, so focus on a strong start, no bait phrases and your keyword over the length score."
+    tag: "Free tool"
+    title: "Check YouTube Shorts Titles With the Free Title Scorer"
+    description: "The free YouTube Title Scorer's 40 to 65 character range is aimed at long-video titles. For Shorts, a lower length score is fine: focus on the other checks instead, like a strong start, no bait phrases and including your keyword. Lead with the specific idea and keep it honest. Run your Shorts titles through the free tool."
+    keywords: [youtube shorts titles, shorts tips, title checker, free youtube tools, faceless youtube, youtube shorts]
+    link: title-scorer
+    board: "YouTube Growth Tools"
+
+  - slug: csv-checker-before-upload
+    type: tool
+    topic: pinterest
+    kicker: "Free tool"
+    headline: "Check your Pinterest CSV *before Pinterest does*"
+    body: "The free checker flags a wrong header, long titles, past dates and image links that aren't direct, row by row."
+    tag: "Free tool"
+    title: "Free Pinterest CSV Checker: Catch Bulk Upload Errors Before You Upload"
+    description: "The free Pinterest CSV Checker reads your bulk-upload file in the browser and flags problems by row: a wrong or misspelled header, titles over 100 characters, descriptions over 500, publish dates in the past or in the wrong format, and Media URLs that don't look like direct image links. Run the free tool before every upload."
+    keywords: [pinterest csv, pinterest bulk upload, pinterest csv checker, pinterest csv error, free pinterest tools, pinterest marketing]
+    link: pinterest-csv-checker
+    board: "YouTube Growth Tools"
+
+  - slug: csv-checker-header-typos
+    type: tool
+    topic: pinterest
+    kicker: "Free tool"
+    headline: "Find the *header typo* that breaks uploads"
+    body: "Board instead of Pinterest board, Image URL instead of Media URL: small slips that get a whole file rejected."
+    tag: "Free tool"
+    title: "Pinterest Bulk Upload Rejected? Check Your CSV Header for Free"
+    description: "A whole Pinterest bulk file often fails because of the first line: Board instead of Pinterest board, Image URL instead of Media URL, Publish Date with a capital D, or a missing Thumbnail column. The free Pinterest CSV Checker compares your header with the exact one Pinterest expects. Open your file in the free tool before you upload."
+    keywords: [pinterest csv error, pinterest bulk upload, invalid format, pinterest csv header, pinterest tips, free pinterest tools]
+    link: pinterest-csv-checker
+    board: "YouTube Growth Tools"
+
+  - slug: csv-checker-publish-dates
+    type: tool
+    topic: pinterest
+    kicker: "Free tool"
+    headline: "Catch *past publish dates* before upload"
+    body: "Files prepared days ahead often hold dates that already passed. The free checker flags them and wrong formats."
+    tag: "Free tool"
+    title: "Pinterest CSV Publish Dates: Find Past or Wrong-Format Dates for Free"
+    description: "Scheduled pins need publish dates in the future, written as YYYY-MM-DDTHH:MM:SS. A CSV built a few days early, or opened and resaved in a spreadsheet, can quietly break that. The free Pinterest CSV Checker flags past dates and wrong formats by row, so you can move them forward before uploading. Check your next batch with the free tool."
+    keywords: [pinterest csv, schedule pinterest pins, pinterest publish date, pinterest bulk upload, free pinterest tools, pinterest scheduling]
+    link: pinterest-csv-checker
+    board: "YouTube Growth Tools"

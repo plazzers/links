@@ -79,7 +79,7 @@ const PAGES = {
       '© 2026 Chef Sal Romano. Mangia bene.',
     ],
   },
-  index: { links: ['walter/', 'sal/'], text: ["Walter's Home Check", 'Chef Sal Romano'] },
+  index: { links: ['walter/', 'sal/', 'creator-kit/'], text: ["Walter's Home Check", 'Chef Sal Romano', 'Tools for creators'] },
 };
 
 const TYPES = { '.html': 'text/html; charset=utf-8', '.jpg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml' };

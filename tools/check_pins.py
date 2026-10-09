@@ -6,6 +6,7 @@ Prints every problem it finds and exits with status 1 if there are any.
 Checks: pin images (size, format, color profile, file size), both bulk CSVs,
 the weekly CSVs in pins/weekly/ (pins with "week:" in the YAML)
 (encoding, header, quoting, lengths, URLs, utm params, publish schedule) and
+the Faceless Creator Kit pins (pins/kit/, pinterest-bulk-kit.csv) and
 the content rules (no restaurant brand names, no repair prices on Walter's
 pins, at most 10 Walter pins mention a product, no health claims).
 """
@@ -280,6 +281,97 @@ def check_week(channel, wk, pins, by_file, prev_last):
     return prev_last
 
 
+KIT_BOARDS = {"Faceless YouTube Tips", "Pinterest Marketing for Creators", "YouTube Growth Tools"}
+KIT_START, KIT_SLOTS = datetime(2026, 10, 12), (14, 20)
+KIT_BANNED = [r"guarantee", r"testimonial", r"passive income", r"go viral", r"overnight", r"\brated\b",
+              r"\bratings?\b", r"#1\b", r"best[- ]selling", r"trusted by", r"loved by", r"\$\s?\d", r"\d+%"]
+
+
+def check_kit():
+    """The Faceless Creator Kit pins: 30 pins, 2 a day at 14/20 UTC from
+    2026-10-12, three boards, links to creator-kit/ pages that exist."""
+    pins = yaml.safe_load((ROOT / "tools" / "pins_kit.yaml").read_text(encoding="utf-8"))["pins"]
+    slugs = [p["slug"] for p in pins]
+    for s, n in Counter(slugs).items():
+        if n > 1:
+            bad(f"kit: slug used twice: {s}")
+    if len(pins) != 30:
+        bad(f"kit: {len(pins)} pins in the YAML, expected 30")
+    for p in pins:
+        t = text_of(p).lower()
+        for b in KIT_BANNED:
+            if re.search(b, t):
+                bad(f"kit/{p['slug']}: banned wording '{b}'")
+    files = sorted((PINS / "kit").glob("*.jpg"))
+    expected = {f"{i:03d}-{s}.jpg" for i, s in enumerate(slugs, 1)}
+    if {f.name for f in files} != expected:
+        bad("kit: image files don't match the YAML")
+    for f in files:
+        with Image.open(f) as im:
+            if im.format != "JPEG" or im.size != (1000, 1500) or im.mode != "RGB":
+                bad(f"kit/{f.name}: {im.format} {im.size} {im.mode}")
+            icc = im.info.get("icc_profile")
+            if not icc or "sRGB" not in ImageCms.getProfileDescription(ImageCms.ImageCmsProfile(io.BytesIO(icc))):
+                bad(f"kit/{f.name}: no sRGB color profile")
+        if f.stat().st_size >= 350_000:
+            bad(f"kit/{f.name}: too big")
+    path = PINS / "pinterest-bulk-kit.csv"
+    raw = path.read_bytes()
+    text = raw.decode("utf-8")
+    if raw.startswith(b"\xef\xbb\xbf"):
+        bad(f"{path.name}: has a byte-order mark")
+    rows = list(csv.reader(io.StringIO(text, newline="")))
+    if rows[0] != HEADER:
+        bad(f"{path.name}: header is {rows[0]}")
+    body = rows[1:]
+    if len(body) != 30:
+        bad(f"{path.name}: {len(body)} rows, expected 30")
+    buf = io.StringIO()
+    csv.writer(buf, quoting=csv.QUOTE_ALL).writerows(rows)
+    if buf.getvalue() != text:
+        bad(f"{path.name}: not every field is quoted the standard way")
+    dates = []
+    prefix = SITE + "pins/kit/"
+    for n, r in enumerate(body, 2):
+        where = f"{path.name} line {n}"
+        title, media, board, thumb, desc, link, date, kw = r
+        if not title or len(title) > 100:
+            bad(f"{where}: title length {len(title)}")
+        if not 150 <= len(desc) <= 500:
+            bad(f"{where}: description length {len(desc)}")
+        if board not in KIT_BOARDS:
+            bad(f"{where}: board '{board}'")
+        if thumb:
+            bad(f"{where}: Thumbnail should be empty")
+        if not media.startswith(prefix) or not (PINS / "kit" / media[len(prefix):]).is_file():
+            bad(f"{where}: Media URL doesn't point to a pin in the repo: {media}")
+        base, _, query = link.partition("?")
+        slug = media[len(prefix):-4].split("-", 1)[-1]
+        if not base.startswith(SITE + "creator-kit/") or not (ROOT / base[len(SITE):] / "index.html").is_file():
+            bad(f"{where}: link goes to a page that doesn't exist: {base}")
+        if query != f"utm_source=pinterest&utm_medium=pin&utm_campaign={slug}":
+            bad(f"{where}: link utm params are '{query}'")
+        k = [x.strip() for x in kw.split(",")]
+        if not 5 <= len(k) <= 8 or not all(k):
+            bad(f"{where}: {len(k)} keywords")
+        last = re.split(r"(?<=[.!?])\s+", desc.strip())[-1].lower()
+        if not any(w in last for w in ("free tool", "guide", "faceless creator kit")):
+            bad(f"{where}: description doesn't end with a call to action")
+        try:
+            dates.append(datetime.strptime(date, "%Y-%m-%dT%H:%M:%S"))
+        except ValueError:
+            bad(f"{where}: publish date '{date}' is not ISO 8601")
+    want = [KIT_START + timedelta(days=i // 2, hours=KIT_SLOTS[i % 2]) for i in range(len(dates))]
+    if dates != want:
+        bad(f"{path.name}: publish dates aren't 2 a day at 14/20 UTC from 2026-10-12")
+    by_file = {f"{i:03d}-{p['slug']}.jpg": p for i, p in enumerate(pins, 1)}
+    seq = [by_file.get(r[1].rsplit("/", 1)[-1]) for r in body]
+    same = sum(1 for a, b in zip(seq, seq[1:]) if a and b and a["type"] == b["type"] and a.get("topic") == b.get("topic"))
+    if same:
+        bad(f"{path.name}: {same} back-to-back pins with the same type and topic")
+    print(f"kit: {len(files)} images, {len(body)} CSV rows, dates {body[0][6]} .. {body[-1][6]}")
+
+
 def desc_ok_cta(body):
     """The last sentence of each description should point somewhere (a soft CTA)."""
     words = ("Walter", "Sal", "page", "tool", "calculator", "Cookbook", "checklist", "Checklist", "Mangia")
@@ -293,7 +385,8 @@ def desc_ok_cta(body):
 if __name__ == "__main__":
     for ch in ("walter", "sal"):
         check_channel(ch)
-    for f in ("index.html", "contact-walter.jpg", "contact-sal.jpg"):
+    check_kit()
+    for f in ("index.html", "contact-walter.jpg", "contact-sal.jpg", "contact-kit.jpg"):
         if not (PINS / f).is_file():
             bad(f"pins/{f} is missing")
     gallery = (PINS / "index.html").read_text(encoding="utf-8") if (PINS / "index.html").is_file() else ""

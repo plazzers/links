@@ -1,7 +1,8 @@
-"""Pinterest pin factory for Walter's Home Check and Chef Sal Romano.
+"""Pinterest pin factory for Walter's Home Check, Chef Sal Romano and the
+Faceless Creator Kit.
 
-Reads the pin content from tools/pins_walter.yaml and tools/pins_sal.yaml and
-writes, for each channel:
+Reads the pin content from tools/pins_walter.yaml, tools/pins_sal.yaml and
+tools/pins_kit.yaml and writes, for each channel:
 
   pins/<channel>/NNN-slug.jpg        1000x1500 pins (sRGB JPEG, < 350 KB)
   pins/pinterest-bulk-<channel>.csv  Pinterest bulk-create CSV
@@ -14,8 +15,11 @@ pins/weekly/<week>-<channel>.jpg). Each weekly batch is scheduled 3 a day
 from the day after the last publish date of the batches before it, so old
 schedules never move.
 
+The kit (third style, "kit") has 30 pins scheduled 2 a day (14:00 and 20:00
+UTC) from KIT_START; its links go to creator-kit/ (landing, free tools, guides).
+
 Run from the repo root:   python3 tools/make_pins.py
-Only one channel:         python3 tools/make_pins.py walter
+Only one channel:         python3 tools/make_pins.py walter   (or sal, kit)
 Then check the output:    python3 tools/check_pins.py
 
 Needs Python 3 with Pillow and PyYAML (pip install pillow pyyaml). Fonts are
@@ -47,6 +51,8 @@ X0, X1 = 70, 930            # left / right text margin
 MAX_BYTES = 350_000
 START = datetime(2026, 10, 10)
 SLOTS = (13, 17, 21)         # UTC publish hours, 3 pins a day per channel
+KIT_START = datetime(2026, 10, 12)
+KIT_SLOTS = (14, 20)        # UTC publish hours, 2 kit pins a day
 SRGB = ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes()
 
 LINKS = {
@@ -54,6 +60,9 @@ LINKS = {
     "house-age": SITE + "walter/house-age/",
     "sal": SITE + "sal/",
     "restaurant-or-home": SITE + "sal/restaurant-or-home/",
+    "creator-kit": SITE + "creator-kit/",
+    "title-scorer": SITE + "creator-kit/tools/title-scorer/",
+    "pinterest-csv-checker": SITE + "creator-kit/tools/pinterest-csv-checker/",
 }
 
 
@@ -627,6 +636,165 @@ def approx(n):
     return f"~${n:,}"
 
 
+# ================================================================ KIT (Faceless Creator Kit)
+
+KN = dict(ink="#1C1A27", ink2="#26233A", coral="#FF6B4A", coral_dark="#C8432A", paper="#F7F3EC", white="#FFFFFF",
+          muted="#C9C5D8", dim="#8F8AA6", line="#E3DFD6", good="#16865A", indigo="#5D50BE")
+SG_B, INTER_R = "SpaceGrotesk-Bold.ttf", "Inter-Regular.otf"
+KIT_FOOTER = "PLAZZERS.GITHUB.IO/LINKS/CREATOR-KIT"
+# feature pins show a crop of a real app screenshot (source-assets/kit/)
+KIT_SHOTS = {
+    "title": ("feature-2-title-lab", (150, 270, 1450, 1000)),
+    "prompt": ("feature-3-prompt-builder", (150, 270, 1450, 1000)),
+    "shorts": ("app-08-shorts", (0, 0, 1440, 810)),
+    "templates": ("feature-4-pin-templates", (150, 270, 1450, 1000)),
+    "batch": ("feature-5-batch-mode", (150, 270, 1450, 1000)),
+    "export": ("feature-6-export", (150, 270, 1450, 1000)),
+}
+KIT_CHECKS = {  # tool pins: the real checks each free tool runs
+    "title-scorer": ["40–65 characters", "Has a number", "Starts strong", "No clickbait words", "Includes your keyword"],
+    "pinterest-csv-checker": ["Exact 8-column header", "Titles up to 100 characters", "Public image links",
+                              "Dates as YYYY-MM-DDTHH:MM:SS", "No duplicate rows"],
+}
+
+
+def kit_background():
+    base = Image.new("RGBA", (W, H), rgba(KN["ink"]))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    g = ImageDraw.Draw(glow)
+    g.ellipse((520, -380, 1400, 420), fill=rgba(KN["coral"], 120))
+    g.ellipse((-500, 1050, 420, 1850), fill=rgba(KN["indigo"], 150))
+    base.alpha_composite(glow.filter(ImageFilter.GaussianBlur(170)))
+    return base
+
+
+@lru_cache(None)
+def kit_logo(size):
+    return Image.open(ROOT / "source-assets" / "kit" / "apple-touch-icon.png").convert("RGBA").resize((size, size), Image.LANCZOS)
+
+
+def kit_shot(slug):
+    key = next((k for k in KIT_SHOTS if k in slug), "export" if "export" in slug or "csv" in slug else None)
+    if key is None:
+        key = "export"
+    name, box = KIT_SHOTS[key]
+    return Image.open(ROOT / "source-assets" / "kit" / f"{name}.png").convert("RGB").crop(box)
+
+
+def rounded_paste(base, im, xy, radius, shadow=True):
+    mask = Image.new("L", im.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, im.width - 1, im.height - 1), radius=radius, fill=255)
+    if shadow:
+        sh = Image.new("RGBA", (im.width + 120, im.height + 120), (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rounded_rectangle((60, 60, im.width + 60, im.height + 60), radius=radius, fill=(0, 0, 0, 150))
+        base.alpha_composite(sh.filter(ImageFilter.GaussianBlur(26)), (xy[0] - 60, xy[1] - 44))
+    layer = im.convert("RGBA")
+    layer.putalpha(mask)
+    base.alpha_composite(layer, xy)
+
+
+KIT_LIMIT = 1225  # content must end above the tag pill
+
+
+def kit_pin(p):
+    for top in (112, 104, 96, 88, 80):
+        im = _kit_pin(p, top)
+        if p["_bottom"] <= KIT_LIMIT:
+            free = KIT_LIMIT - p["_bottom"]
+            if free > 80:  # short pins: center the content in the free space
+                im = _kit_pin(p, top, min(free // 2, 240))
+            return im
+    raise ValueError(f"content too tall: {p['slug']} ({p['_bottom']})")
+
+
+def _kit_pin(p, top_size, shift=0):
+    base = kit_background()
+    d = ImageDraw.Draw(base)
+    kind = p["type"]
+    base.alpha_composite(kit_logo(58), (X0, 64))
+    tracked(d, (X0 + 76, 104), "FACELESS CREATOR KIT", font(INTER_B, 24), rgb(KN["white"]), 0.14)
+
+    tracked(d, (X0, 228 + shift), p["kicker"].upper(), font(INTER_B, 28), rgb(KN["coral"]), 0.16)
+    hf, lines = fit_headline(p["headline"], SG_B, range(top_size, 69, -2), X1 - X0, 4, 400, 1.08)
+    lead = int(hf.size * 1.08)
+    y = 268 + shift + cap_height(hf)
+    y = draw_rich_lines(d, X0, y, lines, hf, rgb(KN["white"]), rgb(KN["coral"]), lead) - lead
+
+    if kind == "howto":
+        items = p["items"]
+        f = font(INTER_SB, 40)
+        row = 92
+        top = y + 64
+        h = 44 + row * len(items) - 20 + 28
+        d.rounded_rectangle((X0, top, X1, top + h), radius=28, fill=rgb(KN["paper"]))
+        yy = top + 44
+        for i, item in enumerate(items, 1):
+            d.ellipse((X0 + 34, yy - 4, X0 + 94, yy + 56), fill=rgb(KN["coral"]))
+            d.text((X0 + 64, yy + 27), str(i), font=font(SG_B, 36), fill=rgb(KN["ink"]), anchor="mm")
+            if f.getlength(item) > X1 - X0 - 150:
+                raise ValueError(f"list item too long: {item!r}")
+            d.text((X0 + 120, yy + 40), item, font=f, fill=rgb(KN["ink"]), anchor="ls")
+            if i < len(items):
+                d.line((X0 + 120, yy + row - 22, X1 - 34, yy + row - 22), fill=rgb(KN["line"]), width=2)
+            yy += row
+        bottom = top + h
+    elif kind == "tip":
+        bf = font(INTER_SB, 42)
+        body = wrap_plain(p["body"], bf, X1 - X0 - 96, 5)
+        if body is None:
+            raise ValueError(f"body too long: {p['slug']}")
+        top = y + 92
+        h = 76 + cap_height(bf) + (len(body) - 1) * 60 + 50
+        d.rounded_rectangle((X0, top, X1, top + h), radius=28, fill=rgb(KN["paper"]))
+        d.rectangle((X0, top + 28, X0 + 8, top + h - 28), fill=rgb(KN["coral"]))
+        lf = font(INTER_B, 22)
+        tw = tracked_width("QUICK TIP", lf, 0.18)
+        d.rounded_rectangle((X0 + 48, top - 20, X0 + 48 + tw + 36, top + 20), radius=20, fill=rgb(KN["coral"]))
+        tracked(d, (X0 + 66, top + 8), "QUICK TIP", lf, rgb(KN["ink"]), 0.18)
+        yy = top + 76 + cap_height(bf)
+        for line in body:
+            d.text((X0 + 48, yy), line, font=bf, fill=rgb(KN["ink"]), anchor="ls")
+            yy += 60
+        bottom = top + h
+    else:
+        bf = font(INTER_R, 38)
+        body = wrap_plain(p["body"], bf, X1 - X0, 4)
+        if body is None:
+            raise ValueError(f"body too long: {p['slug']}")
+        yy = y + 48 + cap_height(bf)
+        for line in body:
+            d.text((X0, yy), line, font=bf, fill=rgb(KN["muted"]), anchor="ls")
+            yy += 54
+        top = yy - 54 + 52
+        if kind == "feature":
+            shot = kit_shot(p["slug"])
+            w = X1 - X0
+            h = min(int(shot.height * w / shot.width), KIT_LIMIT - top)
+            shot = shot.resize((w, int(shot.height * w / shot.width)), Image.LANCZOS).crop((0, 0, w, h))
+            rounded_paste(base, shot, (X0, top), 22)
+            bottom = top + h
+        else:  # tool: the checks the free tool runs
+            tool = p["link"]
+            checks = KIT_CHECKS[tool]
+            row = 74
+            h = 40 + row * len(checks) + 6
+            d.rounded_rectangle((X0, top, X1, top + h), radius=28, fill=rgb(KN["paper"]))
+            cf = font(INTER_SB, 36)
+            yy = top + 40
+            for c in checks:
+                cx, cy = X0 + 56, yy + 20
+                d.ellipse((cx - 20, cy - 20, cx + 20, cy + 20), fill=rgb(KN["good"]))
+                d.line((cx - 10, cy + 1, cx - 3, cy + 9, cx + 11, cy - 8), fill=rgb(KN["white"]), width=5, joint="curve")
+                d.text((X0 + 100, yy + 33), c, font=cf, fill=rgb(KN["ink"]), anchor="ls")
+                yy += row
+            bottom = top + h
+    p["_bottom"] = bottom
+
+    pill_button(d, X0, 1270, p["tag"].upper(), font(INTER_B, 30), rgb(KN["coral"]), rgb(KN["ink"]), 30, 22, 30, 0.12)
+    tracked(d, (X0, 1424), KIT_FOOTER, font(INTER_B, 22), rgb(KN["dim"]), 0.12)
+    return base.convert("RGB")
+
+
 # ---------------------------------------------------------------- schedule, CSV, gallery
 
 def spread_pick(group, last_topic):
@@ -641,7 +809,7 @@ def spread_pick(group, last_topic):
     return None
 
 
-def schedule(pins, start=START):
+def schedule(pins, start=START, slots=SLOTS):
     """Order the pins so similar topics aren't back to back: always take the
     next pin from the group with the most pins left, skipping the group (and
     topic) just used when possible. Then 3 slots a day."""
@@ -665,14 +833,17 @@ def schedule(pins, start=START):
         order.append(pick)
         last_type, last_topic = pick["type"], pick.get("topic")
     for i, p in enumerate(order):
-        p["publish"] = (start + timedelta(days=i // 3, hours=SLOTS[i % 3])).strftime("%Y-%m-%dT%H:%M:%S")
+        p["publish"] = (start + timedelta(days=i // len(slots), hours=slots[i % len(slots)])).strftime("%Y-%m-%dT%H:%M:%S")
     return order
 
 
 def link_for(p):
     # link: walter | house-age | sal | restaurant-or-home, or a site path such
-    # as walter/guides/<slug> (a guide article)
-    base = LINKS.get(p["link"]) or SITE + p["link"].strip("/") + "/"
+    # as walter/guides/<slug> (a guide article); kit pins: guide/<slug>
+    link = p["link"]
+    if link.startswith("guide/"):
+        link = "creator-kit/guides/" + link[len("guide/"):]
+    base = LINKS.get(link) or SITE + link.strip("/") + "/"
     return base + f"?utm_source=pinterest&utm_medium=pin&utm_campaign={p['slug']}"
 
 
@@ -733,7 +904,7 @@ def gallery(all_pins):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Pin gallery — Walter &amp; Sal</title>
+<title>Pin gallery — Walter, Sal &amp; Creator Kit</title>
 <style>
   :root {{ color-scheme: light; }}
   body {{ margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; background: #f3f1ed; color: #222; }}
@@ -756,9 +927,9 @@ def gallery(all_pins):
 <header>
   <h1>Pin gallery</h1>
   <p>Review page, not linked from the site. {sum(len(v) for v in all_pins.values())} pins in publish order. CSVs:
-  <a href="pinterest-bulk-walter.csv">Walter</a> · <a href="pinterest-bulk-sal.csv">Sal</a> ·
-  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a>{weekly}</p>
-  <nav><a href="#walter">Walter's Home Check</a><a href="#sal">Chef Sal Romano</a></nav>
+  <a href="pinterest-bulk-walter.csv">Walter</a> · <a href="pinterest-bulk-sal.csv">Sal</a> · <a href="pinterest-bulk-kit.csv">Creator Kit</a> ·
+  contact sheets: <a href="contact-walter.jpg">Walter</a> · <a href="contact-sal.jpg">Sal</a> · <a href="contact-kit.jpg">Creator Kit</a>{weekly}</p>
+  <nav><a href="#walter">Walter's Home Check</a><a href="#sal">Chef Sal Romano</a><a href="#kit">Faceless Creator Kit</a></nav>
 </header>
 <main>
 <h2 id="walter">Walter's Home Check ({len(all_pins.get('walter', []))})</h2>
@@ -768,6 +939,10 @@ def gallery(all_pins):
 <h2 id="sal">Chef Sal Romano ({len(all_pins.get('sal', []))})</h2>
 <div class="grid">
 {cards.get('sal', '')}
+</div>
+<h2 id="kit">Faceless Creator Kit ({len(all_pins.get('kit', []))})</h2>
+<div class="grid">
+{cards.get('kit', '')}
 </div>
 </main>
 </body>
@@ -782,8 +957,10 @@ BOARDS = {
     "walter": {"quick": "Home Maintenance Checklists", "buyer": "Buying a House: Red Flags",
                "older": "Older Homes", "seasonal": "Winter Home Prep", "list": "Home Maintenance Checklists"},
     "sal": {"recipe": "Copycat Restaurant Recipes", "trick": "Restaurant Secrets", "money": "Budget Family Dinners"},
+    "kit": {"tip": "Faceless YouTube Tips", "howto": "Faceless YouTube Tips", "feature": "YouTube Growth Tools",
+            "tool": "YouTube Growth Tools"},
 }
-DEFAULT_LINK = {"walter": {"older": "house-age"}, "sal": {"money": "restaurant-or-home"}}
+DEFAULT_LINK = {"walter": {"older": "house-age"}, "sal": {"money": "restaurant-or-home"}, "kit": {}}
 
 
 def load(channel):
@@ -792,7 +969,7 @@ def load(channel):
     dishes = calculator_dishes() if channel == "sal" else None
     for n, p in enumerate(pins, 1):
         p.setdefault("board", BOARDS[channel][p["type"]])
-        p.setdefault("link", DEFAULT_LINK[channel].get(p["type"], channel))
+        p.setdefault("link", DEFAULT_LINK[channel].get(p["type"], "creator-kit" if channel == "kit" else channel))
         p["file"] = f"{n:03d}-{p['slug']}.jpg"
         if channel == "sal" and p["type"] == "money" and p.get("calc"):
             o, h = money_numbers(p["calc"], dishes)
@@ -838,7 +1015,10 @@ def schedule_all(channel, pins):
     """Schedule the original batch from START, then each weekly batch from the
     day after the previous batch's last publish date. Returns {week: pins}."""
     base = [p for p in pins if not week_of(p)]
-    schedule(base)
+    if channel == "kit":
+        schedule(base, KIT_START, KIT_SLOTS)
+    else:
+        schedule(base)
     last = max(p["publish"] for p in base)
     weeks = {}
     for p in pins:
@@ -859,7 +1039,7 @@ def build(channel):
     for old in folder.glob("*.jpg"):
         if old.name not in keep:
             old.unlink()
-    make = walter_pin if channel == "walter" else sal_pin
+    make = {"walter": walter_pin, "sal": sal_pin, "kit": kit_pin}[channel]
     for p in pins:
         size = save_jpeg(make(p), folder / p["file"])
         p["_size"] = size
@@ -876,9 +1056,9 @@ def build(channel):
 
 
 if __name__ == "__main__":
-    which = sys.argv[1:] or ["walter", "sal"]
+    which = sys.argv[1:] or ["walter", "sal", "kit"]
     built = {}
-    for ch in ("walter", "sal"):
+    for ch in ("walter", "sal", "kit"):
         if ch in which:
             built[ch] = build(ch)
         else:
