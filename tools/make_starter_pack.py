@@ -26,7 +26,10 @@ CREAM = HexColor("#fdf3dc")
 SOFT = HexColor("#ffe6df")
 GREY = HexColor("#5b5868")
 
-KIT = "https://payhip.com/b/KQZna?utm_source=starterpack&utm_medium=pdf&utm_campaign=starter"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import kit_config as CFG  # noqa: E402
+
+KIT = CFG.BUY_URL + "?utm_source=starterpack&utm_medium=pdf&utm_campaign=starter"
 SITE = "https://plazzers.github.io/links/creator-kit/?utm_source=starterpack&utm_medium=pdf&utm_campaign=starter"
 SCORER = "https://plazzers.github.io/links/creator-kit/tools/title-scorer/"
 CHECKER = "https://plazzers.github.io/links/creator-kit/tools/pinterest-csv-checker/"
