@@ -14,7 +14,7 @@ Nothing else in the repo may contain a Payhip link for the kit
 BUY_URL = "https://payhip.com/b/KQZna"
 
 # The free lead-magnet product on Payhip (placeholder until it exists).
-FREE_URL = "https://payhip.com/PLACEHOLDER-FREE"
+FREE_URL = "https://payhip.com/b/6Nr7R"
 
 # What the free lead magnet is called on the site (change it to match the real product).
 FREE_NAME = "The Faceless Channel Starter Pack"
