@@ -254,6 +254,11 @@ sheet `pins/weekly/<week>-<channel>.jpg`. A weekly batch is 21 pins per channel,
 3 a day (13:00/17:00/21:00 UTC) from the day after the last publish date already used for
 that channel. A pin can link to a guide article with `link: walter/guides/<slug>` (or
 `sal/guides/<slug>`). Upload each weekly CSV the same way as the bulk CSV.
+Pinterest only schedules about 30 days ahead, so a week whose last pin would land more
+than 30 days after today is **held**: its pins and contact sheet are made, but its CSV is
+not written yet (`make_pins.py` prints `HELD`, `check_pins.py` accepts the missing file).
+The held week keeps its place in the queue; the first run of `make_pins.py` where it fits
+writes its CSV, and later weeks are scheduled after it.
 
 **Add or change pins:** all text lives in `tools/pins_walter.yaml` and
 `tools/pins_sal.yaml` — open one, copy a block of the same kind, change it and add it

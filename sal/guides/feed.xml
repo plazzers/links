@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 08 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Copycat Baked Mac and Cheese (Like the Southern-Style Chains)</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-baked-mac-and-cheese/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-baked-mac-and-cheese/</guid>
+    <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Copycat baked mac and cheese like the Southern-style chains: what makes it creamy, the sauce tips, ingredients, common mistakes and holiday serving ideas.</description>
+  </item>
+  <item>
+    <title>Why Restaurant Food Tastes Better (and How to Do It at Home)</title>
+    <link>https://plazzers.github.io/links/sal/guides/why-restaurant-food-tastes-better/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/why-restaurant-food-tastes-better/</guid>
+    <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Restaurant secrets</category>
+    <description>Why does restaurant food taste better than homemade? Salt, heat, butter, prep and finishing tricks, explained by a cook, plus how to use them at home.</description>
+  </item>
   <item>
     <title>Copycat Diner Chili (Like the Fast Food Classic, Only Better)</title>
     <link>https://plazzers.github.io/links/sal/guides/copycat-diner-chili/</link>

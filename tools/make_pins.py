@@ -13,7 +13,10 @@ Weekly batches: pins with  week: YYYY-MM-DD  in the YAML are kept out of the
 big bulk CSV and go to pins/weekly/<week>-<channel>.csv (+ a contact sheet
 pins/weekly/<week>-<channel>.jpg). Each weekly batch is scheduled 3 a day
 from the day after the last publish date of the batches before it, so old
-schedules never move.
+schedules never move. Pinterest only schedules about 30 days ahead, so a week
+whose last pin would be more than MAX_AHEAD_DAYS after today is "held": its
+images and contact sheet are made, but its CSV is not written yet. It keeps its
+place in the queue, and the first run where it fits writes its CSV.
 
 The kit (third style, "kit") has 30 pins scheduled 2 a day (14:00 and 20:00
 UTC) from KIT_START; its links go to creator-kit/ (landing, free tools, guides).
@@ -36,7 +39,7 @@ import html
 import io
 import re
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from functools import lru_cache
 from itertools import combinations
 from pathlib import Path
@@ -54,6 +57,7 @@ X0, X1 = 70, 930            # left / right text margin
 MAX_BYTES = 350_000
 START = datetime(2026, 10, 10)
 SLOTS = (13, 17, 21)         # UTC publish hours, 3 pins a day per channel
+MAX_AHEAD_DAYS = 30         # weekly CSVs are only written once their last pin is this close
 KIT_START = datetime(2026, 10, 12)
 KIT_SLOTS = (14, 20)        # UTC publish hours, 2 kit pins a day
 KIT_BATCHES = {2: datetime(2026, 10, 27)}  # later kit batches (batch: N in the YAML) and their start days
@@ -1041,6 +1045,13 @@ def schedule_all(channel, pins):
     return base, weeks
 
 
+def held(week_pins, today=None):
+    """True if the week's last publish date is more than MAX_AHEAD_DAYS after today."""
+    today = today or datetime.now(timezone.utc).date()
+    last = datetime.strptime(max(p["publish"] for p in week_pins)[:10], "%Y-%m-%d").date()
+    return last > today + timedelta(days=MAX_AHEAD_DAYS)
+
+
 def build(channel):
     pins = load(channel)
     folder = OUT / channel
@@ -1063,10 +1074,14 @@ def build(channel):
             contact_sheet(channel, bp, path=OUT / f"contact-kit-{n}.jpg", label=f"KIT — batch {n} — {len(bp)} pins (in file order)")
             print(f"kit: batch {n}: {len(bp)} pins, {min(p['publish'] for p in bp)} .. {max(p['publish'] for p in bp)}")
     for wk, wp in weeks.items():
-        write_csv(channel, wp, OUT / "weekly" / f"{wk}-{channel}.csv")
+        csv_path = OUT / "weekly" / f"{wk}-{channel}.csv"
+        on_hold = held(wp) and not csv_path.is_file()
+        if not on_hold:
+            write_csv(channel, wp, csv_path)
         contact_sheet(channel, wp, cols=7, path=OUT / "weekly" / f"{wk}-{channel}.jpg",
                       label=f"{channel.upper()} — week {wk} — {len(wp)} pins")
-        print(f"{channel}: week {wk}: {len(wp)} pins, {wp and min(p['publish'] for p in wp)} .. {max(p['publish'] for p in wp)}")
+        print(f"{channel}: week {wk}: {len(wp)} pins, {wp and min(p['publish'] for p in wp)} .. {max(p['publish'] for p in wp)}"
+              + (f"  HELD: more than {MAX_AHEAD_DAYS} days ahead, no CSV yet" if on_hold else ""))
     print(f"{channel}: {len(pins)} pins, largest {max(p['_size'] for p in pins) // 1024} KB")
     return pins
 

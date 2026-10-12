@@ -15,7 +15,7 @@ import io
 import re
 import sys
 from collections import Counter
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
@@ -46,6 +46,7 @@ BOARDS = {
     "sal": {"Copycat Restaurant Recipes", "Restaurant Secrets", "Budget Family Dinners", "Easy Italian Dinners"},
 }
 WEEKLY_SIZE = 21
+MAX_AHEAD_DAYS = 30  # a weekly CSV may be missing ("held") while its last pin is further ahead than this
 HEALTH = ["healthy", "healthier", "detox", "weight loss", "lose weight", "immunity", "medical", "diabetes",
           "cholesterol", "superfood", "anti-inflammatory"]
 
@@ -192,7 +193,8 @@ def check_channel(channel):
     weeks = sorted({str(p["week"]) for p in everything if p.get("week")})
     if (PINS / "weekly").is_dir():
         on_disk = sorted(f.name[:-len(f"-{channel}.csv")] for f in (PINS / "weekly").glob(f"*-{channel}.csv"))
-        if on_disk != weeks:
+        held = {wk for wk in weeks if wk not in on_disk}
+        if on_disk != [wk for wk in weeks if wk not in held]:
             bad(f"{channel}: weekly CSVs on disk {on_disk} don't match the weeks in the YAML {weeks}")
     for wk in weeks:
         last = check_week(channel, wk, [p for p in everything if str(p.get("week")) == wk], by_file, last)
@@ -212,6 +214,12 @@ def check_week(channel, wk, pins, by_file, prev_last):
     if channel == "walter" and sum(1 for p in pins if p.get("product")) > 4:
         bad(f"{where0}: more than 4 pins mention a product")
     if not path.is_file():
+        start = datetime(prev_last.year, prev_last.month, prev_last.day) + timedelta(days=1)
+        last = start + timedelta(days=(len(pins) - 1) // 3, hours=SLOTS[(len(pins) - 1) % 3])
+        if last.date() > datetime.now(timezone.utc).date() + timedelta(days=MAX_AHEAD_DAYS):
+            print(f"{channel}: week {wk}: held (would run {start:%Y-%m-%d} .. {last:%Y-%m-%d}, "
+                  f"more than {MAX_AHEAD_DAYS} days ahead), no CSV yet")
+            return last
         bad(f"{where0} is missing (run tools/make_pins.py)")
         return prev_last
     raw = path.read_bytes()
