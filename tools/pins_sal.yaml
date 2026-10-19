@@ -1919,3 +1919,391 @@ pins:
     dinner ideas from Chef Sal Romano. Try your own order in his free Restaurant or Home?
     calculator.
   keywords: [fettuccine alfredo, italian date night, easy italian dinners, cooking at home vs eating out, budget date night, save money on food]
+
+# ================================================================ weekly batch 2026-10-19
+
+- slug: cold-rice-fried-rice
+  week: 2026-10-19
+  type: trick
+  topic: rice
+  kicker: New guide · Copycat fried rice
+  headline: "Fried Rice? | *Cold Rice.*"
+  body: Day-old rice is dry on the outside, so it fries instead of steaming. Fresh rice turns to mush.
+  quote: Hot pan, small batches, soy around the edge. That's the whole takeout secret.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-takeout-fried-rice
+  title: Copycat Takeout Fried Rice — The Cold Rice Secret
+  description: >-
+    Why is takeout fried rice never mushy? Cold, day-old rice. It's drier on the outside, so the
+    grains fry and toast instead of sticking. Add a very hot pan, small batches, egg cooked
+    first, a light splash of soy around the edge of the pan and sesame oil at the end. About 15
+    minutes and roughly a dollar a serving. Read Sal's full copycat fried rice guide.
+  keywords: [takeout fried rice, copycat fried rice, easy fried rice, leftover rice recipes, copycat restaurant recipes, quick weeknight dinner]
+
+- slug: brown-butter-secret
+  week: 2026-10-19
+  type: trick
+  topic: butter
+  kicker: Restaurant kitchen secret
+  headline: "Brown the | *Butter*"
+  body: Melt it, keep it moving, stop when it smells nutty and the bits turn golden brown. Then off the heat.
+  quote: Brown butter is regular butter that went to finishing school. Great on pasta, squash and cookies.
+  tag: Restaurant trick
+  title: How to Brown Butter — The Easy Restaurant Flavor Secret
+  description: >-
+    Brown butter is a restaurant trick for deep, nutty flavor. Melt butter in a light-colored
+    pan over medium heat, swirl it as it foams, and watch: when the little bits at the bottom
+    turn golden brown and it smells like toasted nuts, take it off the heat. Spoon it over
+    pasta, roasted squash, gnocchi or vegetables, or use it in holiday baking. More restaurant
+    secrets from Chef Sal Romano.
+  keywords: [brown butter, how to brown butter, restaurant cooking secrets, cooking tips, holiday baking, easy pasta sauce]
+
+- slug: chicken-parm-date-night-for-2
+  week: 2026-10-19
+  type: money
+  topic: parm
+  kicker: Restaurant or home?
+  headline: "Chicken Parm | Date Night: | *Out vs Home*"
+  calc: {d: [5, 4, 7], p: 2, t: 18, dr: 3}
+  out_label: Out, for 2 people
+  tag: Save money
+  title: "Chicken Parm Date Night for 2: Restaurant vs Home"
+  description: >-
+    Chicken parmigiana, a house salad with Italian dressing and tiramisu for two: about {out} at
+    an Italian restaurant with drinks and tip, or about {home} made at home. That's roughly
+    {keep} back in your pocket for one night in. Candles optional. Try your own order in Chef
+    Sal Romano's free Restaurant or Home? calculator.
+  keywords: [chicken parmigiana, date night at home, italian dinner ideas, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: dont-rinse-pasta
+  week: 2026-10-19
+  type: trick
+  topic: pasta
+  kicker: Italian kitchen trick
+  headline: "Don't *Rinse* | Your Pasta"
+  body: That starch on the outside is what helps the sauce stick. Drain it, then straight into the pan.
+  quote: Rinsing pasta washes the glue away. Then you wonder why the sauce slides off.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Should You Rinse Pasta? Why Italian Cooks Don't
+  description: >-
+    Don't rinse cooked pasta for a hot dish. The thin layer of starch on the outside is what
+    helps sauce cling, and rinsing washes it away and cools the pasta. Drain it, save a mug of
+    the cooking water, and toss the pasta straight into the warm sauce with a splash of that
+    water. The one exception: some cold pasta salads. Easy Italian dinner tips from Chef Sal
+    Romano.
+  keywords: [should you rinse pasta, how to cook pasta, pasta tips, easy italian dinners, italian cooking tips, pasta sauce]
+
+- slug: happy-hour-food-menu
+  week: 2026-10-19
+  type: trick
+  topic: happyhour
+  kicker: Restaurant trick
+  headline: "Happy Hour | Is for *Food*"
+  body: Many places have a cheaper bar menu early in the evening. Same kitchen, smaller plates, lower prices.
+  quote: Sit at the bar at five, order three small plates, and you've had dinner for the price of one entree.
+  tag: Restaurant trick
+  title: Restaurant Happy Hour Food — The Cheaper Way to Eat Out
+  description: >-
+    Happy hour isn't only about drinks. Many restaurants have a bar or early-evening menu with
+    smaller plates and appetizers at lower prices, from the same kitchen. Ask what the hours
+    are, whether it's bar seating only, and if it's on weekdays only. A few small plates can
+    make a great, cheaper dinner out. More restaurant secrets and ways to eat out for less on
+    Chef Sal Romano's page.
+  keywords: [happy hour food, eat out cheaper, restaurant secrets, save money eating out, restaurant tips, date night ideas]
+
+- slug: pasta-shape-for-sauce
+  week: 2026-10-19
+  type: trick
+  topic: shapes
+  kicker: Italian kitchen trick
+  headline: "Pick the | *Right Shape*"
+  body: Chunky sauce, tubes and ridges. Smooth or oily sauce, long strands. Soup, small shapes.
+  quote: The shape isn't decoration. It's a tool. Pick the one that carries your sauce.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Which Pasta Shape for Which Sauce? The Easy Italian Rule
+  description: >-
+    Italian cooks pick the pasta shape for the sauce. Chunky meat or vegetable sauces go with
+    tubes and ridged shapes like rigatoni and penne that catch the bits. Smooth, creamy or oily
+    sauces suit long strands like spaghetti, linguine and fettuccine. Small shapes like ditalini
+    go in soup. Wide flat noodles love rich sauces. Easy Italian dinner tips from Chef Sal
+    Romano.
+  keywords: [pasta shapes and sauces, which pasta for which sauce, easy italian dinners, pasta tips, italian cooking tips, weeknight pasta]
+
+- slug: mashed-potatoes-cold-water
+  week: 2026-10-19
+  type: trick
+  topic: potatoes
+  kicker: New guide · Restaurant mashed potatoes
+  headline: "Creamy Mash? | *Cold Water*"
+  body: Cold, salted water cooks them evenly from edge to center. Boiling water turns the outside to mush first.
+  quote: Cold water, salt early, dry them in the pot, warm the butter. And never the blender.
+  tag: Read the guide
+  board: Budget Family Dinners
+  link: sal/guides/restaurant-mashed-potatoes-secrets
+  title: How Restaurants Make Mashed Potatoes So Creamy
+  description: >-
+    The restaurant way to creamy mashed potatoes for Thanksgiving: start the potatoes in cold,
+    salted water so they cook evenly, drain and let them steam dry in the pot, warm the butter
+    and milk, and mash gently with a ricer or masher, never a blender. Make them ahead and hold
+    them warm, like a restaurant does. Read Sal's full guide to restaurant mashed potatoes.
+  keywords: [restaurant mashed potatoes, creamy mashed potatoes, thanksgiving side dishes, make ahead mashed potatoes, holiday sides, cooking tips]
+
+- slug: parmigiano-dotted-rind
+  week: 2026-10-19
+  type: trick
+  topic: cheese
+  kicker: At the grocery store
+  headline: "Real Parmigiano? | *Read the Rind*"
+  body: Parmigiano Reggiano has its name stamped in little dots all over the rind. "Parmesan" alone can be made anywhere.
+  quote: Read the rind, not the price tag. Then save that rind for your soup.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: How to Spot Real Parmigiano Reggiano at the Store
+  description: >-
+    Parmigiano Reggiano is a protected cheese from a specific area of northern Italy, and its
+    rind is stamped with the name in a pattern of little dots. Cheese sold as just "parmesan"
+    can be made anywhere and in different ways. Neither is bad, but read the label and the rind
+    so you know what you're buying. Buy a wedge and grate it yourself. Grocery tips from Chef
+    Sal Romano.
+  keywords: [parmigiano reggiano, real parmesan cheese, italian grocery tips, easy italian dinners, italian cooking tips, how to buy parmesan]
+
+- slug: kids-eat-free-fine-print
+  week: 2026-10-19
+  type: trick
+  topic: kids
+  kicker: Restaurant trick
+  headline: "Kids Eat Free? | *Read the Rules*"
+  body: Often it's one kid per paid adult meal, certain days only, dine-in only, and drinks extra.
+  quote: It can be a great deal. Just know the rules before four kids order the big plate.
+  tag: Restaurant trick
+  title: "\"Kids Eat Free\" Restaurant Deals — Read the Fine Print"
+  description: >-
+    "Kids eat free" nights can save a family real money, but read the rules first. Many deals
+    are one free kids' meal per paying adult meal, only on certain days or hours, dine-in
+    only, from the kids' menu only, and drinks or dessert aren't included. Ask your server
+    before you order so there are no surprises on the bill. More restaurant secrets for
+    families on Chef Sal Romano's page.
+  keywords: [kids eat free, family restaurant deals, eating out with kids, save money eating out, restaurant secrets, budget family dinners]
+
+- slug: chili-and-biscuits-for-4
+  week: 2026-10-19
+  type: money
+  topic: chili
+  kicker: Restaurant or home?
+  headline: "Chili & Biscuits | for 4: *the Bill*"
+  rows: breakdown
+  calc: {d: [24, 8], p: 4, t: 18, dr: 3}
+  tag: Save money
+  title: Chili and Cheddar Biscuits for 4 — Where the Bill Goes
+  description: >-
+    A cozy fall dinner of classic diner chili and cheddar garlic biscuits for 4: with drinks
+    and tip, about {out} at a restaurant. Made at home, about {home}, and you'll have leftovers
+    for lunch. A budget family dinner that tastes like a cold-weather weekend. Try your own
+    order in Chef Sal Romano's free Restaurant or Home? calculator.
+  keywords: [chili and biscuits, budget family dinners, cozy fall dinners, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: finish-with-acid
+  week: 2026-10-19
+  type: trick
+  topic: acid
+  kicker: Restaurant kitchen secret
+  headline: "Tastes Flat? | *Add a Squeeze*"
+  body: A little lemon juice or a splash of vinegar at the end wakes up soups, sauces and roasted vegetables.
+  quote: Before you add more salt, try a squeeze of lemon. Most of the time, that is what it needed.
+  tag: Restaurant trick
+  title: The Restaurant Trick for Food That Tastes Flat — Add Acid
+  description: >-
+    Your soup, stew or sauce tastes fine but flat? Restaurant cooks often finish dishes with a
+    little acid: a squeeze of lemon, a splash of red wine vinegar or balsamic, a spoon of
+    tomato. It brightens all the other flavors. Add a little at the end, stir and taste, before
+    reaching for more salt. Works on bean soups, chili, roasted vegetables and pan sauces. More
+    restaurant secrets on Sal's page.
+  keywords: [cooking tips, how to fix bland food, restaurant cooking secrets, lemon juice cooking, soup tips, home cooking tips]
+
+- slug: whole-canned-tomatoes
+  week: 2026-10-19
+  type: trick
+  topic: tomatoes
+  kicker: At the grocery store
+  headline: "Buy *Whole* | Tomatoes"
+  body: Whole peeled tomatoes are often the better tomatoes in the can. Crush them by hand for a fresher sauce.
+  quote: Open the can, taste one. If it tastes like summer, you're halfway to a great sauce.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Whole vs Crushed Canned Tomatoes — The Italian Sauce Trick
+  description: >-
+    Many Italian cooks buy whole peeled canned tomatoes and crush them by hand or with a spoon.
+    Whole tomatoes are often the better-quality fruit in the can, and crushing them yourself
+    gives a fresher, chunkier sauce. Read the label for just tomatoes, juice and salt, taste one
+    straight from the can, and simmer gently. Sunday sauce tips from Chef Sal Romano. More on
+    Sal's page.
+  keywords: [canned whole tomatoes, best tomatoes for sauce, homemade marinara, easy italian dinners, italian cooking tips, pasta sauce]
+
+- slug: still-or-sparkling
+  week: 2026-10-19
+  type: trick
+  topic: water
+  kicker: Restaurant trick
+  headline: "Bottled Water? | *Tap Is Fine*"
+  body: That question can mean bottled water on the bill. If you want tap water, just say so. It's normal.
+  quote: Say "tap is great, thanks" with a smile. Nobody minds, and your bill stays the same.
+  tag: Restaurant trick
+  title: '"Still or Sparkling?" — The Restaurant Water Question'
+  description: >-
+    At some restaurants, the first question is "still or sparkling?" Answer either one and you
+    may get a bottle of water that shows up on the bill. If you'd like regular tap water, it's
+    perfectly normal to say "tap water is fine, thanks." If you want bottled, ask the price.
+    Small habits like this keep a dinner out from creeping up. More restaurant secrets from
+    Chef Sal Romano.
+  keywords: [restaurant water, bottled water restaurant, restaurant secrets, save money eating out, restaurant tips, dining out tips]
+
+- slug: stale-bread-italian-way
+  week: 2026-10-19
+  type: trick
+  topic: bread
+  kicker: Italian kitchen trick
+  headline: "Stale Bread? | *Don't Toss It*"
+  body: Italian kitchens turn it into breadcrumbs, croutons, panzanella or thick bean soup. Nothing wasted.
+  quote: Yesterday's bread is tomorrow's dinner. That's how Italian families cooked for generations.
+  tag: Italian trick
+  board: Budget Family Dinners
+  title: What to Do With Stale Bread — The Italian Way
+  description: >-
+    Italian home cooking wastes nothing, and stale bread is an ingredient. Blitz it into
+    breadcrumbs for meatballs and toppings, toast cubes in olive oil for croutons, toss it with
+    tomatoes and onion for panzanella, or simmer it into a thick Tuscan-style bean soup. Freeze
+    leftover bread in a bag until you need it. Budget family dinner tips from Chef Sal Romano.
+  keywords: [stale bread recipes, what to do with stale bread, italian cooking tips, zero waste cooking, budget family dinners, homemade breadcrumbs]
+
+- slug: game-day-for-6
+  week: 2026-10-19
+  type: money
+  topic: gameday
+  kicker: Restaurant or home?
+  headline: "Game Day for 6: | *Bar vs Home*"
+  calc: {d: [22, 28, 25], p: 6, t: 18, dr: 3}
+  out_label: At a sports bar, 6 people
+  tag: Save money
+  title: "Game Day for 6: Burgers, Wings and Slaw — Bar vs Home"
+  description: >-
+    Smash burgers, oven-baked buffalo wings and creamy coleslaw for 6 on game day: about {out}
+    at a sports bar with drinks and tip, or about {home} made at home with the game on your own
+    couch. That's roughly {keep} left for the next game. Try your own menu in Chef Sal
+    Romano's free Restaurant or Home? calculator.
+  keywords: [game day food, football party food, budget family dinners, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: olive-oil-harvest-date
+  week: 2026-10-19
+  type: trick
+  topic: oil
+  kicker: At the grocery store
+  headline: "Olive Oil? | *Check the Date*"
+  body: Fresher oil tastes better. Look for a harvest date and a dark bottle or tin, and keep it away from the stove.
+  quote: Olive oil is fruit juice. Buy it fresh, keep it in the dark, and use it.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: How to Buy Better Olive Oil — Check the Harvest Date
+  description: >-
+    Olive oil tastes best fresh. At the store, look for a harvest date (not just a best-by
+    date), a dark glass bottle or tin that blocks light, and "extra virgin" for drizzling and
+    finishing. At home, store it in a cool, dark cupboard, not next to the stove, and use it
+    within a few months of opening. Grocery tips from Chef Sal Romano. More easy Italian dinners
+    on Sal's page.
+  keywords: [how to buy olive oil, extra virgin olive oil, olive oil harvest date, italian grocery tips, easy italian dinners, italian cooking tips]
+
+- slug: crowded-sheet-pan
+  week: 2026-10-19
+  type: trick
+  topic: roasting
+  kicker: Holiday sides trick
+  headline: "Crispy Veggies? | *Give Them Room*"
+  body: Packed tight, vegetables steam and go soft. Spread them out, use two pans, and get the oven hot first.
+  quote: Give every piece of vegetable a little room. Roasting needs air. Steaming needs a crowd.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: How to Roast Vegetables So They Get Crispy, Not Soggy
+  description: >-
+    Restaurant roasted vegetables are browned and crispy because they aren't crowded. Spread
+    them in a single layer with space between pieces, use two sheet pans if you need to,
+    preheat the oven, toss with enough oil and salt, and don't stir too often. Perfect for
+    Thanksgiving sides like Brussels sprouts, carrots, squash and potatoes. Holiday cooking
+    tips on Chef Sal Romano's page.
+  keywords: [how to roast vegetables, crispy roasted vegetables, thanksgiving side dishes, sheet pan dinner, holiday sides, cooking tips]
+
+- slug: shared-plate-charge
+  week: 2026-10-19
+  type: trick
+  topic: sharing
+  kicker: Restaurant trick
+  headline: "Sharing a Plate? | *Ask First*"
+  body: Some restaurants add a charge for sharing an entree. Ask first. Often it still beats two big plates.
+  quote: Big portions are made for sharing. Just ask how they handle it before you order.
+  tag: Restaurant trick
+  title: Sharing an Entree at a Restaurant — Ask About the Split Fee
+  description: >-
+    Restaurant portions are often big enough for two. Sharing an entree is a smart way to eat
+    out for less, but some places add a split-plate charge or an extra side fee. Ask your
+    server how they handle it before you order. Even with a small fee, one big plate plus a
+    starter is often cheaper than two entrees. More ways to eat out for less from Chef Sal
+    Romano.
+  keywords: [split plate fee, sharing food at restaurants, save money eating out, restaurant secrets, restaurant tips, eat out cheaper]
+
+- slug: holiday-leftovers-plan
+  week: 2026-10-19
+  type: trick
+  topic: leftovers
+  kicker: After the big dinner
+  headline: "Leftovers? | *2-Hour Rule*"
+  body: Food safety guidance says refrigerate within 2 hours, then eat in 3 to 4 days or freeze in portions.
+  quote: The best part of a holiday dinner is the second day. Pack it up before you sit on the couch.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Holiday Leftovers — The 2-Hour Rule and How Long They Keep
+  description: >-
+    After Thanksgiving dinner, pack up the leftovers before the pie. USDA food safety guidance
+    says to refrigerate cooked food within 2 hours, use it within 3 to 4 days, or freeze it. Cut
+    the turkey off the bone, use shallow containers so it cools fast, label the date, and
+    freeze some in portions for easy dinners later. Budget family dinner tips from Chef Sal
+    Romano.
+  keywords: [thanksgiving leftovers, how long do leftovers last, leftover turkey, food safety tips, budget family dinners, holiday cooking tips]
+
+- slug: room-temp-baking
+  week: 2026-10-19
+  type: trick
+  topic: baking
+  kicker: Holiday baking trick
+  headline: "Bake Better: | *Soft Butter*"
+  body: Room-temperature butter and eggs mix smoothly and trap air. Cold ones make dense cakes and lumpy batter.
+  quote: Baking is patience first. Put the butter on the counter, pour a coffee, then start.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Why Baking Recipes Say Room-Temperature Butter and Eggs
+  description: >-
+    Most cake and cookie recipes call for room-temperature butter and eggs for a reason. Soft
+    butter creams with sugar and traps tiny air bubbles that help baked goods rise, and
+    room-temperature eggs blend in smoothly instead of curdling the batter. Take them out ahead
+    of time, or set whole eggs in warm water for a few minutes. Holiday baking tips from Chef
+    Sal Romano.
+  keywords: [room temperature butter, holiday baking tips, baking tips, christmas cookies, cake baking tips, cooking tips]
+
+- slug: garlic-bread-broiler
+  week: 2026-10-19
+  type: trick
+  topic: garlicbread
+  kicker: Italian kitchen trick
+  headline: "Garlic Bread? | *Watch It*"
+  body: Soft butter, fresh garlic, a little parm, then under the broiler. It goes from golden to burnt in seconds.
+  quote: Garlic bread under the broiler is not the time to check your phone. Stand there. Watch it.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Restaurant-Style Garlic Bread — The Broiler Trick
+  description: >-
+    For restaurant-style garlic bread, mix soft butter with fresh minced garlic, a little
+    grated parmesan and parsley, spread it on split Italian bread and bake until warm, then
+    finish under the broiler until golden. Stay right by the oven: under the broiler it goes
+    from golden to burnt in seconds. Perfect with Sunday sauce and pasta night. Easy Italian
+    dinner tips from Chef Sal Romano.
+  keywords: [garlic bread, restaurant garlic bread, easy italian dinners, pasta night, italian side dishes, garlic butter bread]

@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 12 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Copycat Takeout Fried Rice (The Cold Rice Secret)</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-takeout-fried-rice/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-takeout-fried-rice/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Copycat fried rice like your favorite takeout: why cold rice matters, the ingredients, the hot-pan method, mushy-rice mistakes and the cost at home.</description>
+  </item>
+  <item>
+    <title>How Restaurants Make Mashed Potatoes So Creamy</title>
+    <link>https://plazzers.github.io/links/sal/guides/restaurant-mashed-potatoes-secrets/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/restaurant-mashed-potatoes-secrets/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Restaurant secrets</category>
+    <description>Why restaurant mashed potatoes taste richer and creamier than homemade: the potato, the water, warm dairy, gentle mashing and holiday make-ahead tricks.</description>
+  </item>
   <item>
     <title>Copycat Baked Mac and Cheese (Like the Southern-Style Chains)</title>
     <link>https://plazzers.github.io/links/sal/guides/copycat-baked-mac-and-cheese/</link>
