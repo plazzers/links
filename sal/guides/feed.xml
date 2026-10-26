@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Pan-Seared Steak with Garlic Butter, Steakhouse Style at Home</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-pan-seared-steak/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-pan-seared-steak/</guid>
+    <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Steakhouse steak at home: dry surface, early salt, a very hot pan and a garlic butter baste. About 20 minutes and roughly $7 a steak.</description>
+  </item>
+  <item>
+    <title>Thanksgiving Dinner at a Restaurant: What to Ask Before You Book</title>
+    <link>https://plazzers.github.io/links/sal/guides/eating-out-on-thanksgiving/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/eating-out-on-thanksgiving/</guid>
+    <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
+    <category>Restaurant secrets</category>
+    <description>Thanksgiving dinner at a restaurant: prix-fixe menus, booking early, what&#x27;s included, kids&#x27; pricing, leftovers and holiday surcharges, explained.</description>
+  </item>
   <item>
     <title>Copycat Takeout Fried Rice (The Cold Rice Secret)</title>
     <link>https://plazzers.github.io/links/sal/guides/copycat-takeout-fried-rice/</link>

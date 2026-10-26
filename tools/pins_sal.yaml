@@ -2307,3 +2307,384 @@ pins:
     from golden to burnt in seconds. Perfect with Sunday sauce and pasta night. Easy Italian
     dinner tips from Chef Sal Romano.
   keywords: [garlic bread, restaurant garlic bread, easy italian dinners, pasta night, italian side dishes, garlic butter bread]
+
+# ================================================================ weekly batch 2026-10-26
+
+- slug: steakhouse-crust-dry-the-steak
+  week: 2026-10-26
+  type: trick
+  topic: steak
+  kicker: New guide · Steakhouse steak at home
+  headline: "Steakhouse Crust? | *Dry the Steak*"
+  body: Pat it dry, salt it early, heat the heavy pan until it's very hot, then leave it alone.
+  quote: A wet steak steams. A dry steak sears. Butter and garlic only at the very end.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-pan-seared-steak
+  title: Pan-Seared Steak with Garlic Butter — Steakhouse Style at Home
+  description: >-
+    How do the steakhouse chains get that deep brown crust? A dry steak, salted ahead, a very
+    hot heavy pan, and no poking. Baste with butter, garlic and herbs at the end, check it with
+    a meat thermometer, and let it rest before slicing. A holiday or date-night steak dinner for
+    a fraction of the steakhouse bill. Read Sal's full copycat pan-seared steak guide.
+  keywords: [pan seared steak, steakhouse steak at home, garlic butter steak, cast iron steak, copycat restaurant recipes, date night dinner]
+
+- slug: thanksgiving-out-ask-first
+  week: 2026-10-26
+  type: trick
+  topic: holiday
+  kicker: New guide · Thanksgiving out
+  headline: "Eating Out? | *Ask First*"
+  body: Set menu or regular menu? Drinks and dessert included? Gratuity added for big tables? Leftovers to go?
+  quote: Book early, read the menu, ask four questions. Then let somebody else do the dishes.
+  tag: Read the guide
+  link: sal/guides/eating-out-on-thanksgiving
+  title: Thanksgiving Dinner at a Restaurant — What to Ask Before You Book
+  description: >-
+    Eating Thanksgiving dinner at a restaurant this year? Many places serve a set holiday menu,
+    and the details matter: what's included, whether drinks and dessert are extra, if a
+    gratuity is added for larger tables, kids' pricing, and whether you can take leftovers home.
+    Book early and ask before you go. Read Sal's full guide to Thanksgiving dinner out.
+  keywords: [thanksgiving dinner at a restaurant, thanksgiving dinner out, holiday restaurant tips, restaurant secrets, thanksgiving 2026, eat out cheaper]
+
+- slug: turkey-stock-from-the-carcass
+  week: 2026-10-26
+  type: trick
+  topic: leftovers
+  kicker: After the big dinner
+  headline: "Save the | *Turkey Bones*"
+  body: Bones, onion, carrot, celery, water, a slow simmer. Strain it and you have stock for soup all winter.
+  quote: The restaurant never throws away bones. That's tomorrow's soup. Yours too.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Make Turkey Stock From the Thanksgiving Carcass
+  description: >-
+    Don't throw out the turkey carcass. Put the bones in a big pot with onion, carrot, celery,
+    a bay leaf and cold water, and simmer gently for a few hours. Strain it, cool it quickly,
+    refrigerate or freeze it in portions. Restaurant kitchens make stock from scraps every day,
+    and it turns into soups, gravy and risotto all winter. Budget family dinner tips from Chef
+    Sal Romano.
+  keywords: [turkey stock, thanksgiving leftovers, leftover turkey, homemade stock, budget family dinners, holiday cooking tips]
+
+- slug: steakhouse-night-for-4
+  week: 2026-10-26
+  type: money
+  topic: steak
+  kicker: Restaurant or home?
+  headline: "Steakhouse Night | for 4: *Out vs Home*"
+  calc: {d: [9, 27, 4], p: 4, t: 18, dr: 3}
+  out_label: At a steakhouse, 4 people
+  tag: Save money
+  title: "Steakhouse Night for 4: Restaurant vs Home"
+  description: >-
+    Pan-seared steak with garlic butter, baked mac and cheese and a house salad for four: about
+    {out} at a steakhouse with drinks and tip, or about {home} made at home. That's roughly {keep}
+    for a holiday family dinner you cook yourself. Try your own order in Chef Sal Romano's free
+    Restaurant or Home? calculator.
+  keywords: [steak dinner at home, holiday dinner ideas, cooking at home vs eating out, save money on food, copycat restaurant recipes, family dinner ideas]
+
+- slug: fresh-cranberry-sauce
+  week: 2026-10-26
+  type: trick
+  topic: cranberry
+  kicker: Thanksgiving kitchen trick
+  headline: "Cranberry Sauce? | *Make It Fresh*"
+  body: Fresh cranberries, sugar, water or orange juice. Simmer until they pop. It thickens as it cools.
+  quote: Ten minutes on the stove and it tastes like you tried very hard. Make it two days ahead.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Easy Homemade Cranberry Sauce — Make It Ahead for Thanksgiving
+  description: >-
+    Homemade cranberry sauce is one of the easiest Thanksgiving sides. Simmer fresh cranberries
+    with sugar and a little water or orange juice until the berries pop, about ten minutes,
+    then let it cool; it thickens in the fridge. Add orange zest or a pinch of cinnamon if you
+    like. Make it a day or two ahead, one less thing on the big day. Holiday cooking tips from
+    Chef Sal Romano.
+  keywords: [homemade cranberry sauce, thanksgiving side dishes, make ahead thanksgiving, holiday cooking tips, easy thanksgiving recipes, budget family dinners]
+
+- slug: ask-about-corkage
+  week: 2026-10-26
+  type: trick
+  topic: wine
+  kicker: Restaurant trick
+  headline: "Bring Your Own | *Bottle?* Ask"
+  body: Some restaurants let you bring wine for a corkage fee. Call ahead, ask the fee, and don't bring one on their list.
+  quote: A special bottle for a special dinner? Ask nicely and offer the server a glass. Class.
+  tag: Restaurant trick
+  title: Corkage Fees — Can You Bring Your Own Wine to a Restaurant?
+  description: >-
+    Some restaurants let you bring your own bottle of wine and charge a corkage fee to open and
+    serve it. Call ahead to ask if it's allowed and what the fee is, since policies and local
+    rules vary. Don't bring a bottle that's already on their wine list, and tip on the service.
+    For a special holiday dinner, it can be a nice way to enjoy your own bottle. More restaurant
+    secrets on Sal's page.
+  keywords: [corkage fee, bring your own wine, restaurant secrets, restaurant tips, holiday dinner out, save money eating out]
+
+- slug: bloom-the-tomato-paste
+  week: 2026-10-26
+  type: trick
+  topic: tomatoes
+  kicker: Italian kitchen trick
+  headline: "Cook the | *Tomato Paste*"
+  body: Fry it in the oil for a minute or two until it turns a shade darker. Then add the liquid.
+  quote: Raw tomato paste tastes like the can. Cooked, it tastes like Sunday.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Cook Your Tomato Paste First — The Italian Sauce Trick
+  description: >-
+    Before adding liquid to a sauce, soup or stew, stir the tomato paste into the hot oil with
+    the onions and garlic and cook it for a minute or two until it darkens to a deep brick red.
+    It loses the raw, tinny taste and adds a rich, savory depth. Keep stirring so it doesn't
+    burn. A small step that makes a weeknight sauce taste slow-cooked. Easy Italian dinner tips
+    from Chef Sal Romano.
+  keywords: [tomato paste tips, homemade pasta sauce, easy italian dinners, italian cooking tips, cooking tips, weeknight pasta]
+
+- slug: split-the-check-ask-early
+  week: 2026-10-26
+  type: trick
+  topic: check
+  kicker: Holiday group dinner
+  headline: "Separate Checks? | *Say It First*"
+  body: Tell the server when you sit down, not when the bill comes. Some places limit splits for big groups.
+  quote: Ask at the start and everybody is happy. Ask at the end and somebody is doing math with a phone.
+  tag: Restaurant trick
+  title: Splitting the Check at a Restaurant — Ask at the Start
+  description: >-
+    Going out with a big group for the holidays? If you want separate checks, tell the server
+    when you sit down, not when the bill arrives. Some restaurants limit how many ways a check
+    can be split, or add a gratuity for larger parties, so ask about both up front. It keeps
+    the end of the night easy for everyone. More restaurant secrets on Chef Sal Romano's page.
+  keywords: [split the check, separate checks restaurant, group dinner tips, restaurant secrets, holiday dinner out, restaurant tips]
+
+- slug: italian-dinner-for-6
+  week: 2026-10-26
+  type: money
+  topic: italian
+  kicker: Restaurant or home?
+  headline: "Italian Dinner | for 6: *the Bill*"
+  rows: breakdown
+  calc: {d: [5, 1, 7], p: 6, t: 18, dr: 3}
+  tag: Save money
+  title: "Italian Holiday Dinner for 6 — Restaurant Bill vs Home"
+  description: >-
+    Chicken parmigiana, garlic butter breadsticks and tiramisu for six: with drinks and tip,
+    about {out} at an Italian restaurant. Made at home, about {home}. A big holiday family
+    dinner, and you keep the leftovers. Try your own order in Chef Sal Romano's free Restaurant
+    or Home? calculator.
+  keywords: [italian dinner for a crowd, holiday dinner ideas, budget family dinners, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: lasagna-rest-before-cutting
+  week: 2026-10-26
+  type: trick
+  topic: lasagna
+  kicker: Italian kitchen trick
+  headline: "Lasagna? | *Let It Rest*"
+  body: Out of the oven, wait before you cut. The layers set, and you get clean squares instead of a puddle.
+  quote: The hardest part of lasagna is the waiting. Pour the wine, set the table, then cut.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Why You Should Let Lasagna Rest Before Cutting
+  description: >-
+    The restaurant secret to neat squares of lasagna: let it rest after it comes out of the
+    oven, about 15 to 30 minutes, before you cut. The sauce and cheese settle and the layers
+    hold together instead of sliding apart. It stays plenty hot. Lasagna is also a great
+    make-ahead dish for holiday guests. Easy Italian dinner tips from Chef Sal Romano.
+  keywords: [how to make lasagna, lasagna tips, easy italian dinners, make ahead dinner, holiday dinner ideas, italian cooking tips]
+
+- slug: two-appetizers-as-dinner
+  week: 2026-10-26
+  type: trick
+  topic: appetizers
+  kicker: Restaurant trick
+  headline: "Not Very Hungry? | *Two Starters*"
+  body: Two appetizers can be dinner. Often less than an entree, and you taste two things instead of one.
+  quote: The best food on many menus is in the first column. Nobody's checking how you order.
+  tag: Restaurant trick
+  title: Order Two Appetizers Instead of an Entree — A Smart Way to Eat Out
+  description: >-
+    Not very hungry, or want to try more of the menu? Order two appetizers or small plates as
+    your dinner. It often costs less than an entree, the portions are easier to finish, and you
+    get to taste two dishes. Just ask the server to bring them together if you want them as
+    your main course. More restaurant secrets and ways to eat out for less from Chef Sal
+    Romano.
+  keywords: [eat out cheaper, restaurant ordering tips, appetizers as a meal, restaurant secrets, save money eating out, restaurant tips]
+
+- slug: fresh-vs-dried-pasta
+  week: 2026-10-26
+  type: trick
+  topic: pasta
+  kicker: Italian kitchen trick
+  headline: "Dried Pasta Is | *Not Second Best*"
+  body: Fresh egg pasta loves butter and cream. Good dried pasta is made for tomato sauces and olive oil.
+  quote: Fresh isn't better. It's different. Pick the pasta for the sauce, not for the label.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Fresh vs Dried Pasta — Which One for Which Sauce?
+  description: >-
+    Fresh pasta isn't automatically better than dried. Soft fresh egg pasta goes well with
+    butter, cream and delicate sauces. Good dried pasta, made from durum wheat semolina, holds
+    up to tomato sauces, olive oil and hearty ragù, and it's what many Italian home cooks use
+    every day. Look for a short ingredient list and a rough texture. Easy Italian dinner tips
+    from Chef Sal Romano.
+  keywords: [fresh vs dried pasta, best pasta for sauce, easy italian dinners, italian cooking tips, pasta tips, weeknight pasta]
+
+- slug: anchovy-in-the-sauce
+  week: 2026-10-26
+  type: trick
+  topic: anchovy
+  kicker: Restaurant kitchen secret
+  headline: "The Secret Is | *One Anchovy*"
+  body: Melt it into the warm oil with the garlic. It disappears and makes the sauce taste deeper, not fishy.
+  quote: Nobody will taste fish. They'll just ask why your sauce tastes like the good restaurant.
+  tag: Restaurant trick
+  board: Easy Italian Dinners
+  title: The Anchovy Trick for Deeper Tomato Sauce
+  description: >-
+    Many Italian cooks melt an anchovy fillet or a little anchovy paste into the warm olive oil
+    with the garlic before adding tomatoes. It dissolves completely and adds a savory depth
+    that people can't quite name, without tasting fishy. Try it in marinara, puttanesca or
+    a quick pan sauce. Skip it if someone at the table avoids fish. Easy Italian dinner tips
+    from Chef Sal Romano.
+  keywords: [anchovy in pasta sauce, homemade marinara, italian cooking tips, easy italian dinners, restaurant cooking secrets, pasta sauce]
+
+- slug: soup-and-rolls-for-4
+  week: 2026-10-26
+  type: money
+  topic: soup
+  kicker: Restaurant or home?
+  headline: "Soup & Rolls | for 4: *Out vs Home*"
+  calc: {d: [3, 12], p: 4, t: 18, dr: 3}
+  out_label: At a restaurant, 4 people
+  tag: Save money
+  title: "Cozy Soup Night for 4: Restaurant vs Home"
+  description: >-
+    Sausage, potato and kale soup with honey butter dinner rolls for four: about {out} at a
+    restaurant with drinks and tip, or about {home} made at home, with leftovers for lunch.
+    A cozy, budget family dinner for cold nights. Try your own order in Chef Sal Romano's free
+    Restaurant or Home? calculator.
+  keywords: [soup night, budget family dinners, cozy winter dinners, cooking at home vs eating out, save money on food, copycat recipes]
+
+- slug: sharp-knife-less-slipping
+  week: 2026-10-26
+  type: trick
+  topic: knife
+  kicker: Restaurant kitchen secret
+  headline: "Keep Your Knife | *Sharp*"
+  body: A dull knife needs more force and slips more easily. Hone it often, sharpen it a few times a year.
+  quote: Every cook in a restaurant has a sharp knife. It's not about speed. It's about control.
+  tag: Restaurant trick
+  title: Why Restaurant Cooks Keep Their Knives Sharp
+  description: >-
+    Restaurant cooks keep their knives sharp because a dull blade needs more pressure and is
+    more likely to slip off an onion or a tomato skin. Use a honing steel often to keep the
+    edge straight, sharpen a few times a year or have it done, cut on a wood or plastic board,
+    and hand-wash and dry your knife. Holiday prep goes faster too. Cooking tips from Chef Sal
+    Romano.
+  keywords: [kitchen knife tips, how to sharpen a knife, cooking tips, kitchen tips, restaurant cooking secrets, holiday cooking tips]
+
+- slug: taste-dressing-on-a-leaf
+  week: 2026-10-26
+  type: trick
+  topic: salad
+  kicker: Restaurant kitchen secret
+  headline: "Taste Dressing | *on a Leaf*"
+  body: Dip a lettuce leaf, not a spoon. That's how it will taste on the salad. Then fix the salt and the acid.
+  quote: A spoon lies. The leaf tells the truth.
+  tag: Restaurant trick
+  title: How Restaurant Cooks Taste Salad Dressing — On a Leaf
+  description: >-
+    Restaurant cooks taste salad dressing on a piece of lettuce, not on a spoon. On its own, a
+    dressing tastes too sharp or too salty; on a leaf, you taste it the way it'll be eaten.
+    Adjust the salt, acid and oil from there, and dress the salad just before serving so the
+    leaves stay crisp. Easy holiday side dish tips from Chef Sal Romano.
+  keywords: [homemade salad dressing, salad tips, restaurant cooking secrets, cooking tips, holiday side dishes, house salad]
+
+- slug: holiday-dinner-timeline
+  week: 2026-10-26
+  type: trick
+  topic: planning
+  kicker: Holiday kitchen trick
+  headline: "Plan It | *Backwards*"
+  body: Start with the time you eat. Write when each dish goes in and comes out. Restaurants call it a prep list.
+  quote: A restaurant doesn't cook dinner at six. It cooks it all day, on paper, first.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: The Restaurant Trick for a Stress-Free Holiday Dinner — Plan Backwards
+  description: >-
+    Restaurant kitchens run on a prep list, and it works for holiday dinners too. Start with
+    the time you sit down and work backwards: when the turkey or roast goes in, when it rests,
+    when sides go in the oven, what can be made a day or two ahead. Write it on paper and stick
+    it on the fridge. Make-ahead sides free up the oven. Holiday cooking tips from Chef Sal
+    Romano.
+  keywords: [holiday dinner plan, thanksgiving timeline, thanksgiving cooking schedule, holiday cooking tips, make ahead thanksgiving, budget family dinners]
+
+- slug: cold-butter-pie-crust
+  week: 2026-10-26
+  type: trick
+  topic: baking
+  kicker: Holiday baking trick
+  headline: "Flaky Crust? | *Cold Butter*"
+  body: Keep the butter cold and work fast. Little pieces of butter make steam in the oven, and steam makes flakes.
+  quote: For cake, soft butter. For pie crust, cold butter and cold hands. Don't mix them up.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: The Secret to a Flaky Pie Crust — Keep the Butter Cold
+  description: >-
+    For a flaky pie crust, keep everything cold: cold butter cut into small pieces, ice water,
+    and quick hands. Little bits of butter left in the dough turn to steam in the hot oven and
+    puff up into flaky layers. Chill the dough before rolling and again before baking. Holiday
+    pie and baking tips from Chef Sal Romano.
+  keywords: [flaky pie crust, pie crust tips, holiday baking tips, thanksgiving pie, baking tips, homemade pie]
+
+- slug: sauce-on-the-side
+  week: 2026-10-26
+  type: trick
+  topic: sauce
+  kicker: Restaurant trick
+  headline: "Ask for It | *on the Side*"
+  body: Dressing and sauce on the side means you decide how much goes on. Most kitchens don't mind at all.
+  quote: It's your plate. A polite "on the side, please" is the easiest upgrade on the menu.
+  tag: Restaurant trick
+  title: Ask for Sauce and Dressing on the Side — A Simple Restaurant Tip
+  description: >-
+    When a dish comes drowned in dressing or sauce, you can't take it back off. Ask for it on
+    the side and add as much as you want. Most kitchens are happy to do it, and your salad
+    stays crisp, your fries stay crunchy and the leftovers reheat better. One of the easiest
+    restaurant ordering tips. More restaurant secrets on Chef Sal Romano's page.
+  keywords: [restaurant ordering tips, sauce on the side, restaurant secrets, eating out tips, restaurant tips, dining out]
+
+- slug: toast-the-nuts
+  week: 2026-10-26
+  type: trick
+  topic: nuts
+  kicker: Holiday kitchen trick
+  headline: "Toast the | *Nuts First*"
+  body: A dry pan, medium heat, a few minutes, keep them moving. Pull them off the moment they smell toasty.
+  quote: Raw walnuts are fine. Toasted walnuts taste like somebody cares about you.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Toast Nuts Before Baking and Salads — The Easy Flavor Trick
+  description: >-
+    Toasting nuts brings out a deep, roasted flavor. Put walnuts, pecans or pine nuts in a dry
+    pan over medium heat and stir often for a few minutes, or spread them on a sheet pan in the
+    oven. Take them off as soon as they smell toasty and look a shade darker, then move them
+    to a plate so they don't keep cooking. Great for holiday baking, stuffing and salads. Tips
+    from Chef Sal Romano.
+  keywords: [how to toast nuts, toasted pecans, holiday baking tips, cooking tips, thanksgiving recipes, holiday side dishes]
+
+- slug: private-room-minimum
+  week: 2026-10-26
+  type: trick
+  topic: party
+  kicker: Booking the holiday party?
+  headline: "Private Room? | Ask the *Minimum*"
+  body: Many private rooms have a food and drink minimum, plus service charges and tax on top. Ask before you sign.
+  quote: The room is free until you read the paper. Ask for the total, with everything, in writing.
+  tag: Restaurant trick
+  title: Booking a Private Room for a Holiday Party — Ask About the Minimum
+  description: >-
+    Planning a holiday party at a restaurant? Many private rooms come with a food and beverage
+    minimum, and some add a service charge, room fee or tax on top. Ask what the minimum is, what
+    counts toward it, whether gratuity is included, and the cancellation rules, and get the
+    total in writing before you sign. More restaurant secrets on Chef Sal Romano's page.
+  keywords: [holiday party restaurant, private dining room, office holiday party, restaurant secrets, event planning tips, restaurant tips]
