@@ -2688,3 +2688,376 @@ pins:
     counts toward it, whether gratuity is included, and the cancellation rules, and get the
     total in writing before you sign. More restaurant secrets on Chef Sal Romano's page.
   keywords: [holiday party restaurant, private dining room, office holiday party, restaurant secrets, event planning tips, restaurant tips]
+
+# ---------------------------------------------------------------- week 2026-11-02
+
+- slug: lava-cakes-fill-ahead
+  week: 2026-11-02
+  type: trick
+  topic: dessert
+  kicker: New guide · Copycat lava cakes
+  headline: Lava Cakes? | *Fill Ahead*
+  body: Fill the ramekins in the morning, keep them cold, bake while the dinner plates are cleared.
+  quote: The restaurant secret is timing. Pull them while the middle still jiggles.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-chocolate-lava-cakes
+  title: Copycat Chocolate Lava Cakes — The Restaurant Dessert at Home
+  description: >-
+    The molten chocolate cake from the casual dining chains is one of the easiest restaurant
+    desserts to make at home: good chocolate, butter, eggs, a little flour, about 25 minutes and
+    roughly $1.25 a cake. The trick is timing: fill the ramekins ahead, bake to order and pull
+    them while the center still jiggles. Read Chef Sal Romano's full copycat lava cake guide.
+  keywords: [copycat chocolate lava cake, molten chocolate cake, easy holiday dessert, copycat restaurant recipes, make ahead dessert, chocolate dessert recipe]
+
+- slug: party-booking-in-writing
+  week: 2026-11-02
+  type: trick
+  topic: party
+  kicker: New guide · Holiday party out
+  headline: Party Booked? | *In Writing*
+  body: Minimum, menu, drinks, service charge, deposit, cancellation date. One email with all of it.
+  quote: Ask the boring questions before the party, so nobody gets a surprise after dessert.
+  tag: Read the guide
+  link: sal/guides/holiday-party-at-a-restaurant
+  title: Holiday Party at a Restaurant — What to Ask Before You Book
+  description: >-
+    Planning the office or family holiday party at a restaurant? Ask about the food and drink
+    minimum, what the set menu includes, how drinks work, whether a service charge or gratuity
+    is added, the deposit and the cancellation date, and whether they can split checks. Then
+    get it all confirmed in one email. Read Chef Sal Romano's full guide to booking a holiday
+    party at a restaurant.
+  keywords: [holiday party at a restaurant, office holiday party ideas, group dinner restaurant, private dining room, christmas party planning, restaurant secrets]
+
+- slug: holiday-desserts-for-6
+  week: 2026-11-02
+  type: money
+  topic: dessert
+  kicker: Restaurant or home?
+  headline: "Holiday Dessert | for 6: *Out vs Home*"
+  calc: {d: [29, 7], p: 6, t: 18, dr: 0}
+  out_label: At a restaurant, 6 people
+  tag: Save money
+  title: "Holiday Dessert for 6: Lava Cakes and Tiramisu, Restaurant vs Home"
+  description: >-
+    Chocolate lava cakes and tiramisu for six: about {out} ordered at a restaurant with tip, or
+    about {home} made at home. That's roughly {keep} back for a holiday dessert you can make the
+    day before. Try your own order in Chef Sal Romano's free Restaurant or Home? calculator.
+  keywords: [holiday dessert ideas, christmas dessert, copycat lava cake, easy tiramisu, cooking at home vs eating out, save money on food]
+
+- slug: alfredo-party-for-8
+  week: 2026-11-02
+  type: money
+  topic: italian
+  kicker: Restaurant or home?
+  headline: "Pasta Party | for 8: *the Bill*"
+  rows: breakdown
+  calc: {d: [2, 4, 1], p: 8, t: 18, dr: 3}
+  tag: Save money
+  title: "Holiday Pasta Party for 8 — Restaurant Bill vs Home"
+  description: >-
+    Fettuccine Alfredo, house salad and garlic butter breadsticks for eight: with drinks and tip,
+    about {out} at an Italian restaurant. Made at home, about {home}. A big, cozy holiday dinner
+    for a crowd, and the leftovers stay with you. Try your own order in Chef Sal Romano's free
+    Restaurant or Home? calculator.
+  keywords: [italian dinner for a crowd, holiday party food, pasta dinner party, budget family dinners, cooking at home vs eating out, save money on food]
+
+- slug: steak-and-soup-for-2
+  week: 2026-11-02
+  type: money
+  topic: steak
+  kicker: Restaurant or home?
+  headline: "Steak & Soup | for 2: *Out vs Home*"
+  calc: {d: [9, 10], p: 2, t: 18, dr: 3}
+  out_label: At a steakhouse, 2 people
+  tag: Save money
+  title: "Steak and Potato Soup for 2: Restaurant vs Home"
+  description: >-
+    Pan-seared steak with garlic butter and loaded baked potato soup for two: about {out} at a
+    steakhouse with drinks and tip, or about {home} made at home. A cozy winter date night that
+    keeps roughly {keep} in your pocket. Try your own order in Chef Sal Romano's free Restaurant
+    or Home? calculator.
+  keywords: [date night at home, steak dinner at home, winter dinner ideas, cooking at home vs eating out, copycat restaurant recipes, save money on food]
+
+- slug: fajitas-for-2
+  week: 2026-11-02
+  type: money
+  topic: texmex
+  kicker: Restaurant or home?
+  headline: "Fajitas for 2: | *Out vs Home*"
+  calc: {d: [15, 13], p: 2, t: 18, dr: 3}
+  out_label: At a Tex-Mex restaurant, 2 people
+  tag: Save money
+  title: "Sizzling Fajitas and Salsa for 2: Restaurant vs Home"
+  description: >-
+    Sizzling chicken fajitas with chips and blender salsa for two: about {out} at a Tex-Mex
+    restaurant with drinks and tip, or about {home} made at home. That's roughly {keep} back on
+    an easy weeknight dinner. Try your own order in Chef Sal Romano's free Restaurant or Home?
+    calculator.
+  keywords: [chicken fajitas at home, tex mex dinner, easy weeknight dinner, cooking at home vs eating out, copycat restaurant recipes, budget family dinners]
+
+- slug: wings-and-queso-for-4
+  week: 2026-11-02
+  type: money
+  topic: gameday
+  kicker: Restaurant or home?
+  headline: "Wings & Queso | for 4: *Out vs Home*"
+  calc: {d: [28, 16], p: 4, t: 18, dr: 3}
+  out_label: At a sports bar, 4 people
+  tag: Save money
+  title: "Game Night for 4: Wings and Queso, Bar vs Home"
+  description: >-
+    Oven-baked buffalo wings and white queso dip for four: about {out} at a sports bar with
+    drinks and tip, or about {home} made at home. Bowl season is coming, and that's roughly
+    {keep} back for one game night. Try your own order in Chef Sal Romano's free Restaurant or
+    Home? calculator.
+  keywords: [game day food, buffalo wings at home, queso dip, football party food, cooking at home vs eating out, save money on food]
+
+- slug: chill-the-cookie-dough
+  week: 2026-11-02
+  type: trick
+  topic: baking
+  kicker: Holiday baking trick
+  headline: Flat Cookies? | *Chill It*
+  body: Cold dough holds its shape longer in the oven. Thicker cookies, softer middles, cleaner edges.
+  quote: Bakeries make the dough the day before. You can too, and the cookies taste better for it.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Why Your Cookies Spread — Chill the Dough First
+  description: >-
+    Holiday cookies coming out flat and thin? Chill the dough before baking. Cold butter melts
+    more slowly in the oven, so the cookies hold their shape, stay thicker and get softer
+    middles. Many bakers rest the dough overnight in the fridge, which also gives the flavor
+    time to deepen. Bake on a cool tray, not a hot one. More kitchen tricks from Chef Sal
+    Romano.
+  keywords: [christmas cookies tips, chill cookie dough, cookies spreading, holiday baking tips, baking tricks, cookie recipe tips]
+
+- slug: christmas-eve-start-with-scampi
+  week: 2026-11-02
+  type: trick
+  topic: seafood
+  kicker: Christmas Eve seafood
+  headline: Christmas Eve? | *Scampi*
+  body: Garlic, butter, white wine, lemon and shrimp. Twenty minutes, and it feels like a feast.
+  quote: Seven fishes is a tradition, not a rule. One great shrimp dish on a full table is a feast.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Christmas Eve Seafood Dinner — Start With Easy Shrimp Scampi
+  description: >-
+    Many Italian-American families serve seafood on Christmas Eve, sometimes the Feast of the
+    Seven Fishes. You don't need seven dishes to make it special. Shrimp scampi with garlic,
+    butter, white wine and lemon takes about 20 minutes, and with pasta, bread and a salad it
+    fills the table. Easy Italian holiday dinners from Chef Sal Romano.
+  keywords: [christmas eve dinner ideas, feast of the seven fishes, shrimp scampi, italian christmas eve, easy seafood dinner, easy italian dinners]
+
+- slug: ham-bone-bean-soup
+  week: 2026-11-02
+  type: trick
+  topic: leftovers
+  kicker: After the holiday ham
+  headline: Save the | *Ham Bone*
+  body: Beans, onion, carrot, celery, the bone and water. A slow simmer and you have soup for days.
+  quote: The bone is the best part of the ham. It just takes a few hours to prove it.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Leftover Ham Bone? Make Bean Soup
+  description: >-
+    Don't throw away the bone from the holiday ham. Simmer it slowly with dried or canned beans,
+    onion, carrot, celery and water until the meat falls off, then pull the meat and stir it
+    back in. A cheap, cozy soup that feeds the family for days. Cool leftovers quickly and keep
+    them in the fridge, or freeze in portions. More budget kitchen tricks from Chef Sal Romano.
+  keywords: [leftover ham bone, ham and bean soup, holiday leftovers, budget family dinners, easy soup recipe, frugal meal ideas]
+
+- slug: holiday-roast-thermometer
+  week: 2026-11-02
+  type: trick
+  topic: roast
+  kicker: Holiday roast trick
+  headline: Trust the | *Thermometer*
+  body: Ovens and roasts vary. Check the thickest part. Beef and pork roasts are safe at 145°F plus a rest.
+  quote: The recipe gives you a time. The thermometer gives you the truth.
+  tag: Holiday trick
+  board: Budget Family Dinners
+  title: Holiday Roast Tip — Use a Thermometer, Not the Clock
+  description: >-
+    Recipe times are a guide. Every oven and every roast is different, so check with an instant
+    read thermometer in the thickest part, away from the bone. The USDA's safe minimum for beef,
+    pork and lamb roasts is 145°F followed by a 3-minute rest. Pull the roast a little early and
+    let it rest, since it keeps cooking. More holiday kitchen tricks from Chef Sal Romano.
+  keywords: [holiday roast tips, meat thermometer, prime rib tips, christmas dinner ideas, cooking tips, roast beef tips]
+
+- slug: hot-cocoa-real-chocolate
+  week: 2026-11-02
+  type: trick
+  topic: cocoa
+  kicker: Cafe trick for cold nights
+  headline: Hot Cocoa? | *Real Chocolate*
+  body: Melt chopped chocolate into warm milk with a spoon of cocoa and a tiny pinch of salt. Whisk.
+  quote: The packet is sweet. Real chocolate is rich. Tonight, be rich.
+  tag: Kitchen trick
+  board: Budget Family Dinners
+  title: Cafe-Style Hot Chocolate at Home — Use Real Chocolate
+  description: >-
+    The secret to cafe-style hot chocolate is real chocolate. Warm milk gently, whisk in chopped
+    semi-sweet or dark chocolate with a spoon of cocoa powder and a tiny pinch of salt, and keep
+    whisking until smooth and glossy. Don't let it boil. Top with whipped cream for the kids, or
+    a little cinnamon. Cozy winter tricks from Chef Sal Romano.
+  keywords: [homemade hot chocolate, hot cocoa recipe, cafe style hot chocolate, winter drinks, christmas treats, budget family dinners]
+
+- slug: panettone-french-toast
+  week: 2026-11-02
+  type: trick
+  topic: breakfast
+  kicker: Italian holiday trick
+  headline: Panettone? | *French Toast*
+  body: Thick slices, a quick dip in egg and milk, a buttered pan. The fruit and butter do the rest.
+  quote: In Italy panettone is Christmas. The day after, it's the best breakfast in the house.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Leftover Panettone? Make the Best French Toast
+  description: >-
+    Panettone, the tall Italian Christmas bread with raisins and candied fruit, makes wonderful
+    French toast once it's a day or two old. Cut thick slices, dip them quickly in eggs beaten
+    with milk, and cook in a buttered pan over medium heat until golden. A dusting of powdered
+    sugar and breakfast is a celebration. Italian holiday tricks from Chef Sal Romano.
+  keywords: [panettone french toast, leftover panettone, italian christmas, christmas breakfast ideas, holiday brunch, easy italian recipes]
+
+- slug: holiday-table-time-limit
+  week: 2026-11-02
+  type: trick
+  topic: reservation
+  kicker: Booking a December dinner?
+  headline: Ask About the | *Table Time*
+  body: Busy holiday nights often come with seatings and time limits. Ask how long the table is yours.
+  quote: Better to know at seven that you need to leave at nine. Order dessert on time.
+  tag: Restaurant trick
+  title: Holiday Restaurant Reservations — Ask If There's a Time Limit
+  description: >-
+    In December, many restaurants book in seatings, and your table may come with a time limit,
+    often around two hours on the busiest nights. Ask when you book how long the table is yours,
+    and if you want a long, slow dinner, ask for the last seating of the night. Then nobody
+    rushes you through dessert. More restaurant secrets from Chef Sal Romano.
+  keywords: [holiday restaurant reservations, christmas dinner out, restaurant secrets, dining out tips, restaurant reservation tips, eating out tips]
+
+- slug: fully-booked-call-that-morning
+  week: 2026-11-02
+  type: trick
+  topic: reservation
+  kicker: Restaurant trick
+  headline: No Table? | *Call That Day*
+  body: Plans change and tables open up. Call the morning of the day you want and ask about cancellations.
+  quote: The website says no. The phone, the morning of, sometimes says yes.
+  tag: Restaurant trick
+  title: Restaurant Fully Booked? Call the Morning of for Cancellations
+  description: >-
+    The holiday dinner spot shows no tables online? Call the restaurant on the morning of the
+    day you want. Plans change, groups shrink and tables open up, especially in December. Be
+    flexible on time, ask to be put on a cancellation or wait list, and be polite. Earlier and
+    later tables are often easier. More restaurant secrets from Chef Sal Romano.
+  keywords: [restaurant fully booked, restaurant reservation tips, holiday dinner out, restaurant secrets, dining out tips, christmas dinner out]
+
+- slug: tip-before-the-discount
+  week: 2026-11-02
+  type: trick
+  topic: tipping
+  kicker: Using a gift card or coupon?
+  headline: Tip on the | *Full Amount*
+  body: A gift card or coupon lowers your bill, not the work. Many people tip on the price before it.
+  quote: The server carried the full dinner to your table. Tip on the full dinner.
+  tag: Restaurant trick
+  title: Paying With a Gift Card or Coupon? Tip on the Full Amount
+  description: >-
+    Holiday gift cards and coupons are a great way to eat out. Just remember the server did the
+    same work as for a full-price dinner. Many people work out the tip on the bill before the
+    discount or gift card, not on what's left to pay. A kind habit, especially in the busy
+    holiday season. More restaurant secrets from Chef Sal Romano.
+  keywords: [how much to tip, tipping with gift card, restaurant tipping, restaurant gift card, dining out tips, restaurant secrets]
+
+- slug: lasagna-a-day-ahead
+  week: 2026-11-02
+  type: trick
+  topic: lasagna
+  kicker: Make-ahead Italian trick
+  headline: Lasagna? | *Make It Ahead*
+  body: Assemble it, cover it, refrigerate it. Bake it the next day with a little extra oven time.
+  quote: Lasagna doesn't want to be rushed. Make it Saturday, and Sunday you're a guest at your own table.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Make Lasagna a Day Ahead — The Easy Holiday Dinner Trick
+  description: >-
+    Lasagna is the perfect make-ahead holiday dinner. Assemble it the day before, cover it well
+    and keep it in the fridge. The next day, bake it covered, then uncovered to brown the top,
+    allowing extra time since it starts cold. Check that it's hot all the way through, then let
+    it rest before cutting. Easy Italian dinners from Chef Sal Romano.
+  keywords: [make ahead lasagna, lasagna tips, christmas dinner ideas, easy italian dinners, make ahead holiday dinner, italian recipes]
+
+- slug: tortellini-in-brodo
+  week: 2026-11-02
+  type: trick
+  topic: soup
+  kicker: Italian Christmas classic
+  headline: Tortellini | *in Brodo*
+  body: Little stuffed pasta in a clear, hot broth with grated cheese. Simple, warm, very Italian.
+  quote: In parts of northern Italy, Christmas starts with a bowl of broth. Good broth, good cheese, done.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Tortellini in Brodo — The Easy Italian Christmas Soup
+  description: >-
+    In parts of northern Italy, tortellini in brodo, little stuffed pasta in a clear broth, is a
+    Christmas tradition. At home, simmer good chicken or beef broth, cook store-bought tortellini
+    right in it, and finish each bowl with grated Parmigiano and black pepper. A warm first
+    course or an easy winter dinner. Easy Italian dinners from Chef Sal Romano.
+  keywords: [tortellini in brodo, italian christmas soup, italian christmas dinner, easy soup recipe, easy italian dinners, winter soup ideas]
+
+- slug: grate-the-frozen-butter
+  week: 2026-11-02
+  type: trick
+  topic: biscuits
+  kicker: Bakery kitchen trick
+  headline: Flaky Biscuits? | *Grate Butter*
+  body: Freeze the butter, then grate it into the flour. Tiny cold pieces, no warm hands, flaky layers.
+  quote: Cold butter makes steam, steam makes layers. The grater makes it easy.
+  tag: Kitchen trick
+  board: Copycat Restaurant Recipes
+  title: The Grated Frozen Butter Trick for Flaky Biscuits and Scones
+  description: >-
+    For flaky biscuits and scones, the butter has to stay cold. Freeze it, then grate it into the
+    flour on the large holes of a box grater and toss it through with a fork. You get tiny cold
+    pieces without warming them with your hands, and they turn into steam and flaky layers in
+    the oven. More restaurant kitchen tricks from Chef Sal Romano.
+  keywords: [flaky biscuits, grated frozen butter, biscuit tips, baking tricks, holiday baking tips, copycat restaurant recipes]
+
+- slug: homemade-sauce-as-a-gift
+  week: 2026-11-02
+  type: trick
+  topic: gifts
+  kicker: Homemade holiday gift
+  headline: Give a Jar of | *Sunday Sauce*
+  body: A jar of homemade sauce, a box of good pasta, a wedge of cheese. Tell them to keep it cold.
+  quote: The best gift from an Italian kitchen is dinner. Fridge or freezer, use it soon.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Homemade Holiday Gift — A Jar of Sunday Sauce and Good Pasta
+  description: >-
+    A homemade food gift people actually use: a jar of your Sunday marinara, a box of good dried
+    pasta and a wedge of Parmigiano. Homemade sauce isn't shelf-stable, so give it cold from the
+    fridge, write the date on the label and tell them to refrigerate it and use it within a few
+    days, or freeze it. Easy Italian gift ideas from Chef Sal Romano.
+  keywords: [homemade food gifts, christmas food gifts, homemade marinara sauce, italian gift basket, diy christmas gifts, easy italian dinners]
+
+- slug: big-table-family-style
+  week: 2026-11-02
+  type: trick
+  topic: group
+  kicker: Big table this month?
+  headline: Big Group? | *Family Style*
+  body: Big platters down the middle instead of twelve different orders. Faster, warmer, more to share.
+  quote: Twelve plates, twelve timings. Four platters, one dinner. The kitchen and the table both win.
+  tag: Restaurant trick
+  title: Big Group Dinner Out? Ask About Family-Style Platters
+  description: >-
+    With a big holiday group at a restaurant, ask if they do family style: large platters of a
+    few dishes passed around the table instead of a dozen separate orders. Food comes out faster
+    and hotter, everyone tastes more, and the per-person price is easier to plan. Ask what's
+    included and how many platters per table. More restaurant secrets from Chef Sal Romano.
+  keywords: [family style dinner, group dinner restaurant, holiday party at a restaurant, restaurant secrets, christmas party ideas, dining out tips]

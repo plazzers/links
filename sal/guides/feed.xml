@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Copycat Chocolate Lava Cakes: The Restaurant Dessert at Home</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-chocolate-lava-cakes/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-chocolate-lava-cakes/</guid>
+    <pubDate>Mon, 02 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Copycat chocolate lava cakes like the casual dining chains: why the middle stays molten, key tips and mistakes. About 25 minutes, roughly $1.25 a cake.</description>
+  </item>
+  <item>
+    <title>Holiday Party at a Restaurant: What to Ask Before You Book</title>
+    <link>https://plazzers.github.io/links/sal/guides/holiday-party-at-a-restaurant/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/holiday-party-at-a-restaurant/</guid>
+    <pubDate>Mon, 02 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Restaurant secrets</category>
+    <description>Planning a holiday party at a restaurant? Minimums, set menus, service charges, deposits, drinks, splitting the bill: what to ask before you sign.</description>
+  </item>
   <item>
     <title>Pan-Seared Steak with Garlic Butter, Steakhouse Style at Home</title>
     <link>https://plazzers.github.io/links/sal/guides/copycat-pan-seared-steak/</link>
