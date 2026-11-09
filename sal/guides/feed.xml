@@ -6,7 +6,23 @@
   <atom:link href="https://plazzers.github.io/links/sal/guides/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Free guides from Chef Sal Romano: menu tricks, what to order and what to skip, and copycat restaurant dishes you can make at home.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Copycat Diner Pancakes: Tall, Fluffy Stacks at Home</title>
+    <link>https://plazzers.github.io/links/sal/guides/copycat-diner-pancakes/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/copycat-diner-pancakes/</guid>
+    <pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Copycat dishes</category>
+    <description>Copycat fluffy diner pancakes like the pancake house chains: why theirs are taller, the resting trick, ingredients, mistakes and holiday serving ideas.</description>
+  </item>
+  <item>
+    <title>Restaurant Gift Cards: What to Check Before You Buy or Use One</title>
+    <link>https://plazzers.github.io/links/sal/guides/restaurant-gift-cards/</link>
+    <guid isPermaLink="true">https://plazzers.github.io/links/sal/guides/restaurant-gift-cards/</guid>
+    <pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+    <category>Restaurant secrets</category>
+    <description>Giving restaurant gift cards this year? Bonus card fine print, expiration rules, fees, where the card works, scams to avoid and how to use every dollar.</description>
+  </item>
   <item>
     <title>Copycat Chocolate Lava Cakes: The Restaurant Dessert at Home</title>
     <link>https://plazzers.github.io/links/sal/guides/copycat-chocolate-lava-cakes/</link>

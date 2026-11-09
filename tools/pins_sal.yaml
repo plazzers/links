@@ -3061,3 +3061,373 @@ pins:
     and hotter, everyone tastes more, and the per-person price is easier to plan. Ask what's
     included and how many platters per table. More restaurant secrets from Chef Sal Romano.
   keywords: [family style dinner, group dinner restaurant, holiday party at a restaurant, restaurant secrets, christmas party ideas, dining out tips]
+
+- slug: pancakes-rest-the-batter
+  week: 2026-11-09
+  type: trick
+  topic: pancakes
+  kicker: New guide · Copycat diner pancakes
+  headline: Tall Pancakes? | *Rest the Batter*
+  body: Ten minutes on the counter, then don't stir it again. That's where the height comes from.
+  quote: Lumps are fine. Smooth batter means you stirred too much. Wait the ten minutes.
+  tag: Read the guide
+  board: Copycat Restaurant Recipes
+  link: sal/guides/copycat-diner-pancakes
+  title: Copycat Diner Pancakes — Tall, Fluffy Stacks Like the Pancake House
+  description: >-
+    The tall, fluffy stacks at the pancake house chains are easy to copy at home: buttermilk, baking
+    powder and baking soda for two rounds of lift, a lumpy batter that rests ten minutes and isn't
+    stirred again, and a medium-hot pan with just a swipe of butter. About 20 minutes and roughly
+    $0.20 a pancake, perfect for holiday mornings. Read Chef Sal Romano's full copycat pancake guide.
+  keywords: [copycat diner pancakes, fluffy pancakes, buttermilk pancakes, holiday breakfast ideas, copycat restaurant recipes, christmas morning breakfast]
+
+- slug: gift-card-use-it-soon
+  week: 2026-11-09
+  type: trick
+  topic: giftcards
+  kicker: New guide · Restaurant gift cards
+  headline: Got a Gift Card? | *Use It Soon*
+  body: Restaurants close, bonus cards expire fast, and a card in the drawer never gets worth more.
+  quote: Got one in December? Book the dinner for January. Tables are easier to get anyway.
+  tag: Read the guide
+  link: sal/guides/restaurant-gift-cards
+  title: "Restaurant Gift Cards: What to Check Before You Buy or Use One"
+  description: >-
+    Giving restaurant gift cards this year? Bonus cards often expire in a few months and come with
+    limits, so put the dates in your calendar. Ask whether the card works at every location and
+    online. Use cards fairly soon, because restaurants do close. Set your total before you order,
+    tip on the full bill, check packages for tampering, and never pay anyone with a gift card. Read
+    Chef Sal Romano's full gift card guide.
+  keywords: [restaurant gift card, gift card tips, bonus gift card, holiday gift ideas, restaurant secrets, dining out tips]
+
+- slug: seven-fishes-christmas-eve
+  week: 2026-11-09
+  type: trick
+  topic: seafood
+  kicker: Italian-American Christmas Eve
+  headline: The Feast of the | *Seven Fishes*
+  body: A Christmas Eve table of seafood dishes. How many? Every family counts a little differently.
+  quote: Don't stress about the number seven. Make three fish dishes you love and make them well.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Feast of the Seven Fishes — The Italian-American Christmas Eve Dinner
+  description: >-
+    The Feast of the Seven Fishes is an Italian-American Christmas Eve tradition: a long dinner of
+    seafood dishes, from fried calamari and baked clams to shrimp scampi and pasta with clam sauce.
+    The number of dishes changes from family to family. Start small with three you love, cook what
+    you can ahead, and save the frying for last. Easy Italian dinners from Chef Sal Romano.
+  keywords: [feast of the seven fishes, italian christmas eve dinner, christmas eve seafood, italian american christmas, easy italian dinners, holiday dinner ideas]
+
+- slug: diner-brunch-for-6
+  week: 2026-11-09
+  type: money
+  topic: breakfast
+  kicker: Restaurant or home?
+  headline: "Holiday Brunch | for 6: *Out vs Home*"
+  calc: {d: [26, 8], p: 6, t: 18, dr: 3}
+  out_label: At a diner, 6 people
+  tag: Save money
+  title: "Holiday Brunch for 6: Pancakes and Biscuits, Diner vs Home"
+  description: >-
+    A stack of fluffy pancakes and warm cheddar garlic biscuits for six: about {out} at a diner with
+    coffee and tip, or about {home} made at home. That's roughly {keep} back on one holiday morning,
+    and nobody has to get dressed. Try your own order in Chef Sal Romano's free Restaurant or Home?
+    calculator.
+  keywords: [holiday brunch ideas, christmas morning breakfast, copycat diner pancakes, cooking at home vs eating out, budget family dinners, save money on food]
+
+- slug: struffoli-honey-balls
+  week: 2026-11-09
+  type: trick
+  topic: dessert
+  kicker: Neapolitan Christmas sweet
+  headline: "*Struffoli*: | Little Honey Balls"
+  body: Tiny fried dough balls rolled in warm honey and piled high with sprinkles. Pure Naples at Christmas.
+  quote: Make the dough balls small, smaller than you think. They puff up in the oil.
+  tag: Holiday trick
+  board: Easy Italian Dinners
+  title: Struffoli — The Italian Christmas Honey Balls From Naples
+  description: >-
+    Struffoli are a Christmas sweet from Naples: tiny balls of fried dough tossed in warm honey,
+    piled into a mound or a ring and covered with colored sprinkles. Roll the pieces small, because
+    they puff up, fry them in batches, and let the honey cool a little before you toss. They keep
+    for a few days on the counter. Italian holiday ideas from Chef Sal Romano.
+  keywords: [struffoli, italian christmas desserts, honey balls, neapolitan christmas, italian christmas cookies, holiday dessert ideas]
+
+- slug: bottomless-brunch-fine-print
+  week: 2026-11-09
+  type: trick
+  topic: drinks
+  kicker: Restaurant secret
+  headline: '"Bottomless" | Has a *Bottom*'
+  body: Ask about the time limit, whether it's per person, and if everyone at the table has to order it.
+  quote: Bottomless means two hours and a busy server. Know the rules before you say yes.
+  tag: Restaurant trick
+  title: Bottomless Brunch? Ask These 3 Questions First
+  description: >-
+    "Bottomless" drink deals at brunch usually come with rules: a time limit, often 90 minutes or two
+    hours, a price per person, and sometimes the whole table has to order it. Refills may slow down
+    when the dining room is busy. Ask before you order, and do the math against what you'd really
+    drink. More restaurant secrets from Chef Sal Romano.
+  keywords: [bottomless brunch, brunch tips, restaurant secrets, dining out tips, restaurant drink prices, eating out tips]
+
+- slug: lumps-are-good-pancakes
+  week: 2026-11-09
+  type: trick
+  topic: pancakes
+  kicker: Diner kitchen trick
+  headline: Lumpy Batter? | *Good.*
+  body: Stir until the dry flour disappears, then stop. Every extra stir makes them tougher.
+  quote: Smooth like paint means flat like a plate. Leave the lumps alone.
+  tag: Kitchen trick
+  board: Copycat Restaurant Recipes
+  title: The Diner Pancake Secret — Leave the Lumps in the Batter
+  description: >-
+    Want tall, tender pancakes like the diner? Stop stirring sooner. Mix the wet ingredients into the
+    dry just until you can't see dry flour, and leave the lumps. Overmixing works the flour and
+    makes pancakes chewy and flat. Rest the batter about ten minutes, cook on medium heat, and flip
+    once. The full recipe is in Chef Sal Romano's Restaurant Copycat Cookbook.
+  keywords: [fluffy pancakes tips, pancake batter lumps, copycat diner pancakes, buttermilk pancakes, breakfast ideas, copycat restaurant recipes]
+
+- slug: christmas-eve-scampi-and-alfredo-for-4
+  week: 2026-11-09
+  type: money
+  topic: italian
+  kicker: Restaurant or home?
+  headline: "Christmas Eve | for 4: *Out vs Home*"
+  calc: {d: [6, 2, 4], p: 4, t: 18, dr: 3}
+  out_label: Italian restaurant, 4 people
+  tag: Save money
+  title: "Christmas Eve Dinner for 4: Shrimp Scampi and Alfredo, Out vs Home"
+  description: >-
+    Shrimp scampi, fettuccine Alfredo and a house salad for four: about {out} at an Italian
+    restaurant on Christmas Eve with drinks and tip, or about {home} made at home. That's roughly
+    {keep} back, and you can light your own candles. Try your own order in Chef Sal Romano's free
+    Restaurant or Home? calculator.
+  keywords: [christmas eve dinner ideas, italian christmas eve, shrimp scampi, fettuccine alfredo, cooking at home vs eating out, budget family dinners]
+
+- slug: pizzelle-italian-cookies
+  week: 2026-11-09
+  type: trick
+  topic: cookies
+  kicker: Italian holiday cookie
+  headline: "*Pizzelle*: | The Waffle Cookie"
+  body: Thin, crisp cookies pressed in a hot iron, often with anise or vanilla. A cookie tray classic.
+  quote: Lift them out while they're soft and lay them flat. They crisp up as they cool.
+  tag: Holiday trick
+  board: Easy Italian Dinners
+  title: Pizzelle — The Thin Italian Waffle Cookies for Your Cookie Tray
+  description: >-
+    Pizzelle are thin, crisp Italian cookies pressed in a hot patterned iron, traditionally from
+    Abruzzo and a favorite on Italian-American Christmas cookie trays. Anise is the classic flavor,
+    with vanilla or lemon as easy swaps. Take them out while they're still soft, cool them flat,
+    and store them in a tin away from soft cookies. Italian holiday ideas from Chef Sal Romano.
+  keywords: [pizzelle, italian christmas cookies, christmas cookie tray, italian cookies, holiday baking, italian desserts]
+
+- slug: nye-early-seating
+  week: 2026-11-09
+  type: trick
+  topic: newyear
+  kicker: New Year's Eve out?
+  headline: Ask About the | *Early Seating*
+  body: Many places run set menus on New Year's Eve. The early seating is often simpler and costs less.
+  quote: Eat early, toast at home. Same food, calmer room, and you beat the taxi rush.
+  tag: Holiday tip
+  title: New Year's Eve Dinner Out? Ask About the Early Seating
+  description: >-
+    Many restaurants switch to set menus and timed seatings on New Year's Eve. The late seating
+    usually has the party, and often a higher price. The early seating is often shorter, calmer and
+    lower-priced. Ask what's included, whether tax and tip are extra, and how long the table is
+    yours. Then toast at midnight at home. More restaurant secrets from Chef Sal Romano.
+  keywords: [new years eve dinner, new years eve restaurant, prix fixe menu, restaurant secrets, dining out tips, holiday dinner out]
+
+- slug: baccala-soak-ahead
+  week: 2026-11-09
+  type: trick
+  topic: seafood
+  kicker: Christmas Eve planning
+  headline: "*Baccalà*? | Start Soaking Now"
+  body: Salt cod soaks in cold water in the fridge for a couple of days. Change the water often.
+  quote: Taste a little corner before you cook it. If it's still salty, soak it longer.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Cooking Baccalà for Christmas Eve? Start Soaking the Salt Cod Days Ahead
+  description: >-
+    Baccalà, dried salt cod, is a Christmas Eve classic in many Italian and Italian-American homes.
+    It has to soak before you cook it: in cold water, in the fridge, usually for two to three days,
+    changing the water several times a day. Follow the package, taste a small piece, and soak longer
+    if it's still salty. Easy Italian dinners from Chef Sal Romano.
+  keywords: [baccala, how to soak salt cod, feast of the seven fishes, italian christmas eve, easy italian dinners, christmas eve seafood]
+
+- slug: holiday-takeout-for-6
+  week: 2026-11-09
+  type: money
+  topic: takeout
+  kicker: Restaurant or home?
+  headline: "Takeout Night | for 6: *Out vs Home*"
+  calc: {d: [18, 19, 20], p: 6, t: 0, dr: 0}
+  out_label: Takeout order, 6 people
+  tag: Save money
+  title: "Takeout Night for 6: Orange Chicken, Chow Mein and Fried Rice, Order vs Make"
+  description: >-
+    Orange chicken, chow mein and fried rice for six during a busy holiday week: about {out} ordered
+    as takeout, or about {home} made at home with leftover rice from the fridge. That's roughly
+    {keep} back, and dinner is ready about when the delivery would be. Try your own order in Chef Sal
+    Romano's free Restaurant or Home? calculator.
+  keywords: [copycat takeout recipes, fakeout takeout, orange chicken at home, fried rice, cooking at home vs eating out, budget family dinners]
+
+- slug: wedding-soup-name
+  week: 2026-11-09
+  type: trick
+  topic: soup
+  kicker: Italian kitchen story
+  headline: Why It's Called | *Wedding Soup*
+  body: Not for weddings. It's the "marriage" of greens and meat in one good broth.
+  quote: Little meatballs, greens, good broth, a handful of cheese. A happy marriage in a bowl.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Why Italian Wedding Soup Is Called Wedding Soup
+  description: >-
+    Italian wedding soup isn't really a wedding dish. The name comes from minestra maritata,
+    "married soup," for the way greens and meat go together in the broth. The Italian-American
+    version has tiny meatballs, escarole or spinach, small pasta and grated cheese. It's a warm,
+    easy winter dinner that tastes even better the next day. Easy Italian dinners from Chef Sal
+    Romano.
+  keywords: [italian wedding soup, wedding soup, italian soup recipes, winter soup ideas, easy italian dinners, meatball soup]
+
+- slug: store-crisp-and-soft-cookies-apart
+  week: 2026-11-09
+  type: trick
+  topic: cookies
+  kicker: Bakery kitchen trick
+  headline: Crisp & Soft | Cookies? *Two Tins*
+  body: Soft cookies give off moisture and the crisp ones go soft. Store them apart.
+  quote: One tin for crunchy, one for chewy. Your biscotti will thank you.
+  tag: Kitchen trick
+  title: Holiday Baking Tip — Store Crisp and Soft Cookies Separately
+  description: >-
+    Baking a big holiday cookie tray? Keep crisp cookies like biscotti and pizzelle in a different
+    tin from soft ones. Soft cookies give off moisture, and the crisp ones turn soft overnight. Let
+    everything cool completely before it goes in, keep tins airtight, and put the cookies together
+    on the tray just before serving. More kitchen secrets from Chef Sal Romano.
+  keywords: [how to store christmas cookies, holiday baking tips, cookie tray, biscotti, christmas cookies, baking tips]
+
+- slug: office-lunch-for-8
+  week: 2026-11-09
+  type: money
+  topic: texmex
+  kicker: Restaurant or home?
+  headline: "Office Lunch | for 8: *Out vs Home*"
+  calc: {d: [17, 13], p: 8, t: 0, dr: 0}
+  out_label: Ordered in, 8 people
+  tag: Save money
+  title: "Holiday Office Lunch for 8: Burrito Bowls and Salsa, Order vs Make"
+  description: >-
+    Burrito bowls with chips and blender salsa for eight: about {out} ordered in for the office
+    holiday lunch, or about {home} if you set up a build-your-own bowl bar at home or at work.
+    That's roughly {keep} back, and everybody gets their bowl the way they like it. Try your own
+    order in Chef Sal Romano's free Restaurant or Home? calculator.
+  keywords: [office holiday party food, burrito bowl bar, feeding a crowd, cooking at home vs eating out, budget family dinners, party food ideas]
+
+- slug: reheat-roast-low-and-slow
+  week: 2026-11-09
+  type: trick
+  topic: leftovers
+  kicker: Holiday leftovers
+  headline: Reheat the Roast | *Low and Slow*
+  body: A low oven, covered, with a splash of broth. Or slice it thin and warm it in hot gravy.
+  quote: High heat turns a good roast into shoe leather. Be patient with leftovers.
+  tag: Kitchen trick
+  title: How to Reheat Leftover Roast Without Drying It Out
+  description: >-
+    Leftover roast beef, pork or turkey dries out fast at high heat. Warm it covered in a low oven
+    with a splash of broth, or slice it thin and let it sit in hot gravy for a minute or two. Heat
+    leftovers until they're steaming hot, and use them within a few days. Then make sandwiches.
+    More kitchen secrets from Chef Sal Romano.
+  keywords: [how to reheat roast beef, holiday leftovers, reheat turkey, leftover roast ideas, kitchen tips, christmas leftovers]
+
+- slug: pasta-e-fagioli
+  week: 2026-11-09
+  type: trick
+  topic: soup
+  kicker: The pantry dinner
+  headline: "*Pasta e Fagioli*: | Pasta & Beans"
+  body: Beans, small pasta, garlic, a little tomato and a Parmesan rind. Dinner from the pantry.
+  quote: Mash a spoonful of the beans into the pot. That's how it gets thick and creamy.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Pasta e Fagioli — The Cozy Italian Pantry Soup
+  description: >-
+    Pasta e fagioli, pasta and beans, is the Italian pantry dinner: canned beans, a small pasta shape,
+    garlic, onion, a little tomato and a Parmesan rind in the pot. Mash some of the beans so the soup
+    gets thick and creamy, and cook the pasta right in it. Cheap, filling and even better the next
+    day. Easy Italian dinners from Chef Sal Romano.
+  keywords: [pasta e fagioli, italian bean soup, cheap dinner ideas, pantry meals, easy italian dinners, winter soup ideas]
+
+- slug: tip-more-in-the-snow
+  week: 2026-11-09
+  type: trick
+  topic: tipping
+  kicker: Sal's opinion
+  headline: Delivery in the | Snow? *Tip More*
+  body: Bad roads, cold porches, holiday rush. If someone drives your dinner through that, say thanks.
+  quote: Somebody drove your lasagna through a snowstorm. That's worth a few extra dollars.
+  tag: Restaurant trick
+  title: Ordering Delivery in Bad Weather? Why Sal Tips a Little More
+  description: >-
+    Ordering delivery during a snowstorm or the holiday rush? Chef Sal Romano tips a little more when
+    the roads are bad. Turn on your porch light, shovel a path, put your house number where it's easy
+    to see, and answer the phone if the driver calls. And check whether a delivery fee goes to the
+    driver at all. More restaurant secrets from Chef Sal Romano.
+  keywords: [delivery tipping, how much to tip delivery, tipping in bad weather, restaurant secrets, dining out tips, holiday tipping]
+
+- slug: holiday-party-platters-for-8
+  week: 2026-11-09
+  type: money
+  topic: party
+  kicker: Restaurant or home?
+  headline: "Party Platters | for 8: *Out vs Home*"
+  calc: {d: [11, 28], p: 8, t: 18, dr: 3}
+  out_label: At a restaurant bar, 8 people
+  tag: Save money
+  title: "Holiday Party for 8: Wings and Spinach Dip, Bar vs Home"
+  description: >-
+    Oven-baked buffalo wings and hot spinach artichoke dip for eight: about {out} at a restaurant bar
+    with drinks and tip, or about {home} made at home. That's roughly {keep} back for a holiday party,
+    and you pick the music. Try your own order in Chef Sal Romano's free Restaurant or Home?
+    calculator.
+  keywords: [holiday party food, christmas party appetizers, party food for a crowd, copycat spinach artichoke dip, cooking at home vs eating out, budget family dinners]
+
+- slug: pancetta-or-bacon
+  week: 2026-11-09
+  type: trick
+  topic: pork
+  kicker: Italian kitchen trick
+  headline: "*Pancetta* or | Bacon?"
+  body: Pancetta is cured, not smoked. Bacon is smoked. Both work, but they taste different.
+  quote: For a clean Italian flavor use pancetta. For a smoky one, bacon. Neither is wrong.
+  tag: Italian trick
+  board: Easy Italian Dinners
+  title: Pancetta vs Bacon — What's the Difference in Italian Cooking?
+  description: >-
+    Pancetta and bacon both come from pork belly, but pancetta is salt-cured and usually not smoked,
+    while American bacon is smoked. In pasta sauces, soups and beans, pancetta gives a clean, savory
+    flavor and bacon adds smoke. Cook either one slowly so the fat melts out, then use that fat to
+    start the sauce. Easy Italian dinners from Chef Sal Romano.
+  keywords: [pancetta vs bacon, what is pancetta, italian cooking tips, pasta carbonara, easy italian dinners, kitchen tips]
+
+- slug: brunch-is-the-markup
+  week: 2026-11-09
+  type: trick
+  topic: menu
+  kicker: Restaurant secret
+  headline: Brunch Is Where | the *Markup* Lives
+  body: Eggs, bread and potatoes are cheap ingredients. The brunch menu is priced like dinner.
+  quote: Eggs Benedict is a restaurant favorite for a reason. Make it at home on a slow Sunday.
+  tag: Restaurant trick
+  title: The Restaurant Secret About Brunch Prices
+  description: >-
+    Look at a brunch menu next time. Eggs, bread, potatoes and pancake batter are some of the
+    cheapest things a kitchen buys, but brunch dishes are often priced close to lunch or dinner.
+    That's not a scam, it's rent, labor and a busy weekend. But it's why a family brunch is one of
+    the easiest restaurant meals to make at home. More restaurant secrets from Chef Sal Romano.
+  keywords: [brunch prices, restaurant markup, restaurant secrets, brunch at home, save money eating out, dining out tips]
